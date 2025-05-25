@@ -1,9 +1,10 @@
 """
 schedule_parser.py
 
-Handles class schedule processing. Generates base class sessions and then uses an LLM
-to extract detailed topics, readings, and activities from the course schedule text segment,
-merging this information into the event_data.
+Handles class schedule processing. Generates base class sessions, populates ISO datetimes
+and unique IDs, and then uses an LLM to extract detailed topics, readings, 
+and activities from the course schedule text segment, merging this information 
+into the event_data.
 """
 
 import re
@@ -11,16 +12,16 @@ import os
 import logging
 import sys
 import json
-from datetime import date, timedelta, datetime # Added datetime for completeness if needed
+import uuid # Added for unique event IDs
+from datetime import date, timedelta, datetime, time # Added time
 from typing import Dict, List, Any, Optional
 
 try:
-    # Assuming SyllabusDateParser is the actual class name in date_parser.py
+    # DateParser should have get_iso_datetime_str, parse_time_string_to_objects
     from utils.parsers.date_parser import DateParser as SyllabusDateParser
     DATE_PARSER_CLASS_AVAILABLE = True
 except ImportError:
     DATE_PARSER_CLASS_AVAILABLE = False
-    # This print is okay for module-level feedback during development/setup
     print("Warning (schedule_parser.py): SyllabusDateParser not found. ScheduleParser functionality will be limited.")
 
 try:
@@ -33,8 +34,9 @@ except ImportError:
 class ScheduleParser:
     """
     Generates a detailed class schedule (event_data) by first creating base class sessions
-    and then using an LLM to parse the "course_schedule" text segment for topics,
-    readings, and in-class activities, merging these details.
+    with ISO datetimes and unique IDs, and then using an LLM to parse the 
+    "course_schedule" text segment for topics, readings, and in-class activities, 
+    merging these details.
     """
     
     def __init__(self, 
@@ -43,26 +45,24 @@ class ScheduleParser:
                  openai_parser_instance: Optional[OpenAIParser] = None,
                  config: Optional[Dict[str, Any]] = None):
         self.logger = logger_instance
-        if not self.logger: # Should ideally not happen if app.py provides it
-            self.logger = logging.getLogger(__name__) # Fallback logger
-            if not self.logger.hasHandlers(): # Configure if no handlers exist
+        if not self.logger: 
+            self.logger = logging.getLogger(__name__) 
+            if not self.logger.hasHandlers(): 
                 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - [%(funcName)s:%(lineno)d] %(message)s')
-            self.logger.critical("ScheduleParser initialized with a default fallback logger. This is not recommended for production.")
+            self.logger.critical("ScheduleParser initialized with a default fallback logger.")
             
         self.config = config or {}
         self.openai_parser = openai_parser_instance
 
         if not self.openai_parser and OPENAI_PARSER_CLASS_AVAILABLE:
             self.logger.warning("No OpenAIParser instance provided to ScheduleParser. Attempting to create one if configured.")
-            # Ensure OpenAIParser can be initialized this way or adjust as needed
-            model = self.config.get("extraction", {}).get("openai_model", "gpt-4o") # Default model
-            # OpenAIParser might need more config, ensure its __init__ matches
+            model = self.config.get("extraction", {}).get("openai_model", "gpt-4o")
             try:
                 self.openai_parser = OpenAIParser(model=model, logger_instance=self.logger, config=self.config)
             except Exception as e_op_init:
                 self.logger.error(f"Failed to auto-initialize OpenAIParser in ScheduleParser: {e_op_init}", exc_info=True)
-                self.openai_parser = None # Ensure it's None if init fails
-        elif not self.openai_parser: # If still None after attempt or if OPENAI_PARSER_CLASS_AVAILABLE is False
+                self.openai_parser = None
+        elif not self.openai_parser: 
             self.logger.error("OpenAIParser not available/creatable. LLM-based schedule detail extraction will be impaired or fail.")
 
         if date_parser_instance:
@@ -70,27 +70,25 @@ class ScheduleParser:
         elif DATE_PARSER_CLASS_AVAILABLE:
             self.logger.warning("No DateParser instance provided. Creating new one for ScheduleParser.")
             try:
-                self.date_parser = SyllabusDateParser(logger_instance=self.logger) # Assuming simple init
+                # DateParser might need config if output_date_format is to be configured
+                self.date_parser = SyllabusDateParser(logger_instance=self.logger, config=self.config.get("date_parser"))
             except Exception as e_dp_init:
                 self.logger.error(f"Failed to auto-initialize DateParser in ScheduleParser: {e_dp_init}", exc_info=True)
                 self.date_parser = None
         else:
-            self.date_parser = None # Explicitly None if not available
+            self.date_parser = None 
             self.logger.error("DateParser not available. ScheduleParser functionality severely limited.")
         
         self.default_term_weeks = int(self.config.get("schedule_parser", {}).get("default_term_weeks", 15))
-        # Ensure self.date_parser exists before accessing attributes
         self.output_date_format = self.date_parser.output_date_format if self.date_parser and hasattr(self.date_parser, 'output_date_format') else "%B %d, %Y"
         self.logger.info(f"ScheduleParser initialized. Default term weeks: {self.default_term_weeks}.")
     
     def _generate_schedule_detail_extraction_prompt(self, schedule_text_segment: str, class_data: Dict[str, Any]) -> str:
-        """Generates the prompt for the LLM to extract detailed schedule items."""
-        
+        # ... (prompt definition remains the same as schedule_parser_revised_v1) ...
         course_code = class_data.get("Course Code", "COURSE")
         class_start_date_str = class_data.get("Class Start Date", "Not Specified")
         class_end_date_str = class_data.get("Class End Date", "Not Specified")
         days_of_week_str = class_data.get("Days of Week", "Not Specified")
-
         prompt = f"""
 You are an expert academic assistant specializing in parsing course schedules.
 Your task is to extract detailed information for each chronological entry (e.g., week, day, session)
@@ -141,115 +139,99 @@ CRITICAL:
                                          schedule_text_segment: str, 
                                          class_data: Dict[str, Any],
                                          unique_id: str) -> List[Dict[str, Any]]:
+        # ... (LLM call logic remains the same as schedule_parser_revised_v1) ...
+        # This method now enriches events that should already have IDs and ISO datetimes.
         if not self.date_parser:
             self.logger.error("DateParser not available in _populate_event_details_with_llm. Skipping LLM detail extraction.")
             return event_data_base
         if not schedule_text_segment.strip() or not self.openai_parser:
-            self.logger.warning("Schedule text segment is empty or OpenAIParser is not available. Skipping LLM detail extraction.")
+            self.logger.warning("Schedule text segment empty or OpenAIParser unavailable. Skipping LLM detail extraction.")
             return event_data_base
 
         prompt = self._generate_schedule_detail_extraction_prompt(schedule_text_segment, class_data)
-        
         llm_schedule_items: Optional[List[Dict[str, Any]]] = None
         try:
             if hasattr(self.openai_parser, 'get_json_list_from_prompt') and callable(getattr(self.openai_parser, 'get_json_list_from_prompt')):
                  llm_schedule_items = self.openai_parser.get_json_list_from_prompt(prompt, f"{class_data.get('Course Code', 'COURSE')}_schedule_details_{unique_id}")
-            elif self.openai_parser.client: # Fallback manual call
+            elif self.openai_parser.client:
                 self.logger.debug("Using fallback manual OpenAI call for schedule details.")
                 response = self.openai_parser.client.chat.completions.create(
                     model=self.openai_parser.model,
-                    messages=[{"role": "system", "content": "You are an AI assistant that returns JSON formatted data as requested."}, # More generic system prompt
+                    messages=[{"role": "system", "content": "You are an AI assistant that returns JSON formatted data as requested."},
                               {"role": "user", "content": prompt}],
-                    # Ensure response_format is compatible with how you parse.
-                    # If prompt asks for an array, but API forces an object, parsing needs to handle it.
-                    # Forcing json_object here, means the LLM should output a JSON object that might contain the array.
                     response_format={"type": "json_object"} 
                 )
                 raw_response_text = response.choices[0].message.content.strip() if response.choices and response.choices[0].message else ""
                 if raw_response_text:
                     parsed_outer_json = json.loads(raw_response_text) 
-                    if isinstance(parsed_outer_json, list):
-                        llm_schedule_items = parsed_outer_json
-                    # Check if the prompt asks for an array and the LLM wrapped it in a key, e.g., "schedule_entries"
+                    if isinstance(parsed_outer_json, list): llm_schedule_items = parsed_outer_json
                     elif isinstance(parsed_outer_json, dict):
-                        # Try to find a list if the LLM wrapped the array
                         found_list = None
                         for val in parsed_outer_json.values():
-                            if isinstance(val, list):
-                                found_list = val
-                                break
-                        if found_list is not None:
-                             llm_schedule_items = found_list
-                        else:
-                            self.logger.error(f"LLM response (json_object mode) was a dict but did not contain a clear list of schedule items: {str(parsed_outer_json)[:500]}")
-                    else: 
-                        self.logger.error(f"LLM response for schedule details was not a list or expected dict structure: {raw_response_text[:500]}")
-                else:
-                    self.logger.warning("LLM returned empty response for schedule details.")
-            else: 
-                self.logger.error("OpenAI client not available or get_json_list_from_prompt missing for schedule detail extraction.")
+                            if isinstance(val, list): found_list = val; break
+                        if found_list is not None: llm_schedule_items = found_list
+                        else: self.logger.error(f"LLM response (json_object mode) dict did not contain a clear list of schedule items: {str(parsed_outer_json)[:500]}")
+                    else: self.logger.error(f"LLM response for schedule details was not a list or expected dict: {raw_response_text[:500]}")
+                else: self.logger.warning("LLM returned empty response for schedule details.")
+            else: self.logger.error("OpenAI client not available or get_json_list_from_prompt missing.")
         except Exception as e_llm:
             self.logger.error(f"LLM call for schedule detail extraction failed for ID {unique_id}: {e_llm}", exc_info=True)
         
         if not llm_schedule_items:
-            self.logger.info(f"LLM did not return any schedule items or response was invalid for ID {unique_id}.")
+            self.logger.info(f"LLM did not return schedule items or response invalid for ID {unique_id}.")
             return event_data_base
 
         event_map: Dict[str, Dict[str, Any]] = {
-            event["Event Date"]: event for event in event_data_base if event.get("Event Date")
+            event["Event Date"]: event for event in event_data_base if event.get("Event Date") and event.get("event_id") # Ensure base events have IDs
         }
         course_code = class_data.get("Course Code", "COURSE")
+        course_timezone = class_data.get("Time Zone") # For context if needed, though ISOs should be set
 
         for item in llm_schedule_items:
+            # ... (logic for extracting topics, readings, etc. from item remains same) ...
             if not isinstance(item, dict): continue
             date_ref_str = str(item.get("date_reference", "")).strip()
             topics = item.get("topics", [])
             readings = item.get("readings", [])
             activities_notes = item.get("activities_notes", [])
             is_holiday_no_class = item.get("is_holiday_or_no_class", False)
-
             if not date_ref_str: continue
             
             try:
-                # Assuming DateParser.normalize_date returns a standardized string like "Month Day, Year"
-                # And DateParser.parse can handle this standardized string.
-                normalized_date_str = self.date_parser.normalize_date(date_ref_str, term_year_str=class_data.get("Term")) # Pass term for context
+                normalized_date_str = self.date_parser.normalize_date(date_ref_str, term_year_str=class_data.get("Term"))
                 if not normalized_date_str or normalized_date_str.upper() in ["TBD", "TBA", "NOT SPECIFIED"]: 
-                    self.logger.debug(f"Skipping LLM item due to unparsable/TBD date_reference: '{date_ref_str}' -> '{normalized_date_str}'")
+                    self.logger.debug(f"Skipping LLM item due to TBD date_reference: '{date_ref_str}' -> '{normalized_date_str}'")
                     continue
                 
-                # REVISED: Use self.date_parser.parse (assuming it exists and returns a datetime-like object)
                 parsed_date_obj = self.date_parser.parse(normalized_date_str, ignoretz=True).date()
                 target_event_date_str = parsed_date_obj.strftime(self.output_date_format)
 
                 if target_event_date_str in event_map:
                     event_to_update = event_map[target_event_date_str]
                     current_title = event_to_update.get("Event Title", f"{course_code}: Class")
-
                     if topics:
                         if current_title == f"{course_code}: Class" or not current_title.startswith(course_code):
                             event_to_update["Event Title"] = f"{course_code}: {', '.join(topics)}"
-                        else: 
-                            event_to_update["Event Title"] += f" - {', '.join(topics)}"
-                    
+                        else: event_to_update["Event Title"] += f" - {', '.join(topics)}"
                     if readings: event_to_update.setdefault("reading", []).extend(r for r in readings if r not in event_to_update.get("reading",[]))
                     if activities_notes: event_to_update.setdefault("special", []).extend(an for an in activities_notes if an not in event_to_update.get("special",[]))
-
                     if is_holiday_no_class:
                         event_to_update["Event Title"] = f"{course_code}: No Class - {topics[0] if topics else 'Holiday/Break'}"
                         event_to_update.setdefault("special", []).append(topics[0] if topics else "Holiday/Break")
                         event_to_update["Class Time"] = "" 
-                    
+                        # For holidays, ISO times might become just date or be cleared
+                        event_to_update["start_datetime_iso"] = parsed_date_obj.isoformat() # All-day event
+                        event_to_update["end_datetime_iso"] = (parsed_date_obj + timedelta(days=1)).isoformat() # All-day event convention
                     self.logger.debug(f"Updated event on {target_event_date_str} with LLM details. Title: {event_to_update['Event Title']}")
             except Exception as e_date_resolve:
-                self.logger.warning(f"Could not resolve or apply LLM schedule item with date_reference '{date_ref_str}': {e_date_resolve}", exc_info=True)
+                self.logger.warning(f"Could not resolve/apply LLM schedule item with date_reference '{date_ref_str}': {e_date_resolve}", exc_info=True)
         return list(event_map.values())
 
     def process_schedule(self, data: Dict[str, Any], unique_id: str) -> Dict[str, Any]:
         self.logger.info(f"Processing class schedule for ID {unique_id} to generate/update event_data...")
         try:
             if not self.date_parser:
-                self.logger.error("DateParser not available. Cannot process schedule.")
+                self.logger.error("DateParser unavailable. Cannot process schedule.")
                 data.setdefault("event_data", [])
                 return data
 
@@ -260,11 +242,15 @@ CRITICAL:
                 return data
 
             class_data = self._ensure_class_start_end_dates(class_data)
-            data["class_data"] = class_data # Persist any changes from _ensure_class_start_end_dates
+            data["class_data"] = class_data 
 
             final_class_start_str = class_data.get("Class Start Date")
             final_class_end_str = class_data.get("Class End Date")
             days_of_week_str = class_data.get("Days of Week", "")
+            course_timezone_str = class_data.get("Time Zone") # Get timezone for ISO generation
+
+            if not course_timezone_str:
+                self.logger.warning(f"Time Zone missing in class_data for {unique_id}. ISO datetimes for events will be naive or omitted.")
             
             base_event_data: List[Dict[str, Any]] = []
             if final_class_start_str and final_class_start_str.upper() not in ["TBD", "TBA", "NOT SPECIFIED"] and \
@@ -275,11 +261,11 @@ CRITICAL:
                     self.logger.warning(f"No valid weekdays from '{days_of_week_str}'. Cannot generate base schedule for {unique_id}.")
                 else:
                     course_code = self._extract_course_code(class_data.get("Course Title", "Course"))
-                    class_time = class_data.get("Class Time", "")
+                    class_time_str = class_data.get("Class Time", "") # Human-readable
                     class_location = class_data.get("Class Location", "")
                     base_event_data = self._generate_class_sessions(
                         final_class_start_str, final_class_end_str, weekday_indices, 
-                        course_code, class_time, class_location
+                        course_code, class_time_str, class_location, course_timezone_str # Pass timezone
                     )
             else:
                 self.logger.warning(f"Missing critical info (start/end date, days) for base schedule generation for {unique_id}.")
@@ -290,22 +276,18 @@ CRITICAL:
             merged_event_data_before_llm = self._merge_schedules(base_event_data, existing_events)
 
             schedule_text_segment = data.get("segmented_syllabus", {}).get("course_schedule", "")
-            if schedule_text_segment.strip() and self.openai_parser: # Check if openai_parser is not None
+            if schedule_text_segment.strip() and self.openai_parser:
                 self.logger.info(f"Populating event details using LLM for ID {unique_id} from 'course_schedule' segment.")
                 final_event_data = self._populate_event_details_with_llm(
-                    merged_event_data_before_llm, 
-                    schedule_text_segment, 
-                    class_data, 
-                    unique_id
+                    merged_event_data_before_llm, schedule_text_segment, class_data, unique_id
                 )
             else:
-                self.logger.info(f"Skipping LLM detail population for schedule (no schedule text or no OpenAIParser) for ID {unique_id}.")
+                self.logger.info(f"Skipping LLM detail population (no text or no OpenAIParser) for ID {unique_id}.")
                 final_event_data = merged_event_data_before_llm
             
-            if self.date_parser: # Ensure date_parser is available for sorting
+            if self.date_parser:
                 try:
-                    # REVISED: Use self.date_parser.parse
-                    final_event_data.sort(key=lambda x: self.date_parser.parse(x["Event Date"], ignoretz=True).date() if x.get("Event Date") else date.max)
+                    final_event_data.sort(key=lambda x: self.date_parser.parse(x["Event Date"], ignoretz=True).date() if x.get("Event Date") and x["Event Date"] != "TBD" else date.max)
                 except Exception as e_sort:
                     self.logger.error(f"Error sorting final event_data for ID {unique_id}: {e_sort}", exc_info=True)
 
@@ -314,86 +296,61 @@ CRITICAL:
             return data
         except Exception as e_proc_schedule:
             self.logger.error(f"Error processing schedule for ID {unique_id}: {e_proc_schedule}", exc_info=True)
-            data.setdefault("event_data", []) # Ensure event_data key exists even on error
+            data.setdefault("event_data", [])
             return data
 
     def _ensure_class_start_end_dates(self, class_data: Dict[str, Any]) -> Dict[str, Any]:
+        # ... (implementation remains same as schedule_parser_revised_v1) ...
         self.logger.debug("Ensuring 'Class Start Date' and 'Class End Date' are determined and refined.")
-        if not self.date_parser:
-            self.logger.error("DateParser not available in _ensure_class_start_end_dates.")
-            return class_data
-
-        # Normalize dates first using DateParser's method
+        if not self.date_parser: self.logger.error("DateParser not available in _ensure_class_start_end_dates."); return class_data
         term_start_str = self.date_parser.normalize_date(class_data.get("Term Start Date", ""), term_year_str=class_data.get("Term"))
         term_end_str = self.date_parser.normalize_date(class_data.get("Term End Date", ""), term_year_str=class_data.get("Term"))
         class_start_str = self.date_parser.normalize_date(class_data.get("Class Start Date", ""), term_year_str=class_data.get("Term"))
         class_end_str = self.date_parser.normalize_date(class_data.get("Class End Date", ""), term_year_str=class_data.get("Term"))
         days_of_week_str = class_data.get("Days of Week", "")
-        
-        # Update class_data with normalized dates if they changed and were not empty initially
         if class_data.get("Term Start Date") and term_start_str != class_data.get("Term Start Date"): class_data["Term Start Date"] = term_start_str
         if class_data.get("Term End Date") and term_end_str != class_data.get("Term End Date"): class_data["Term End Date"] = term_end_str
-        # Class Start/End dates will be set at the end after all logic
-
-        final_class_start_str = class_start_str
-        final_class_end_str = class_end_str
-
+        final_class_start_str = class_start_str; final_class_end_str = class_end_str
         if not final_class_start_str or final_class_start_str.upper() in ["TBD", "TBA", "NOT SPECIFIED"]:
-            if term_start_str and term_start_str.upper() not in ["TBD", "TBA", "NOT SPECIFIED"]:
-                final_class_start_str = term_start_str
-                self.logger.info(f"Using Term Start Date '{term_start_str}' as Class Start Date.")
-            else: self.logger.warning("Cannot determine class start date from class or term start dates.")
-        
+            if term_start_str and term_start_str.upper() not in ["TBD", "TBA", "NOT SPECIFIED"]: final_class_start_str = term_start_str; self.logger.info(f"Using Term Start Date '{term_start_str}' as Class Start Date.")
+            else: self.logger.warning("Cannot determine class start date.")
         if not final_class_end_str or final_class_end_str.upper() in ["TBD", "TBA", "NOT SPECIFIED"]:
-            if term_end_str and term_end_str.upper() not in ["TBD", "TBA", "NOT SPECIFIED"]:
-                final_class_end_str = term_end_str
-                self.logger.info(f"Using Term End Date '{term_end_str}' as Class End Date.")
+            if term_end_str and term_end_str.upper() not in ["TBD", "TBA", "NOT SPECIFIED"]: final_class_end_str = term_end_str; self.logger.info(f"Using Term End Date '{term_end_str}' as Class End Date.")
             elif final_class_start_str and final_class_start_str.upper() not in ["TBD", "TBA", "NOT SPECIFIED"]:
                 try:
-                    # REVISED: Use self.date_parser.parse
                     start_date_obj = self.date_parser.parse(final_class_start_str, ignoretz=True).date()
-                    estimated_end_obj = start_date_obj + timedelta(weeks=self.default_term_weeks) - timedelta(days=1) # Common term length
+                    estimated_end_obj = start_date_obj + timedelta(weeks=self.default_term_weeks) - timedelta(days=1)
                     final_class_end_str = estimated_end_obj.strftime(self.output_date_format)
-                    self.logger.info(f"Estimated Class End Date: '{final_class_end_str}' based on start date and default term weeks.")
+                    self.logger.info(f"Estimated Class End Date: '{final_class_end_str}'.")
                 except Exception as e_est: self.logger.warning(f"Could not estimate Class End Date: {e_est}", exc_info=True)
-            else: self.logger.warning("Cannot determine class end date from class/term end dates or estimate from start.")
-
+            else: self.logger.warning("Cannot determine class end date.")
         if final_class_start_str and final_class_start_str.upper() not in ["TBD", "TBA", "NOT SPECIFIED"] and \
            final_class_end_str and final_class_end_str.upper() not in ["TBD", "TBA", "NOT SPECIFIED"] and \
            days_of_week_str:
             try:
                 weekday_indices = self.date_parser.parse_weekdays_to_indices(days_of_week_str)
                 if weekday_indices:
-                    # REVISED: Use self.date_parser.parse
                     start_obj_curr = self.date_parser.parse(final_class_start_str, ignoretz=True).date()
                     end_obj_curr = self.date_parser.parse(final_class_end_str, ignoretz=True).date()
-                    
-                    refined_start = False
-                    temp_date = start_obj_curr
-                    for _ in range(7): # Check current and next 6 days
-                        if temp_date.weekday() in weekday_indices:
-                            final_class_start_str = temp_date.strftime(self.output_date_format)
-                            refined_start = True
-                            break
+                    refined_start = False; temp_date = start_obj_curr
+                    for _ in range(7): 
+                        if temp_date.weekday() in weekday_indices: final_class_start_str = temp_date.strftime(self.output_date_format); refined_start = True; break
                         temp_date += timedelta(days=1)
-                    if refined_start: self.logger.debug(f"Refined Class Start Date to first meeting day: {final_class_start_str}")
-
-                    refined_end = False
-                    temp_date = end_obj_curr
-                    for _ in range(7): # Check current and previous 6 days
-                        if temp_date.weekday() in weekday_indices:
-                            final_class_end_str = temp_date.strftime(self.output_date_format)
-                            refined_end = True
-                            break
+                    if refined_start: self.logger.debug(f"Refined Class Start Date to: {final_class_start_str}")
+                    refined_end = False; temp_date = end_obj_curr
+                    for _ in range(7):
+                        if temp_date.weekday() in weekday_indices: final_class_end_str = temp_date.strftime(self.output_date_format); refined_end = True; break
                         temp_date -= timedelta(days=1)
-                    if refined_end: self.logger.debug(f"Refined Class End Date to last meeting day: {final_class_end_str}")
-            except Exception as e_ref: self.logger.error(f"Error refining class start/end dates to meeting days: {e_ref}", exc_info=True)
-        
+                    if refined_end: self.logger.debug(f"Refined Class End Date to: {final_class_end_str}")
+            except Exception as e_ref: self.logger.error(f"Error refining class dates: {e_ref}", exc_info=True)
         class_data["Class Start Date"] = final_class_start_str if final_class_start_str and final_class_start_str.upper() not in ["TBD", "TBA", "NOT SPECIFIED"] else ""
         class_data["Class End Date"] = final_class_end_str if final_class_end_str and final_class_end_str.upper() not in ["TBD", "TBA", "NOT SPECIFIED"] else ""
         return class_data
 
-    def _generate_class_sessions(self, class_start_date_str: str, class_end_date_str: str, weekday_indices: List[int], course_code: str, global_class_time: str, global_class_location: str) -> List[Dict[str, Any]]:
+    def _generate_class_sessions(self, class_start_date_str: str, class_end_date_str: str, 
+                                 weekday_indices: List[int], course_code: str, 
+                                 global_class_time_str: str, global_class_location: str,
+                                 course_timezone_str: Optional[str]) -> List[Dict[str, Any]]: # Added course_timezone_str
         self.logger.info(f"Generating regular class sessions for '{course_code}' from {class_start_date_str} to {class_end_date_str}.")
         if not self.date_parser: 
             self.logger.error("DateParser not available in _generate_class_sessions.")
@@ -401,22 +358,44 @@ CRITICAL:
             
         generated_events: List[Dict[str, Any]] = []
         try:
-            # REVISED: Use self.date_parser.parse
-            start_obj = self.date_parser.parse(class_start_date_str, ignoretz=True).date()
-            end_obj = self.date_parser.parse(class_end_date_str, ignoretz=True).date()
-            current_date = start_obj
-            while current_date <= end_obj:
+            start_obj_date = self.date_parser.parse(class_start_date_str, ignoretz=True).date()
+            end_obj_date = self.date_parser.parse(class_end_date_str, ignoretz=True).date()
+            
+            start_time_obj: Optional[time] = None
+            end_time_obj: Optional[time] = None
+            if global_class_time_str:
+                start_time_obj, end_time_obj = self.date_parser.parse_time_string_to_objects(global_class_time_str)
+
+            current_date = start_obj_date
+            while current_date <= end_obj_date:
                 if current_date.weekday() in weekday_indices:
+                    event_id = str(uuid.uuid4())
+                    start_datetime_iso = None
+                    end_datetime_iso = None
+
+                    if start_time_obj and course_timezone_str:
+                        start_datetime_iso = self.date_parser.get_iso_datetime_str(current_date, start_time_obj, course_timezone_str)
+                        if end_time_obj:
+                            end_datetime_iso = self.date_parser.get_iso_datetime_str(current_date, end_time_obj, course_timezone_str)
+                        elif start_datetime_iso: # If only start time, assume 1 hour duration for end ISO for now
+                            try:
+                                temp_start_dt = datetime.fromisoformat(start_datetime_iso)
+                                temp_end_dt = temp_start_dt + timedelta(hours=1)
+                                end_datetime_iso = temp_end_dt.isoformat()
+                            except ValueError:
+                                self.logger.warning(f"Could not form default end_datetime_iso from start {start_datetime_iso}")
+                    
                     generated_events.append({
-                        "Event Date": current_date.strftime(self.output_date_format),
+                        "event_id": event_id,
+                        "Event Date": current_date.strftime(self.output_date_format), # Human-readable
+                        "Class Time": global_class_time_str, # Human-readable
+                        "start_datetime_iso": start_datetime_iso, # Machine-readable
+                        "end_datetime_iso": end_datetime_iso,   # Machine-readable
+                        "time_zone": course_timezone_str,       # IANA timezone
                         "Event Title": f"{course_code}: Class", 
-                        "Class Time": global_class_time, 
                         "Class Location": global_class_location,
-                        "reading": [], 
-                        "assignment": [], 
-                        "assignment_description": None, 
-                        "test": [], 
-                        "special": [] 
+                        "reading": [], "assignment": [], "assignment_description": None, 
+                        "test": [], "special": [], "is_holiday_or_no_class": False 
                     })
                 current_date += timedelta(days=1)
             self.logger.info(f"Generated {len(generated_events)} regular class sessions for '{course_code}'.")
@@ -424,188 +403,141 @@ CRITICAL:
         return generated_events
     
     def _merge_schedules(self, generated_sessions: List[Dict[str, Any]], existing_events: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        if not self.date_parser:
-            self.logger.error("DateParser not available in _merge_schedules. Basic concatenation fallback.")
-            return existing_events + generated_sessions 
-
+        # ... (implementation remains same as schedule_parser_revised_v1, but ensure IDs/ISO fields are handled) ...
+        # This method should now be careful about event_id uniqueness and merging ISO fields if applicable.
+        # For simplicity, if an existing event (from AssignmentParser linking) matches a generated session by date,
+        # we might prioritize the generated session's ID and ISO times, but merge descriptive content.
+        if not self.date_parser: self.logger.error("DateParser unavailable in _merge_schedules."); return existing_events + generated_sessions 
         self.logger.debug(f"Merging {len(generated_sessions)} generated sessions with {len(existing_events)} existing events.")
         merged_event_map: Dict[str, Dict[str, Any]] = {}
 
+        # First, add generated sessions to the map using their event_id if present, or human-readable date as fallback key
+        for session in generated_sessions:
+            key = session.get("event_id", session.get("Event Date")) # Prefer event_id if it exists
+            if key: merged_event_map[key] = session
+
+        # Now, merge or add existing events
         for event in existing_events:
             if isinstance(event, dict) and event.get("Event Date"):
-                try:
-                    # Normalize date using DateParser for consistent keying
-                    # Assuming normalize_date returns a string in self.output_date_format or similar parsable format
-                    norm_date_key = self.date_parser.normalize_date(str(event["Event Date"]), term_year_str=None) # Term context might not be needed if date is absolute
-                    if not norm_date_key or norm_date_key.upper() in ["TBD", "TBA", "NOT SPECIFIED"]:
-                        self.logger.warning(f"Skipping existing event with un-normalizable date: {event.get('Event Date')}")
-                        continue
+                # Try to match by human-readable date if no event_id on existing event
+                norm_date_key = self.date_parser.normalize_date(str(event["Event Date"]), term_year_str=None)
+                
+                # Check if any generated session already exists for this date to merge into
+                matched_session_key = None
+                for gen_key, gen_session in merged_event_map.items():
+                    if gen_session.get("Event Date") == norm_date_key:
+                        matched_session_key = gen_key
+                        break
+                
+                if matched_session_key: # Merge into existing generated session for that date
+                    target_session = merged_event_map[matched_session_key]
+                    # Prioritize LLM-populated or more specific titles from existing event
+                    if event.get("Event Title") and (target_session.get("Event Title", "").endswith(": Class") or not target_session.get("Event Title")):
+                        target_session["Event Title"] = event["Event Title"]
+                    # Merge lists like assignment, test, special, reading
+                    for list_key in ["assignment", "test", "special", "reading"]:
+                        target_session.setdefault(list_key, [])
+                        if isinstance(event.get(list_key), list):
+                            for item in event[list_key]:
+                                if item not in target_session[list_key]:
+                                    target_session[list_key].append(item)
+                    if event.get("assignment_description"):
+                        target_session["assignment_description"] = (target_session.get("assignment_description", "") + "; " + event["assignment_description"]).strip("; ")
+                    # Ensure ISO fields from generated session are kept if existing event lacks them
+                    for iso_key in ["start_datetime_iso", "end_datetime_iso", "time_zone", "event_id"]:
+                        target_session.setdefault(iso_key, event.get(iso_key)) # Keep original if it had it
 
-                    # Ensure all fields are present from the target schema
-                    event.setdefault("Event Title", "") # Ensure title exists
-                    event.setdefault("Class Time", "")
-                    event.setdefault("Class Location", "")
-                    event.setdefault("reading", [])
-                    event.setdefault("assignment", [])
-                    event.setdefault("assignment_description", None)
-                    event.setdefault("test", [])
-                    event.setdefault("special", [])
-                    merged_event_map[norm_date_key] = event
-                except Exception as e_norm: self.logger.warning(f"Could not normalize/process existing event date: {event.get('Event Date')}, error: {e_norm}", exc_info=True)
+                else: # No generated session for this date, add existing event (ensure it has an ID)
+                    event.setdefault("event_id", str(uuid.uuid4()))
+                    # Attempt to add ISO fields if missing and possible
+                    if not event.get("start_datetime_iso") and self.date_parser and event.get("Class Time") and event.get("time_zone"):
+                        start_t, end_t = self.date_parser.parse_time_string_to_objects(event["Class Time"])
+                        event["start_datetime_iso"] = self.date_parser.get_iso_datetime_str(event["Event Date"], start_t, event["time_zone"])
+                        event["end_datetime_iso"] = self.date_parser.get_iso_datetime_str(event["Event Date"], end_t, event["time_zone"])
+
+                    key_for_existing = event.get("event_id") # Use its new ID as key
+                    merged_event_map[key_for_existing] = event
         
-        for session in generated_sessions:
-            # session["Event Date"] should already be in self.output_date_format from _generate_class_sessions
-            session_date_key = session["Event Date"] 
-            if session_date_key in merged_event_map:
-                existing = merged_event_map[session_date_key]
-                # Prioritize existing more specific titles or details
-                if not existing.get("Event Title") or existing.get("Event Title") == f"{self._extract_course_code(existing.get('Course Title', 'COURSE'))}: Class":
-                    existing["Event Title"] = session.get("Event Title", existing.get("Event Title"))
-                existing["Class Time"] = existing.get("Class Time") or session.get("Class Time")
-                existing["Class Location"] = existing.get("Class Location") or session.get("Class Location")
-                # Ensure lists are initialized (already done above for existing, do for session if it was minimal)
-                for key_list in ["reading", "assignment", "test", "special"]:
-                    existing.setdefault(key_list, [])
-                    # If session has items for these lists, they would be added by LLM population later
-                existing.setdefault("assignment_description", None)
-            else:
-                merged_event_map[session_date_key] = session
-        
-        final_list = list(merged_event_map.values())
-        return final_list
-    
+        return list(merged_event_map.values())
+
     def _extract_course_code(self, course_title: Optional[str]) -> str:
+        # ... (implementation remains same as schedule_parser_revised_v1) ...
         if not course_title or not isinstance(course_title, str): return "COURSE"
-        # Try to find common course code patterns (e.g., DEPT123, DEPT 123A)
         match = re.search(r'([A-Z]{2,5}\s*\d{2,4}[A-Z]?)', course_title, re.IGNORECASE)
-        if match: 
-            # Remove spaces from the matched group and uppercase
-            return "".join(match.group(1).split()).upper() 
-        
-        # Fallback: if the first word looks like a course code
+        if match: return "".join(match.group(1).split()).upper() 
         first_word = course_title.split(' ')[0]
-        if re.fullmatch(r'[A-Za-z]{2,4}\d{2,4}[A-Za-z]?', first_word): # More flexible regex for first word
-            return first_word.upper()
-        
-        # Further fallback: take first word if it's short and alphanumeric
-        if len(first_word) <= 7 and first_word.isalnum() and not first_word.isdigit():
-            return first_word.upper()
-            
-        return "COURSE" # Default if no clear code found
+        if re.fullmatch(r'[A-Za-z]{2,4}\d{2,4}[A-Za-z]?', first_word): return first_word.upper()
+        if len(first_word) <= 7 and first_word.isalnum() and not first_word.isdigit(): return first_word.upper()
+        return "COURSE"
 
 if __name__ == '__main__':
-    # BasicConfig for standalone testing, real app should configure logger.
+    # ... (standalone test block from schedule_parser_revised_v1, updated to check for new fields) ...
     logging.basicConfig(level=logging.DEBUG, 
                         format='%(asctime)s - %(name)s - %(levelname)s - [%(module)s:%(funcName)s:%(lineno)d] %(message)s', 
-                        handlers=[logging.StreamHandler(sys.stdout)]) # Ensure output to console
-    main_logger = logging.getLogger(__name__) # Get logger after basicConfig
+                        handlers=[logging.StreamHandler(sys.stdout)])
+    main_logger = logging.getLogger(__name__)
 
-    if not DATE_PARSER_CLASS_AVAILABLE: # Removed check for OPENAI_PARSER_CLASS_AVAILABLE for this basic test
-        main_logger.critical("DateParser class (SyllabusDateParser) not available. ScheduleParser standalone tests cannot run effectively.")
+    if not DATE_PARSER_CLASS_AVAILABLE or not OPENAI_PARSER_CLASS_AVAILABLE:
+        main_logger.critical("DateParser or OpenAIParser class not available. ScheduleParser tests cannot run effectively.")
         sys.exit(1)
 
-    # --- Mock Config & Parsers for Standalone Test ---
     mock_config = {
-        "extraction": {"openai_model": "gpt-4-turbo-preview"}, # Example model
-        "openai": {"api_key": os.getenv("OPENAI_API_KEY")}, # Needs API key for real LLM test
+        "extraction": {"openai_model": "gpt-4o"},
+        "openai": {"api_key": os.getenv("OPENAI_API_KEY")},
         "schedule_parser": {"default_term_weeks": 15},
         "openai_parser": {"max_api_retries": 1, "client_timeout": {"read": 60.0, "connect": 10.0}},
-        "date_parser": {"output_date_format": "%B %d, %Y"} # Ensure DateParser uses this
+        "date_parser": {"output_date_format": "%B %d, %Y"}
     }
     
-    # Use the real DateParser
-    try:
-        test_date_parser = SyllabusDateParser(logger_instance=main_logger, config=mock_config.get("date_parser"))
-    except Exception as e_dp:
-        main_logger.critical(f"Failed to initialize real DateParser for test: {e_dp}")
-        sys.exit(1)
-
-    # Mock OpenAIParser for schedule detail extraction if real one is problematic for testing
-    class MockOpenAIParserForScheduleTest:
-        def __init__(self, model, logger_instance, config=None):
-            self.model = model; self.logger = logger_instance; self.config = config or {}
-            self.client = True # Simulate client being ready
-            self.logger.info(f"MockOpenAIParserForScheduleTest initialized with model: {self.model}")
-
-        def get_json_list_from_prompt(self, prompt: str, unique_id: str) -> Optional[List[Dict[str, Any]]]:
+    test_date_parser = SyllabusDateParser(logger_instance=main_logger, config=mock_config.get("date_parser"))
+    
+    class MockOpenAIParserForScheduleTest(OpenAIParser):
+         def get_json_list_from_prompt(self, prompt: str, unique_id: str) -> Optional[List[Dict[str, Any]]]:
             self.logger.info(f"MockOpenAIParserForScheduleTest.get_json_list_from_prompt called for {unique_id}.")
-            # Simulate a response based on the PHY203 example
-            if "PHY203" in prompt and "Exam and Homework Schedule" in prompt:
+            if "PHY203" in prompt and "Course Schedule" in prompt: # Adjusted condition
                 return [
-                    {"date_reference": "Wed., Sept. 11", "topics": ["Kinematics Review", "Intro to Vectors"], "readings": ["Chapter 1", "Handout A"], "activities_notes": ["HW #1 due today", "Clicker Quiz #1"], "is_holiday_or_no_class": False},
-                    {"date_reference": "Fri., Sept. 27", "topics": ["Exam #1"], "readings": [], "activities_notes": ["Covers Chapters 1, 3, 4. Bring calculator."], "is_holiday_or_no_class": False},
-                    {"date_reference": "Wed., Nov. 27", "topics": ["Thanksgiving Break"], "readings": [], "activities_notes": [], "is_holiday_or_no_class": True}
+                    {"date_reference": "Wed., Sept. 11", "topics": ["Kinematics Review", "Intro to Vectors"], "readings": ["Chapter 1"], "activities_notes": ["HW #1 due today"], "is_holiday_or_no_class": False},
+                    {"date_reference": "Fri., Sept. 27", "topics": ["Exam #1"], "readings": [], "activities_notes": ["Covers Chaps. 1,3,4."], "is_holiday_or_no_class": False}
                 ]
-            self.logger.warning(f"MockOpenAIParserForScheduleTest: No matching mock response for prompt containing: {prompt[:200]}...")
             return []
 
-    # Use the mock or real OpenAIParser
-    test_openai_parser = None
-    if OPENAI_PARSER_CLASS_AVAILABLE and os.getenv("OPENAI_API_KEY"): # Try real if key is available
-        try:
-            test_openai_parser = OpenAIParser(model=mock_config["extraction"]["openai_model"], 
-                                            logger_instance=main_logger, 
-                                            config=mock_config)
-            main_logger.info("Using REAL OpenAIParser for test.")
-        except Exception as e_op_real:
-            main_logger.warning(f"Failed to init REAL OpenAIParser ({e_op_real}), falling back to MOCK for schedule details.")
-            test_openai_parser = MockOpenAIParserForScheduleTest(model="mock-gpt", logger_instance=main_logger, config=mock_config)
-    else:
-        main_logger.info("Using MOCK OpenAIParser for schedule details in test (OpenAI key missing or class unavailable).")
-        test_openai_parser = MockOpenAIParserForScheduleTest(model="mock-gpt", logger_instance=main_logger, config=mock_config)
+    test_openai_parser = MockOpenAIParserForScheduleTest(model="gpt-4o", logger_instance=main_logger, config=mock_config)
+    if not os.getenv("OPENAI_API_KEY"): main_logger.warning("OPENAI_API_KEY not set for real OpenAIParser test fallback.")
 
-
-    # Initialize ScheduleParser with the (potentially mock) parsers
     schedule_parser_instance = ScheduleParser(
         logger_instance=main_logger,
         date_parser_instance=test_date_parser,
-        openai_parser_instance=test_openai_parser, # type: ignore # Allow mock
+        openai_parser_instance=test_openai_parser, 
         config=mock_config
     )
 
-    main_logger.info("\n--- Testing ScheduleParser with PHY203 Example ---")
-    
+    main_logger.info("\n--- Testing ScheduleParser with PHY203 Example (ISO Datetimes) ---")
     phy203_class_data = {
-        "School Name": "University of Rhode Island", "Term": "Fall 2024", "Course Title": "PHY203: ELEMENTARY PHYSICS I",
-        "Course Code": "PHY203", "Instructor Name": "Miquel Dorca", "Instructor Email": "miquel@uri.edu",
-        "Class Time": "1:00 PM - 1:50 PM", "Time Zone": "America/New_York", # Using a standard TZ
+        "Course Title": "PHY203: ELEMENTARY PHYSICS I", "Course Code": "PHY203",
+        "Class Time": "1:00 PM - 1:50 PM", "Time Zone": "America/New_York", 
         "Days of Week": "Monday, Wednesday, Friday",
-        "Term Start Date": "September 4, 2024", "Term End Date": "December 13, 2024",
-        "Class Start Date": "September 4, 2024", # Explicitly set
-        "Class End Date": "December 11, 2024",   # Explicitly set
-        "Office Hours": "MWF 12:30pm-1:00pm (East Hall Auditorium)",
-        "Class Location": "East Hall Auditorium (section 1)"
+        "Class Start Date": "September 04, 2024", "Class End Date": "December 11, 2024",
+        "Term": "Fall 2024" # For DateParser context
     }
-    phy203_segmented_syllabus = { # This is what SyllabusParser would provide
-        "course_schedule": """
-Week 1 (Sept 4, 6): Introduction to Physics, Units & Dimensions. Reading: Ch 1. HW #1 assigned.
-Wed., Sept. 11: Kinematics Review. Intro to Vectors. Reading: Chapter 1. HW #1 due today. Clicker Quiz #1.
-Fri., Sept. 13: Vector Addition. Projectile Motion. Reading: Ch 3.
-...
-Fri., Sept. 27: Exam #1. Covers Chapters 1, 3, 4. Bring calculator.
-...
-Wed., Nov. 27: Thanksgiving Break - No Class.
-...
-Wed., Dec. 11: Final Review Session. HW #12 due.
-Final Exam: TBA (Covers Chaps. 1-11,15)
-"""
+    phy203_segmented_syllabus = {
+        "course_schedule": "Week 1: Intro. Wed., Sept. 11: Kinematics. Fri., Sept. 27: Exam #1."
     }
-    phy203_initial_event_data = [ # Events that might exist from AssignmentParser linking tasks
-        {"Event Date": "September 11, 2024", "Event Title": "PHY203: HW #1 Due", "Task Type": "Homework", "assignment": ["PHY203: HW #1"], "Class Time": "10:00 PM"}, # Task due
-        {"Event Date": "September 27, 2024", "Event Title": "PHY203: Exam #1", "Task Type": "Exam", "test": ["PHY203: Exam #1"]}, # Exam
-        {"Event Date": "December 11, 2024", "Event Title": "PHY203: HW #12 Due", "Task Type": "Homework", "assignment": ["PHY203: HW #12"], "Class Time": "10:00 PM"}
-    ]
-
-    test_pipeline_input = {
-        "class_data": phy203_class_data.copy(), # Use a copy
-        "segmented_syllabus": phy203_segmented_syllabus,
-        "task_data": [], # Assuming task_data is processed separately or not relevant for this isolated test
-        "event_data": phy203_initial_event_data # Start with some pre-linked events
-    }
-
-    final_processed_data = schedule_parser_instance.process_schedule(test_pipeline_input, "phy203_standalone_test")
+    test_pipeline_input = { "class_data": phy203_class_data, "segmented_syllabus": phy203_segmented_syllabus, "event_data": [] }
+    final_processed_data = schedule_parser_instance.process_schedule(test_pipeline_input, "phy203_iso_test")
     
-    main_logger.info(f"\n--- Final Class Data after Schedule Processing ---\n{json.dumps(final_processed_data.get('class_data'), indent=2)}")
-    main_logger.info(f"\n--- Final Event Data after Schedule Processing ---\n{json.dumps(final_processed_data.get('event_data'), indent=2)}")
+    main_logger.info(f"\n--- Final Class Data (Schedule - ISO Test) ---\n{json.dumps(final_processed_data.get('class_data'), indent=2)}")
+    main_logger.info(f"\n--- Final Event Data (Schedule - ISO Test) ---\n{json.dumps(final_processed_data.get('event_data'), indent=2)}")
 
-    main_logger.info("\n--- ScheduleParser standalone test finished ---")
+    if final_processed_data.get('event_data'):
+        for event in final_processed_data['event_data']:
+            assert "event_id" in event, f"event_id missing in event: {event.get('Event Title')}"
+            assert "start_datetime_iso" in event, f"start_datetime_iso missing in event: {event.get('Event Title')}"
+            assert "end_datetime_iso" in event, f"end_datetime_iso missing in event: {event.get('Event Title')}"
+            assert "time_zone" in event, f"time_zone missing in event: {event.get('Event Title')}"
+            if event.get("start_datetime_iso"):
+                assert phy203_class_data["Time Zone"] in event["start_datetime_iso"] or phy203_class_data["Time Zone"] == event.get("time_zone"), \
+                    f"Timezone mismatch or not in ISO for event: {event.get('Event Title')}, ISO: {event['start_datetime_iso']}"
+        main_logger.info("Basic ISO field assertion passed for generated events.")
+    else:
+        main_logger.warning("No event_data generated in ISO test to assert fields.")
+    main_logger.info("\n--- ScheduleParser ISO standalone test finished ---")

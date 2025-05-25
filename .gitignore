@@ -54,7 +54,6 @@ coverage.xml
 *.pot
 
 # Django stuff:
-# *.log  <-- Covered by general logs below
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -83,7 +82,7 @@ ipython_config.py
 .env
 .venv
 env/
-venv/  # If your virtual environment folder is named 'venv'
+venv/
 ENV/
 env.bak/
 venv.bak/
@@ -105,12 +104,17 @@ logs/
 uploads/
 converted/
 output/
-# Consider if syllabus_data subdirectories should be ignored:
-# If `syllabus_data/originals` contains source files you want to version, keep it.
-# If `syllabus_data/converted_text` and `syllabus_data/parsed_results` are purely generated, add them:
-# syllabus_data/converted_text/
+# Specific path from your git status for generated parsed syllabus results
+utils/parsing/syllabus_repository/parsed_syllabus/
+# If your app.py PARSED_SYLLABUS_DIR config points to 'syllabus_data/parsed_results/' 
+# and those are also generated, uncomment or add:
 # syllabus_data/parsed_results/
-# For now, let's assume these might have some state you want to track or are small.
+
+# Backup files
+*.bak
+
+# Executable files
+*.exe
 
 # SQLite Databases (if any local dbs are used for testing)
 *.sqlite3
