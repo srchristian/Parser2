@@ -1,0 +1,39 @@
+{
+    "class_data": {
+        "School Name": "",
+        "Term": "",
+        "Course Title": "",
+        "Instructor Name": "",
+        "Instructor Email": "",
+        "Class Time": "",
+        "Time Zone": "",
+        "Days of Week": "",
+        "Term Start Date": "",
+        "Term End Date": "",
+        "Class Start Date": "",
+        "Class End Date": "",
+        "Office Hours": "",
+        "Telephone": "",
+        "Class Location": "",
+        "Additional": "",
+        "Date Verification": ""
+    },
+    "event_data": [],
+    "task_data": [],
+    "metadata": {
+        "original_file": null,
+        "syllabus_text_path": null,
+        "missing_fields": [
+            "Course Title",
+            "Term",
+            "Days of Week",
+            "Class Time",
+            "Class Start Date",
+            "Class End Date"
+        ],
+        "process_time": 25.622781,
+        "timestamp": "2025-03-23T16:56:40.585652",
+        "parsed_syllabus_path": "utils/parsing/syllabus_repository/parsed_syllabus\\b674edfc-3115-469d-8e8e-c8ae4db76bb9.json"
+    },
+    "status": "Success"
+}

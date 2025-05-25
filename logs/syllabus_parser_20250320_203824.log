@@ -1,0 +1,8 @@
+2025-03-20 20:38:24,640 [INFO] logging_setup.__init__:69 - Logging initialized to file: logs\syllabus_parser_20250320_203824.log
+2025-03-20 20:38:24,665 [INFO] app.<module>:210 - Loaded configuration from config.yaml
+2025-03-20 20:38:24,665 [DEBUG] app.create_required_directories:240 - Created directory: utils/parsing/syllabus_repository
+2025-03-20 20:38:24,665 [DEBUG] app.create_required_directories:240 - Created directory: utils/parsing/syllabus_repository/original_syllabus
+2025-03-20 20:38:24,665 [DEBUG] app.create_required_directories:240 - Created directory: utils/parsing/syllabus_repository/converted_syllabus
+2025-03-20 20:38:24,665 [DEBUG] app.create_required_directories:240 - Created directory: utils/parsing/syllabus_repository/parsed_syllabus
+2025-03-20 20:38:24,665 [DEBUG] app.create_required_directories:240 - Created directory: utils/parsing/syllabus_repository/main_data
+2025-03-20 20:38:26,047 [INFO] app.<module>:259 - SyllabusParser initialized successfully

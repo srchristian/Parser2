@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus Processor - Upload</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .file-input-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.625rem 0.75rem;
+            margin-left: -1px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #4b5563;
+            background-color: #f9fafb;
+            border: 1px solid #d1d5db;
+            border-radius: 0 0.375rem 0.375rem 0;
+            cursor: pointer;
+            transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+        }
+        .file-input-button:hover {
+            background-color: #f3f4f6;
+        }
+        .file-input-text {
+            padding: 0.625rem 0.75rem;
+            border: 1px solid #d1d5db;
+            border-right: none;
+            border-radius: 0.375rem 0 0 0.375rem;
+            background-color: #fff;
+            color: #6b7280;
+            flex-grow: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .progress-bar-custom {
+            background-color: #4f46e5; /* indigo-600 */
+            transition: width 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 flex flex-col items-center justify-center min-h-screen p-4 selection:bg-indigo-500 selection:text-white">
+    <div class="w-full max-w-xl">
+        <div class="bg-white shadow-2xl rounded-xl overflow-hidden">
+            <div class="bg-gradient-to-r from-indigo-600 to-purple-600 p-6 sm:p-8">
+                <h1 class="text-3xl sm:text-4xl font-bold text-white text-center flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mr-3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" />
+                    </svg>
+                    Syllabus Processor
+                </h1>
+                <p class="text-center text-indigo-100 mt-2 text-sm sm:text-base">Upload your syllabus file or provide a URL to get started.</p>
+            </div>
+
+            <div class="p-6 sm:p-8">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div id="flash-message-{{ loop.index }}" class="mb-4 p-4 rounded-md text-sm {{ 'bg-red-100 text-red-700 border border-red-300' if category == 'error' else 'bg-blue-100 text-blue-700 border border-blue-300' }}" role="alert">
+                                <div class="flex items-start">
+                                    {% if category == 'error' %}
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2 flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" /></svg>
+                                    {% else %}
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2 flex-shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /></svg>
+                                    {% endif %}
+                                    <span>{{ message }}</span>
+                                    <button type="button" class="ml-auto -mx-1.5 -my-1.5 bg-transparent rounded-lg focus:ring-2 p-1.5 inline-flex h-8 w-8 {{ 'text-red-500 hover:bg-red-200 focus:ring-red-400' if category == 'error' else 'text-blue-500 hover:bg-blue-200 focus:ring-blue-400' }}" onclick="this.parentElement.parentElement.style.display='none';" aria-label="Dismiss">
+                                        <span class="sr-only">Dismiss</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+                                      </button>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+
+                <form id="uploadForm" action="{{ url_for('upload_file_route') }}" method="post" enctype="multipart/form-data">
+                    <div class="mb-6">
+                        <label for="fileInput" class="block text-sm font-medium text-slate-700 mb-1">Upload Syllabus Document</label>
+                        <div class="mt-1 flex rounded-md shadow-sm">
+                            <span class="file-input-text" id="fileInputText">No file chosen...</span>
+                            <input type="file" class="sr-only" id="fileInput" name="file" 
+                                   accept=".pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,.txt,.html,.htm" 
+                                   aria-describedby="fileHelp">
+                            <label for="fileInput" class="file-input-button" role="button" tabindex="0">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2 text-slate-500"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" /></svg>
+                                Choose File
+                            </label>
+                        </div>
+                        <p class="mt-2 text-xs text-slate-500" id="fileHelp">
+                            Supported: PDF, DOCX, TXT, HTML. Max: {{ (app_config.file_settings.max_content_length / (1024*1024))|int }}MB.
+                        </p>
+                    </div>
+
+                    <div class="my-6 flex items-center">
+                        <hr class="flex-grow border-slate-300">
+                        <span class="mx-4 text-sm font-medium text-slate-500">OR</span>
+                        <hr class="flex-grow border-slate-300">
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="urlInput" class="block text-sm font-medium text-slate-700 mb-1">Enter Syllabus URL</label>
+                        <div class="mt-1 flex rounded-md shadow-sm">
+                            <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-slate-300 bg-slate-50 text-slate-500 text-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" /></svg>
+                            </span>
+                            <input type="url" class="block w-full flex-1 rounded-none rounded-r-md border-slate-300 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm px-3 py-2.5" id="urlInput" name="url" 
+                                   placeholder="https://example.com/syllabus.pdf">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors duration-150 disabled:opacity-50" id="submitBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mr-2"><path stroke-linecap="round" stroke-linejoin="round" d="m15.75 15.75-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg>
+                        Process Syllabus
+                    </button>
+
+                    <div class="mt-6 hidden" id="progressContainer"> 
+                        <div class="text-sm font-medium text-slate-700 mb-1" id="progressText">Processing...</div>
+                        <div class="w-full bg-slate-200 rounded-full h-2.5">
+                            <div id="uploadProgressBar" class="progress-bar-custom h-2.5 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="text-center text-sm text-slate-500 mt-8 pb-4">
+            Syllabus Processor &copy; {{ current_year }} 
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const uploadForm = document.getElementById('uploadForm');
+            const fileInput = document.getElementById('fileInput');
+            const fileInputText = document.getElementById('fileInputText');
+            const urlInput = document.getElementById('urlInput');
+            const submitBtn = document.getElementById('submitBtn');
+            const progressContainer = document.getElementById('progressContainer');
+            const uploadProgressBar = document.getElementById('uploadProgressBar');
+            const progressText = document.getElementById('progressText');
+
+            fileInput.addEventListener('change', function() {
+                if (fileInput.files.length > 0) {
+                    const file = fileInput.files[0];
+                    fileInputText.textContent = `${file.name} (${(file.size / 1024 / 1024).toFixed(1)}MB)`;
+                    urlInput.value = ''; 
+                    urlInput.disabled = true;
+                    fileInput.disabled = false; // Ensure file input is enabled
+                } else {
+                    fileInputText.textContent = 'No file chosen...';
+                    urlInput.disabled = false;
+                }
+            });
+            
+            urlInput.addEventListener('input', function() {
+                if (urlInput.value.trim() !== '') {
+                    if (fileInput.files.length > 0) {
+                        fileInput.value = ''; 
+                        fileInputText.textContent = 'No file chosen...';
+                    }
+                    fileInput.disabled = true;
+                    urlInput.disabled = false; // Ensure URL input is enabled
+                } else {
+                    fileInput.disabled = false;
+                }
+            });
+
+            uploadForm.addEventListener('submit', function(e) {
+                if (!fileInput.files.length && urlInput.value.trim() === '') {
+                    e.preventDefault(); 
+                    const fileHelp = document.getElementById('fileHelp');
+                    if (fileHelp) { // Check if element exists
+                        fileHelp.textContent = 'Please choose a file or enter a URL.';
+                        fileHelp.classList.add('text-red-600', 'font-semibold');
+                    }
+                    return;
+                }
+                
+                progressContainer.classList.remove('hidden');
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = `<svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>Processing...`;
+                progressText.textContent = 'Uploading and processing...';
+                
+                let progress = 0;
+                uploadProgressBar.style.width = '0%';
+                const interval = setInterval(function() {
+                    progress += 10;
+                    if (progress <= 100) {
+                        uploadProgressBar.style.width = progress + '%';
+                    } else {
+                        clearInterval(interval);
+                    }
+                }, 150); 
+            });
+        });
+    </script>
+</body>
+</html>

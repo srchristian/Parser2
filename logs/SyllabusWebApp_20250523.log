@@ -1,0 +1,144 @@
+2025-05-23 10:07:58 - SyllabusWebApp - INFO - [setup_logger:98] Logger 'SyllabusWebApp' configured. Level: DEBUG. File: logs\SyllabusWebApp_20250523.log
+2025-05-23 10:07:58 - SyllabusWebApp - INFO - [<module>:93] Application logger initialized.
+2025-05-23 10:07:58 - SyllabusWebApp - INFO - [__init__:150] DateParser initialized using 'python-dateutil' for robust date parsing.
+2025-05-23 10:07:58 - SyllabusWebApp - INFO - [__init__:153] DateParser standard output format set to: '%B %d, %Y' (Month Day, Year).
+2025-05-23 10:07:58 - SyllabusWebApp - INFO - [<module>:106] DateParser initialized.
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [__init__:66] Initializing OpenAIParser with model: gpt-4.1-nano
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [__init__:85] OpenAI client created for model gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [<module>:108] OpenAIParser initialized with model: gpt-4.1-nano.
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [__init__:138] SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [_create_directories:183] SyllabusParser output directory ensured: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [__init__:166] OpenAI client initialized for SyllabusParser. Model preference: gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [__init__:177] SyllabusParser initialized. Expects pre-converted .txt files for parsing.
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [<module>:110] SyllabusParser initialized.
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [__init__:66] Initializing SyllabusExtractor...
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [__init__:70] SyllabusExtractor preferred OpenAI model: gpt-4.1-nano
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [__init__:74] Using provided OpenAIParser instance.
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [__init__:82] SyllabusExtractor initialized successfully.
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [<module>:112] SyllabusExtractor initialized.
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [__init__:96] AssignmentParser initialized.
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [<module>:116] AssignmentParser initialized.
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [__init__:70] ScheduleParser initialized. Default term weeks: 15.
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [<module>:119] ScheduleParser initialized.
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [__init__:78] LabParser initialized.
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [<module>:122] LabParser initialized.
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [__init__:78] RecitationParser initialized.
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [<module>:125] RecitationParser initialized.
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [<module>:134] Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser', 'lab_parser', 'recitation_parser']
+2025-05-23 10:07:59 - SyllabusWebApp - INFO - [<module>:559] Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [setup_logger:98] Logger 'SyllabusWebApp' configured. Level: DEBUG. File: logs\SyllabusWebApp_20250523.log
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [<module>:93] Application logger initialized.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [__init__:150] DateParser initialized using 'python-dateutil' for robust date parsing.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [__init__:153] DateParser standard output format set to: '%B %d, %Y' (Month Day, Year).
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [<module>:106] DateParser initialized.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [__init__:66] Initializing OpenAIParser with model: gpt-4.1-nano
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [__init__:85] OpenAI client created for model gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [<module>:108] OpenAIParser initialized with model: gpt-4.1-nano.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [__init__:138] SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [_create_directories:183] SyllabusParser output directory ensured: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [__init__:166] OpenAI client initialized for SyllabusParser. Model preference: gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [__init__:177] SyllabusParser initialized. Expects pre-converted .txt files for parsing.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [<module>:110] SyllabusParser initialized.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [__init__:66] Initializing SyllabusExtractor...
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [__init__:70] SyllabusExtractor preferred OpenAI model: gpt-4.1-nano
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [__init__:74] Using provided OpenAIParser instance.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [__init__:82] SyllabusExtractor initialized successfully.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [<module>:112] SyllabusExtractor initialized.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [__init__:96] AssignmentParser initialized.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [<module>:116] AssignmentParser initialized.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [__init__:70] ScheduleParser initialized. Default term weeks: 15.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [<module>:119] ScheduleParser initialized.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [__init__:78] LabParser initialized.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [<module>:122] LabParser initialized.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [__init__:78] RecitationParser initialized.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [<module>:125] RecitationParser initialized.
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [<module>:134] Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser', 'lab_parser', 'recitation_parser']
+2025-05-23 10:08:00 - SyllabusWebApp - INFO - [<module>:559] Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-23 10:10:10 - SyllabusWebApp - INFO - [index:179] Rendering index page (/)
+2025-05-23 10:10:24 - SyllabusWebApp - INFO - [upload_file_route:184] Processing file upload request via /upload
+2025-05-23 10:10:24 - SyllabusWebApp - INFO - [upload_file_route:190] Generated transient run ID: 3360c0d5-ed15-4a1c-9471-1fbd157b65c5
+2025-05-23 10:10:25 - SyllabusWebApp - INFO - [parse_syllabus:236] Starting syllabus segmentation for pre-converted text file: utils\parsing\syllabus_repository\converted_syllabus\eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c_converted.txt (ID: eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c)
+2025-05-23 10:10:25 - SyllabusWebApp - INFO - [parse_syllabus:248] Using unique ID for this segmentation run: eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c
+2025-05-23 10:10:25 - SyllabusWebApp - INFO - [_extract_text_from_file:192] Attempting to extract text from pre-converted file: utils\parsing\syllabus_repository\converted_syllabus\eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c_converted.txt
+2025-05-23 10:10:25 - SyllabusWebApp - INFO - [parse_syllabus:258] Extracted 12189 characters from file eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c_converted.txt for segmentation.
+2025-05-23 10:10:25 - SyllabusWebApp - DEBUG - [_call_openai_api:424] Saved API segmentation prompt to utils\parsing\syllabus_repository\parsed_syllabus\segmentation_debug\prompt_segment_eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c_20250523_101025345140.txt
+2025-05-23 10:10:25 - SyllabusWebApp - INFO - [_call_openai_api:434] Calling OpenAI API for segmentation (Attempt 1/2) with model gpt-4.1-nano for ID eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c...
+2025-05-23 10:10:57 - SyllabusWebApp - INFO - [_call_openai_api:456] Received OpenAI response for segmentation (length 7256 chars) on attempt 1 for ID eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c.
+2025-05-23 10:10:57 - SyllabusWebApp - DEBUG - [_parse_llm_response:503] Extracted JSON content by finding first and last braces (no markdown block).
+2025-05-23 10:10:57 - SyllabusWebApp - WARNING - [_parse_llm_response:549] LLM response was missing the following core keys, which have been added with empty strings: ['course_identification', 'instructor_information', 'course_description_prerequisites', 'learning_objectives', 'required_texts_materials', 'course_requirements_grading_policy', 'assignments_exams', 'course_schedule', 'course_policies', 'communication_student_support', 'university_wide_policies_resources']
+2025-05-23 10:10:57 - SyllabusWebApp - WARNING - [_parse_llm_response:569] LLM response included unexpected keys which were ignored: ['core_modules', 'optional_modules']
+2025-05-23 10:10:57 - SyllabusWebApp - INFO - [_parse_llm_response:571] LLM response parsed, validated, and structured successfully.
+2025-05-23 10:10:57 - SyllabusWebApp - INFO - [parse_syllabus:314] Syllabus segmentation for eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c completed in 31.78s. Method: llm. Output: utils\parsing\syllabus_repository\parsed_syllabus\eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c_segmented_syllabus.json
+2025-05-23 10:10:57 - SyllabusWebApp - INFO - [extract_all:161] SyllabusExtractor.extract_all started for Unique ID: eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c
+2025-05-23 10:10:57 - SyllabusWebApp - INFO - [_construct_targeted_text:141] Constructed targeted text for OpenAIParser. Length: 2558 chars. Number of parts: 2.
+2025-05-23 10:10:57 - SyllabusWebApp - DEBUG - [_construct_targeted_text:142] Targeted text preview (first 500 chars): --- Initial Syllabus Snippet ---
+PHY203: ELEMENTARY PHYSICS I (Fall 2024) Instructor: Miquel Dorca, 211 East Hall, miquel@uri.edu Office Hours: MWF 12:30pm -1:00pm Lecture Time s: 1pm-1:50pm (section 1 ), (East Hall Auditorium) Course Description Calculus -based i ntroductio n to Newtonian mechanics. Kine matics and dynamics of particles and systems of particles , conservation laws, rotational motion, gravitation, and oscillatory motion. (Lec. 3 ) Pre: credit or concurrent enrollment in MTH 141 ...
+2025-05-23 10:10:57 - SyllabusWebApp - INFO - [extract_all:180] Delegating extraction to OpenAIParser with targeted text (length: 2558).
+2025-05-23 10:10:57 - SyllabusWebApp - INFO - [extract:113] OpenAIParser: Starting data extraction for ID: eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c
+2025-05-23 10:10:57 - SyllabusWebApp - INFO - [_extract_class_metadata:272] Calling OpenAI API for class metadata (ID: eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c, attempt 1/2). Model: gpt-4.1-nano
+2025-05-23 10:11:03 - SyllabusWebApp - INFO - [_extract_class_metadata:285] OpenAI API response received for class_data (ID: eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c, length: 2035 chars).
+2025-05-23 10:11:03 - SyllabusWebApp - DEBUG - [_extract_class_metadata:286] OpenAI Raw Response for class_data (ID: eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c, first 500 chars): {
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "ELEMENTARY PHYSICS I",
+  "Course Code": "PHY203",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+  "Class Time": "1pm-1:50pm",
+  "Time Zone": "",
+  "Days of Week": "Monday, Wednesday, Friday",
+  "Term Start Date": "",
+  "Term End Date": "",
+  "Class Start Date": "",
+  "Class End Date": "",
+  "Office Hours": "MWF 12:30pm -1:00pm",
+  "Telephone": "211 East Hall",
+  "Class Locati...
+2025-05-23 10:11:03 - SyllabusWebApp - DEBUG - [_extract_json_from_response:346] Attempting direct JSON parse of API response.
+2025-05-23 10:11:03 - SyllabusWebApp - INFO - [_extract_class_metadata:294] Successfully extracted and parsed class metadata from API response for ID: eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c.
+2025-05-23 10:11:03 - SyllabusWebApp - DEBUG - [extract:162] ID eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c: 'Course Title' ('ELEMENTARY PHYSICS I') may be missing course code. Marked as potentially missing.
+2025-05-23 10:11:03 - SyllabusWebApp - INFO - [extract:182] Extraction for ID eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c completed. Fields flagged by parser: ['Course Title', 'Class Start Date']. Process time: 5.98s
+2025-05-23 10:11:03 - SyllabusWebApp - INFO - [extract_all:194] OpenAIParser extraction (via SyllabusExtractor) completed in 5.99s for ID: eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c
+2025-05-23 10:11:03 - SyllabusWebApp - INFO - [extract_all:195] Missing fields reported by parser: ['Class Start Date', 'Course Title']
+2025-05-23 10:11:03 - SyllabusWebApp - INFO - [process_dates:206] Normalizing all relevant dates and standardizing days of week in extracted data.
+2025-05-23 10:11:03 - SyllabusWebApp - DEBUG - [_standardize_days_of_week:338] Attempting to standardize days of week from: 'Monday, Wednesday, Friday'
+2025-05-23 10:11:03 - SyllabusWebApp - DEBUG - [_standardize_days_of_week:390] Regex/token based standardization for 'Monday, Wednesday, Friday' yielded indices: [4]
+2025-05-23 10:11:03 - SyllabusWebApp - INFO - [_standardize_days_of_week:408] Successfully standardized days of week: 'Monday, Wednesday, Friday' -> 'Friday'
+2025-05-23 10:11:03 - SyllabusWebApp - DEBUG - [process_dates:220] Standardized 'Days of Week' in class_data: 'Monday, Wednesday, Friday' -> 'Friday'
+2025-05-23 10:11:03 - SyllabusWebApp - INFO - [process_dates:273] Date processing and standardization completed for all relevant fields.
+2025-05-23 10:11:03 - SyllabusWebApp - INFO - [extract_tasks_from_text:146] Attempting to extract tasks using LLM from text segment of length 12189 chars.
+2025-05-23 10:11:15 - SyllabusWebApp - DEBUG - [normalize_date:309] Normalized date: 'Wed., Sept. 11' -> 'September 11, 2025'
+2025-05-23 10:11:15 - SyllabusWebApp - INFO - [extract_labs_from_text:121] Attempting to extract labs using LLM from text segment of length 12189 chars.
+2025-05-23 10:11:22 - SyllabusWebApp - DEBUG - [normalize_date:309] Normalized date: '9/9-13' -> 'September 09, 2013'
+2025-05-23 10:11:22 - SyllabusWebApp - INFO - [extract_recitations_from_text:121] Attempting to extract recitations using LLM from text segment of length 12189 chars.
+2025-05-23 10:11:37 - SyllabusWebApp - ERROR - [extract_recitations_from_text:155] LLM response for recitations was not a list or expected object: {
+  "sessions": [
+    {
+      "session_title": "Recitation Section",
+      "session_date_str": "Not Specified",
+      "session_time_str": "",
+      "location_str": "Room 112",
+      "description_str": "All students must register for a recitation section of PHY273. Your recitation grade will be counted toward PHY203 up to 250 points. Students must correctly solve 3 problems per recitation to get full credit."
+    },
+    {
+      "session_title": "PHY273 Laboratory",
+      "session_date_str": "Not 
+2025-05-23 10:11:37 - SyllabusWebApp - INFO - [extract_recitations_from_text:164] LLM did not return any recitation items or response was invalid.
+2025-05-23 10:11:37 - SyllabusWebApp - DEBUG - [process_recitations_from_structured_data:207] Ensuring 'recitation_data' key exists and is a list in structured data.
+2025-05-23 10:11:37 - SyllabusWebApp - INFO - [missing_fields:282] Showing missing fields form for content_hash ID: eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c
+2025-05-23 10:12:24 - SyllabusWebApp - INFO - [complete_data:311] Processing completed data for content_hash ID: eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c
+2025-05-23 10:12:24 - SyllabusWebApp - ERROR - [complete_data:374] Error in /complete-data/eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c: 'class_data'
+Traceback (most recent call last):
+  File "C:\SyllabusParser2\app.py", line 325, in complete_data
+    system_defined_fields = config.get("required_fields", []) + list(app_default_config["class_data"].keys()) # All possible class_data fields
+                                                                     ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'class_data'
+2025-05-23 10:12:24 - SyllabusWebApp - INFO - [missing_fields:282] Showing missing fields form for content_hash ID: eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c
+2025-05-23 10:13:03 - SyllabusWebApp - INFO - [complete_data:311] Processing completed data for content_hash ID: eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c
+2025-05-23 10:13:03 - SyllabusWebApp - ERROR - [complete_data:374] Error in /complete-data/eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c: 'class_data'
+Traceback (most recent call last):
+  File "C:\SyllabusParser2\app.py", line 325, in complete_data
+    system_defined_fields = config.get("required_fields", []) + list(app_default_config["class_data"].keys()) # All possible class_data fields
+                                                                     ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+KeyError: 'class_data'
+2025-05-23 10:13:03 - SyllabusWebApp - INFO - [missing_fields:282] Showing missing fields form for content_hash ID: eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c

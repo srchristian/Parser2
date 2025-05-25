@@ -1,0 +1,173 @@
+2025-03-25 14:10:02 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:10:20 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:10:21 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:10:34 - SyllabusParserHelpers - INFO - Saved uploaded file to: uploads\e3303fcd-013c-4ecc-a486-6b61218e0455_PHY203syllabusF24.pdf
+2025-03-25 14:10:34 - SyllabusParserHelpers - INFO - Converting file with extension: pdf
+2025-03-25 14:10:34 - SyllabusParserHelpers - INFO - Processing PDF with 7 pages
+2025-03-25 14:10:35 - SyllabusParserHelpers - INFO - Extracted 12189 characters from PDF
+2025-03-25 14:10:35 - SyllabusParserHelpers - INFO - Starting pipeline processing for ID: e3303fcd-013c-4ecc-a486-6b61218e0455 with 12189 characters
+2025-03-25 14:10:35 - SyllabusParserHelpers - INFO - Pipeline Step 1: Text segmentation with SyllabusParser
+2025-03-25 14:10:45 - SyllabusParserHelpers - INFO - Loaded parsed sections from utils/parsing/syllabus_repository/parsed_syllabus\e3303fcd-013c-4ecc-a486-6b61218e0455.json
+2025-03-25 14:10:45 - SyllabusParserHelpers - INFO - Pipeline Step 2: Metadata extraction with OpenAIParser
+2025-03-25 14:10:56 - SyllabusParserHelpers - INFO - Extracted class metadata successfully
+2025-03-25 14:10:56 - SyllabusParserHelpers - INFO - Pipeline Step 3: Date processing with DateParser
+2025-03-25 14:10:56 - SyllabusParserHelpers - INFO - Processed dates successfully
+2025-03-25 14:10:56 - SyllabusParserHelpers - INFO - Pipeline Step 4: Schedule generation with ScheduleParser
+2025-03-25 14:10:56 - SyllabusParserHelpers - INFO - Skipping schedule generation - missing Days of Week or Start Date
+2025-03-25 14:10:56 - SyllabusParserHelpers - INFO - Pipeline Step 5: Assignment extraction with AssignmentParser
+2025-03-25 14:10:56 - SyllabusParserHelpers - INFO - Pipeline Step 6: Using SyllabusExtractor as fallback
+2025-03-25 14:11:14 - SyllabusParserHelpers - INFO - Fallback: Added missing field 'School Name' via SyllabusExtractor
+2025-03-25 14:11:14 - SyllabusParserHelpers - INFO - Fallback: Merged class_data fields from SyllabusExtractor
+2025-03-25 14:11:14 - SyllabusParserHelpers - INFO - Fallback: Filled task_data via SyllabusExtractor
+2025-03-25 14:11:14 - SyllabusParserHelpers - INFO - SyllabusExtractor fallback completed successfully
+2025-03-25 14:11:14 - SyllabusParserHelpers - INFO - Pipeline processing completed in 39.41 seconds
+2025-03-25 14:21:43 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:21:43 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:21:58 - SyllabusParserHelpers - INFO - Saved uploaded file to: uploads\4064c2aa-3b1c-4641-b83d-90ac400f852f_PHY203syllabusF24.pdf
+2025-03-25 14:21:58 - SyllabusParserHelpers - INFO - Converting file with extension: pdf
+2025-03-25 14:21:58 - SyllabusParserHelpers - INFO - Processing PDF with 7 pages
+2025-03-25 14:21:58 - SyllabusParserHelpers - INFO - Extracted 12189 characters from PDF
+2025-03-25 14:21:58 - SyllabusParserHelpers - INFO - Starting pipeline processing for ID: 4064c2aa-3b1c-4641-b83d-90ac400f852f with 12189 characters
+2025-03-25 14:21:58 - SyllabusParserHelpers - INFO - Pipeline Step 1: Text segmentation with SyllabusParser
+2025-03-25 14:22:23 - SyllabusParserHelpers - INFO - Loaded parsed sections from utils/parsing/syllabus_repository/parsed_syllabus\4064c2aa-3b1c-4641-b83d-90ac400f852f.json
+2025-03-25 14:22:23 - SyllabusParserHelpers - INFO - Pipeline Step 2: Metadata extraction with OpenAIParser
+2025-03-25 14:22:50 - SyllabusParserHelpers - INFO - Extracted class metadata successfully
+2025-03-25 14:22:50 - SyllabusParserHelpers - INFO - Pipeline Step 3: Date processing with DateParser
+2025-03-25 14:22:50 - SyllabusParserHelpers - INFO - Processed dates successfully
+2025-03-25 14:22:50 - SyllabusParserHelpers - INFO - Pipeline Step 4: Schedule generation with ScheduleParser
+2025-03-25 14:22:50 - SyllabusParserHelpers - INFO - Skipping schedule generation - missing Days of Week or Start Date
+2025-03-25 14:22:50 - SyllabusParserHelpers - INFO - Pipeline Step 5: Assignment extraction with AssignmentParser
+2025-03-25 14:22:50 - SyllabusParserHelpers - INFO - Pipeline Step 6: Using SyllabusExtractor as fallback
+2025-03-25 14:23:09 - SyllabusParserHelpers - INFO - Fallback: Merged class_data fields from SyllabusExtractor
+2025-03-25 14:23:09 - SyllabusParserHelpers - INFO - Fallback: Filled task_data via SyllabusExtractor
+2025-03-25 14:23:09 - SyllabusParserHelpers - INFO - SyllabusExtractor fallback completed successfully
+2025-03-25 14:23:09 - SyllabusParserHelpers - INFO - Pipeline processing completed in 71.40 seconds
+2025-03-25 14:31:55 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:31:55 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:32:06 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:32:09 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:32:17 - SyllabusParserHelpers - INFO - Saved uploaded file to: uploads\01ffe61c-fae0-4dae-954a-f80b89439605_PHY203syllabusF24.pdf
+2025-03-25 14:32:17 - SyllabusParserHelpers - INFO - Converting file with extension: pdf
+2025-03-25 14:32:17 - SyllabusParserHelpers - INFO - Processing PDF with 7 pages
+2025-03-25 14:32:17 - SyllabusParserHelpers - INFO - Extracted 12189 characters from PDF
+2025-03-25 14:32:17 - SyllabusParserHelpers - INFO - Starting pipeline processing for ID: 01ffe61c-fae0-4dae-954a-f80b89439605 with 12189 characters
+2025-03-25 14:32:17 - SyllabusParserHelpers - INFO - Pipeline Step 1: Text segmentation with SyllabusParser
+2025-03-25 14:32:30 - SyllabusParserHelpers - INFO - Loaded parsed sections from utils/parsing/syllabus_repository/parsed_syllabus\01ffe61c-fae0-4dae-954a-f80b89439605.json
+2025-03-25 14:32:30 - SyllabusParserHelpers - INFO - Pipeline Step 2: Metadata extraction with OpenAIParser
+2025-03-25 14:32:34 - SyllabusParserHelpers - INFO - Extracted class metadata successfully
+2025-03-25 14:32:34 - SyllabusParserHelpers - INFO - Pipeline Step 3: Date processing with DateParser
+2025-03-25 14:32:34 - SyllabusParserHelpers - INFO - Processed dates successfully
+2025-03-25 14:32:34 - SyllabusParserHelpers - INFO - Pipeline Step 4: Schedule generation with ScheduleParser
+2025-03-25 14:32:34 - SyllabusParserHelpers - INFO - Skipping schedule generation - missing Days of Week or Start Date
+2025-03-25 14:32:34 - SyllabusParserHelpers - INFO - Pipeline Step 5: Assignment extraction with AssignmentParser
+2025-03-25 14:32:34 - SyllabusParserHelpers - INFO - Extracted 12 assignments/tasks successfully
+2025-03-25 14:32:34 - SyllabusParserHelpers - INFO - Processed assignments from structured data
+2025-03-25 14:32:34 - SyllabusParserHelpers - INFO - Pipeline Step 6: Using SyllabusExtractor as fallback
+2025-03-25 14:32:38 - SyllabusParserHelpers - INFO - Fallback: Merged class_data fields from SyllabusExtractor
+2025-03-25 14:32:38 - SyllabusParserHelpers - INFO - SyllabusExtractor fallback completed successfully
+2025-03-25 14:32:38 - SyllabusParserHelpers - INFO - Pipeline processing completed in 20.34 seconds
+2025-03-25 14:38:22 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:38:22 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:38:37 - SyllabusParserHelpers - INFO - Saved uploaded file to: uploads\9e6d1d05-4389-4e38-9efd-cb1518283c88_PHY203syllabusF24.pdf
+2025-03-25 14:38:37 - SyllabusParserHelpers - INFO - Converting file with extension: pdf
+2025-03-25 14:38:37 - SyllabusParserHelpers - INFO - Processing PDF with 7 pages
+2025-03-25 14:38:37 - SyllabusParserHelpers - INFO - Extracted 12189 characters from PDF
+2025-03-25 14:38:38 - SyllabusParserHelpers - INFO - Starting pipeline processing for ID: 9e6d1d05-4389-4e38-9efd-cb1518283c88 with 12189 characters
+2025-03-25 14:38:38 - SyllabusParserHelpers - INFO - Pipeline Step 1: Text segmentation with SyllabusParser
+2025-03-25 14:38:54 - SyllabusParserHelpers - INFO - Loaded parsed sections from utils/parsing/syllabus_repository/parsed_syllabus\9e6d1d05-4389-4e38-9efd-cb1518283c88.json
+2025-03-25 14:38:54 - SyllabusParserHelpers - INFO - Pipeline Step 2: Metadata extraction with OpenAIParser
+2025-03-25 14:38:57 - SyllabusParserHelpers - INFO - Extracted class metadata successfully
+2025-03-25 14:38:57 - SyllabusParserHelpers - INFO - Pipeline Step 3: Date processing with DateParser
+2025-03-25 14:38:57 - SyllabusParserHelpers - INFO - Processed dates successfully
+2025-03-25 14:38:57 - SyllabusParserHelpers - INFO - Pipeline Step 4: Schedule generation with ScheduleParser
+2025-03-25 14:38:57 - SyllabusParserHelpers - INFO - Skipping schedule generation - missing Days of Week or Start Date
+2025-03-25 14:38:57 - SyllabusParserHelpers - INFO - Pipeline Step 5: Assignment extraction with AssignmentParser
+2025-03-25 14:38:57 - SyllabusParserHelpers - INFO - Extracted 12 assignments/tasks successfully
+2025-03-25 14:38:57 - SyllabusParserHelpers - INFO - Processed assignments from structured data
+2025-03-25 14:38:57 - SyllabusParserHelpers - INFO - Pipeline Step 6: Using SyllabusExtractor as fallback
+2025-03-25 14:39:02 - SyllabusParserHelpers - INFO - Fallback: Merged class_data fields from SyllabusExtractor
+2025-03-25 14:39:02 - SyllabusParserHelpers - INFO - SyllabusExtractor fallback completed successfully
+2025-03-25 14:39:02 - SyllabusParserHelpers - INFO - Pipeline processing completed in 24.05 seconds
+2025-03-25 14:52:54 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:52:54 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:54:48 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:54:48 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:57:57 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:57:57 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:58:35 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:58:37 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 14:58:51 - SyllabusParserHelpers - INFO - Saved uploaded file to: uploads\61f29af3-b151-48a0-af7f-5c3d35483846_PHY203syllabusF24.pdf
+2025-03-25 14:58:51 - SyllabusParserHelpers - INFO - Converting file with extension: pdf
+2025-03-25 14:58:51 - SyllabusParserHelpers - INFO - Processing PDF with 7 pages
+2025-03-25 14:58:51 - SyllabusParserHelpers - INFO - Extracted 12189 characters from PDF
+2025-03-25 14:58:51 - SyllabusParserHelpers - INFO - Starting pipeline processing for ID: 61f29af3-b151-48a0-af7f-5c3d35483846 with 12189 characters
+2025-03-25 14:58:51 - SyllabusParserHelpers - INFO - Pipeline Step 1: Text segmentation with SyllabusParser
+2025-03-25 14:59:03 - SyllabusParserHelpers - INFO - Loaded parsed sections from utils/parsing/syllabus_repository/parsed_syllabus\61f29af3-b151-48a0-af7f-5c3d35483846.json
+2025-03-25 14:59:03 - SyllabusParserHelpers - INFO - Pipeline Step 2: Metadata extraction with OpenAIParser
+2025-03-25 14:59:24 - SyllabusParserHelpers - INFO - Extracted class metadata successfully
+2025-03-25 14:59:24 - SyllabusParserHelpers - INFO - Pipeline Step 3: Date processing with DateParser
+2025-03-25 14:59:24 - SyllabusParserHelpers - INFO - Processed dates successfully
+2025-03-25 14:59:24 - SyllabusParserHelpers - INFO - Pipeline Step 4: Assignment extraction with AssignmentParser
+2025-03-25 14:59:24 - SyllabusParserHelpers - INFO - Extracted 11 assignments/tasks successfully
+2025-03-25 14:59:24 - SyllabusParserHelpers - INFO - Processed assignments from structured data
+2025-03-25 14:59:24 - SyllabusParserHelpers - INFO - Pipeline Step 5: Using SyllabusExtractor to fill critical missing fields
+2025-03-25 14:59:41 - SyllabusParserHelpers - INFO - Fallback: Added missing field 'Days of Week' via SyllabusExtractor
+2025-03-25 14:59:41 - SyllabusParserHelpers - INFO - SyllabusExtractor fallback for critical fields completed
+2025-03-25 14:59:41 - SyllabusParserHelpers - INFO - Critical fields missing: ['Class Time', 'Class Start Date', 'Class End Date']
+2025-03-25 14:59:41 - SyllabusParserHelpers - INFO - Returning results with missing fields for user input. Processing time: 49.59 seconds
+2025-03-25 15:05:24 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 15:05:24 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 15:05:32 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 15:05:35 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 15:05:42 - SyllabusParserHelpers - INFO - Saved uploaded file to: uploads\d4fcd8fe-0d98-4038-9556-5c79d63dda3f_PHY203syllabusF24.pdf
+2025-03-25 15:05:42 - SyllabusParserHelpers - INFO - Converting file with extension: pdf
+2025-03-25 15:05:42 - SyllabusParserHelpers - INFO - Processing PDF with 7 pages
+2025-03-25 15:05:42 - SyllabusParserHelpers - INFO - Extracted 12189 characters from PDF
+2025-03-25 15:05:42 - SyllabusParserHelpers - INFO - Starting pipeline processing for ID: d4fcd8fe-0d98-4038-9556-5c79d63dda3f with 12189 characters
+2025-03-25 15:05:42 - SyllabusParserHelpers - INFO - Pipeline Step 1: Text segmentation with SyllabusParser
+2025-03-25 15:05:54 - SyllabusParserHelpers - INFO - Loaded parsed sections from utils/parsing/syllabus_repository/parsed_syllabus\d4fcd8fe-0d98-4038-9556-5c79d63dda3f.json
+2025-03-25 15:05:54 - SyllabusParserHelpers - INFO - Pipeline Step 2: Metadata extraction with OpenAIParser
+2025-03-25 15:06:02 - SyllabusParserHelpers - INFO - Extracted class metadata successfully
+2025-03-25 15:06:02 - SyllabusParserHelpers - INFO - Pipeline Step 3: Date processing with DateParser
+2025-03-25 15:06:02 - SyllabusParserHelpers - INFO - Processed dates successfully
+2025-03-25 15:06:02 - SyllabusParserHelpers - INFO - Pipeline Step 4: Assignment extraction with AssignmentParser
+2025-03-25 15:06:02 - SyllabusParserHelpers - INFO - Extracted 11 assignments/tasks successfully
+2025-03-25 15:06:02 - SyllabusParserHelpers - INFO - Processed assignments from structured data
+2025-03-25 15:06:02 - SyllabusParserHelpers - INFO - Pipeline Step 5: Using SyllabusExtractor to fill critical missing fields
+2025-03-25 15:06:06 - SyllabusParserHelpers - INFO - Fallback: Added missing field 'Days of Week' via SyllabusExtractor
+2025-03-25 15:06:06 - SyllabusParserHelpers - INFO - Fallback: Added missing field 'Class Start Date' via SyllabusExtractor
+2025-03-25 15:06:06 - SyllabusParserHelpers - INFO - Fallback: Added missing field 'Class End Date' via SyllabusExtractor
+2025-03-25 15:06:06 - SyllabusParserHelpers - INFO - SyllabusExtractor fallback for critical fields completed
+2025-03-25 15:06:06 - SyllabusParserHelpers - INFO - All critical fields are present. Continuing with schedule generation.
+2025-03-25 15:06:06 - SyllabusParserHelpers - INFO - Pipeline Step 7: Schedule generation with ScheduleParser
+2025-03-25 15:06:06 - SyllabusParserHelpers - INFO - Generated class schedule successfully
+2025-03-25 15:06:06 - SyllabusParserHelpers - INFO - Pipeline Step 9: Using SyllabusExtractor for final enrichment
+2025-03-25 15:06:11 - SyllabusParserHelpers - INFO - SyllabusExtractor final enrichment completed
+2025-03-25 15:06:11 - SyllabusParserHelpers - INFO - Pipeline processing completed in 28.84 seconds
+2025-03-25 16:36:58 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 16:36:58 - SyllabusParserHelpers - INFO - Loaded configuration from YAML file
+2025-03-25 16:37:10 - SyllabusParserHelpers - INFO - Saved uploaded file to: uploads\45103d11-b479-41c7-8262-3551d9ac3c25_PHY203syllabusF24.pdf
+2025-03-25 16:37:10 - SyllabusParserHelpers - INFO - Converting file with extension: pdf
+2025-03-25 16:37:10 - SyllabusParserHelpers - INFO - Processing PDF with 7 pages
+2025-03-25 16:37:10 - SyllabusParserHelpers - INFO - Extracted 12189 characters from PDF
+2025-03-25 16:37:10 - SyllabusParserHelpers - INFO - Starting pipeline processing for ID: 45103d11-b479-41c7-8262-3551d9ac3c25 with 12189 characters
+2025-03-25 16:37:10 - SyllabusParserHelpers - INFO - Pipeline Step 1: Text segmentation with SyllabusParser
+2025-03-25 16:37:22 - SyllabusParserHelpers - INFO - Loaded parsed sections from utils/parsing/syllabus_repository/parsed_syllabus\45103d11-b479-41c7-8262-3551d9ac3c25.json
+2025-03-25 16:37:22 - SyllabusParserHelpers - INFO - Pipeline Step 2: Metadata extraction with OpenAIParser
+2025-03-25 16:37:30 - SyllabusParserHelpers - INFO - Extracted class metadata successfully
+2025-03-25 16:37:30 - SyllabusParserHelpers - INFO - Pipeline Step 3: Date processing with DateParser
+2025-03-25 16:37:30 - SyllabusParserHelpers - INFO - Processed dates successfully
+2025-03-25 16:37:30 - SyllabusParserHelpers - INFO - Pipeline Step 4: Assignment extraction with AssignmentParser
+2025-03-25 16:37:30 - SyllabusParserHelpers - INFO - Extracted 11 assignments/tasks successfully
+2025-03-25 16:37:30 - SyllabusParserHelpers - INFO - Processed assignments from structured data
+2025-03-25 16:37:30 - SyllabusParserHelpers - INFO - Pipeline Step 5: Using SyllabusExtractor to fill critical missing fields
+2025-03-25 16:37:36 - SyllabusParserHelpers - INFO - Fallback: Added missing field 'Days of Week' via SyllabusExtractor
+2025-03-25 16:37:36 - SyllabusParserHelpers - INFO - Fallback: Added missing field 'Class Start Date' via SyllabusExtractor
+2025-03-25 16:37:36 - SyllabusParserHelpers - INFO - Fallback: Added missing field 'Class End Date' via SyllabusExtractor
+2025-03-25 16:37:36 - SyllabusParserHelpers - INFO - SyllabusExtractor fallback for critical fields completed
+2025-03-25 16:37:36 - SyllabusParserHelpers - INFO - All critical fields are present. Continuing with schedule generation.
+2025-03-25 16:37:36 - SyllabusParserHelpers - INFO - Pipeline Step 7: Schedule generation with ScheduleParser
+2025-03-25 16:37:36 - SyllabusParserHelpers - INFO - Generated class schedule successfully
+2025-03-25 16:37:36 - SyllabusParserHelpers - INFO - Pipeline Step 9: Using SyllabusExtractor for final enrichment
+2025-03-25 16:38:11 - SyllabusParserHelpers - INFO - SyllabusExtractor final enrichment completed
+2025-03-25 16:38:11 - SyllabusParserHelpers - INFO - Pipeline processing completed in 60.65 seconds

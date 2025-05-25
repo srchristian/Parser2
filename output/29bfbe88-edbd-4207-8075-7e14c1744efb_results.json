@@ -1,0 +1,33 @@
+{
+    "metadata": {
+        "extraction_time": "2025-03-26T17:01:24.580309",
+        "unique_id": "29bfbe88-edbd-4207-8075-7e14c1744efb",
+        "text_length": 15785,
+        "extraction_complete": false,
+        "missing_fields": [],
+        "scheduled_labs": false,
+        "recitation_session": false,
+        "original_file": "29bfbe88-edbd-4207-8075-7e14c1744efb.txt",
+        "process_time": 2.231003,
+        "processing_stage": "after_user_input",
+        "requires_user_input": false
+    },
+    "class_data": {
+        "School Name": "",
+        "Term": "Fall 2021",
+        "Course Title": "Online Teaching and Learning",
+        "Instructor Name": "Dr. Donna Murdoch",
+        "Instructor Email": "murdoch@tc.edu",
+        "Class Time": "6 PM",
+        "Time Zone": "Eastern Time",
+        "Days of Week": "Tuesday, Thursday, Saturday",
+        "Class Start Date": "September 09, 2021",
+        "Class End Date": "December 09, 2021",
+        "Office Hours": "By Appointment",
+        "Telephone": "",
+        "Class Location": "Synchronous Sessions via Zoom",
+        "Additional": "Participation in Online Discussions 50%, Attendance in Synchronous Session 20%, Final Project 30%"
+    },
+    "event_data": [],
+    "task_data": []
+}

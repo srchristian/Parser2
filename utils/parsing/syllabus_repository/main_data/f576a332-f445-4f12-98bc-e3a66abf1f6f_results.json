@@ -1,0 +1,30 @@
+{
+    "metadata": {
+        "extraction_time": "2025-03-26T17:37:42.294965",
+        "unique_id": "f576a332-f445-4f12-98bc-e3a66abf1f6f",
+        "text_length": 15785,
+        "missing_fields": [
+            "Class Time"
+        ],
+        "original_file": "f576a332-f445-4f12-98bc-e3a66abf1f6f.txt",
+        "process_time": 2.567988
+    },
+    "class_data": {
+        "School Name": "Teachers College Columbia University",
+        "Term": "Fall 2021",
+        "Course Title": "ORLD5063: Online Teaching and Learning",
+        "Instructor Name": "Dr. Donna Murdoch",
+        "Instructor Email": "murdoch@tc.edu",
+        "Class Time": "6 PM EST",
+        "Time Zone": "EST",
+        "Days of Week": "Thursdays",
+        "Class Start Date": "September 16, 2021",
+        "Class End Date": "December 23, 2020",
+        "Office Hours": "By Appointment",
+        "Telephone": "",
+        "Class Location": "Zoom",
+        "Additional": "In this course we will explore online teaching and learning - new theories and research that inform best practices in online learning and “participative culture,” the history and evolution of online learning, and planning and designing an online course."
+    },
+    "event_data": [],
+    "task_data": []
+}

@@ -1,0 +1,2 @@
+2025-03-11 22:54:05,454 [INFO] logging_setup.__init__:69 - Logging initialized to file: logs\syllabus_parser_20250311_225405.log
+2025-03-11 22:54:05,455 [ERROR] app.<module>:245 - SyllabusExtractor not available, application will not function correctly

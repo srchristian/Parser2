@@ -1,0 +1,65 @@
+2025-03-12 16:34:29,835 [INFO] logging_setup.__init__:69 - Logging initialized to file: logs\syllabus_parser_20250312_163429.log
+2025-03-12 16:34:30,428 [INFO] openai_parser.__init__:64 - OpenAI parser initialized with model: o1-mini
+2025-03-12 16:34:30,428 [INFO] date_parser.__init__:68 - DateParser initialized
+2025-03-12 16:34:30,430 [INFO] schedule_parser.__init__:40 - ScheduleParser initialized
+2025-03-12 16:34:30,430 [INFO] assignment_parser.__init__:24 - AssignmentParser initialized
+2025-03-12 16:34:30,430 [INFO] date_scraper._log:111 - Using default school CSV path: C:\SyllabusParser2\utils\School List\schools_with_urls.csv
+2025-03-12 16:34:30,430 [ERROR] date_scraper._log:111 - School CSV file not found: C:\SyllabusParser2\utils\School List\schools_with_urls.csv
+2025-03-12 16:34:30,430 [DEBUG] date_scraper._log:111 - Compiling regex patterns for school names
+2025-03-12 16:34:30,430 [DEBUG] date_scraper._log:111 - Compiled regex patterns for 0 schools
+2025-03-12 16:34:30,430 [INFO] date_scraper.__init__:95 - TermDateScraper initialized
+2025-03-12 16:34:30,430 [INFO] syllabus_extractor.__init__:57 - SyllabusExtractor initialized with model: o1-mini
+2025-03-12 16:34:30,430 [INFO] app.<module>:242 - SyllabusExtractor initialized successfully with model: o1-mini
+2025-03-12 16:34:30,438 [INFO] app.<module>:900 - Starting Flask application on 0.0.0.0:5000
+2025-03-12 16:36:12,595 [INFO] app.index:262 - Rendering index page
+2025-03-12 16:36:58,865 [INFO] app.upload_file:268 - Processing file upload request
+2025-03-12 16:36:58,866 [INFO] app.upload_file:277 - Generated unique ID: c7fab002-a296-4258-b006-e2586eeb66ee
+2025-03-12 16:36:58,894 [INFO] app.upload_file:346 - Saved uploaded file to: uploads\c7fab002-a296-4258-b006-e2586eeb66ee_PHY203syllabusF24.pdf and utils/parsing/syllabus_repository/original_syllabus\c7fab002-a296-4258-b006-e2586eeb66ee_PHY203syllabusF24.pdf
+2025-03-12 16:36:59,034 [INFO] app.upload_file:361 - Saved converted text to: utils/parsing/syllabus_repository/converted_syllabus\c7fab002-a296-4258-b006-e2586eeb66ee.txt
+2025-03-12 16:36:59,035 [INFO] app.upload_file:370 - Extracted 12187 characters of text
+2025-03-12 16:36:59,035 [INFO] logging_setup.start_operation:110 - STARTED: extract_all with params: unique_id=c7fab002-a296-4258-b006-e2586eeb66ee
+2025-03-12 16:36:59,036 [INFO] syllabus_extractor.extract_all:71 - Text length: 12187 characters
+2025-03-12 16:36:59,036 [INFO] logging_setup.start_operation:110 - STARTED: openai_parse with params: unique_id=c7fab002-a296-4258-b006-e2586eeb66ee
+2025-03-12 16:36:59,036 [INFO] openai_parser.parse_syllabus:109 - Extracting class metadata
+2025-03-12 16:37:17,529 [INFO] openai_parser.parse_syllabus:114 - Extracting assignments and schedule
+2025-03-12 16:37:45,854 [INFO] logging_setup.end_operation:127 - ENDED: openai_parse success
+2025-03-12 16:37:45,855 [INFO] syllabus_extractor._verify_term_dates:158 - Verifying term dates with TermDateScraper
+2025-03-12 16:37:45,856 [INFO] syllabus_extractor._verify_term_dates:177 - Looking up dates for University of Rhode Island, Fall 2024
+2025-03-12 16:37:45,856 [INFO] date_scraper._log:111 - Looking up term dates for University of Rhode Island, Fall 2024
+2025-03-12 16:37:45,856 [DEBUG] date_scraper._log:111 - Looking for school with regex: 'university of rhode island'
+2025-03-12 16:37:45,857 [WARNING] date_scraper._log:111 - No regex match found for University of Rhode Island
+2025-03-12 16:37:45,857 [WARNING] date_scraper._log:111 - No URL found for University of Rhode Island, returning null dates
+2025-03-12 16:37:45,858 [WARNING] syllabus_extractor._verify_term_dates:198 - No verified term dates found
+2025-03-12 16:37:45,858 [INFO] date_parser.process_dates:103 - Processing dates in extracted data
+2025-03-12 16:37:45,859 [INFO] schedule_parser.process_schedule:52 - Processing class schedule
+2025-03-12 16:37:45,859 [INFO] schedule_parser.recalculate_class_schedule:215 - Recalculating class schedule
+2025-03-12 16:37:45,859 [INFO] assignment_parser.process_assignments:36 - Processing assignments
+2025-03-12 16:37:45,861 [INFO] assignment_parser._validate_assignment_sequence:98 - Validating assignment sequence
+2025-03-12 16:37:45,861 [INFO] assignment_parser._validate_assignment_sequence:123 - Found 12 homework assignments
+2025-03-12 16:37:45,862 [WARNING] assignment_parser._validate_assignment_sequence:139 - Found 11 duplicate homework numbers
+2025-03-12 16:37:45,862 [INFO] assignment_parser._link_assignments_to_events:209 - Linking assignments to class sessions
+2025-03-12 16:37:45,863 [INFO] syllabus_extractor.extract_all:118 - Extraction complete. Results contain 0 events and 16 tasks
+2025-03-12 16:37:45,863 [INFO] syllabus_extractor.extract_all:119 - Missing fields: Days of Week, Term Start Date, Term End Date
+2025-03-12 16:37:45,863 [INFO] logging_setup.end_operation:127 - ENDED: extract_all completed
+2025-03-12 16:37:45,863 [INFO] app.upload_file:381 - Processing completed in 46.83 seconds
+2025-03-12 16:37:45,864 [INFO] app.upload_file:393 - Saved results to: output\c7fab002-a296-4258-b006-e2586eeb66ee_results.json
+2025-03-12 16:37:45,865 [INFO] app.upload_file:402 - Also saved results to repository: utils/parsing/syllabus_repository/main_data\c7fab002-a296-4258-b006-e2586eeb66ee_results.json
+2025-03-12 16:37:45,865 [INFO] app.upload_file:407 - Missing fields detected: ['Days of Week', 'Term Start Date', 'Term End Date']
+2025-03-12 16:37:45,877 [INFO] app.missing_fields:430 - Showing missing fields form for ID: c7fab002-a296-4258-b006-e2586eeb66ee
+2025-03-12 16:38:14,448 [INFO] app.complete_data:466 - Processing user-provided data for ID: c7fab002-a296-4258-b006-e2586eeb66ee
+2025-03-12 16:38:14,451 [INFO] app.complete_data:495 - User provided data: {'Days of Week': 'Monday, Wednesday, Friday', 'Term Start Date': '2024-09-04', 'Term End Date': '2024-12-11'}
+2025-03-12 16:38:14,452 [INFO] syllabus_extractor.update_class_data:296 - Updating extracted data with user input
+2025-03-12 16:38:14,452 [INFO] syllabus_extractor.update_class_data:304 - Updated Days of Week: Monday, Wednesday, Friday
+2025-03-12 16:38:14,453 [INFO] syllabus_extractor.update_class_data:304 - Updated Term Start Date: 2024-09-04
+2025-03-12 16:38:14,453 [INFO] syllabus_extractor.update_class_data:304 - Updated Term End Date: 2024-12-11
+2025-03-12 16:38:14,453 [INFO] date_parser.process_days_of_week:194 - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-12 16:38:14,453 [DEBUG] date_parser.process_days_of_week:198 - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-12 16:38:14,454 [INFO] date_parser.process_dates:103 - Processing dates in extracted data
+2025-03-12 16:38:14,454 [INFO] date_parser.process_days_of_week:194 - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-12 16:38:14,454 [DEBUG] date_parser.process_days_of_week:198 - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-12 16:38:14,456 [INFO] schedule_parser.recalculate_class_schedule:215 - Recalculating class schedule
+2025-03-12 16:38:14,456 [INFO] schedule_parser._parse_weekdays:332 - Parsed days of week 'Monday, Wednesday, Friday' to indices [0, 2, 4]
+2025-03-12 16:38:14,457 [INFO] app.complete_data:503 - Saved updated results to: output\c7fab002-a296-4258-b006-e2586eeb66ee_results.json
+2025-03-12 16:38:14,459 [INFO] app.complete_data:512 - Also saved updated results to repository: utils/parsing/syllabus_repository/main_data\c7fab002-a296-4258-b006-e2586eeb66ee_results.json
+2025-03-12 16:38:14,466 [INFO] app.show_results:525 - Showing results for ID: c7fab002-a296-4258-b006-e2586eeb66ee
+2025-03-12 16:38:14,480 [INFO] app.show_results:553 - Rendering results with 0 events and 16 tasks

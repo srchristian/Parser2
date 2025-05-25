@@ -1,0 +1,121 @@
+{
+    "class_data": {
+        "School Name": "University of Rhode Island",
+        "Term": "Fall 2024",
+        "Course Title": "ELEMENTARY PHYSICS I",
+        "Instructor Name": "Miquel Dorca",
+        "Instructor Email": "miquel@uri.edu",
+        "Class Time": "1pm-1:50pm",
+        "Time Zone": "Eastern Time",
+        "Days of Week": "```\n\n```",
+        "Term Start Date": "",
+        "Term End Date": "",
+        "Class Start Date": "",
+        "Class End Date": "",
+        "Office Hours": "MWF 12:30pm -1:00pm",
+        "Telephone": "",
+        "Class Location": "East Hall Auditorium",
+        "Additional": "",
+        "Date Verification": "ai_generated"
+    },
+    "event_data": [],
+    "task_data": [
+        {
+            "Task Title": "ELEMENTARY: homework 150",
+            "Due Date": "date",
+            "Task Description": "points recitation 250 points Grading Scheme : A(93 -100); A -(90-93); B+(87 -90); B(83 -87); B -(80-83); C+(77 -80); C(73 -77); C-(70-73); D+(67 -70); D(60 -67); F(<60). WebAssign: Homework and recitations will be administered through a web -based service named WebAssign. WebAssign can be accessed and purchased at http://webassign.net/student.html The Class Key for WebAssign for this course is: uri 1373 1043 A recent check showed that it was cheaper to purchase Webassign/Openstax for 2 semesters, since it will be used for PHY204 as well. Here’s a specific link to openstax/webassign: https://webassign.net/features/textbooks/osuniphys1/details.html . Here’s a link about pricing: https://www.cengage.com/c/webassign -for-openstax - university -physics -1e-ling/9781337799942/?filterBy=Higher -Education#compare -buying - options .  Students will enroll with this class key, creating their own user IDs and password. When they go to the login page, they simply click the box saying \"ENTER CLASS KEY\".  You will have 5 chances to submit your homework solutions before the"
+        },
+        {
+            "Task Title": "ELEMENTARY: HW #1",
+            "Due Date": "Reading: Chapter 1 Wed",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "ELEMENTARY: HW #2",
+            "Due Date": "Reading: Sections 3",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "ELEMENTARY: HW #3",
+            "Due Date": "Reading: Sections 2",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "ELEMENTARY: HW #4",
+            "Due Date": "Reading: Chap",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "ELEMENTARY: HW #5",
+            "Due Date": "Reading: Section s 4",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "ELEMENTARY: HW #6",
+            "Due Date": "Reading: 1st part of Sec",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "ELEMENTARY: HW #7",
+            "Due Date": "Reading: Chap",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "ELEMENTARY: HW #8",
+            "Due Date": "Wed",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "ELEMENTARY: HW #9",
+            "Due Date": "Reading: 2nd part of Sec",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "ELEMENTARY: HW #10",
+            "Due Date": "Reading: Sections 13",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "ELEMENTARY: HW #11",
+            "Due Date": "Reading: Sections 15",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "ELEMENTARY: HW #12",
+            "Due Date": "Reading: Sections 15",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "ELEMENTARY: exam 400",
+            "Due Date": "250 points Grading Scheme : A(93 -100); A -(90-93); B+(87 -90); B(83 -87); B -(80-83); C+(77 -80); C(73 -77); C-(70-73); D+(67 -70); D(60 -67); F(<60)",
+            "Task Description": "points homework 150 points recitati"
+        },
+        {
+            "Task Title": "ELEMENTARY: Exam #1",
+            "Due Date": "s 4",
+            "Task Description": "(Chaps. 1,3,4 ) Fri., Oct. 4 HW #4 due Reading: Chap. 5 Fri., Oct. 1 1 HW #5 due Reading: Secti"
+        },
+        {
+            "Task Title": "ELEMENTARY: Exam #2",
+            "Due Date": "Each student registered for PHY203 must also register for two sections of PHY273",
+            "Task Description": "(Chaps. 5-8) Wed., Oct. 30 No Homework due Reading: Sections 9.1-9.6 Wed., Nov. 6 HW #8 due Wed., Nov. 13 No Homework due Reading: Sections 10.1 -10.6 Wed., Nov. 20 HW #9 due Reading: 2nd part of Sec. 2.4, Secs. 11 -1-11.3 Wed., Nov. 2 7 HW #10 due Reading: Sections 13.1 -13.5 Wed., Dec. 4 HW #11 due Reading: Sections 15.1,15.2,15.4 Wed., Dec. 11 HW #12 due Reading: Sections 15.1,15.2,15.4 Wed ., Dec. 11 Exam #3 (Chaps. 9-11,15 ) Final Exam TBA Chaps. 1 -11,15 PHY273: LABORATORY POLICIES Registrati"
+        }
+    ],
+    "metadata": {
+        "original_file": null,
+        "syllabus_text_path": null,
+        "missing_fields": [
+            "Class Start Date",
+            "Class End Date"
+        ],
+        "confidence_scores": {
+            "class_data": 0.6470588235294118,
+            "overall": 0.16176470588235295
+        },
+        "process_time": 71.3978,
+        "timestamp": "2025-03-25T14:23:09.886140",
+        "unique_id": "4064c2aa-3b1c-4641-b83d-90ac400f852f",
+        "parsed_syllabus_path": "utils/parsing/syllabus_repository/parsed_syllabus\\4064c2aa-3b1c-4641-b83d-90ac400f852f.json"
+    },
+    "status": "Success"
+}

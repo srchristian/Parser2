@@ -1,0 +1,35 @@
+{
+    "metadata": {
+        "extraction_time": "2025-03-26T16:38:08.149794",
+        "unique_id": "80d6b210-b851-435c-a6fb-b30d11295cec",
+        "text_length": 12189,
+        "extraction_complete": false,
+        "missing_fields": [],
+        "scheduled_labs": true,
+        "recitation_session": true,
+        "original_file": "80d6b210-b851-435c-a6fb-b30d11295cec.txt",
+        "process_time": 2.280515,
+        "processing_stage": "after_user_input",
+        "requires_user_input": false
+    },
+    "class_data": {
+        "School Name": "University of Rhode Island",
+        "Term": "Fall 2024",
+        "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+        "Instructor Name": "Miquel Dorca",
+        "Instructor Email": "miquel@uri.edu",
+        "Class Time": "1:00 PM - 1:50 PM",
+        "Time Zone": "Eastern Time",
+        "Days of Week": "Monday, Wednesday, Friday",
+        "Term Start Date": "",
+        "Term End Date": "",
+        "Class Start Date": "September 04, 2024",
+        "Class End Date": "December 11, 2024",
+        "Office Hours": "Monday, Wednesday, Friday 12:30 PM - 1:00 PM",
+        "Telephone": "401-874-2098",
+        "Class Location": "East Hall Auditorium",
+        "Additional": "Course Grade: The grade for PHY203 will be based on a maximum of 1200 points: unit exams 400 points, final exam 400 points, homework 150 points, recitation 250 points. Grading Scheme: A(93-100); A-(90-93); B+(87-90); B(83-87); B-(80-83); C+(77-80); C(73-77); C-(70-73); D+(67-70); D(60-67); F(<60)."
+    },
+    "event_data": [],
+    "task_data": []
+}

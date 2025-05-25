@@ -1,0 +1,103 @@
+{
+    "class_data": {
+        "School Name": "",
+        "Term": "",
+        "Course Title": "",
+        "Instructor Name": "",
+        "Instructor Email": "",
+        "Class Time": "",
+        "Time Zone": "",
+        "Days of Week": "",
+        "Term Start Date": "",
+        "Term End Date": "",
+        "Class Start Date": "",
+        "Class End Date": "",
+        "Office Hours": "",
+        "Telephone": "",
+        "Class Location": "",
+        "Additional": "",
+        "Date Verification": ""
+    },
+    "event_data": [],
+    "task_data": [
+        {
+            "Task Title": "COURSE: HW #1",
+            "Due Date": "| Reading: Chapter 1",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #2",
+            "Due Date": "| Reading: Sections 3",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #3",
+            "Due Date": "| Reading: Sections 2",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #4",
+            "Due Date": "| Reading: Chapter 5",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #5",
+            "Due Date": "| Reading: Sections 4",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #6",
+            "Due Date": "| Reading: 1st part of Sec",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #7",
+            "Due Date": "| Reading: Chapter 8",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #8",
+            "Due Date": "- Wed",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #9",
+            "Due Date": "| Reading: 2nd part of Sec",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #10",
+            "Due Date": "| Reading: Sections 13",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #11",
+            "Due Date": "| Reading: Sections 15",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #12",
+            "Due Date": "| Reading: Sections 15",
+            "Task Description": ""
+        }
+    ],
+    "metadata": {
+        "original_file": null,
+        "syllabus_text_path": null,
+        "missing_fields": [
+            "Days of Week",
+            "Class Time",
+            "Class Start Date",
+            "Class End Date"
+        ],
+        "confidence_scores": {
+            "class_data": 0.0,
+            "overall": 0.0
+        },
+        "process_time": 32.112461,
+        "timestamp": "2025-03-23T18:04:54.789910",
+        "unique_id": "5f0c584f-2905-404e-b660-8beb1d31aad8",
+        "parsed_syllabus_path": "utils/parsing/syllabus_repository/parsed_syllabus\\5f0c584f-2905-404e-b660-8beb1d31aad8.json"
+    },
+    "status": "Success"
+}

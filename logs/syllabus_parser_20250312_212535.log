@@ -1,0 +1,39 @@
+2025-03-12 21:25:35,508 [INFO] logging_setup.__init__:69 - Logging initialized to file: logs\syllabus_parser_20250312_212535.log
+2025-03-12 21:25:36,222 [INFO] openai_parser.__init__:64 - OpenAI parser initialized with model: o1-mini
+2025-03-12 21:25:36,222 [INFO] date_parser.__init__:68 - DateParser initialized
+2025-03-12 21:25:36,224 [INFO] schedule_parser.__init__:40 - ScheduleParser initialized
+2025-03-12 21:25:36,224 [INFO] assignment_parser.__init__:24 - AssignmentParser initialized
+2025-03-12 21:25:36,226 [INFO] date_scraper._log:111 - Using default school CSV path: C:\SyllabusParser2\utils\School List\schools_with_urls.csv
+2025-03-12 21:25:36,226 [ERROR] date_scraper._log:111 - School CSV file not found: C:\SyllabusParser2\utils\School List\schools_with_urls.csv
+2025-03-12 21:25:36,227 [DEBUG] date_scraper._log:111 - Compiling regex patterns for school names
+2025-03-12 21:25:36,227 [DEBUG] date_scraper._log:111 - Compiled regex patterns for 0 schools
+2025-03-12 21:25:36,227 [INFO] date_scraper.__init__:95 - TermDateScraper initialized
+2025-03-12 21:25:36,227 [INFO] syllabus_extractor.__init__:57 - SyllabusExtractor initialized with model: o1-mini
+2025-03-12 21:25:36,227 [INFO] app.<module>:242 - SyllabusExtractor initialized successfully with model: o1-mini
+2025-03-12 21:25:36,232 [INFO] app.<module>:900 - Starting Flask application on 0.0.0.0:5000
+2025-03-12 21:25:46,043 [INFO] app.index:262 - Rendering index page
+2025-03-12 21:25:55,328 [INFO] app.upload_file:268 - Processing file upload request
+2025-03-12 21:25:55,330 [INFO] app.upload_file:277 - Generated unique ID: 9726a11b-909f-46d4-bb54-7feeb1c9734f
+2025-03-12 21:25:55,349 [INFO] app.upload_file:346 - Saved uploaded file to: uploads\9726a11b-909f-46d4-bb54-7feeb1c9734f_PHY203syllabusF24.pdf and utils/parsing/syllabus_repository/original_syllabus\9726a11b-909f-46d4-bb54-7feeb1c9734f_PHY203syllabusF24.pdf
+2025-03-12 21:25:55,532 [INFO] app.upload_file:361 - Saved converted text to: utils/parsing/syllabus_repository/converted_syllabus\9726a11b-909f-46d4-bb54-7feeb1c9734f.txt
+2025-03-12 21:25:55,532 [INFO] app.upload_file:370 - Extracted 12187 characters of text
+2025-03-12 21:25:55,532 [INFO] logging_setup.start_operation:110 - STARTED: extract_all with params: unique_id=9726a11b-909f-46d4-bb54-7feeb1c9734f
+2025-03-12 21:25:55,532 [INFO] syllabus_extractor.extract_all:71 - Text length: 12187 characters
+2025-03-12 21:25:55,532 [INFO] logging_setup.start_operation:110 - STARTED: openai_parse with params: unique_id=9726a11b-909f-46d4-bb54-7feeb1c9734f
+2025-03-12 21:25:55,532 [INFO] openai_parser.parse_syllabus:109 - Extracting class metadata
+2025-03-12 21:26:07,277 [INFO] openai_parser.parse_syllabus:114 - Extracting assignments and schedule
+2025-03-12 21:26:32,864 [INFO] logging_setup.end_operation:127 - ENDED: openai_parse success
+2025-03-12 21:26:32,864 [INFO] syllabus_extractor.extract_all:95 - Days of Week not found, attempting direct extraction from text
+2025-03-12 21:26:32,864 [ERROR] logging_setup.log_exception:96 - Failed to extract syllabus data: 'DateParser' object has no attribute 'extract_days_from_text'
+Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\syllabus_extractor.py", line 96, in extract_all
+    days_of_week = self.date_parser.extract_days_from_text(syllabus_text)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DateParser' object has no attribute 'extract_days_from_text'
+
+2025-03-12 21:26:32,864 [INFO] logging_setup.end_operation:127 - ENDED: extract_all completed
+2025-03-12 21:26:32,864 [INFO] app.upload_file:381 - Processing completed in 37.33 seconds
+2025-03-12 21:26:32,873 [INFO] app.upload_file:393 - Saved results to: output\9726a11b-909f-46d4-bb54-7feeb1c9734f_results.json
+2025-03-12 21:26:32,875 [INFO] app.upload_file:402 - Also saved results to repository: utils/parsing/syllabus_repository/main_data\9726a11b-909f-46d4-bb54-7feeb1c9734f_results.json
+2025-03-12 21:26:32,875 [INFO] app.upload_file:407 - Missing fields detected: ['School Name', 'Term', 'Course Title', 'Instructor Name', 'Instructor Email', 'Class Time', 'Time Zone', 'Days of Week', 'Term Start Date', 'Term End Date', 'Class Start Date', 'Class End Date', 'Office Hours', 'Telephone', 'Class Location', 'Additional']
+2025-03-12 21:26:32,881 [INFO] app.missing_fields:430 - Showing missing fields form for ID: 9726a11b-909f-46d4-bb54-7feeb1c9734f

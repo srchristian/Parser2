@@ -1,0 +1,24 @@
+2025-03-22 17:38:25,390 [INFO] logging_setup.__init__:69 - Logging initialized to file: logs\syllabus_parser_20250322_173825.log
+2025-03-22 17:38:25,393 [INFO] app.<module>:217 - Loaded configuration from config.yaml
+2025-03-22 17:38:25,395 [INFO] app.create_required_directories:242 - Created all required directories with absolute paths
+2025-03-22 17:38:25,971 [INFO] openai_parser.__init__:56 - OpenAI parser initialized with model: o1-mini
+2025-03-22 17:38:25,971 [INFO] app.<module>:261 - OpenAIParser initialized successfully
+2025-03-22 17:38:25,972 [INFO] date_parser.__init__:69 - DateParser initialized with enhanced day processing
+2025-03-22 17:38:25,973 [INFO] app.<module>:269 - DateParser initialized successfully
+2025-03-22 17:38:25,975 [INFO] schedule_parser.__init__:40 - ScheduleParser initialized
+2025-03-22 17:38:25,975 [INFO] app.<module>:277 - ScheduleParser initialized successfully
+2025-03-22 17:38:25,976 [INFO] assignment_parser.__init__:24 - AssignmentParser initialized
+2025-03-22 17:38:25,977 [INFO] app.<module>:285 - AssignmentParser initialized successfully
+2025-03-22 17:38:25,984 [INFO] app.<module>:303 - SyllabusParser initialized successfully
+2025-03-22 17:38:25,986 [INFO] openai_parser.__init__:56 - OpenAI parser initialized with model: o1-mini
+2025-03-22 17:38:25,986 [INFO] date_parser.__init__:69 - DateParser initialized with enhanced day processing
+2025-03-22 17:38:25,987 [INFO] schedule_parser.__init__:40 - ScheduleParser initialized
+2025-03-22 17:38:25,987 [INFO] assignment_parser.__init__:24 - AssignmentParser initialized
+2025-03-22 17:38:25,987 [INFO] date_scraper._log:111 - Using default school CSV path: C:\SyllabusParser2\utils\School List\schools_with_urls.csv
+2025-03-22 17:38:25,987 [ERROR] date_scraper._log:111 - School CSV file not found: C:\SyllabusParser2\utils\School List\schools_with_urls.csv
+2025-03-22 17:38:25,988 [DEBUG] date_scraper._log:111 - Compiling regex patterns for school names
+2025-03-22 17:38:25,988 [DEBUG] date_scraper._log:111 - Compiled regex patterns for 0 schools
+2025-03-22 17:38:25,988 [INFO] date_scraper.__init__:95 - TermDateScraper initialized
+2025-03-22 17:38:25,988 [INFO] syllabus_extractor.__init__:58 - SyllabusExtractor initialized with model: o1-mini
+2025-03-22 17:38:25,989 [INFO] app.<module>:317 - SyllabusExtractor initialized successfully
+2025-03-22 17:38:25,992 [INFO] app.<module>:1221 - Starting Flask application on 0.0.0.0:5000

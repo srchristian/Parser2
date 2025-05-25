@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "extraction_time": "2025-03-25T14:30:00.000000",
+    "unique_id": "ff61a5ba-ec97-4e72-98e1-9da2526665a7",
+    "text_length": 12187,
+    "extraction_complete": false,
+    "missing_fields": ["Days of Week", "Class Start Date"],
+    "scheduled_labs": false,
+    "recitation_session": false,
+    "original_file": "syllabus_example.pdf",
+    "process_time": 3.45
+  },
+  "class_data": {
+    "School Name": "University of Example",
+    "Term": "Spring 2025",
+    "Course Title": "CS101: Introduction to Computer Science",
+    "Instructor Name": "Professor Smith",
+    "Instructor Email": "smith@example.edu",
+    "Class Time": "10:00 AM - 11:15 AM",
+    "Time Zone": "Eastern Time",
+    "Days of Week": "",
+    "Term Start Date": "January 15, 2025",
+    "Term End Date": "May 10, 2025",
+    "Class Start Date": "",
+    "Class End Date": "May 5, 2025",
+    "Office Hours": "Tuesdays 2-4 PM",
+    "Telephone": "555-123-4567",
+    "Class Location": "Science Hall 301",
+    "Additional": "Introduction to fundamental concepts of computer science"
+  },
+  "event_data": [
+    {
+      "Event Date": "January 17, 2025",
+      "Event Title": "CS101: Class Session 1",
+      "Class Time": "10:00 AM - 11:15 AM",
+      "Class Location": "Science Hall 301",
+      "reading": ["Chapter 1: Introduction"],
+      "assignment": ["Homework #1"],
+      "assignment_description": "Complete exercises 1-5",
+      "test": null,
+      "special": null
+    }
+  ],
+  "task_data": [
+    {
+      "Task Title": "CS101: Homework #1",
+      "Due Date": "January 24, 2025",
+      "Task Description": "Complete exercises 1-5 from Chapter 1"
+    },
+    {
+      "Task Title": "CS101: Midterm Exam",
+      "Due Date": "March 10, 2025",
+      "Task Description": "Covers Chapters 1-5"
+    }
+  ]
+}

@@ -1,0 +1,582 @@
+2025-05-17 12:31:13 - INFO - Logger 'SyllabusPipelineApp' configured by setup_logger. Level: DEBUG. File: logs\SyllabusPipelineApp_20250517.log
+2025-05-17 12:31:13 - INFO - Application logger initialized.
+2025-05-17 12:31:13 - INFO - DateParser initialized.
+2025-05-17 12:31:13 - INFO - DateParser initialized successfully.
+2025-05-17 12:31:14 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-17 12:31:14 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-17 12:31:14 - INFO - OpenAIParser initialized successfully.
+2025-05-17 12:31:14 - WARNING - SyllabusParser is using internal fallback JSON read/write functions.
+2025-05-17 12:31:14 - INFO - SyllabusParser directories ensured:
+- base_dir: utils\parsing\syllabus_repository\parsed_syllabus
+- log_dir for module's default logger (if used): logs
+2025-05-17 12:31:14 - INFO - OpenAI client initialized. Model preference for API calls: gpt-4o. Timeout: 90.0s read, 10.0s connect.
+2025-05-17 12:31:14 - INFO - SyllabusParser initialized successfully.
+2025-05-17 12:31:14 - INFO - Initializing SyllabusExtractor...
+2025-05-17 12:31:14 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-17 12:31:14 - INFO - Using provided OpenAIParser instance.
+2025-05-17 12:31:14 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:31:14 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:31:14 - INFO - ScheduleParser initialized with provided DateParser instance.
+2025-05-17 12:31:14 - INFO - ScheduleParser initialized. Default term weeks: 15.
+2025-05-17 12:31:14 - INFO - ScheduleParser initialized successfully.
+2025-05-17 12:31:14 - INFO - AssignmentParser initialized with provided DateParser instance.
+2025-05-17 12:31:14 - WARNING - AssignmentParser is using an internal fallback for '_extract_course_code'.
+2025-05-17 12:31:14 - INFO - AssignmentParser initialized.
+2025-05-17 12:31:14 - INFO - AssignmentParser initialized successfully.
+2025-05-17 12:31:14 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-17 12:31:14 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-17 12:31:14 - INFO - Logger 'SyllabusPipelineApp' configured by setup_logger. Level: DEBUG. File: logs\SyllabusPipelineApp_20250517.log
+2025-05-17 12:31:14 - INFO - Application logger initialized.
+2025-05-17 12:31:14 - INFO - DateParser initialized.
+2025-05-17 12:31:14 - INFO - DateParser initialized successfully.
+2025-05-17 12:31:14 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-17 12:31:14 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-17 12:31:14 - INFO - OpenAIParser initialized successfully.
+2025-05-17 12:31:14 - WARNING - SyllabusParser is using internal fallback JSON read/write functions.
+2025-05-17 12:31:14 - INFO - SyllabusParser directories ensured:
+- base_dir: utils\parsing\syllabus_repository\parsed_syllabus
+- log_dir for module's default logger (if used): logs
+2025-05-17 12:31:14 - INFO - OpenAI client initialized. Model preference for API calls: gpt-4o. Timeout: 90.0s read, 10.0s connect.
+2025-05-17 12:31:14 - INFO - SyllabusParser initialized successfully.
+2025-05-17 12:31:14 - INFO - Initializing SyllabusExtractor...
+2025-05-17 12:31:14 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-17 12:31:14 - INFO - Using provided OpenAIParser instance.
+2025-05-17 12:31:14 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:31:14 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:31:14 - INFO - ScheduleParser initialized with provided DateParser instance.
+2025-05-17 12:31:14 - INFO - ScheduleParser initialized. Default term weeks: 15.
+2025-05-17 12:31:14 - INFO - ScheduleParser initialized successfully.
+2025-05-17 12:31:14 - INFO - AssignmentParser initialized with provided DateParser instance.
+2025-05-17 12:31:14 - WARNING - AssignmentParser is using an internal fallback for '_extract_course_code'.
+2025-05-17 12:31:14 - INFO - AssignmentParser initialized.
+2025-05-17 12:31:14 - INFO - AssignmentParser initialized successfully.
+2025-05-17 12:31:14 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-17 12:31:14 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-17 12:39:30 - INFO - Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250517.log
+2025-05-17 12:39:30 - INFO - Application logger initialized.
+2025-05-17 12:39:30 - INFO - DateParser initialized.
+2025-05-17 12:39:30 - INFO - DateParser initialized successfully.
+2025-05-17 12:39:31 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-17 12:39:31 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-17 12:39:31 - INFO - OpenAIParser initialized successfully with model: gpt-4o.
+2025-05-17 12:39:31 - WARNING - SyllabusParser is using internal fallback JSON read/write functions.
+2025-05-17 12:39:31 - INFO - SyllabusParser directories ensured:
+- base_dir: utils\parsing\syllabus_repository\parsed_syllabus
+- log_dir for module's default logger (if used): logs
+2025-05-17 12:39:31 - INFO - OpenAI client initialized. Model preference for API calls: gpt-4o. Timeout: 90.0s read, 10.0s connect.
+2025-05-17 12:39:31 - INFO - SyllabusParser initialized successfully.
+2025-05-17 12:39:31 - INFO - Initializing SyllabusExtractor...
+2025-05-17 12:39:31 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-17 12:39:31 - INFO - Using provided OpenAIParser instance.
+2025-05-17 12:39:31 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:39:31 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:39:31 - INFO - ScheduleParser initialized with provided DateParser instance.
+2025-05-17 12:39:31 - INFO - ScheduleParser initialized. Default term weeks: 15.
+2025-05-17 12:39:31 - INFO - ScheduleParser initialized successfully.
+2025-05-17 12:39:31 - ERROR - Error initializing AssignmentParser: AssignmentParser.__init__() got an unexpected keyword argument 'course_code_extractor'
+Traceback (most recent call last):
+  File "C:\SyllabusParser2\app.py", line 171, in <module>
+    assignment_parser = AssignmentParser(logger_instance=logger, date_parser_instance=date_parser, config=config, course_code_extractor=extract_course_code)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AssignmentParser.__init__() got an unexpected keyword argument 'course_code_extractor'
+2025-05-17 12:39:31 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser']
+2025-05-17 12:39:31 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-17 12:39:31 - INFO - Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250517.log
+2025-05-17 12:39:31 - INFO - Application logger initialized.
+2025-05-17 12:39:31 - INFO - DateParser initialized.
+2025-05-17 12:39:31 - INFO - DateParser initialized successfully.
+2025-05-17 12:39:31 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-17 12:39:31 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-17 12:39:31 - INFO - OpenAIParser initialized successfully with model: gpt-4o.
+2025-05-17 12:39:31 - WARNING - SyllabusParser is using internal fallback JSON read/write functions.
+2025-05-17 12:39:31 - INFO - SyllabusParser directories ensured:
+- base_dir: utils\parsing\syllabus_repository\parsed_syllabus
+- log_dir for module's default logger (if used): logs
+2025-05-17 12:39:31 - INFO - OpenAI client initialized. Model preference for API calls: gpt-4o. Timeout: 90.0s read, 10.0s connect.
+2025-05-17 12:39:31 - INFO - SyllabusParser initialized successfully.
+2025-05-17 12:39:31 - INFO - Initializing SyllabusExtractor...
+2025-05-17 12:39:31 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-17 12:39:31 - INFO - Using provided OpenAIParser instance.
+2025-05-17 12:39:31 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:39:31 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:39:31 - INFO - ScheduleParser initialized with provided DateParser instance.
+2025-05-17 12:39:31 - INFO - ScheduleParser initialized. Default term weeks: 15.
+2025-05-17 12:39:31 - INFO - ScheduleParser initialized successfully.
+2025-05-17 12:39:31 - ERROR - Error initializing AssignmentParser: AssignmentParser.__init__() got an unexpected keyword argument 'course_code_extractor'
+Traceback (most recent call last):
+  File "C:\SyllabusParser2\app.py", line 171, in <module>
+    assignment_parser = AssignmentParser(logger_instance=logger, date_parser_instance=date_parser, config=config, course_code_extractor=extract_course_code)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AssignmentParser.__init__() got an unexpected keyword argument 'course_code_extractor'
+2025-05-17 12:39:31 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser']
+2025-05-17 12:39:31 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-17 12:42:28 - INFO - Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250517.log
+2025-05-17 12:42:28 - INFO - Application logger initialized.
+2025-05-17 12:42:28 - INFO - DateParser initialized.
+2025-05-17 12:42:28 - INFO - DateParser initialized successfully.
+2025-05-17 12:42:29 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-17 12:42:29 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-17 12:42:29 - INFO - OpenAIParser initialized successfully with model: gpt-4o.
+2025-05-17 12:42:29 - WARNING - SyllabusParser is using internal fallback JSON read/write functions.
+2025-05-17 12:42:29 - INFO - SyllabusParser directories ensured:
+- base_dir: utils\parsing\syllabus_repository\parsed_syllabus
+- log_dir for module's default logger (if used): logs
+2025-05-17 12:42:29 - INFO - OpenAI client initialized. Model preference for API calls: gpt-4o. Timeout: 90.0s read, 10.0s connect.
+2025-05-17 12:42:29 - INFO - SyllabusParser initialized successfully.
+2025-05-17 12:42:29 - INFO - Initializing SyllabusExtractor...
+2025-05-17 12:42:29 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-17 12:42:29 - INFO - Using provided OpenAIParser instance.
+2025-05-17 12:42:29 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:42:29 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:42:29 - INFO - ScheduleParser initialized with provided DateParser instance.
+2025-05-17 12:42:29 - INFO - ScheduleParser initialized. Default term weeks: 15.
+2025-05-17 12:42:29 - INFO - ScheduleParser initialized successfully.
+2025-05-17 12:42:29 - INFO - AssignmentParser initialized with provided DateParser instance.
+2025-05-17 12:42:29 - INFO - AssignmentParser will use imported 'extract_course_code' helper.
+2025-05-17 12:42:29 - INFO - AssignmentParser initialized.
+2025-05-17 12:42:29 - INFO - AssignmentParser initialized.
+2025-05-17 12:42:29 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-17 12:42:29 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-17 12:42:38 - INFO - Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250517.log
+2025-05-17 12:42:38 - INFO - Application logger initialized.
+2025-05-17 12:42:38 - INFO - DateParser initialized.
+2025-05-17 12:42:38 - INFO - DateParser initialized successfully.
+2025-05-17 12:42:38 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-17 12:42:38 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-17 12:42:38 - INFO - OpenAIParser initialized successfully with model: gpt-4o.
+2025-05-17 12:42:38 - WARNING - SyllabusParser is using internal fallback JSON read/write functions.
+2025-05-17 12:42:38 - INFO - SyllabusParser directories ensured:
+- base_dir: utils\parsing\syllabus_repository\parsed_syllabus
+- log_dir for module's default logger (if used): logs
+2025-05-17 12:42:38 - INFO - OpenAI client initialized. Model preference for API calls: gpt-4o. Timeout: 90.0s read, 10.0s connect.
+2025-05-17 12:42:38 - INFO - SyllabusParser initialized successfully.
+2025-05-17 12:42:38 - INFO - Initializing SyllabusExtractor...
+2025-05-17 12:42:38 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-17 12:42:38 - INFO - Using provided OpenAIParser instance.
+2025-05-17 12:42:38 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:42:38 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:42:38 - INFO - ScheduleParser initialized with provided DateParser instance.
+2025-05-17 12:42:38 - INFO - ScheduleParser initialized. Default term weeks: 15.
+2025-05-17 12:42:38 - INFO - ScheduleParser initialized successfully.
+2025-05-17 12:42:38 - INFO - AssignmentParser initialized with provided DateParser instance.
+2025-05-17 12:42:38 - INFO - AssignmentParser will use imported 'extract_course_code' helper.
+2025-05-17 12:42:38 - INFO - AssignmentParser initialized.
+2025-05-17 12:42:38 - INFO - AssignmentParser initialized.
+2025-05-17 12:42:38 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-17 12:42:38 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-17 12:42:39 - INFO - Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250517.log
+2025-05-17 12:42:39 - INFO - Application logger initialized.
+2025-05-17 12:42:39 - INFO - DateParser initialized.
+2025-05-17 12:42:39 - INFO - DateParser initialized successfully.
+2025-05-17 12:42:39 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-17 12:42:39 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-17 12:42:39 - INFO - OpenAIParser initialized successfully with model: gpt-4o.
+2025-05-17 12:42:39 - WARNING - SyllabusParser is using internal fallback JSON read/write functions.
+2025-05-17 12:42:39 - INFO - SyllabusParser directories ensured:
+- base_dir: utils\parsing\syllabus_repository\parsed_syllabus
+- log_dir for module's default logger (if used): logs
+2025-05-17 12:42:39 - INFO - OpenAI client initialized. Model preference for API calls: gpt-4o. Timeout: 90.0s read, 10.0s connect.
+2025-05-17 12:42:39 - INFO - SyllabusParser initialized successfully.
+2025-05-17 12:42:39 - INFO - Initializing SyllabusExtractor...
+2025-05-17 12:42:39 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-17 12:42:39 - INFO - Using provided OpenAIParser instance.
+2025-05-17 12:42:39 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:42:39 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:42:39 - INFO - ScheduleParser initialized with provided DateParser instance.
+2025-05-17 12:42:39 - INFO - ScheduleParser initialized. Default term weeks: 15.
+2025-05-17 12:42:39 - INFO - ScheduleParser initialized successfully.
+2025-05-17 12:42:39 - INFO - AssignmentParser initialized with provided DateParser instance.
+2025-05-17 12:42:39 - INFO - AssignmentParser will use imported 'extract_course_code' helper.
+2025-05-17 12:42:39 - INFO - AssignmentParser initialized.
+2025-05-17 12:42:39 - INFO - AssignmentParser initialized.
+2025-05-17 12:42:39 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-17 12:42:39 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-17 12:44:04 - INFO - Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250517.log
+2025-05-17 12:44:04 - INFO - Application logger initialized.
+2025-05-17 12:44:04 - INFO - DateParser initialized.
+2025-05-17 12:44:04 - INFO - DateParser initialized successfully.
+2025-05-17 12:44:04 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-17 12:44:04 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-17 12:44:04 - INFO - OpenAIParser initialized successfully with model: gpt-4o.
+2025-05-17 12:44:04 - WARNING - SyllabusParser is using internal fallback JSON read/write functions.
+2025-05-17 12:44:04 - INFO - SyllabusParser directories ensured:
+- base_dir: utils\parsing\syllabus_repository\parsed_syllabus
+- log_dir for module's default logger (if used): logs
+2025-05-17 12:44:04 - INFO - OpenAI client initialized. Model preference for API calls: gpt-4o. Timeout: 90.0s read, 10.0s connect.
+2025-05-17 12:44:04 - INFO - SyllabusParser initialized successfully.
+2025-05-17 12:44:04 - INFO - Initializing SyllabusExtractor...
+2025-05-17 12:44:04 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-17 12:44:04 - INFO - Using provided OpenAIParser instance.
+2025-05-17 12:44:04 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:44:04 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:44:04 - INFO - ScheduleParser initialized with provided DateParser instance.
+2025-05-17 12:44:04 - INFO - ScheduleParser initialized. Default term weeks: 15.
+2025-05-17 12:44:04 - INFO - ScheduleParser initialized successfully.
+2025-05-17 12:44:04 - INFO - AssignmentParser initialized with provided DateParser instance.
+2025-05-17 12:44:04 - INFO - AssignmentParser will use imported 'extract_course_code' helper.
+2025-05-17 12:44:04 - INFO - AssignmentParser initialized.
+2025-05-17 12:44:04 - INFO - AssignmentParser initialized.
+2025-05-17 12:44:04 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-17 12:44:04 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-17 12:44:05 - INFO - Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250517.log
+2025-05-17 12:44:05 - INFO - Application logger initialized.
+2025-05-17 12:44:05 - INFO - DateParser initialized.
+2025-05-17 12:44:05 - INFO - DateParser initialized successfully.
+2025-05-17 12:44:05 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-17 12:44:05 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-17 12:44:05 - INFO - OpenAIParser initialized successfully with model: gpt-4o.
+2025-05-17 12:44:05 - WARNING - SyllabusParser is using internal fallback JSON read/write functions.
+2025-05-17 12:44:05 - INFO - SyllabusParser directories ensured:
+- base_dir: utils\parsing\syllabus_repository\parsed_syllabus
+- log_dir for module's default logger (if used): logs
+2025-05-17 12:44:05 - INFO - OpenAI client initialized. Model preference for API calls: gpt-4o. Timeout: 90.0s read, 10.0s connect.
+2025-05-17 12:44:05 - INFO - SyllabusParser initialized successfully.
+2025-05-17 12:44:05 - INFO - Initializing SyllabusExtractor...
+2025-05-17 12:44:05 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-17 12:44:05 - INFO - Using provided OpenAIParser instance.
+2025-05-17 12:44:05 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:44:05 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:44:05 - INFO - ScheduleParser initialized with provided DateParser instance.
+2025-05-17 12:44:05 - INFO - ScheduleParser initialized. Default term weeks: 15.
+2025-05-17 12:44:05 - INFO - ScheduleParser initialized successfully.
+2025-05-17 12:44:05 - INFO - AssignmentParser initialized with provided DateParser instance.
+2025-05-17 12:44:05 - INFO - AssignmentParser will use imported 'extract_course_code' helper.
+2025-05-17 12:44:05 - INFO - AssignmentParser initialized.
+2025-05-17 12:44:05 - INFO - AssignmentParser initialized.
+2025-05-17 12:44:05 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-17 12:44:05 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-17 12:46:38 - INFO - Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250517.log
+2025-05-17 12:46:38 - INFO - Application logger initialized.
+2025-05-17 12:46:38 - INFO - DateParser initialized.
+2025-05-17 12:46:38 - INFO - DateParser initialized successfully.
+2025-05-17 12:46:38 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-17 12:46:38 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-17 12:46:38 - INFO - OpenAIParser initialized successfully with model: gpt-4o.
+2025-05-17 12:46:38 - WARNING - SyllabusParser is using internal fallback JSON read/write functions.
+2025-05-17 12:46:38 - INFO - SyllabusParser directories ensured:
+- base_dir: utils\parsing\syllabus_repository\parsed_syllabus
+- log_dir for module's default logger (if used): logs
+2025-05-17 12:46:38 - INFO - OpenAI client initialized. Model preference for API calls: gpt-4o. Timeout: 90.0s read, 10.0s connect.
+2025-05-17 12:46:38 - INFO - SyllabusParser initialized successfully.
+2025-05-17 12:46:38 - INFO - Initializing SyllabusExtractor...
+2025-05-17 12:46:38 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-17 12:46:38 - INFO - Using provided OpenAIParser instance.
+2025-05-17 12:46:38 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:46:38 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:46:38 - INFO - ScheduleParser initialized with provided DateParser instance.
+2025-05-17 12:46:38 - INFO - ScheduleParser initialized. Default term weeks: 15.
+2025-05-17 12:46:38 - INFO - ScheduleParser initialized successfully.
+2025-05-17 12:46:38 - INFO - AssignmentParser initialized with provided DateParser instance.
+2025-05-17 12:46:38 - INFO - AssignmentParser will use imported 'extract_course_code' helper.
+2025-05-17 12:46:38 - INFO - AssignmentParser initialized.
+2025-05-17 12:46:38 - INFO - AssignmentParser initialized.
+2025-05-17 12:46:38 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-17 12:46:38 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-17 12:46:39 - INFO - Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250517.log
+2025-05-17 12:46:39 - INFO - Application logger initialized.
+2025-05-17 12:46:39 - INFO - DateParser initialized.
+2025-05-17 12:46:39 - INFO - DateParser initialized successfully.
+2025-05-17 12:46:39 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-17 12:46:39 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-17 12:46:39 - INFO - OpenAIParser initialized successfully with model: gpt-4o.
+2025-05-17 12:46:39 - WARNING - SyllabusParser is using internal fallback JSON read/write functions.
+2025-05-17 12:46:39 - INFO - SyllabusParser directories ensured:
+- base_dir: utils\parsing\syllabus_repository\parsed_syllabus
+- log_dir for module's default logger (if used): logs
+2025-05-17 12:46:39 - INFO - OpenAI client initialized. Model preference for API calls: gpt-4o. Timeout: 90.0s read, 10.0s connect.
+2025-05-17 12:46:39 - INFO - SyllabusParser initialized successfully.
+2025-05-17 12:46:39 - INFO - Initializing SyllabusExtractor...
+2025-05-17 12:46:39 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-17 12:46:39 - INFO - Using provided OpenAIParser instance.
+2025-05-17 12:46:39 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:46:39 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:46:39 - INFO - ScheduleParser initialized with provided DateParser instance.
+2025-05-17 12:46:39 - INFO - ScheduleParser initialized. Default term weeks: 15.
+2025-05-17 12:46:39 - INFO - ScheduleParser initialized successfully.
+2025-05-17 12:46:39 - INFO - AssignmentParser initialized with provided DateParser instance.
+2025-05-17 12:46:39 - INFO - AssignmentParser will use imported 'extract_course_code' helper.
+2025-05-17 12:46:39 - INFO - AssignmentParser initialized.
+2025-05-17 12:46:39 - INFO - AssignmentParser initialized.
+2025-05-17 12:46:39 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-17 12:46:39 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-17 12:52:25 - INFO - Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250517.log
+2025-05-17 12:52:25 - INFO - Application logger initialized.
+2025-05-17 12:52:25 - INFO - DateParser initialized.
+2025-05-17 12:52:25 - INFO - DateParser initialized successfully.
+2025-05-17 12:52:25 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-17 12:52:25 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-17 12:52:25 - INFO - OpenAIParser initialized successfully with model: gpt-4o.
+2025-05-17 12:52:25 - INFO - SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-17 12:52:25 - INFO - SyllabusParser directories ensured:
+- base_dir: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-17 12:52:25 - INFO - OpenAI client initialized for SyllabusParser. Model preference: gpt-4o. Timeout: 90.0s read, 10.0s connect.
+2025-05-17 12:52:25 - INFO - SyllabusParser initialized successfully.
+2025-05-17 12:52:25 - INFO - Initializing SyllabusExtractor...
+2025-05-17 12:52:25 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-17 12:52:25 - INFO - Using provided OpenAIParser instance.
+2025-05-17 12:52:25 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:52:25 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:52:25 - INFO - ScheduleParser initialized with provided DateParser instance.
+2025-05-17 12:52:25 - INFO - ScheduleParser initialized. Default term weeks: 15.
+2025-05-17 12:52:25 - INFO - ScheduleParser initialized successfully.
+2025-05-17 12:52:25 - INFO - AssignmentParser initialized with provided DateParser instance.
+2025-05-17 12:52:25 - INFO - AssignmentParser will use imported 'extract_course_code' helper.
+2025-05-17 12:52:25 - INFO - AssignmentParser initialized.
+2025-05-17 12:52:25 - INFO - AssignmentParser initialized.
+2025-05-17 12:52:25 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-17 12:52:25 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-17 12:52:26 - INFO - Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250517.log
+2025-05-17 12:52:26 - INFO - Application logger initialized.
+2025-05-17 12:52:26 - INFO - DateParser initialized.
+2025-05-17 12:52:26 - INFO - DateParser initialized successfully.
+2025-05-17 12:52:26 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-17 12:52:26 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-17 12:52:26 - INFO - OpenAIParser initialized successfully with model: gpt-4o.
+2025-05-17 12:52:26 - INFO - SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-17 12:52:26 - INFO - SyllabusParser directories ensured:
+- base_dir: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-17 12:52:26 - INFO - OpenAI client initialized for SyllabusParser. Model preference: gpt-4o. Timeout: 90.0s read, 10.0s connect.
+2025-05-17 12:52:26 - INFO - SyllabusParser initialized successfully.
+2025-05-17 12:52:26 - INFO - Initializing SyllabusExtractor...
+2025-05-17 12:52:26 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-17 12:52:26 - INFO - Using provided OpenAIParser instance.
+2025-05-17 12:52:26 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:52:26 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:52:26 - INFO - ScheduleParser initialized with provided DateParser instance.
+2025-05-17 12:52:26 - INFO - ScheduleParser initialized. Default term weeks: 15.
+2025-05-17 12:52:26 - INFO - ScheduleParser initialized successfully.
+2025-05-17 12:52:26 - INFO - AssignmentParser initialized with provided DateParser instance.
+2025-05-17 12:52:26 - INFO - AssignmentParser will use imported 'extract_course_code' helper.
+2025-05-17 12:52:26 - INFO - AssignmentParser initialized.
+2025-05-17 12:52:26 - INFO - AssignmentParser initialized.
+2025-05-17 12:52:26 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-17 12:52:26 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-17 12:54:47 - INFO - Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250517.log
+2025-05-17 12:54:47 - INFO - Application logger initialized.
+2025-05-17 12:54:47 - INFO - DateParser initialized.
+2025-05-17 12:54:47 - INFO - DateParser initialized successfully.
+2025-05-17 12:54:48 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-17 12:54:48 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-17 12:54:48 - INFO - OpenAIParser initialized successfully with model: gpt-4o.
+2025-05-17 12:54:48 - INFO - SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-17 12:54:48 - INFO - SyllabusParser directories ensured:
+- base_dir: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-17 12:54:48 - INFO - OpenAI client initialized for SyllabusParser. Model preference: gpt-4o. Timeout: 90.0s read, 10.0s connect.
+2025-05-17 12:54:48 - INFO - SyllabusParser initialized successfully.
+2025-05-17 12:54:48 - INFO - Initializing SyllabusExtractor...
+2025-05-17 12:54:48 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-17 12:54:48 - INFO - Using provided OpenAIParser instance.
+2025-05-17 12:54:48 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:54:48 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:54:48 - INFO - ScheduleParser initialized with provided DateParser instance.
+2025-05-17 12:54:48 - INFO - ScheduleParser initialized. Default term weeks: 15.
+2025-05-17 12:54:48 - INFO - ScheduleParser initialized successfully.
+2025-05-17 12:54:48 - INFO - AssignmentParser initialized with provided DateParser instance.
+2025-05-17 12:54:48 - INFO - AssignmentParser will use imported 'extract_course_code' helper.
+2025-05-17 12:54:48 - INFO - AssignmentParser initialized.
+2025-05-17 12:54:48 - INFO - AssignmentParser initialized.
+2025-05-17 12:54:48 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-17 12:54:48 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-17 12:54:49 - INFO - Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250517.log
+2025-05-17 12:54:49 - INFO - Application logger initialized.
+2025-05-17 12:54:49 - INFO - DateParser initialized.
+2025-05-17 12:54:49 - INFO - DateParser initialized successfully.
+2025-05-17 12:54:50 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-17 12:54:50 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-17 12:54:50 - INFO - OpenAIParser initialized successfully with model: gpt-4o.
+2025-05-17 12:54:50 - INFO - SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-17 12:54:50 - INFO - SyllabusParser directories ensured:
+- base_dir: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-17 12:54:50 - INFO - OpenAI client initialized for SyllabusParser. Model preference: gpt-4o. Timeout: 90.0s read, 10.0s connect.
+2025-05-17 12:54:50 - INFO - SyllabusParser initialized successfully.
+2025-05-17 12:54:50 - INFO - Initializing SyllabusExtractor...
+2025-05-17 12:54:50 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-17 12:54:50 - INFO - Using provided OpenAIParser instance.
+2025-05-17 12:54:50 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:54:50 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:54:50 - INFO - ScheduleParser initialized with provided DateParser instance.
+2025-05-17 12:54:50 - INFO - ScheduleParser initialized. Default term weeks: 15.
+2025-05-17 12:54:50 - INFO - ScheduleParser initialized successfully.
+2025-05-17 12:54:50 - INFO - AssignmentParser initialized with provided DateParser instance.
+2025-05-17 12:54:50 - INFO - AssignmentParser will use imported 'extract_course_code' helper.
+2025-05-17 12:54:50 - INFO - AssignmentParser initialized.
+2025-05-17 12:54:50 - INFO - AssignmentParser initialized.
+2025-05-17 12:54:50 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-17 12:54:50 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-17 12:55:28 - INFO - Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250517.log
+2025-05-17 12:55:28 - INFO - Application logger initialized.
+2025-05-17 12:55:28 - INFO - DateParser initialized.
+2025-05-17 12:55:28 - INFO - DateParser initialized successfully.
+2025-05-17 12:55:28 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-17 12:55:28 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-17 12:55:28 - INFO - OpenAIParser initialized successfully with model: gpt-4o.
+2025-05-17 12:55:28 - INFO - SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-17 12:55:28 - INFO - SyllabusParser directories ensured:
+- base_dir: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-17 12:55:28 - INFO - OpenAI client initialized for SyllabusParser. Model preference: gpt-4o. Timeout: 90.0s read, 10.0s connect.
+2025-05-17 12:55:28 - INFO - SyllabusParser initialized successfully.
+2025-05-17 12:55:28 - INFO - Initializing SyllabusExtractor...
+2025-05-17 12:55:28 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-17 12:55:28 - INFO - Using provided OpenAIParser instance.
+2025-05-17 12:55:28 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:55:28 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:55:28 - INFO - ScheduleParser initialized with provided DateParser instance.
+2025-05-17 12:55:28 - INFO - ScheduleParser initialized. Default term weeks: 15.
+2025-05-17 12:55:28 - INFO - ScheduleParser initialized successfully.
+2025-05-17 12:55:28 - INFO - AssignmentParser initialized with provided DateParser instance.
+2025-05-17 12:55:28 - INFO - AssignmentParser will use imported 'extract_course_code' helper.
+2025-05-17 12:55:28 - INFO - AssignmentParser initialized.
+2025-05-17 12:55:28 - INFO - AssignmentParser initialized.
+2025-05-17 12:55:28 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-17 12:55:28 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-17 12:55:29 - INFO - Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250517.log
+2025-05-17 12:55:29 - INFO - Application logger initialized.
+2025-05-17 12:55:29 - INFO - DateParser initialized.
+2025-05-17 12:55:29 - INFO - DateParser initialized successfully.
+2025-05-17 12:55:29 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-17 12:55:29 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-17 12:55:29 - INFO - OpenAIParser initialized successfully with model: gpt-4o.
+2025-05-17 12:55:29 - INFO - SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-17 12:55:29 - INFO - SyllabusParser directories ensured:
+- base_dir: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-17 12:55:29 - INFO - OpenAI client initialized for SyllabusParser. Model preference: gpt-4o. Timeout: 90.0s read, 10.0s connect.
+2025-05-17 12:55:29 - INFO - SyllabusParser initialized successfully.
+2025-05-17 12:55:29 - INFO - Initializing SyllabusExtractor...
+2025-05-17 12:55:29 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-17 12:55:29 - INFO - Using provided OpenAIParser instance.
+2025-05-17 12:55:29 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:55:29 - INFO - SyllabusExtractor initialized successfully.
+2025-05-17 12:55:29 - INFO - ScheduleParser initialized with provided DateParser instance.
+2025-05-17 12:55:29 - INFO - ScheduleParser initialized. Default term weeks: 15.
+2025-05-17 12:55:29 - INFO - ScheduleParser initialized successfully.
+2025-05-17 12:55:29 - INFO - AssignmentParser initialized with provided DateParser instance.
+2025-05-17 12:55:29 - INFO - AssignmentParser will use imported 'extract_course_code' helper.
+2025-05-17 12:55:29 - INFO - AssignmentParser initialized.
+2025-05-17 12:55:29 - INFO - AssignmentParser initialized.
+2025-05-17 12:55:29 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-17 12:55:29 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-17 12:56:41 - INFO - Rendering index page (/)
+2025-05-17 12:56:42 - WARNING - 404 Not Found: http://127.0.0.1:5000/favicon.ico (Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.)
+2025-05-17 13:07:54 - INFO - Processing file upload request via /upload
+2025-05-17 13:07:54 - INFO - Generated unique ID for upload: bb548444-18b9-47eb-95c8-210605f25446
+2025-05-17 13:07:54 - INFO - File uploaded and saved to: C:\SyllabusParser2\uploads\bb548444-18b9-47eb-95c8-210605f25446_PHY203syllabusF24.pdf
+2025-05-17 13:07:54 - INFO - Starting syllabus pipeline for: C:\SyllabusParser2\uploads\bb548444-18b9-47eb-95c8-210605f25446_PHY203syllabusF24.pdf (Display: bb548444-18b9-47eb-95c8-210605f25446_PHY203syllabusF24.pdf)
+2025-05-17 13:07:54 - INFO - Starting syllabus parsing for: C:\SyllabusParser2\uploads\bb548444-18b9-47eb-95c8-210605f25446_PHY203syllabusF24.pdf (ID: bb548444-18b9-47eb-95c8-210605f25446)
+2025-05-17 13:07:54 - INFO - Using unique ID for this parse run: bb548444-18b9-47eb-95c8-210605f25446
+2025-05-17 13:07:54 - INFO - Attempting to extract text from: C:\SyllabusParser2\uploads\bb548444-18b9-47eb-95c8-210605f25446_PHY203syllabusF24.pdf
+2025-05-17 13:07:54 - INFO - Successfully extracted text from PDF: bb548444-18b9-47eb-95c8-210605f25446_PHY203syllabusF24.pdf (approx. 12866 chars).
+2025-05-17 13:07:54 - INFO - Extracted 12833 characters from file C:\SyllabusParser2\uploads\bb548444-18b9-47eb-95c8-210605f25446_PHY203syllabusF24.pdf.
+2025-05-17 13:07:54 - DEBUG - Saved API prompt to utils\parsing\syllabus_repository\parsed_syllabus\debug_prompts\prompt_bb548444-18b9-47eb-95c8-210605f25446_20250517_130754575143.txt
+2025-05-17 13:07:54 - INFO - Calling OpenAI API (Attempt 1/3) with model gpt-4o for ID bb548444-18b9-47eb-95c8-210605f25446...
+2025-05-17 13:08:25 - INFO - Received OpenAI response (length 7990 chars) on attempt 1.
+2025-05-17 13:08:25 - DEBUG - Extracted JSON from markdown code block.
+2025-05-17 13:08:25 - INFO - LLM response parsed and validated successfully.
+2025-05-17 13:08:25 - INFO - Syllabus parsing completed in 31.45 seconds. Output: utils\parsing\syllabus_repository\parsed_syllabus\bb548444-18b9-47eb-95c8-210605f25446_segmented.json
+2025-05-17 13:08:25 - INFO - SyllabusExtractor.extract_all started for Unique ID: bb548444-18b9-47eb-95c8-210605f25446
+2025-05-17 13:08:25 - INFO - Text length for extraction: 12833 characters
+2025-05-17 13:08:25 - DEBUG - Text preview for extraction: PHY203: ELEMENTARY PHYSICS I (Fall 2024)  
+ 
+ 
+Instructor:  Miquel Dorca, 211 East Hall, miquel@uri.edu  
+ 
+Office Hours: MWF 12:30pm -1:00pm   Lecture Time s: 1pm-1:50pm (section 1 ), 
+(East Hall Auditorium)  
+ 
+Course Description  
+Calculus -based i ntroductio n to Newtonian mechanics. Kine matics and dynamics of 
+particles and systems of particles , conservation laws, rotational motion, gravitation,  and 
+oscillatory motion. (Lec. 3 )  Pre: credit or concurrent enrollment in MTH 141 and 
+conc...
+2025-05-17 13:08:25 - INFO - Delegating extraction to OpenAIParser...
+2025-05-17 13:08:25 - INFO - OpenAIParser: Starting data extraction for ID: bb548444-18b9-47eb-95c8-210605f25446
+2025-05-17 13:08:25 - INFO - Calling OpenAI API for class metadata (attempt 1/2). Model: gpt-4o
+2025-05-17 13:08:28 - INFO - OpenAI API response received (length: 633 chars).
+2025-05-17 13:08:28 - DEBUG - OpenAI Raw Response (first 500 chars): {
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+  "Class Time": "1pm-1:50pm",
+  "Time Zone": "",
+  "Days of Week": "",
+  "Class Start Date": "",
+  "Class End Date": "",
+  "Office Hours": "MWF 12:30pm -1:00pm",
+  "Telephone": "",
+  "Class Location": "East Hall Auditorium",
+  "Additional": "Calculus-based introduction to Newtonian mechanics. Kinemat...
+2025-05-17 13:08:28 - DEBUG - Attempting direct JSON parse.
+2025-05-17 13:08:28 - INFO - Successfully extracted and parsed class metadata from API response.
+2025-05-17 13:08:28 - INFO - Extraction for ID bb548444-18b9-47eb-95c8-210605f25446 completed. Missing fields: ['Days of Week', 'Class Start Date', 'Class End Date']. Process time: 3.01s
+2025-05-17 13:08:28 - INFO - OpenAIParser extraction completed in 3.02 seconds for ID: bb548444-18b9-47eb-95c8-210605f25446
+2025-05-17 13:08:28 - INFO - Missing fields reported by parser: ['Days of Week', 'Class End Date', 'Class Start Date']
+2025-05-17 13:08:28 - DEBUG - Extracted class_data for ID bb548444-18b9-47eb-95c8-210605f25446: {'School Name': 'University of Rhode Island', 'Term': 'Fall 2024', 'Course Title': 'PHY203: ELEMENTARY PHYSICS I', 'Instructor Name': 'Miquel Dorca', 'Instructor Email': 'miquel@uri.edu', 'Class Time': '1pm-1:50pm', 'Time Zone': '', 'Days of Week': '', 'Class Start Date': '', 'Class End Date': '', 'Office Hours': 'MWF 12:30pm -1:00pm', 'Telephone': '', 'Class Location': 'East Hall Auditorium', 'Additional': 'Calculus-based introduction to Newtonian mechanics. Kinematics and dynamics of particles and systems of particles, conservation laws, rotational motion, gravitation, and oscillatory motion.'}
+2025-05-17 13:08:28 - INFO - Normalizing dates and standardizing days of week in extracted data.
+2025-05-17 13:08:28 - DEBUG - _standardize_days_of_week: Input '' is empty or not a string. Returning empty string.
+2025-05-17 13:08:28 - DEBUG - Processed 'Days of Week': '' -> ''
+2025-05-17 13:08:28 - INFO - Attempting to extract tasks from text segment (length: 717 chars).
+2025-05-17 13:08:28 - INFO - Extracted Task: 'exam' with due date 'Fri. 09' (normalized to 'May 09, 2025')
+2025-05-17 13:08:28 - INFO - Extracted Task: 'exam' with due date 'Fri. 10' (normalized to 'May 10, 2025')
+2025-05-17 13:08:28 - INFO - Extracted Task: 'exam' with due date 'Wed., 12' (normalized to 'May 12, 2025')
+2025-05-17 13:08:28 - WARNING - Failed to parse and normalize date string 'on or before (usually Wednesdays or Fridays) of almost every week (by 10': Unknown string format: on or before (usually Wednesdays or Fridays) of almost every week (by 10. Returning original string.
+2025-05-17 13:08:28 - INFO - Extracted Task: 'Homework' with due date 'on or before (usually Wednesdays or Fridays) of almost every week (by 10' (normalized to 'on or before (usually Wednesdays or Fridays) of almost every week (by 10')
+2025-05-17 13:08:28 - INFO - Processing assignments from structured data (task_data).
+2025-05-17 13:08:28 - INFO - Validating assignment sequence (e.g., Homework #1, #2...).
+2025-05-17 13:08:28 - INFO - No numbered homework/assignments found to validate sequence.
+2025-05-17 13:08:28 - INFO - Linking assignments/tasks to schedule events.
+2025-05-17 13:08:28 - DEBUG - No task_data or event_data to link, or data is not in list format.
+2025-05-17 13:08:28 - INFO - Processing class schedule...
+2025-05-17 13:08:28 - DEBUG - Ensuring class start and end dates are determined.
+2025-05-17 13:08:28 - DEBUG - Date string '' is empty, special, or not a string; returning as is.
+2025-05-17 13:08:28 - DEBUG - Date string '' is empty, special, or not a string; returning as is.
+2025-05-17 13:08:28 - DEBUG - Date string '' is empty, special, or not a string; returning as is.
+2025-05-17 13:08:28 - DEBUG - Date string '' is empty, special, or not a string; returning as is.
+2025-05-17 13:08:28 - WARNING - Missing Term Start Date, Term End Date, or Days of Week in class_data after finalization. Cannot generate schedule.
+2025-05-17 13:08:28 - INFO - Results also saved to main_data_dir: utils\parsing\syllabus_repository\main_data\bb548444-18b9-47eb-95c8-210605f25446_results.json
+2025-05-17 13:08:28 - INFO - Showing missing fields form for ID: bb548444-18b9-47eb-95c8-210605f25446
+2025-05-17 13:09:17 - INFO - Processing completed data for ID: bb548444-18b9-47eb-95c8-210605f25446
+2025-05-17 13:09:17 - DEBUG - Updated class_data.Days of Week from form: 'Monday, Wednesday, Friday'
+2025-05-17 13:09:17 - DEBUG - Updated class_data.Class Start Date from form: '2024-09-04'
+2025-05-17 13:09:17 - DEBUG - Updated class_data.Class End Date from form: '2024-12-11'
+2025-05-17 13:09:17 - DEBUG - Updated class_data.Time Zone from form: 'Eastern'
+2025-05-17 13:09:17 - INFO - Normalizing dates and standardizing days of week in extracted data.
+2025-05-17 13:09:17 - DEBUG - Standardizing days of week from: 'Monday, Wednesday, Friday'
+2025-05-17 13:09:17 - INFO - Regex/token based standardization: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-05-17 13:09:17 - DEBUG - Processed 'Days of Week': 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-05-17 13:09:17 - DEBUG - Normalized 'Class Start Date': '2024-09-04' -> 'September 04, 2024'
+2025-05-17 13:09:17 - DEBUG - Normalized 'Class End Date': '2024-12-11' -> 'December 11, 2024'
+2025-05-17 13:09:17 - WARNING - Failed to parse and normalize date string 'on or before (usually Wednesdays or Fridays) of almost every week (by 10': Unknown string format: on or before (usually Wednesdays or Fridays) of almost every week (by 10. Returning original string.
+2025-05-17 13:09:17 - INFO - Processing class schedule...
+2025-05-17 13:09:17 - DEBUG - Ensuring class start and end dates are determined.
+2025-05-17 13:09:17 - DEBUG - Date string '' is empty, special, or not a string; returning as is.
+2025-05-17 13:09:17 - DEBUG - Date string '' is empty, special, or not a string; returning as is.
+2025-05-17 13:09:17 - DEBUG - Standardizing days of week from: 'Monday, Wednesday, Friday'
+2025-05-17 13:09:17 - INFO - Regex/token based standardization: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-05-17 13:09:17 - ERROR - Error refining Class Start/End Dates: 'DateParser' object has no attribute 'date_parser_module'
+Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\schedule_parser.py", line 200, in _ensure_class_start_end_dates
+    start_date_obj = self.date_parser.date_parser_module.parse(final_class_start_str, ignoretz=True).date()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DateParser' object has no attribute 'date_parser_module'
+2025-05-17 13:09:17 - DEBUG - Standardizing days of week from: 'Monday, Wednesday, Friday'
+2025-05-17 13:09:17 - INFO - Regex/token based standardization: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-05-17 13:09:17 - INFO - Generating class sessions from September 04, 2024 to December 11, 2024 for course PHY203.
+2025-05-17 13:09:17 - DEBUG - parse_weekdays_to_indices: Empty or invalid input ''.
+2025-05-17 13:09:17 - INFO - No specific weekdays provided or parsed from ''. Returning all dates in range for September 04, 2024 to December 11, 2024.
+2025-05-17 13:09:17 - ERROR - Unexpected error generating class sessions: 'DateParser' object has no attribute 'date_parser_module'
+Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\schedule_parser.py", line 277, in _generate_class_sessions
+    start_obj = self.date_parser.date_parser_module.parse(class_start_date_str, ignoretz=True).date()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DateParser' object has no attribute 'date_parser_module'
+2025-05-17 13:09:17 - DEBUG - Merging 0 generated sessions with 0 existing events.
+2025-05-17 13:09:17 - DEBUG - Merged schedule sorted. Total events: 0
+2025-05-17 13:09:17 - INFO - Generated/merged schedule with 0 total events.
+2025-05-17 13:09:17 - INFO - Processing assignments from structured data (task_data).
+2025-05-17 13:09:17 - INFO - Validating assignment sequence (e.g., Homework #1, #2...).
+2025-05-17 13:09:17 - INFO - No numbered homework/assignments found to validate sequence.
+2025-05-17 13:09:17 - INFO - Linking assignments/tasks to schedule events.
+2025-05-17 13:09:17 - DEBUG - No task_data or event_data to link, or data is not in list format.
+2025-05-17 13:09:17 - INFO - Updated results also saved to main_data_dir: utils\parsing\syllabus_repository\main_data\bb548444-18b9-47eb-95c8-210605f25446_results.json
+2025-05-17 13:09:17 - INFO - Showing results for ID: bb548444-18b9-47eb-95c8-210605f25446

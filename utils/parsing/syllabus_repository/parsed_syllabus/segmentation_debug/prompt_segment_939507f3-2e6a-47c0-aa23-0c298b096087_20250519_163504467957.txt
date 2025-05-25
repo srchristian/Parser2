@@ -1,0 +1,359 @@
+You are an expert academic assistant. Your task is to segment the following course syllabus text into a structured JSON format.
+Adhere strictly to the defined modules and instructions.
+
+### Core Modules (Always include these keys in the JSON. If no content is found for a key, use an empty string ""):
+- `course_identification`: Extract: Course Number & Title (e.g., ENGL 101: Introduction to Academic Writing), Term/Semester & Credit Hours (e.g., Spring 2025, 3 credits), Meeting Days, Times & Location (e.g., MWF 10:00-10:50 AM, Room 101 or Online), Modality (In-person, Hybrid, Online Synchronous/Asynchronous).
+- `instructor_information`: Extract: Instructor’s Full Name & Academic Title (e.g., Dr. Jane Doe, Associate Professor), Contact Information (institutional email, expected response time), Office Location & Hours (physical room or virtual link, scheduled weekly hours), Teaching Assistants (Names, contact, office hours/location).
+- `course_description_prerequisites`: Extract: Official Course Description (from university catalog), Overview of Topics (narrative summary of core themes, key questions, subject matter), Prerequisites/Corequisites (required prior coursework, placement scores, concurrent courses).
+- `learning_objectives`: Extract: Clearly stated goals describing what students should know or do upon course completion (Specific, Measurable, Attainable, Relevant, Time-bound - SMART). Use observable action verbs (e.g., analyze, compare, design, evaluate).
+- `required_texts_materials`: Extract: Full bibliographic citations (Author, Title, Edition, Publisher, ISBN) for all required textbooks and readings. Distinguish required vs. recommended. Information on accessing readings (bookstore, library reserve, online links). Specifications for necessary software, hardware, lab kits, art supplies, or online platform access codes. Access to supplementary materials (lecture slides, articles via LMS).
+- `course_requirements_grading_policy`: Extract: Comprehensive list of all graded components (e.g., homework, quizzes, midterms, final exam, projects, papers, participation) with their percentage weight towards the final grade. Clear definition of the grading scale (e.g., A = 90-100%). Policies for assignment submission methods, deadlines (including time zone if online), penalties for late submissions, conditions for make-up work. Statement referencing institutional honor code or academic integrity policy.
+- `assignments_exams`: Extract: Descriptions of significant assignments (papers, projects, presentations) including format, length, due dates, and alignment with learning objectives. Details on major exams (midterm, final) including format (e.g., multiple-choice, essay, open/closed-book), duration, specific dates, and types of questions. Information on preparation resources (study guides, practice problems, review sessions).
+- `course_schedule`: Extract: A week-by-week or session-by-session schedule, often in a table. List dates, corresponding topics, required readings, assignment due dates, and exam dates. Note any holidays or breaks when class does not meet.
+- `course_policies`: Extract: Instructor's policy on class attendance (required/recommended, excused/unexcused), tardiness, and participation (in-class or online). Detailed late/missed work policy. Links to academic support (tutoring, writing centers). Universal Design & Accommodations statement (Disability Services contact and process).
+- `communication_student_support`: Extract: Instructor's preferred communication methods (email, LMS messages, forum), expected response timeframe, communication etiquette. Specific links/info for Tutoring, Writing Center, Math Lab, Library Support, Counseling & Well-Being services. Campus emergency procedures contact.
+- `university_wide_policies_resources`: Extract: Links/summaries of university-wide policies: FERPA (student privacy), Non-Discrimination/Title IX, Disability Accommodations (ADA/Section 504), Academic Integrity/Honor Code, Emergency Procedures/Campus Safety, IT Acceptable Use/Copyright, Grade Appeal/Grievance, Student Conduct Code, Health/Counseling/Wellness resources, Academic Calendar (add/drop deadlines).
+
+### Optional Modules (Include these keys ONLY if relevant content is found. If no content, omit the key or use an empty string ""):
+- `separate_laboratory_sections`: (Optional) Extract: Specific schedule (days, times, dates), location for laboratory sessions if detailed separately from main class. Lab Instructor/TA details if provided. Pre-lab requirements. Lab attendance policies and specific safety (PPE) rules for labs.
+- `recitation_discussion_sections`: (Optional) Extract: Schedule (days, times, dates) and locations for recitation, discussion, or tutorial sections if detailed separately. TA or section leader details. Typical activities, topics covered, or participation policy for these sections.
+
+### Unclassified Content Module:
+- `unclassified_content`: This MUST be a list of strings. Place any significant text blocks here that do not clearly fit into any of the defined Core or Optional modules. If all content is classified, use an empty list `[]`.
+
+### Key Instructions:
+1.  **Complete and Accurate Extraction:** Preserve all specific details: dates, times, names, locations, policies, ISBNs, links, etc.
+2.  **Comprehensive Coverage:** Extract all relevant text for each module. If content seems to fit multiple modules, choose the most specific one or the one where it's most emphasized. Avoid duplicating large chunks of text across modules unless absolutely necessary for context.
+3.  **Strict JSON Output:** Your entire response MUST be a single, valid JSON object. Do not include any explanatory text, comments, or markdown formatting outside the JSON structure. Ensure correct JSON syntax, especially for strings (e.g., escape internal quotes if necessary, use double quotes for keys and string values).
+4.  **Text Formatting:** Preserve original line breaks within the extracted text for each module where it aids readability (e.g., in schedules, lists of policies). Represent newlines as `\n` in the JSON strings.
+
+### Example:
+**Input Syllabus Text Snippet:**
+```text
+
+COURSE: BIOL 202L Human Anatomy Lab (Fall 2024)
+Instructor: Dr. Lab Tech, Office: Bio Hall 101
+This is the lab component for BIOL 202.
+Lab Schedule: All labs meet in Bio Hall Room 105.
+Section L01: Mondays 1:00 PM - 3:50 PM. First Lab: Aug 26. Topic: Safety & Intro.
+Section L02: Tuesdays 9:00 AM - 11:50 AM. First Lab: Aug 27. Topic: Safety & Intro.
+Required: Lab Coat & Goggles.
+
+```
+**Expected JSON Output Snippet (Illustrative of structure and newlines):**
+```json
+
+{
+  "course_identification": "COURSE: BIOL 202L Human Anatomy Lab (Fall 2024)",
+  "instructor_information": "Instructor: Dr. Lab Tech, Office: Bio Hall 101",
+  "course_description_prerequisites": "This is the lab component for BIOL 202.",
+  "learning_objectives": "",
+  "required_texts_materials": "Required: Lab Coat & Goggles.",
+  "course_requirements_grading_policy": "",
+  "assignments_exams": "",
+  "course_schedule": "", 
+  "separate_laboratory_sections": "Lab Schedule: All labs meet in Bio Hall Room 105.\nSection L01: Mondays 1:00 PM - 3:50 PM. First Lab: Aug 26. Topic: Safety & Intro.\nSection L02: Tuesdays 9:00 AM - 11:50 AM. First Lab: Aug 27. Topic: Safety & Intro.",
+  "course_policies": "",
+  "communication_student_support": "",
+  "university_wide_policies_resources": "",
+  "unclassified_content": []
+}
+
+```
+---
+### Full Syllabus Text to Parse:
+
+```text
+PHY203: ELEMENTARY PHYSICS I (Fall 2024)  
+ 
+ 
+Instructor:  Miquel Dorca, 211 East Hall, miquel@uri.edu  
+ 
+Office Hours: MWF 12:30pm -1:00pm   Lecture Time s: 1pm-1:50pm (section 1 ), 
+(East Hall Auditorium)  
+ 
+Course Description  
+Calculus -based i ntroductio n to Newtonian mechanics. Kine matics and dynamics of 
+particles and systems of particles , conservation laws, rotational motion, gravitation,  and 
+oscillatory motion. (Lec. 3 )  Pre: credit or concurrent enrollment in MTH 141 and 
+concurrent enrollment in PHY 273. Intended for science and engineering majors.  
+ 
+Text:  University Physics (Open Stax), 1st Edition, Volume 1  
+ 
+University Physics from Open Stax is a free, open access textb ook that can be found at 
+https://openstax.org/subjects/science.  
+ 
+Course Goals  
+1. To develop a conceptual and quantitative understanding of kinematics.  
+2. To develop a conceptual and quantitative understanding of forces.  
+3. To develop a conceptual and quantitative understanding of work, energy, and 
+energy conservation.  
+4. To develop a conceptual and quantitative understanding of linear momentum and 
+linear momentum conservation.  
+5. To develop a conceptual and quantitative understanding of rotational kinematics, 
+rotational dynamics, and angular momentum conservation.  
+6. To develop a conceptual and quantitative understanding of oscillations and 
+simple harmonic motion.  
+ 
+General Education Areas  
+This course satisfies URI's general education areas: "Scientific, Technology, 
+Engineeri ng, and Mathematical Disciplines" (Full); and "Mathematical, Statistical, or 
+Computational Strategies" (Partial).  
+ 
+Learning Outcomes  
+1. To demonstrate an understanding of the basic concepts of classical mechanics.  
+2. To apply a conceptual understanding of classical mechanics to physics 
+problems.  
+3. To develop problem -solving strategies and techniques appropriate to classical 
+mechanics.  
+4. To be able to carry out quantitative solutions of classical mechanics problems.  
+5. To be able to carry out, analyze, and present the results of classical mechanics 
+laboratory experiments.  
+ 
+ 
+Brightspace:  
+ 
+The class will use Brightspace  for class announcements  and all lectures will be posted 
+there. If the course needs to go remote (due to a weather cancellation, for instance) the 
+lectures will be given asynchronously on Brightspace.  
+ 
+This course will be taught in person (besides any possible weather related 
+cancellations). However, if there are no further notices, the course will be given 
+asynchronously on Brightspace  on the following three  dates:  
+November  25th, 27th, 
+December  2nd  
+ 
+ 
+ 
+Examinations:  There will be three unit exams and a cumulative final exam. All  exams 
+are closed book  and no other resources are allowed. Calculators will be permitted. You 
+will be allowed  to bring a sheet of paper containing relevant formulas for each unit exam 
+and 3 sheets for the final. A unit exam will be given at the end of each of the first three 
+course units. The dates and times are listed below.  
+ 
+Course Units:   The course is divide d into three units as follows:  
+unit #1        Chaps. 1,3,4       exam on Fri.      09/27  
+unit #2        Chaps. 5 -8        exam on Fri.      10/25  
+unit #3        Chaps. 9 -11,15  exam on Wed .,  12/11  
+Final Exam     Chaps. 1 -11,15   tba  
+ 
+Final Exam : The final exam will consist of 3 parts each corresponding to the 3 unit 
+exams above. If the score on a part of the final exam is higher than the score on the 
+corresponding unit exam, the score on that section of the final exam will replace the unit 
+exam score when your semester grade is calculated. However, the scores of the final 
+are not replaced if they are lower than the scores  of the unit exams . 
+ 
+**If the course has to go remote during the semester, the exam schedule and grading 
+scheme may be modified .** 
+ 
+Homework Assignments: A set of homework problems will be due on or before 
+(usually Wednesdays or Fridays) of almost every week ( by 10 p.m. ) and will be 
+administered through a web -based system called WebAssign (see below).  
+ 
+Course Grade:  
+The grade for PHY203 will be based on a maximum of 1200 points :  
+unit exams    400 points  
+final exam    400 points  
+homework    150 points  
+recitation    250 points  
+ 
+Grading Scheme :  
+A(93 -100); A -(90-93); B+(87 -90); B(83 -87); B -(80-83); C+(77 -80); C(73 -77); 
+C-(70-73); D+(67 -70); D(60 -67); F(<60).  
+ 
+WebAssign:  
+Homework and recitations will be administered through a web -based service named 
+WebAssign.  
+WebAssign can be accessed and purchased at http://webassign.net/student.html  The 
+Class Key for WebAssign for this course is:  uri 1373 1043  
+ 
+A recent check showed that it was cheaper to purchase Webassign/Openstax for 2 
+semesters, since it will be used for PHY204 as well.  
+ 
+Here’s a specific link to openstax/webassign: 
+https://webassign.net/features/textbooks/osuniphys1/details.html . 
+Here’s a link about pricing: https://www.cengage.com/c/webassign -for-openstax -
+university -physics -1e-ling/9781337799942/?filterBy=Higher -Education#compare -buying -
+options . 
+ 
+ Students will  enroll with this class key, creating their own user IDs and 
+password. When they go to the login page, they simply click the box 
+saying "ENTER CLASS KEY".  
+ You will have 5 chances  to submit your homework solutions before the 
+due date.  
+ After the due date, a 4 day  extension with a 10 point penalty  can be 
+selected in WebAssign (available once only per assignment -and must be 
+selected 4 days  after  the assignment is due ). 
+ In WebAssign  each student gets a different set of numbers in the 
+problems, so the answers will be different.  
+ Try logging on well before the first assignment due date and become 
+familiar with the WebAssign system. There is a 2 -week (free) grace 
+period  for you to get s tarted.  
+Recitation:  
+ All students must also register for a recitation section of PHY273. 
+Separate enrollment is required . 
+ The recitations will be held in Room 112.  
+ Your recitation grade will be counted toward your PHY203 grade up to a 
+maximum of 250 points . There is no separate letter grade for the 
+recitation of PH273.   
+ You must correctly solve 3 problems in each recitation to get full credit for 
+the section. Solving more than 3 problems will c ount for missed 
+problems in previous recitation meetings . 
+ 
+Anti-Bias Syllabus Statement: We respect the rights and dignity of each individual and group. We reject 
+prejudice and intolerance, and we work to understand differences. We believe that equity and inclusion 
+are critical components for campus community memb ers to thrive. If you are a target or a witness of a 
+bias incident, you are encouraged to submit a report to the URI Bias Response Team at www.uri.edu/brt . 
+There you will also find people and resources to help.  
+Disability Services for Students Statement : Your access in this course is important. Please send me 
+your Disability Services for Students (DSS) accommodation letter early in the semester so that we have 
+adequate time to discuss and arrange your approved academic accommodations. If you have not yet 
+established services through DSS, please contact them to engage in a confidential conversation about 
+the process for requesting reasonable accommodations in the classroom. DSS can be reached by calling: 
+401-874-2098, visiting: web.uri.edu/disability , or ema iling: dss@etal.uri.edu . We are available to meet 
+with students enrolled in Kingston as well as Providence courses.  
+Academic Enhancement Center (for undergraduate courses) : Located in Roosevelt Hall, the AEC 
+offers free face -to- face and web -based service s to undergraduate students seeking academic support. 
+Peer tutoring is available for STEM - related courses by appointment online and in -person. The Writing 
+Center offers peer tutoring focused on supporting undergraduate writers at any stage of a writing 
+assignment. The UCS160 course and academic skills consultations offer students strategies and 
+activities aimed at improving their studying and test -taking skills. Complete details about each of these 
+programs, up -to-date schedules, contact information and se lf-service study resources are all available on 
+the AEC website, uri.edu/aec .  
+COVID -19 Statement:  The University is committed to delivering its educational mission while protecting 
+the health and safety of our community. While the university has worked to create a healthy learning 
+environment for all, it is up to all of us to ensure our campus stays t hat way.  
+As members of the URI community, students are required to comply with standards of conduct and take 
+precautions to keep themselves and others safe.  Visit web.uri.edu/coronavirus/  for the  latest information 
+about the URI COVID -19 response.  
+ 
+PHY273: LABORATORY AND RECITATION FOR ELEMENTARY PHYSICS I  
+ PHY273 is closely connected to PHY203. It consists of two components: 
+Laboratory and Recitation. Separate enrollment in each is required.   
+ Your recitation grade will be absorbed into your PHY203 grade, but you will be 
+getting a separate letter grade for the lab section of PHY273 (1 credit).  
+PHY273 Laboratory  
+ A statement of Laboratory Policies and the Lab Schedule for the semester is 
+provided b elow.  
+ A lab manual must be purchased either in advance or at the first lab meeting. 
+Please bring an acceptable lab notebook to your first lab meeting. The following 
+is the most common, durable and least expensive of its kind we have 
+recommended  before : 
+National Brand Computation Notebook, Model number 43 -648, 75 sheets with no 
+carbon paper.   
+ 
+CONTINUATION OF ELEMENTARY PHYSICS  
+ Elementary Physics will continue for two more semesters:  
+ PHY204: Electricity and magnetism.  
+ PHY205: Thermodynamics, waves, acoustics, optics.  
+  
+Exam and Homework Schedule  
+ 
+ 
+ Homework must be submitted to WebAssign by 10 p.m. of the date due.  
+ With the problems on WebAssign, some of the numbers and therefore the final 
+answers will in general be dif ferent for each student.  
+ 5 chances are allowed per assignment.  
+ After the due date, a 4 day extension with a 10 point penalty  can be selected in 
+WebAssign (available once only per assignment).  
+  
+ 
+Wed., Sept. 11 HW #1 due   Reading: Chapter 1  
+ 
+Wed., Sept. 18 HW #2 due   Reading: Sections 3.1-3.5 
+ 
+Wed.,  Sept. 2 5 HW #3 due   Reading: Sections 2.1-2.3, 4.1-4.3 
+ 
+ Fri., Sept. 2 7  Exam #1   (Chaps. 1,3,4 ) 
+ 
+Fri., Oct. 4  HW #4 due   Reading: Chap. 5  
+ 
+Fri., Oct. 1 1  HW #5 due   Reading:   Section s 4.4, 6.1-6.3   
+ 
+Fri., Oct. 18  HW #6 due   Reading: 1st part of Sec. 2.4, Chap. 7  
+ 
+Fri., Oct. 2 5  HW #7 due   Reading: Chap. 8   
+ 
+           Fri., Oct. 2 5  Exam #2   (Chaps. 5-8)   
+ 
+Wed., Oct. 30  No Homework due  Reading: Sections 9.1-9.6 
+  
+Wed., Nov. 6  HW #8 due   
+   
+Wed., Nov. 13  No Homework due  Reading: Sections 10.1 -10.6 
+ 
+Wed., Nov. 20 HW #9 due   Reading: 2nd part of Sec. 2.4, Secs. 11 -1-11.3 
+ 
+Wed., Nov. 2 7 HW #10 due   Reading: Sections 13.1 -13.5 
+ 
+Wed., Dec. 4  HW #11 due   Reading: Sections 15.1,15.2,15.4  
+   
+   
+Wed., Dec. 11  HW #12 due   Reading: Sections 15.1,15.2,15.4  
+  
+ Wed ., Dec. 11  Exam #3   (Chaps. 9-11,15 )   
+ 
+Final Exam  TBA Chaps. 1 -11,15 
+  
+PHY273: LABORATORY POLICIES  
+ 
+Registration  
+ 
+Each  student registered for PHY203 must also register for two sections of PHY273 . 
+Register for one of 000x sections for laboratory, and one of R0x sectio ns for recitation . 
+ 
+ 
+Make -up Labs  
+ 
+You must complete every one of the seven  experiments. Otherwise, you will receive 
+zero points for the experiments missed. If you have a legitimate reason to mi ss a 
+laboratory session, you may ask in advance  permission from the TA to participate in 
+another laboratory section . There  will be only one  make -up lab available at the end of 
+the s emester . 
+ 
+  
+Tentative Laboratory Schedule  
+ 
+You will be conducting seven  experiments.  See specific dates below:  
+ 
+Experiment  Week  
+  
+Intro lab  9/9-13 
+1.Motion in 1D 
+(free fall)  9/16-20 
+1.Motion in 
+one 1D 
+(analysis)  9/23-27 
+2.Motion in 2D 
+(projectiles)  9/30-10/4 
+2.Motion in 2D 
+(analysis)  10/7-11 
+3.Newton's 
+laws 10/14-18 
+4.Conservation 
+of Energy  10/21-25 
+5. Collis ions 
+(expt.)  10/28-11/1 
+5.Collis ions 
+(anal.)  
+2 weeks  11/4-15 
+6. Ballistic 
+Pendulum  11/18-22 
+No labs  11/25-29 
+7.Rotational 
+dynamics  12/2-12/6 
+Make -up Lab 
+(Pendulum)  12/12 
+(Reading  
+Day)  
+ 
+ 
+The letter grade for PHY273 lab will be calculated as below . There will be no additional 
+scaling of grades.  
+A (93 or higher)  A- (90-93) B+ (87 -90) B (83 -87) B- (80-83) 
+C+ (77 -80) C (73 -77) C- (70-73) D+ (67 -70) D (60 -67) 
+F (60 or lower)  NW (No submission of work)
+```
+
+### Your JSON Output (ensure it is a single, valid JSON object):
+```json

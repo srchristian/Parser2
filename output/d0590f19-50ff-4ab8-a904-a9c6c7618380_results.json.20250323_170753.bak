@@ -1,0 +1,36 @@
+{
+    "class_data": {
+        "School Name": "University of Rhode Island",
+        "Term": "Fall 2024",
+        "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+        "Instructor Name": "Miquel Dorca",
+        "Instructor Email": "miquel@uri.edu",
+        "Class Time": "1:00pm - 1:50pm",
+        "Time Zone": "",
+        "Days of Week": "",
+        "Term Start Date": "",
+        "Term End Date": "",
+        "Class Start Date": "",
+        "Class End Date": "",
+        "Office Hours": "MWF 12:30pm - 1:00pm",
+        "Telephone": "",
+        "Class Location": "East Hall Auditorium",
+        "Additional": "Course Description:\nCalculus-based introduction to Newtonian mechanics. Topics include kinematics and dynamics of particles and systems of particles, conservation laws, rotational motion, gravitation, and oscillatory motion.\n\nPrerequisites:\nCredit or concurrent enrollment in MTH 141 and PHY 273.\n\nIntended for:\nScience and engineering majors.\n\nTextbook:\nUniversity Physics (OpenStax), 1st Edition, Volume 1 Available for free at [OpenStax](https://openstax.org/subjects/science).\n\nCourse Goals:\n1. To develop a conceptual and quantitative understanding of kinematics.\n2. To develop a conceptual and quantitative understanding of forces.\n3. To develop a conceptual and quantitative understanding of work, energy, and energy conservation.\n4. To develop a conceptual and quantitative understanding of linear momentum and linear momentum conservation.\n5. To develop a conceptual and quantitative understanding of rotational kinematics, rotational dynamics, and angular momentum conservation.\n6. To develop a conceptual and quantitative understanding of oscillations and simple harmonic motion.\n\nGeneral Education Areas:\nThis course satisfies URI's general education areas: \"Scientific, Technology, Engineering, and Mathematical Disciplines\" (Full); and \"Mathematical, Statistical, or Computational Strategies\" (Partial).\n\nLearning Outcomes:\n1. Demonstrate an understanding of the basic concepts of classical mechanics.\n2. Apply a conceptual understanding of classical mechanics to physics problems.\n3. Develop problem-solving strategies and techniques appropriate to classical mechanics.\n4. Carry out quantitative solutions of classical mechanics problems.\n5. Carry out, analyze, and present the results of classical mechanics laboratory experiments.",
+        "Date Verification": "ai_generated"
+    },
+    "event_data": [],
+    "task_data": [],
+    "metadata": {
+        "original_file": null,
+        "syllabus_text_path": null,
+        "missing_fields": [
+            "Days of Week",
+            "Class Start Date",
+            "Class End Date"
+        ],
+        "process_time": 61.512867,
+        "timestamp": "2025-03-23T17:07:35.473976",
+        "parsed_syllabus_path": "utils/parsing/syllabus_repository/parsed_syllabus\\d0590f19-50ff-4ab8-a904-a9c6c7618380.json"
+    },
+    "status": "Success"
+}

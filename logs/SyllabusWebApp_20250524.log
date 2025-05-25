@@ -1,0 +1,62 @@
+2025-05-24 14:42:29 - SyllabusWebApp - INFO - [setup_logger:98] Logger 'SyllabusWebApp' configured. Level: DEBUG. File: logs\SyllabusWebApp_20250524.log
+2025-05-24 14:42:29 - SyllabusWebApp - INFO - [<module>:116] SyllabusWebApp logger initialized.
+2025-05-24 14:42:29 - SyllabusWebApp - INFO - [__init__:101] DateParser initialized using 'python-dateutil'.
+2025-05-24 14:42:29 - SyllabusWebApp - INFO - [__init__:66] Initializing OpenAIParser with model: gpt-4.1-nano
+2025-05-24 14:42:29 - SyllabusWebApp - INFO - [__init__:85] OpenAI client created for model gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-24 14:42:29 - SyllabusWebApp - INFO - [__init__:138] SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-24 14:42:29 - SyllabusWebApp - INFO - [_create_directories:183] SyllabusParser output directory ensured: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-24 14:42:29 - SyllabusWebApp - INFO - [__init__:166] OpenAI client initialized for SyllabusParser. Model preference: gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-24 14:42:29 - SyllabusWebApp - INFO - [__init__:177] SyllabusParser initialized. Expects pre-converted .txt files for parsing.
+2025-05-24 14:42:29 - SyllabusWebApp - INFO - [__init__:66] Initializing SyllabusExtractor...
+2025-05-24 14:42:29 - SyllabusWebApp - INFO - [__init__:70] SyllabusExtractor preferred OpenAI model: gpt-4.1-nano
+2025-05-24 14:42:29 - SyllabusWebApp - INFO - [__init__:74] Using provided OpenAIParser instance.
+2025-05-24 14:42:29 - SyllabusWebApp - INFO - [__init__:82] SyllabusExtractor initialized successfully.
+2025-05-24 14:42:29 - SyllabusWebApp - INFO - [__init__:96] AssignmentParser initialized.
+2025-05-24 14:42:29 - SyllabusWebApp - INFO - [__init__:70] ScheduleParser initialized. Default term weeks: 15.
+2025-05-24 14:42:29 - SyllabusWebApp - INFO - [__init__:78] LabParser initialized.
+2025-05-24 14:42:29 - SyllabusWebApp - INFO - [<module>:143] Initialized and available parsers: ['date_parser', 'openai_parser', 'syllabus_parser', 'extractor', 'assignment_parser', 'schedule_parser', 'lab_parser', 'recitation_parser']
+2025-05-24 14:42:29 - SyllabusWebApp - INFO - [<module>:486] Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-24 14:42:30 - SyllabusWebApp - INFO - [setup_logger:98] Logger 'SyllabusWebApp' configured. Level: DEBUG. File: logs\SyllabusWebApp_20250524.log
+2025-05-24 14:42:30 - SyllabusWebApp - INFO - [<module>:116] SyllabusWebApp logger initialized.
+2025-05-24 14:42:30 - SyllabusWebApp - INFO - [__init__:101] DateParser initialized using 'python-dateutil'.
+2025-05-24 14:42:30 - SyllabusWebApp - INFO - [__init__:66] Initializing OpenAIParser with model: gpt-4.1-nano
+2025-05-24 14:42:30 - SyllabusWebApp - INFO - [__init__:85] OpenAI client created for model gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-24 14:42:30 - SyllabusWebApp - INFO - [__init__:138] SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-24 14:42:30 - SyllabusWebApp - INFO - [_create_directories:183] SyllabusParser output directory ensured: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-24 14:42:30 - SyllabusWebApp - INFO - [__init__:166] OpenAI client initialized for SyllabusParser. Model preference: gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-24 14:42:30 - SyllabusWebApp - INFO - [__init__:177] SyllabusParser initialized. Expects pre-converted .txt files for parsing.
+2025-05-24 14:42:30 - SyllabusWebApp - INFO - [__init__:66] Initializing SyllabusExtractor...
+2025-05-24 14:42:30 - SyllabusWebApp - INFO - [__init__:70] SyllabusExtractor preferred OpenAI model: gpt-4.1-nano
+2025-05-24 14:42:30 - SyllabusWebApp - INFO - [__init__:74] Using provided OpenAIParser instance.
+2025-05-24 14:42:30 - SyllabusWebApp - INFO - [__init__:82] SyllabusExtractor initialized successfully.
+2025-05-24 14:42:30 - SyllabusWebApp - INFO - [__init__:96] AssignmentParser initialized.
+2025-05-24 14:42:30 - SyllabusWebApp - INFO - [__init__:70] ScheduleParser initialized. Default term weeks: 15.
+2025-05-24 14:42:30 - SyllabusWebApp - INFO - [__init__:78] LabParser initialized.
+2025-05-24 14:42:30 - SyllabusWebApp - INFO - [<module>:143] Initialized and available parsers: ['date_parser', 'openai_parser', 'syllabus_parser', 'extractor', 'assignment_parser', 'schedule_parser', 'lab_parser', 'recitation_parser']
+2025-05-24 14:42:30 - SyllabusWebApp - INFO - [<module>:486] Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-24 14:53:23 - SyllabusWebApp - DEBUG - [index:184] Request to / (index)
+2025-05-24 14:53:40 - SyllabusWebApp - INFO - [upload_file_route:189] Processing /upload request
+2025-05-24 14:53:40 - SyllabusWebApp - INFO - [upload_file_route:225] File uploaded to C:\SyllabusParser2\uploads\46214bc2-d1b0-458f-9004-01654bf18e7a.pdf for transient_run_id: 46214bc2-d1b0-458f-9004-01654bf18e7a
+2025-05-24 14:53:40 - SyllabusWebApp - INFO - [upload_file_route:228] Starting pipeline for transient_run_id: 46214bc2-d1b0-458f-9004-01654bf18e7a, input type: Path
+2025-05-24 14:53:40 - SyllabusWebApp - INFO - [upload_file_route:268] Redirecting to missing fields for ID eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c. Fields: ['Class Start Date', 'Class End Date']
+2025-05-24 14:53:40 - SyllabusWebApp - INFO - [missing_fields:281] Displaying missing_fields page for ID: eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c
+2025-05-24 14:53:40 - SyllabusWebApp - INFO - [show_results:384] Displaying results page for ID: eaa553191c22bce2227bdca34316e6b98b3ead43b3895fb550dcaaf7a40db03c
+2025-05-24 20:01:21 - SyllabusWebApp - INFO - [setup_logger:98] Logger 'SyllabusWebApp' configured. Level: DEBUG. File: logs\SyllabusWebApp_20250524.log
+2025-05-24 20:01:21 - SyllabusWebApp - INFO - [__init__:101] DateParser initialized using 'python-dateutil'.
+2025-05-24 20:01:21 - SyllabusWebApp - INFO - [__init__:66] Initializing OpenAIParser with model: gpt-4.1-nano
+2025-05-24 20:01:21 - SyllabusWebApp - INFO - [__init__:85] OpenAI client created for model gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-24 20:01:21 - SyllabusWebApp - ERROR - [<module>:132] Failed to init SyllabusParser: SyllabusParser.__init__() got an unexpected keyword argument 'openai_parser_instance'
+Traceback (most recent call last):
+  File "C:\SyllabusParser2\app.py", line 130, in <module>
+    syllabus_parser = SyllabusParser(config=config, base_dir=str(syllabus_parser_base_dir), model=openai_model_from_config, logger_instance=logger, openai_parser_instance=openai_parser)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: SyllabusParser.__init__() got an unexpected keyword argument 'openai_parser_instance'
+2025-05-24 20:01:21 - SyllabusWebApp - INFO - [__init__:66] Initializing SyllabusExtractor...
+2025-05-24 20:01:21 - SyllabusWebApp - INFO - [__init__:70] SyllabusExtractor preferred OpenAI model: gpt-4.1-nano
+2025-05-24 20:01:21 - SyllabusWebApp - INFO - [__init__:74] Using provided OpenAIParser instance.
+2025-05-24 20:01:21 - SyllabusWebApp - INFO - [__init__:82] SyllabusExtractor initialized successfully.
+2025-05-24 20:01:21 - SyllabusWebApp - INFO - [__init__:96] AssignmentParser initialized.
+2025-05-24 20:01:21 - SyllabusWebApp - INFO - [__init__:70] ScheduleParser initialized. Default term weeks: 15.
+2025-05-24 20:01:21 - SyllabusWebApp - INFO - [__init__:78] LabParser initialized.
+2025-05-24 20:01:21 - SyllabusWebApp - INFO - [<module>:168] Initialized and available parsers after cleanup: ['date_parser', 'openai_parser', 'extractor', 'assignment_parser', 'schedule_parser', 'lab_parser', 'recitation_parser']
+2025-05-24 20:01:21 - SyllabusWebApp - CRITICAL - [<module>:525] One or more critical parsers failed to initialize: ['syllabus_parser']. Check logs. Aborting Flask app start.

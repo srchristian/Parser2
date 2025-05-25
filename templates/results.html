@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Syllabus Information - Syllabus Processor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style type="text/tailwindcss">
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-slate-100 selection:bg-indigo-500 selection:text-white;
+        }
+        .content-container { @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12; }
+        .page-title-container { @apply text-center mb-8 sm:mb-12; }
+        .page-title { @apply text-3xl sm:text-4xl font-bold text-slate-800; }
+        .page-subtitle { @apply text-base sm:text-lg text-slate-600 mt-2; }
+        .status-banner { @apply bg-indigo-50 border border-indigo-200 text-indigo-700 px-4 py-3 rounded-lg mb-6 sm:mb-8 text-sm; }
+        .data-section { @apply bg-white shadow-xl rounded-xl p-6 sm:p-8 mb-8; }
+        .section-title { @apply text-xl sm:text-2xl font-semibold text-slate-700 mb-1 flex items-center; }
+        .section-subtitle { @apply text-sm text-slate-500 mb-6; }
+        .data-counter { @apply ml-2 bg-indigo-500 text-white text-xs font-semibold px-2.5 py-0.5 rounded-full; }
+        .data-entry { @apply bg-slate-50 border border-slate-200 rounded-lg p-4 sm:p-6 mb-4 relative; }
+        .data-entry .static-view strong { @apply font-medium text-slate-700; }
+        .data-entry .static-view div { @apply mb-1 text-slate-600 break-words; }
+        .data-entry .static-view .list-display { @apply pl-4 mt-1; }
+        .data-entry .static-view .list-display-item { @apply text-slate-500 text-sm; }
+        .data-entry .edit-view { @apply space-y-4 mt-4; }
+        .icon-button-group { @apply absolute top-3 right-3 sm:top-4 sm:right-4 flex space-x-2; }
+        .icon-button { @apply text-slate-400 hover:text-indigo-600 transition-colors duration-150 p-1; }
+        .icon-button i { @apply text-base; }
+        .form-input, .form-textarea, .form-select {
+            @apply block w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm shadow-sm placeholder-slate-400;
+            @apply focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500;
+        }
+        .form-label { @apply block text-sm font-medium text-slate-700 mb-1; }
+        .form-checkbox { @apply h-4 w-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 mr-2; }
+        .btn { @apply inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors duration-150; }
+        .btn-primary { @apply text-white bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500; }
+        .btn-secondary { @apply text-slate-700 bg-slate-200 hover:bg-slate-300 focus:ring-slate-500; }
+        .btn-success { @apply text-white bg-green-600 hover:bg-green-700 focus:ring-green-500; }
+        .btn-danger { @apply text-white bg-red-600 hover:bg-red-700 focus:ring-red-500; }
+        .btn-outline-primary { @apply text-indigo-600 border-indigo-600 hover:bg-indigo-50 focus:ring-indigo-500; }
+        .btn-outline-danger { @apply text-red-600 border-red-600 hover:bg-red-50 focus:ring-red-500; }
+        .btn-sm { @apply px-2.5 py-1.5 text-xs; }
+        .action-buttons-container { @apply mt-8 flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4; }
+        .modal-content-tailwind { @apply bg-white rounded-lg shadow-xl; }
+        .modal-header-tailwind { @apply px-6 py-4 border-b border-slate-200; }
+        .modal-title-tailwind { @apply text-lg font-semibold text-slate-800; }
+        .modal-body-tailwind { @apply p-6 space-y-4 max-h-[70vh] overflow-y-auto; }
+        .modal-footer-tailwind { @apply px-6 py-4 bg-slate-50 border-t border-slate-200 flex justify-end space-x-3 rounded-b-lg; }
+        .debug-section { @apply mt-10 p-4 sm:p-6 bg-slate-800 text-slate-300 rounded-lg shadow; }
+        .debug-title { @apply text-lg font-semibold text-amber-400 border-b border-slate-700 pb-2 mb-3; }
+        .debug-content { @apply font-mono text-xs whitespace-pre-wrap max-h-80 overflow-y-auto bg-slate-900 p-3 rounded-md; }
+        #saveStatus { @apply fixed top-5 right-5 z-[100] p-4 rounded-md shadow-lg text-sm; }
+        #saveStatus.alert-success { @apply bg-green-500 text-white; }
+        #saveStatus.alert-danger { @apply bg-red-500 text-white; }
+        #saveStatus.alert-info { @apply bg-blue-500 text-white; }
+        input.flatpickr-input { @apply form-input; }
+        .list-editor { @apply space-y-2; }
+        .list-item-input-group { @apply flex items-center space-x-2; }
+        .list-item-input { @apply flex-grow; }
+    </style>
+</head>
+<body>
+    <div id="saveStatus" class="fixed top-5 right-5 z-[100] p-4 rounded-md shadow-lg text-sm hidden" role="alert">
+        <span id="saveStatusMessage"></span>
+        <button type="button" class="ml-2 text-lg font-semibold" onclick="this.parentElement.classList.add('hidden')" aria-label="Close">&times;</button>
+    </div>
+
+    <div class="content-container">
+        <div class="page-title-container">
+            <h1 class="page-title">Review Your Syllabus Information</h1>
+            <p class="page-subtitle">Please review and edit your syllabus information before adding it to your calendar.</p>
+        </div>
+
+        <div class="status-banner" role="alert">
+            <p><strong>Processing Status:</strong> {{ metadata.get('status', metadata.get('processing_stage', 'N/A')) }}</p>
+            <div class="mt-1 flex flex-wrap gap-x-4 gap-y-1">
+                <span class="font-medium">Data Counts:</span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800">
+                    Class Data: {{ class_data|length if class_data else 0 }} fields
+                </span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                    Events: <span id="eventCounterDisplay">{{ event_data|length if event_data else 0 }}</span>
+                </span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-100 text-amber-800">
+                    Tasks: <span id="taskCounterDisplay">{{ task_data|length if task_data else 0 }}</span>
+                </span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-sky-100 text-sky-800">
+                    Labs: <span id="labCounterDisplay">{{ lab_data|length if lab_data else 0 }}</span>
+                </span>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+                    Recitations: <span id="recitationCounterDisplay">{{ recitation_data|length if recitation_data else 0 }}</span>
+                </span>
+            </div>
+            <p class="mt-1"><strong>Source File:</strong> {{ metadata.get('original_file', 'N/A') }}</p>
+            <p class="mt-1"><strong>Processing ID:</strong> <span id="uniqueId" class="font-mono">{{ unique_id }}</span></p>
+             {% if metadata.get('unresolved_lab_schedules') %}
+                <div class="mt-2 p-3 bg-yellow-100 border border-yellow-300 text-yellow-800 rounded-md text-xs">
+                    <strong>Attention:</strong> Some lab schedules need clarification: 
+                    {{ metadata.unresolved_lab_schedules|join(', ') }}. 
+                    You may need to edit these in the "Lab Sessions" section below or re-process with more specific info if available.
+                </div>
+            {% endif %}
+            {% if metadata.get('unresolved_recitation_schedules') %}
+                <div class="mt-2 p-3 bg-yellow-100 border border-yellow-300 text-yellow-800 rounded-md text-xs">
+                    <strong>Attention:</strong> Some recitation schedules need clarification: 
+                    {{ metadata.unresolved_recitation_schedules|join(', ') }}. 
+                    You may need to edit these in the "Recitation Sessions" section below or re-process.
+                </div>
+            {% endif %}
+        </div>
+
+        <div class="data-section">
+            <h2 class="section-title">Course Overview</h2>
+            <div id="courseOverviewDiv" class="data-entry">
+                <div class="static-view">
+                    {% for key, value in class_data.items() %}
+                    <div><strong>{{ key.replace("_", " ") }}:</strong> <span id="display-class_data-{{ key|lower|replace(' ', '_') }}">{{ value if value else 'N/A' }}</span></div>
+                    {% endfor %}
+                    <div class="icon-button-group">
+                        <button class="icon-button" onclick="toggleEdit(this.closest('.data-entry'), 'class_data', null)" title="Edit Course Overview">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="edit-view hidden">
+                    {% for key, value in class_data.items() %}
+                    <div class="form-group">
+                        <label for="input-class_data-{{ key|lower|replace(' ', '_') }}" class="form-label">{{ key.replace("_", " ") }}:</label>
+                        {% if key == "Days of Week" %}
+                            <div class="mt-1 space-x-4">
+                            {% for day_val_loop in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"] %}
+                                <label class="inline-flex items-center">
+                                    <input class="form-checkbox days-checkbox" type="checkbox" value="{{ day_val_loop }}"
+                                           {% if day_val_loop in (value or "") %}checked{% endif %}>
+                                    <span class="ml-1 text-sm text-slate-700">{{ day_val_loop }}</span>
+                                </label>
+                            {% endfor %}
+                            </div>
+                            <input type="hidden" id="input-class_data-days_of_week" class="edit-input-target" data-key="{{key}}" value="{{ value if value else '' }}">
+                        {% elif "Date" in key %}
+                            <input type="text" id="input-class_data-{{ key|lower|replace(' ', '_') }}" class="form-input date-picker edit-input-target" data-key="{{key}}" value="{{ value if value else '' }}">
+                        {% elif key == "Class Time" or key == "Office Hours" %}
+                            <input type="text" id="input-class_data-{{ key|lower|replace(' ', '_') }}" class="form-input time-picker edit-input-target" data-key="{{key}}" value="{{ value if value else '' }}">
+                        {% elif key == "Instructor Email" %}
+                            <input type="email" id="input-class_data-{{ key|lower|replace(' ', '_') }}" class="form-input edit-input-target" data-key="{{key}}" value="{{ value if value else '' }}">
+                        {% elif key == "Additional" or "Description" in key %}
+                            <textarea id="input-class_data-{{ key|lower|replace(' ', '_') }}" class="form-textarea edit-input-target" data-key="{{key}}" rows="3">{{ value if value else '' }}</textarea>
+                        {% else %}
+                            <input type="text" id="input-class_data-{{ key|lower|replace(' ', '_') }}" class="form-input edit-input-target" data-key="{{key}}" value="{{ value if value else '' }}">
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                    <div class="flex justify-end space-x-3 mt-4">
+                        <button class="btn btn-secondary" onclick="toggleEdit(this.closest('.data-entry'), 'class_data', null, false)">Cancel</button>
+                        <button class="btn btn-success" onclick="saveChanges(this.closest('.data-entry'), 'class_data', null)">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="data-section">
+            <h2 class="section-title">Class Sessions <span class="data-counter" id="eventCounterDisplay">{{ event_data|length if event_data else 0 }}</span></h2>
+            <p class="section-subtitle">Confirm dates, times, and details for each class session. Fields like 'reading', 'assignment', 'test', 'special' can contain multiple items.</p>
+            <div id="eventSection" class="space-y-4">
+                </div>
+            <div class="mt-6 text-center">
+                <button class="btn btn-outline-primary" onclick="addNewEntry('event_data')"><i class="fas fa-plus mr-2"></i>Add New Class Session</button>
+            </div>
+        </div>
+
+        <div class="data-section">
+            <h2 class="section-title">Assignments & Tasks <span class="data-counter" id="taskCounterDisplay">{{ task_data|length if task_data else 0 }}</span></h2>
+            <p class="section-subtitle">Verify assignment details and due dates.</p>
+            <div id="taskSection" class="space-y-4">
+                </div>
+            <div class="mt-6 text-center">
+                <button class="btn btn-outline-primary" onclick="addNewEntry('task_data')"><i class="fas fa-plus mr-2"></i>Add New Assignment/Task</button>
+            </div>
+        </div>
+        
+        <div class="data-section">
+            <h2 class="section-title">Lab Sessions <span class="data-counter" id="labCounterDisplay">{{ lab_data|length if lab_data else 0 }}</span></h2>
+            <p class="section-subtitle">Review and edit lab session details. Labs listed here might need date clarification if they couldn't be automatically scheduled.</p>
+            <div id="labSection" class="space-y-4">
+                </div>
+            <div class="mt-6 text-center">
+                <button class="btn btn-outline-primary" onclick="addNewEntry('lab_data')"><i class="fas fa-plus mr-2"></i>Add New Lab Session</button>
+            </div>
+        </div>
+
+        <div class="data-section">
+            <h2 class="section-title">Recitation Sessions <span class="data-counter" id="recitationCounterDisplay">{{ recitation_data|length if recitation_data else 0 }}</span></h2>
+            <p class="section-subtitle">Review and edit recitation/discussion session details. Sessions listed here might need date clarification.</p>
+            <div id="recitationSection" class="space-y-4">
+                </div>
+            <div class="mt-6 text-center">
+                <button class="btn btn-outline-primary" onclick="addNewEntry('recitation_data')"><i class="fas fa-plus mr-2"></i>Add New Recitation Session</button>
+            </div>
+        </div>
+
+        <div class="action-buttons-container">
+            <button id="saveAllBtn" class="btn btn-primary btn-lg">
+                <i class="fas fa-save mr-2"></i> Save All Changes
+            </button>
+            <button id="exportCalendarBtn" class="btn btn-success btn-lg">
+                <i class="fas fa-calendar-alt mr-2"></i> Export to Calendar
+            </button>
+            <a href="{{ url_for('index') }}" class="btn btn-secondary btn-lg">
+                <i class="fas fa-home mr-2"></i> Return to Home
+            </a>
+        </div>
+
+        <div class="debug-section">
+            <details>
+                <summary class="debug-title cursor-pointer">DEBUG INFORMATION (Click to Expand)</summary>
+                <div class="mt-2">
+                    <p><strong>Status:</strong> {{ metadata.get('status', metadata.get('processing_stage', 'N/A')) }}</p>
+                    <div class="debug-content" id="rawJsonDisplay">{{ json_data|safe if json_data else 'No JSON data available initially.' }}</div>
+                </div>
+            </details>
+        </div>
+    </div>
+
+    <div id="calendarModal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black bg-opacity-50 p-4" aria-labelledby="calendarModalLabel" role="dialog" aria-modal="true">
+        <div class="modal-content-tailwind w-full max-w-md">
+            <div class="modal-header-tailwind flex justify-between items-center">
+                <h5 class="modal-title-tailwind" id="calendarModalLabel">Export to Calendar</h5>
+                <button type="button" class="text-slate-400 hover:text-slate-600" onclick="closeModal('calendarModal')" aria-label="Close">
+                    <span aria-hidden="true" class="text-2xl">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body-tailwind">
+                 <div id="calendarExportOptions">
+                    <p class="text-slate-700 mb-4">Select which items to include in your calendar:</p>
+                    <div class="space-y-2">
+                        <div><label class="inline-flex items-center"><input type="checkbox" id="exportAssignmentsExams" class="form-checkbox" checked><span class="ml-2 text-sm text-slate-700">Assignments and Exams</span></label></div>
+                        <div><label class="inline-flex items-center"><input type="checkbox" id="exportClassSessions" class="form-checkbox" checked><span class="ml-2 text-sm text-slate-700">Regular Class Sessions</span></label></div>
+                        <div id="exportLabSessionsContainer"><label class="inline-flex items-center"><input type="checkbox" id="exportLabSessions" class="form-checkbox" checked><span class="ml-2 text-sm text-slate-700">Lab Sessions</span></label></div>
+                        <div id="exportRecitationSessionsContainer"><label class="inline-flex items-center"><input type="checkbox" id="exportRecitationSessions" class="form-checkbox" checked><span class="ml-2 text-sm text-slate-700">Recitation Sessions</span></label></div>
+                    </div>
+                </div>
+                <div id="calendarExportStatus" class="hidden mt-4"><p class="text-slate-700">Generating calendar...</p><div class="w-full bg-slate-200 rounded-full h-2.5 mt-2"><div class="bg-indigo-600 h-2.5 rounded-full animate-pulse" style="width: 0%"></div></div></div>
+                <div id="calendarExportSuccess" class="hidden mt-4"><div class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg" role="alert"><i class="fas fa-check-circle mr-2"></i> Calendar file ready!</div><p class="text-slate-600 text-sm">Download and import into your calendar app.</p></div>
+                <div id="calendarExportError" class="hidden mt-4"><div class="p-4 mb-4 text-sm text-red-700 bg-red-100 rounded-lg" role="alert"><i class="fas fa-exclamation-circle mr-2"></i> Error.</div><p id="calendarExportErrorMessage" class="text-slate-600 text-sm">Try again.</p></div>
+            </div>
+            <div class="modal-footer-tailwind">
+                <button type="button" class="btn btn-secondary" onclick="closeModal('calendarModal')">Cancel</button>
+                <button type="button" id="proceedWithExportBtn" class="btn btn-primary">Proceed to Export</button>
+                <a id="downloadCalendarBtn" href="#" class="btn btn-success hidden"><i class="fas fa-download mr-1"></i> Download Calendar</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="addEditModal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black bg-opacity-50 p-4" aria-labelledby="addEditModalLabel" role="dialog" aria-modal="true">
+        <div class="modal-content-tailwind w-full max-w-lg">
+            <div class="modal-header-tailwind flex justify-between items-center">
+                <h5 class="modal-title-tailwind" id="addEditModalLabel">Add/Edit Item</h5>
+                <button type="button" class="text-slate-400 hover:text-slate-600" onclick="closeModal('addEditModal')" aria-label="Close"><span aria-hidden="true" class="text-2xl">&times;</span></button>
+            </div>
+            <div class="modal-body-tailwind" id="addEditModalBody"></div>
+            <div class="modal-footer-tailwind">
+                <button type="button" class="btn btn-secondary" onclick="closeModal('addEditModal')">Cancel</button>
+                <button type="button" class="btn btn-primary" id="saveModalChangesBtn">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        let syllabusDataGlobal = {}; 
+        let uniqueId = '{{ unique_id }}'; 
+
+        const defaultEventStructure = { "Event Date": "", "Event Title": "", "Class Time": "", "Class Location": "", "reading": [], "assignment": [], "assignment_description": null, "test": [], "special": [], "Type": "Class Session" };
+        const defaultTaskStructure = { "Task Title": "", "Due Date": "", "Due Time": "", "Task Description": "", "Task Type": "Other" };
+        const defaultLabStructure = { "Lab Date String": "", "Lab Title": "", "Class Time": "", "Location": "", "Description": "" }; // "Lab Date String" for raw input
+        const defaultRecitationStructure = { "Recitation Date String": "", "Recitation Title": "", "Class Time": "", "Location": "", "Description": "" }; // "Recitation Date String"
+
+        const dataStructures = {
+            'event_data': defaultEventStructure,
+            'task_data': defaultTaskStructure,
+            'lab_data': defaultLabStructure,
+            'recitation_data': defaultRecitationStructure
+        };
+        const arrayLikeFields = { 
+            'event_data': ['reading', 'assignment', 'test', 'special']
+        };
+        // Key mapping for display labels in modal and static view if different from data key
+        const displayKeyMap = {
+            'event_data': { "Event Date": "Date", "Event Title": "Title/Topic", "Class Time": "Time", "Class Location": "Location", "reading": "Readings", "assignment": "Assignments Due", "assignment_description": "Assignment Details", "test": "Tests/Exams", "special": "Notes/Activities", "Type": "Event Type" },
+            'task_data': { "Task Title": "Title", "Due Date": "Due Date", "Due Time": "Due Time", "Task Description": "Description", "Task Type": "Type" },
+            'lab_data': { "Lab Date String": "Date/Pattern (Edit to specify day if range)", "Lab Title": "Title", "Class Time": "Time", "Location": "Location", "Description": "Description"},
+            'recitation_data': { "Recitation Date String": "Date/Pattern (Edit to specify day if range)", "Recitation Title": "Title", "Class Time": "Time", "Location": "Location", "Description": "Description"}
+        };
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            try {
+                const rawJsonText = document.getElementById('rawJsonDisplay').textContent;
+                if (rawJsonText && rawJsonText.trim() !== 'No JSON data available initially.') {
+                    syllabusDataGlobal = JSON.parse(rawJsonText);
+                } else {
+                    syllabusDataGlobal = { 
+                        class_data: {{ class_data|tojson|safe if class_data else {} }},
+                        event_data: {{ event_data|tojson|safe if event_data else [] }},
+                        task_data: {{ task_data|tojson|safe if task_data else [] }},
+                        lab_data: {{ lab_data|tojson|safe if lab_data else [] }}, // Initialize lab_data
+                        recitation_data: {{ recitation_data|tojson|safe if recitation_data else [] }}, // Initialize recitation_data
+                        metadata: {{ metadata|tojson|safe if metadata else {} }}
+                    };
+                }
+            } catch (e) {
+                console.error('Error parsing initial JSON data:', e);
+                syllabusDataGlobal = { class_data: {}, event_data: [], task_data: [], lab_data: [], recitation_data: [], metadata: {} };
+            }
+            
+            renderSection('event_data');
+            renderSection('task_data');
+            renderSection('lab_data');
+            renderSection('recitation_data');
+
+            initializeDatePickers(document.body); 
+            document.getElementById('saveAllBtn')?.addEventListener('click', saveAllChanges);
+            document.getElementById('exportCalendarBtn')?.addEventListener('click', showCalendarExportOptions);
+            document.getElementById('proceedWithExportBtn')?.addEventListener('click', proceedWithCalendarExport);
+        });
+
+        function initializeDatePickers(context = document) {
+            context.querySelectorAll('.date-picker').forEach(el => {
+                if (el._flatpickr) el._flatpickr.destroy();
+                flatpickr(el, { dateFormat: "F d, Y", altInput: true, altFormat: "Y-m-d", allowInput: true });
+            });
+            context.querySelectorAll('.time-picker').forEach(el => {
+                if (el._flatpickr) el._flatpickr.destroy();
+                flatpickr(el, { enableTime: true, noCalendar: true, dateFormat: "h:i K", allowInput: true, time_24hr: false });
+            });
+        }
+
+        function toggleEdit(entryElement, dataType, index, editMode = true) {
+            const staticView = entryElement.querySelector('.static-view');
+            const editView = entryElement.querySelector('.edit-view');
+            if (!staticView || !editView) return;
+
+            if (editMode) {
+                staticView.classList.add('hidden');
+                editView.classList.remove('hidden');
+                initializeDatePickers(editView); 
+                if (dataType === 'class_data') {
+                    const daysValue = syllabusDataGlobal.class_data['Days of Week'] || "";
+                    const daysArray = daysValue ? daysValue.split(',').map(d => d.trim()) : [];
+                    editView.querySelectorAll('.days-checkbox').forEach(checkbox => {
+                        checkbox.checked = daysArray.includes(checkbox.value);
+                    });
+                }
+            } else {
+                staticView.classList.remove('hidden');
+                editView.classList.add('hidden');
+                // Re-render static view from syllabusDataGlobal to discard un-saved changes
+                const item = (dataType === 'class_data') ? syllabusDataGlobal.class_data : syllabusDataGlobal[dataType][index];
+                let staticContent = '';
+                const currentDisplayKeys = displayKeyMap[dataType] || item; // Use item keys if no map
+                 for (const key in currentDisplayKeys) { // Iterate over display keys or item keys
+                    const dataKey = Object.keys(item).find(k => (displayKeyMap[dataType]?.[k] || k) === key) || key; // Find original data key
+                    const value = item[dataKey];
+                    const displayLabel = displayKeyMap[dataType]?.[dataKey] || dataKey.replace("_", " ");
+
+                    let displayValue = 'N/A';
+                    if (Array.isArray(value)) {
+                        displayValue = value.length > 0 ? value.map(v => `<div class="list-display-item">${v}</div>`).join('') : 'N/A';
+                    } else if (value !== null && value !== undefined && value !== '') {
+                        displayValue = value;
+                    }
+                    const idKey = dataKey.toLowerCase().replace(/ /g, '_').replace(/[^a-z0-9_]/gi, '');
+                    const displayElementId = `display-${dataType}-${index !== null ? index + '-' : ''}${idKey}`;
+                    const finalDisplayElementId = dataType === 'class_data' ? `display-class_data-${idKey}` : displayElementId;
+                    staticContent += `<div><strong>${displayLabel}:</strong> <span id="${finalDisplayElementId}">${displayValue}</span></div>`;
+                }
+                const iconGroup = entryElement.querySelector('.icon-button-group');
+                staticView.innerHTML = staticContent + (iconGroup ? iconGroup.outerHTML : '');
+            }
+        }
+        
+        function saveChanges(entryElement, dataType, index) {
+            const editView = entryElement.querySelector('.edit-view');
+            let targetData = (dataType === 'class_data') ? syllabusDataGlobal.class_data : syllabusDataGlobal[dataType][index];
+
+            if (dataType === 'class_data') {
+                const selectedDays = Array.from(editView.querySelectorAll('.days-checkbox:checked')).map(cb => cb.value).join(', ');
+                targetData['Days of Week'] = selectedDays;
+                const hiddenDaysInput = editView.querySelector('#input-class_data-days_of_week'); // Ensure this ID is correct
+                if(hiddenDaysInput) hiddenDaysInput.value = selectedDays;
+            }
+
+            editView.querySelectorAll('.edit-input-target').forEach(input => {
+                const key = input.dataset.key;
+                if (key && targetData.hasOwnProperty(key) && key !== 'Days of Week') { 
+                    targetData[key] = input.value;
+                } else if (key && key !== 'Days of Week') { // New field potentially
+                     targetData[key] = input.value;
+                }
+            });
+            editView.querySelectorAll('.list-editor').forEach(listEditor => {
+                const key = listEditor.dataset.key;
+                const items = Array.from(listEditor.querySelectorAll('.list-item-input')).map(input => input.value.trim()).filter(value => value !== "");
+                targetData[key] = items; // Always set as array, even if empty
+            });
+            showSaveStatus('Section changes saved locally. Click "Save All Changes" to persist.', 'info');
+            toggleEdit(entryElement, dataType, index, false); 
+        }
+
+        function deleteEntry(entryElement, dataType, index) {
+            if (!confirm("Delete this entry locally? (Save All Changes to make it permanent)")) return;
+            if (dataType !== 'class_data' && index !== null && syllabusDataGlobal[dataType]) {
+                syllabusDataGlobal[dataType].splice(index, 1);
+                renderSection(dataType); 
+                showSaveStatus('Entry deleted locally.', 'info');
+            }
+        }
+
+        function updateSectionCounter(dataType) {
+            const counterElementId = `${dataType.replace('_data', '')}CounterDisplay`;
+            const counterElement = document.getElementById(counterElementId);
+            if(counterElement) counterElement.textContent = syllabusDataGlobal[dataType]?.length || 0;
+        }
+
+        function addListItem(listEditorElement) { /* Same as v1 */ 
+            const inputGroup = document.createElement('div');
+            inputGroup.className = 'list-item-input-group';
+            inputGroup.innerHTML = `<input type="text" class="form-input list-item-input flex-grow" value=""><button type="button" class="btn-outline-danger btn btn-sm" onclick="removeListItem(this.parentElement)">Remove</button>`;
+            listEditorElement.insertBefore(inputGroup, listEditorElement.querySelector('button[onclick^="addListItem"]'));
+        }
+        function removeListItem(itemElement) { itemElement.remove(); }
+        function openModal(modalId) { document.getElementById(modalId).classList.remove('hidden'); document.getElementById(modalId).classList.add('flex'); }
+        function closeModal(modalId) { document.getElementById(modalId).classList.add('hidden'); document.getElementById(modalId).classList.remove('flex');}
+        
+        function addNewEntry(dataType) {
+            const modalBody = document.getElementById('addEditModalBody');
+            const modalLabel = document.getElementById('addEditModalLabel');
+            const saveBtn = document.getElementById('saveModalChangesBtn');
+            modalBody.innerHTML = ''; 
+            let structure = JSON.parse(JSON.stringify(dataStructures[dataType] || {})); // Deep copy
+            let sectionName = dataType.replace('_data', '').replace(/_/g, ' ');
+            sectionName = sectionName.charAt(0).toUpperCase() + sectionName.slice(1);
+            modalLabel.textContent = `Add New ${sectionName}`;
+
+            const currentDisplayKeys = displayKeyMap[dataType] || structure;
+
+            for (const key in currentDisplayKeys) { // Iterate over display keys or structure keys
+                 const dataKey = Object.keys(structure).find(k => (displayKeyMap[dataType]?.[k] || k) === key) || key;
+                 const displayLabel = displayKeyMap[dataType]?.[dataKey] || dataKey.replace(/_/g, " ");
+
+                const inputId = `modal-input-${dataType}-${dataKey.toLowerCase().replace(/ /g, '_').replace(/[^a-z0-9_]/gi, '')}`;
+                let fieldHtml = `<div class="form-group"><label for="${inputId}" class="form-label">${displayLabel}:</label>`;
+                if (dataKey.includes("Date")) { // Handles "Lab Date String", "Recitation Date String", "Due Date", "Event Date"
+                    fieldHtml += `<input type="text" id="${inputId}" class="form-input date-picker edit-input-target" data-key="${dataKey}" value="">`;
+                } else if (dataKey.includes("Time")) {
+                    fieldHtml += `<input type="text" id="${inputId}" class="form-input time-picker edit-input-target" data-key="${dataKey}" value="">`;
+                } else if (dataKey.includes("Description") || dataKey === "Additional") {
+                    fieldHtml += `<textarea id="${inputId}" class="form-textarea edit-input-target" data-key="${dataKey}" rows="3"></textarea>`;
+                } else if (arrayLikeFields[dataType]?.includes(dataKey)) { 
+                    fieldHtml += `<div class="list-editor" data-key="${dataKey}"><button type="button" class="btn btn-outline-primary btn-sm mt-1" onclick="addListItem(this.parentElement)">Add Item</button></div>`;
+                } else {
+                    fieldHtml += `<input type="text" id="${inputId}" class="form-input edit-input-target" data-key="${dataKey}" value="">`;
+                }
+                fieldHtml += `</div>`;
+                modalBody.insertAdjacentHTML('beforeend', fieldHtml);
+            }
+            initializeDatePickers(modalBody); 
+            saveBtn.onclick = () => saveNewModalData(dataType);
+            openModal('addEditModal');
+        }
+
+        function saveNewModalData(dataType) { /* Same as v1, ensures all keys from defaultStructure are present */
+            const modalBody = document.getElementById('addEditModalBody');
+            const newEntry = JSON.parse(JSON.stringify(dataStructures[dataType] || {})); // Start with default structure
+            modalBody.querySelectorAll('.edit-input-target').forEach(input => {
+                newEntry[input.dataset.key] = input.value;
+            });
+            modalBody.querySelectorAll('.list-editor').forEach(listEditor => {
+                const key = listEditor.dataset.key;
+                const items = Array.from(listEditor.querySelectorAll('.list-item-input')).map(input => input.value.trim()).filter(value => value !== "");
+                newEntry[key] = items; // Always set as array
+            });
+            if (!syllabusDataGlobal[dataType]) syllabusDataGlobal[dataType] = [];
+            syllabusDataGlobal[dataType].push(newEntry);
+            renderSection(dataType); closeModal('addEditModal');
+            showSaveStatus(`New ${dataType.replace('_data','')} entry added locally.`, 'info');
+        }
+
+        function createHtmlForEntry(item, dataType, index) { /* Updated to use displayKeyMap */
+            let staticContent = ''; let editContent = '';
+            const currentDisplayKeys = displayKeyMap[dataType] || item;
+
+            for (const displayKey in currentDisplayKeys) {
+                const dataKey = Object.keys(item).find(k => (displayKeyMap[dataType]?.[k] || k) === displayKey) || displayKey;
+                const value = item[dataKey];
+                const idSuffix = `${dataType}-${index}-${dataKey.toLowerCase().replace(/ /g, '_').replace(/[^a-z0-9_]/gi, '')}`;
+                
+                let displayValue = 'N/A';
+                if (Array.isArray(value)) { displayValue = value.length > 0 ? value.map(v => `<div class="list-display-item">${v}</div>`).join('') : 'N/A'; }
+                else if (value !== null && value !== undefined && value !== '') { displayValue = value; }
+                staticContent += `<div><strong>${displayKey}:</strong> <span id="display-${idSuffix}">${displayValue}</span></div>`;
+
+                editContent += `<div class="form-group"><label for="input-${idSuffix}" class="form-label">${displayKey}:</label>`;
+                if (dataKey.includes("Date")) { editContent += `<input type="text" id="input-${idSuffix}" class="form-input date-picker edit-input-target" data-key="${dataKey}" value="${value || ''}">`; }
+                else if (dataKey.includes("Time")) { editContent += `<input type="text" id="input-${idSuffix}" class="form-input time-picker edit-input-target" data-key="${dataKey}" value="${value || ''}">`; }
+                else if (dataKey.includes("Description") || dataKey === "Additional") { editContent += `<textarea id="input-${idSuffix}" class="form-textarea edit-input-target" data-key="${dataKey}" rows="3">${value || ''}</textarea>`; }
+                else if (arrayLikeFields[dataType]?.includes(dataKey)) {
+                    editContent += `<div class="list-editor" data-key="${dataKey}">`;
+                    const listValues = Array.isArray(value) ? value : [];
+                    listValues.forEach(val => { editContent += `<div class="list-item-input-group"><input type="text" class="form-input list-item-input flex-grow" value="${val}"><button type="button" class="btn-outline-danger btn btn-sm" onclick="removeListItem(this.parentElement)">Remove</button></div>`; });
+                    editContent += `<button type="button" class="btn btn-outline-primary btn-sm mt-1" onclick="addListItem(this.parentElement)">Add Item</button></div>`;
+                } else { editContent += `<input type="text" id="input-${idSuffix}" class="form-input edit-input-target" data-key="${dataKey}" value="${value || ''}">`; }
+                editContent += `</div>`;
+            }
+            return `<div class="data-entry" data-type="${dataType}" data-index="${index}"><div class="static-view">${staticContent}<div class="icon-button-group"><button class="icon-button" onclick="toggleEdit(this.closest('.data-entry'), '${dataType}', ${index})" title="Edit"><i class="fas fa-edit"></i></button><button class="icon-button" onclick="deleteEntry(this.closest('.data-entry'), '${dataType}', ${index})" title="Delete"><i class="fas fa-trash"></i></button></div></div><div class="edit-view hidden">${editContent}<div class="flex justify-end space-x-3 mt-4"><button class="btn btn-secondary" onclick="toggleEdit(this.closest('.data-entry'), '${dataType}', ${index}, false)">Cancel</button><button class="btn btn-success" onclick="saveChanges(this.closest('.data-entry'), '${dataType}', ${index})">Save</button></div></div></div>`;
+        }
+        function renderSection(dataType) { /* Same as v1, but createHtmlForEntry is updated */
+            const sectionContainerId = `${dataType.replace('_data', '')}Section`;
+            const sectionContainer = document.getElementById(sectionContainerId);
+            if (!sectionContainer) return;
+            sectionContainer.innerHTML = ''; 
+            const dataArray = syllabusDataGlobal[dataType];
+            if (dataArray && dataArray.length > 0) {
+                dataArray.forEach((item, index) => {
+                    sectionContainer.insertAdjacentHTML('beforeend', createHtmlForEntry(item, dataType, index));
+                });
+            } else {
+                let sectionName = dataType.replace('_data', '').replace(/_/g, ' ');
+                sectionName = sectionName.charAt(0).toUpperCase() + sectionName.slice(1);
+                sectionContainer.innerHTML = `<p class="text-slate-500 italic">No ${sectionName}s were detected or added yet.</p>`;
+            }
+            updateSectionCounter(dataType);
+            initializeDatePickers(sectionContainer);
+        }
+
+        function saveAllChanges() { /* Same as v1 */ 
+            const saveBtn=document.getElementById('saveAllBtn'), originalText=saveBtn.innerHTML; saveBtn.innerHTML='<i class="fas fa-spinner fa-spin mr-2"></i> Saving...'; saveBtn.disabled=true;
+            const payload={class_data:syllabusDataGlobal.class_data||{},event_data:syllabusDataGlobal.event_data||[],task_data:syllabusDataGlobal.task_data||[],lab_data:syllabusDataGlobal.lab_data||[],recitation_data:syllabusDataGlobal.recitation_data||[],metadata:syllabusDataGlobal.metadata||{}};
+            fetch(`/api/save-results/${uniqueId}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)})
+            .then(r=>(!r.ok&&Promise.reject(new Error(`HTTP ${r.status}`)),r.json()))
+            .then(d=>{if(d.success){showSaveStatus('All changes saved to server!','success');document.getElementById('rawJsonDisplay').textContent=JSON.stringify(payload,null,2)}else{showSaveStatus(`Error: ${d.error||'Unknown'}`,'danger')}})
+            .catch(e=>{console.error('Error saving:',e);showSaveStatus(`Error: ${e.message}`,'danger')})
+            .finally(()=>{saveBtn.innerHTML=originalText;saveBtn.disabled=false});
+        }
+        function showCalendarExportOptions() { /* Same as v1 */ 
+            document.getElementById('exportLabSessionsContainer').classList.toggle('hidden',!(syllabusDataGlobal.lab_data&&syllabusDataGlobal.lab_data.length>0));
+            document.getElementById('exportRecitationSessionsContainer').classList.toggle('hidden',!(syllabusDataGlobal.recitation_data&&syllabusDataGlobal.recitation_data.length>0));
+            ['calendarExportOptions','calendarExportStatus','calendarExportSuccess','calendarExportError','downloadCalendarBtn','proceedWithExportBtn'].forEach(id=>document.getElementById(id).classList.add('hidden'));
+            document.getElementById('calendarExportOptions').classList.remove('hidden'); document.getElementById('proceedWithExportBtn').classList.remove('hidden');
+            openModal('calendarModal');
+        }
+        function proceedWithCalendarExport() { /* Same as v1 */
+            const btn=document.getElementById('proceedWithExportBtn'),origTxt=btn.innerHTML;btn.innerHTML='<i class="fas fa-spinner fa-spin mr-2"></i> Exporting...';btn.disabled=true;
+            ['calendarExportOptions','calendarExportSuccess','calendarExportError'].forEach(id=>document.getElementById(id).classList.add('hidden'));
+            document.getElementById('calendarExportStatus').classList.remove('hidden');
+            const bar=document.getElementById('calendarExportStatus').querySelector('div div');bar.style.width='0%';let p=0;const i=setInterval(()=>{p+=10;bar.style.width=p+'%';if(p>=100)clearInterval(i)},100);
+            const choices={assignments_exams:document.getElementById('exportAssignmentsExams').checked,class_sessions:document.getElementById('exportClassSessions').checked,lab_sessions:document.getElementById('exportLabSessions').checked,recitation_sessions:document.getElementById('exportRecitationSessions').checked};
+            fetch(`/export/calendar/${uniqueId}`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({choices:choices,syllabus_data:syllabusDataGlobal})})
+            .then(r=>(clearInterval(i),bar.style.width='100%',!r.ok&&Promise.reject(new Error(`HTTP ${r.status}`)),r.json()))
+            .then(d=>{document.getElementById('calendarExportStatus').classList.add('hidden');if(d.success){document.getElementById('calendarExportSuccess').classList.remove('hidden');const dl=document.getElementById('downloadCalendarBtn');dl.href=d.download_url;dl.classList.remove('hidden');btn.classList.add('hidden')}else{document.getElementById('calendarExportError').classList.remove('hidden');document.getElementById('calendarExportErrorMessage').textContent=d.message||'Error.'}})
+            .catch(e=>{clearInterval(i);bar.style.width='100%';document.getElementById('calendarExportStatus').classList.add('hidden');document.getElementById('calendarExportError').classList.remove('hidden');document.getElementById('calendarExportErrorMessage').textContent=e.message||'Error.';console.error('Error exporting:',e)})
+            .finally(()=>{btn.innerHTML=origTxt;btn.disabled=false});
+        }
+        function showSaveStatus(message, type = 'success') { /* Same as v1 */
+            const el=document.getElementById('saveStatus');let span=el.querySelector('#saveStatusMessage');if(!span){span=document.createElement('span');span.id='saveStatusMessage';el.insertBefore(span,el.firstChild)}
+            span.textContent=message;el.className=`fixed top-5 right-5 z-[100] p-4 rounded-md shadow-lg text-sm alert-${type}`;el.classList.remove('hidden');setTimeout(()=>el.classList.add('hidden'),3000);
+        }
+
+    </script>
+</body>
+</html>

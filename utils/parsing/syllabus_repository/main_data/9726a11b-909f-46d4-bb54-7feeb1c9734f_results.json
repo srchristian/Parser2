@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "extraction_time": "2025-03-12T21:25:55.532405",
+    "unique_id": "9726a11b-909f-46d4-bb54-7feeb1c9734f",
+    "text_length": 12187,
+    "confidence_scores": {},
+    "missing_fields": [
+      "School Name",
+      "Term",
+      "Course Title",
+      "Instructor Name",
+      "Instructor Email",
+      "Class Time",
+      "Time Zone",
+      "Days of Week",
+      "Term Start Date",
+      "Term End Date",
+      "Class Start Date",
+      "Class End Date",
+      "Office Hours",
+      "Telephone",
+      "Class Location",
+      "Additional"
+    ],
+    "error": "'DateParser' object has no attribute 'extract_days_from_text'",
+    "original_file": "9726a11b-909f-46d4-bb54-7feeb1c9734f_PHY203syllabusF24.pdf",
+    "process_time": 37.332323,
+    "timestamp": "2025-03-12T21:26:32.864728"
+  },
+  "class_data": {
+    "School Name": "",
+    "Term": "",
+    "Course Title": "",
+    "Instructor Name": "",
+    "Instructor Email": "",
+    "Class Time": "",
+    "Time Zone": "Eastern Time",
+    "Days of Week": "",
+    "Term Start Date": "",
+    "Term End Date": "",
+    "Class Start Date": "",
+    "Class End Date": "",
+    "Office Hours": "",
+    "Telephone": "",
+    "Class Location": "",
+    "Additional": ""
+  },
+  "event_data": [],
+  "task_data": [],
+  "status": "Success"
+}

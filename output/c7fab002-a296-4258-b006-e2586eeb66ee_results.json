@@ -1,0 +1,141 @@
+{
+  "metadata": {
+    "extraction_time": "2025-03-12T16:36:59.036137",
+    "unique_id": "c7fab002-a296-4258-b006-e2586eeb66ee",
+    "text_length": 12187,
+    "confidence_scores": {
+      "class_data": 0.5294117647058824,
+      "event_data": 0,
+      "task_data": 1.0,
+      "date_verification": 0.0,
+      "overall": 0.3588235294117647
+    },
+    "missing_fields": [
+      "Days of Week",
+      "Term Start Date",
+      "Term End Date"
+    ],
+    "original_file": "c7fab002-a296-4258-b006-e2586eeb66ee_PHY203syllabusF24.pdf",
+    "process_time": 46.82806,
+    "timestamp": "2025-03-12T16:37:45.863197"
+  },
+  "class_data": {
+    "School Name": "University of Rhode Island",
+    "Term": "Fall 2024",
+    "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+    "Instructor Name": "Miquel Dorca",
+    "Instructor Email": "miquel@uri.edu",
+    "Class Time": "1:00 PM - 1:50 PM",
+    "Time Zone": "",
+    "Days of Week": "Monday, Wednesday, Friday",
+    "Term Start Date": "September 04, 2024",
+    "Term End Date": "December 11, 2024",
+    "Class Start Date": "September 04, 2024",
+    "Class End Date": "December 11, 2024",
+    "Office Hours": "Monday, Wednesday, Friday 12:30 PM - 1:00 PM",
+    "Telephone": "",
+    "Class Location": "East Hall Auditorium",
+    "Additional": "",
+    "Date Verification": "user_provided"
+  },
+  "event_data": [],
+  "task_data": [
+    {
+      "Task Title": "PHY203: HW#1",
+      "Due Date": "September 11, 2024",
+      "Task Description": "Homework assignment #1 is due via WebAssign by 10 p.m. Reading: Chapter 1.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: HW#2",
+      "Due Date": "September 18, 2024",
+      "Task Description": "Homework assignment #2 is due via WebAssign by 10 p.m. Reading: Sections 3.1-3.5.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: HW#3",
+      "Due Date": "September 25, 2024",
+      "Task Description": "Homework assignment #3 is due via WebAssign by 10 p.m. Reading: Sections 2.1-2.3, 4.1-4.3.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: HW#4",
+      "Due Date": "October 04, 2024",
+      "Task Description": "Homework assignment #4 is due via WebAssign by 10 p.m. Reading: Chapter 5.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: HW#5",
+      "Due Date": "October 11, 2024",
+      "Task Description": "Homework assignment #5 is due via WebAssign by 10 p.m. Reading: Sections 4.4, 6.1-6.3.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: HW#6",
+      "Due Date": "October 18, 2024",
+      "Task Description": "Homework assignment #6 is due via WebAssign by 10 p.m. Reading: 1st part of Section 2.4, Chapter 7.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: HW#7",
+      "Due Date": "October 25, 2024",
+      "Task Description": "Homework assignment #7 is due via WebAssign by 10 p.m. Reading: Chapter 8.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: HW#8",
+      "Due Date": "November 06, 2024",
+      "Task Description": "Homework assignment #8 is due via WebAssign by 10 p.m.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: HW#9",
+      "Due Date": "November 20, 2024",
+      "Task Description": "Homework assignment #9 is due via WebAssign by 10 p.m. Reading: 2nd part of Section 2.4, Sections 11-11.3.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: HW#10",
+      "Due Date": "December 04, 2024",
+      "Task Description": "Homework assignment #10 is due via WebAssign by 10 p.m. Reading: Sections 13.1-13.5.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: HW#11",
+      "Due Date": "December 11, 2024",
+      "Task Description": "Homework assignment #11 is due via WebAssign by 10 p.m. Reading: Sections 15.1, 15.2, 15.4.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: HW#12",
+      "Due Date": "December 11, 2024",
+      "Task Description": "Homework assignment #12 is due via WebAssign by 10 p.m. Reading: Sections 15.1, 15.2, 15.4.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Unit Exam #1",
+      "Due Date": "September 27, 2024",
+      "Task Description": "Unit Exam #1 covering Chapters 1, 3, and 4. The exam is closed book, calculators permitted, and a formula sheet is allowed.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Unit Exam #2",
+      "Due Date": "October 25, 2024",
+      "Task Description": "Unit Exam #2 covering Chapters 5 through 8. The exam is closed book, calculators permitted, and a formula sheet is allowed.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Unit Exam #3",
+      "Due Date": "December 11, 2024",
+      "Task Description": "Unit Exam #3 covering Chapters 9-11 and 15. The exam is closed book, calculators permitted, and a formula sheet is allowed.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Final Exam",
+      "Due Date": "TBA",
+      "Task Description": "Cumulative final exam covering all course material. The final consists of three parts corresponding to the three unit exams. It is closed book, calculators permitted, and a formula sheet is allowed.",
+      "Due Time": "23:59"
+    }
+  ],
+  "status": "Success"
+}

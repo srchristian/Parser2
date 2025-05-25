@@ -1,0 +1,97 @@
+{
+    "class_data": {
+        "School Name": "",
+        "Term": "Fall 2024",
+        "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+        "Instructor Name": "Miquel Dorca",
+        "Instructor Email": "miquel@uri.edu",
+        "Class Time": "1pm-1:50pm",
+        "Time Zone": "",
+        "Days of Week": "",
+        "Term Start Date": "",
+        "Term End Date": "",
+        "Class Start Date": "",
+        "Class End Date": "",
+        "Office Hours": "MWF 12:30pm -1:00pm",
+        "Telephone": "",
+        "Class Location": "East Hall Auditorium",
+        "Additional": "The class will use Brightspace for announcements and lecture postings. If the course needs to go remote, lectures will be given asynchronously on Brightspace on November 25th, 27th, and December 2nd.",
+        "Date Verification": "ai_generated"
+    },
+    "event_data": [],
+    "task_data": [
+        {
+            "Task Title": "PHY203: HW #1",
+            "Due Date": "(Reading: Chapter 1)",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #2",
+            "Due Date": "(Reading: Sections 3",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #3",
+            "Due Date": "(Reading: Sections 2",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #4",
+            "Due Date": "(Reading: Chap",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #5",
+            "Due Date": "(Reading: Sections 4",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #6",
+            "Due Date": "(Reading: 1st part of Sec",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #7",
+            "Due Date": "(Reading: Chap",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #8",
+            "Due Date": "(Reading: Sections 9",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #9",
+            "Due Date": "(Reading: 2nd part of Sec",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #10",
+            "Due Date": "(Reading: Sections 13",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #11",
+            "Due Date": "(Reading: Sections 15",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #12",
+            "Due Date": "(Reading: Sections 15",
+            "Task Description": ""
+        }
+    ],
+    "metadata": {
+        "original_file": null,
+        "syllabus_text_path": null,
+        "missing_fields": [
+            "Days of Week",
+            "Class Start Date",
+            "Class End Date"
+        ],
+        "process_time": 45.438098,
+        "timestamp": "2025-03-23T17:43:16.599589",
+        "parsed_syllabus_path": "utils/parsing/syllabus_repository/parsed_syllabus\\3200b94b-c425-45fe-afb6-889f7ea56949.json"
+    },
+    "status": "Success"
+}

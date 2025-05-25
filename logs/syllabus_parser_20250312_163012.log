@@ -1,0 +1,3 @@
+2025-03-12 16:30:12,524 [INFO] logging_setup.__init__:69 - Logging initialized to file: logs\syllabus_parser_20250312_163012.log
+2025-03-12 16:30:13,198 [ERROR] app.<module>:247 - SyllabusExtractor import failed: cannot import name 'OpenAIParser' from 'utils.parsers.openai_parser' (C:\SyllabusParser2\utils\parsers\openai_parser.py)
+2025-03-12 16:30:13,198 [INFO] app.<module>:900 - Starting Flask application on 0.0.0.0:5000

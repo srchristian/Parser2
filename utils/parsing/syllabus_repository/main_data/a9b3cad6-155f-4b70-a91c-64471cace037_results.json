@@ -1,0 +1,97 @@
+{
+    "class_data": {
+        "School Name": "University of Rhode Island",
+        "Term": "Fall 2024",
+        "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+        "Instructor Name": "Miquel Dorca",
+        "Instructor Email": "miquel@uri.edu",
+        "Class Time": "1:00pm - 1:50pm",
+        "Time Zone": "",
+        "Days of Week": "",
+        "Term Start Date": "",
+        "Term End Date": "",
+        "Class Start Date": "",
+        "Class End Date": "",
+        "Office Hours": "MWF 12:30pm - 1:00pm",
+        "Telephone": "",
+        "Class Location": "East Hall Auditorium",
+        "Additional": "Course Description: Calculus-based introduction to Newtonian mechanics. Topics include kinematics and dynamics of particles and systems of particles, conservation laws, rotational motion, gravitation, and oscillatory motion. Prerequisites: Credit or concurrent enrollment in MTH 141 and concurrent enrollment in PHY 273. Intended for science and engineering majors. Textbook: University Physics (OpenStax), 1st Edition, Volume 1. Available at https://openstax.org/subjects/science. General Education Areas: Satisfies URI's general education areas: \"Scientific, Technology, Engineering, and Mathematical Disciplines\" (Full); and \"Mathematical, Statistical, or Computational Strategies\" (Partial). Learning Outcomes: 1. Demonstrate an understanding of the basic concepts of classical mechanics. 2. Apply a conceptual understanding of classical mechanics to physics problems. 3. Develop problem-solving strategies and techniques appropriate to classical mechanics. 4. Carry out quantitative solutions of classical mechanics problems. 5. Carry out, analyze, and present the results of classical mechanics laboratory experiments.",
+        "Date Verification": "ai_generated"
+    },
+    "event_data": [],
+    "task_data": [
+        {
+            "Task Title": "PHY203: HW #1",
+            "Due Date": "Wed",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #2",
+            "Due Date": "Wed",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #3",
+            "Due Date": "Wed",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #4",
+            "Due Date": "Wed",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #5",
+            "Due Date": "Wed",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #6",
+            "Due Date": "Wed",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #7",
+            "Due Date": "Wed",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #8",
+            "Due Date": "Wed",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #9",
+            "Due Date": "Wed",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #10",
+            "Due Date": "Wed",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #11",
+            "Due Date": "Wed",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #12",
+            "Due Date": "Wed",
+            "Task Description": ""
+        }
+    ],
+    "metadata": {
+        "original_file": null,
+        "syllabus_text_path": null,
+        "missing_fields": [
+            "Days of Week",
+            "Class Start Date",
+            "Class End Date"
+        ],
+        "process_time": 62.429581,
+        "timestamp": "2025-03-23T17:57:30.395305",
+        "parsed_syllabus_path": "utils/parsing/syllabus_repository/parsed_syllabus\\a9b3cad6-155f-4b70-a91c-64471cace037.json"
+    },
+    "status": "Success"
+}

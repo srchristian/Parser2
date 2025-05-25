@@ -1,0 +1,14 @@
+2025-03-23 11:20:54,643 [INFO] logging_setup.__init__:69 - Logging initialized to file: logs\syllabus_parser_20250323_112054.log
+2025-03-23 11:20:54,663 [INFO] app.<module>:217 - Loaded configuration from config.yaml
+2025-03-23 11:20:54,665 [INFO] app.create_required_directories:242 - Created all required directories with absolute paths
+2025-03-23 11:20:55,468 [INFO] openai_parser.__init__:66 - OpenAI parser initialized with model: o1-mini
+2025-03-23 11:20:55,469 [INFO] app.<module>:261 - OpenAIParser initialized successfully
+2025-03-23 11:20:55,470 [INFO] date_parser.__init__:69 - DateParser initialized with enhanced day processing
+2025-03-23 11:20:55,470 [INFO] app.<module>:269 - DateParser initialized successfully
+2025-03-23 11:20:55,472 [INFO] schedule_parser.__init__:40 - ScheduleParser initialized
+2025-03-23 11:20:55,472 [INFO] app.<module>:277 - ScheduleParser initialized successfully
+2025-03-23 11:20:55,474 [INFO] assignment_parser.__init__:24 - AssignmentParser initialized
+2025-03-23 11:20:55,474 [INFO] app.<module>:285 - AssignmentParser initialized successfully
+2025-03-23 11:20:55,482 [INFO] app.<module>:303 - SyllabusParser initialized successfully
+2025-03-23 11:20:55,484 [WARNING] app.<module>:319 - Could not import SyllabusExtractor: No module named 'utils.parsers.date_scraper'
+2025-03-23 11:20:55,488 [INFO] app.<module>:1221 - Starting Flask application on 0.0.0.0:5000

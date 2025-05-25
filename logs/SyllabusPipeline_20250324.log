@@ -1,0 +1,472 @@
+2025-03-24 16:11:07 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-24 16:11:07 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-24 16:11:07 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-24 16:11:07 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-24 16:11:07 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-24 16:11:07 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-24 16:11:07 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-24 16:11:07 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-24 16:11:07 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-24 16:11:07 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-24 16:11:07 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-24 16:11:07 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-24 16:11:08 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-24 16:11:08 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-24 16:11:08 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-24 16:11:08 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-24 16:11:08 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-24 16:11:08 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-24 16:11:08 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-24 16:11:08 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-24 16:11:08 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-24 16:11:08 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-24 16:11:08 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-24 16:11:08 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-24 16:19:27 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-24 16:19:27 - SyllabusPipeline - INFO - OpenAI API key found
+2025-03-24 16:19:27 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-24 16:19:27 - SyllabusPipeline - INFO - OpenAI API key found
+2025-03-24 16:19:27 - SyllabusPipeline - INFO - Created OpenAI client with 1.x API style for model o1-mini
+2025-03-24 16:19:27 - SyllabusPipeline - INFO - Created OpenAI client with 1.x API style for model o1-mini
+2025-03-24 16:19:28 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:19:28 - SyllabusPipeline - ERROR - OpenAI API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - OpenAI API key found
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - Created OpenAI client with 1.x API style for model o1-mini
+2025-03-24 16:19:28 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:19:28 - SyllabusPipeline - ERROR - OpenAI API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - OpenAI API key found
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - Created OpenAI client with 1.x API style for model o1-mini
+2025-03-24 16:19:28 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:19:28 - SyllabusPipeline - ERROR - OpenAI API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-24 16:19:28 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:19:28 - SyllabusPipeline - ERROR - OpenAI API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-24 16:19:28 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-24 16:44:59 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-24 16:44:59 - SyllabusPipeline - INFO - OpenAI API key found
+2025-03-24 16:45:00 - SyllabusPipeline - INFO - Created OpenAI client with 1.x API style for model o1-mini
+2025-03-24 16:45:01 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:45:01 - SyllabusPipeline - ERROR - OpenAI API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:45:01 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-24 16:45:01 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-24 16:45:01 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-24 16:45:01 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-24 16:45:01 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-24 16:45:01 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-24 16:45:01 - SyllabusPipeline - INFO - OpenAI API key found
+2025-03-24 16:45:01 - SyllabusPipeline - INFO - Created OpenAI client with 1.x API style for model o1-mini
+2025-03-24 16:45:01 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:45:01 - SyllabusPipeline - ERROR - OpenAI API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:45:01 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-24 16:45:01 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-24 16:45:01 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-24 16:45:01 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-24 16:45:01 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-24 16:46:46 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-24 16:46:46 - SyllabusPipeline - INFO - OpenAI API key found
+2025-03-24 16:46:46 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-24 16:46:46 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:46:46 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 107, in _test_api_connection
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+2025-03-24 16:46:46 - SyllabusPipeline - ERROR - Failed to initialize OpenAI client: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:46:47 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 85, in __init__
+    self._test_api_connection()
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 107, in _test_api_connection
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+2025-03-24 16:46:47 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-24 16:46:47 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-24 16:46:47 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-24 16:46:47 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-24 16:46:47 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-24 16:46:47 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-24 16:46:47 - SyllabusPipeline - INFO - OpenAI API key found
+2025-03-24 16:46:47 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-24 16:46:47 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:46:47 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 107, in _test_api_connection
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+2025-03-24 16:46:47 - SyllabusPipeline - ERROR - Failed to initialize OpenAI client: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:46:47 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 85, in __init__
+    self._test_api_connection()
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 107, in _test_api_connection
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+2025-03-24 16:46:47 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-24 16:46:47 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-24 16:46:47 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-24 16:46:47 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-24 16:46:47 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-24 16:51:08 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-24 16:51:08 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-24 16:51:08 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-24 16:51:08 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-24 16:51:08 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-24 16:51:08 - SyllabusPipeline - INFO - Testing connection with model: o1-mini
+2025-03-24 16:51:09 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:51:09 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 133, in _test_api_connection
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+2025-03-24 16:51:09 - SyllabusPipeline - ERROR - This appears to be an issue with the model name or access to this model
+2025-03-24 16:51:09 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-24 16:51:09 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-24 16:51:09 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-24 16:51:09 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-24 16:51:09 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-24 16:51:09 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-24 16:51:09 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-24 16:51:09 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-24 16:51:09 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-24 16:51:09 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-24 16:51:09 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-24 16:51:09 - SyllabusPipeline - INFO - Testing connection with model: o1-mini
+2025-03-24 16:51:09 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:51:09 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 133, in _test_api_connection
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+2025-03-24 16:51:09 - SyllabusPipeline - ERROR - This appears to be an issue with the model name or access to this model
+2025-03-24 16:51:09 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-24 16:51:09 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-24 16:51:09 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-24 16:51:09 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-24 16:51:09 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-24 16:51:09 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-24 16:51:12 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-24 16:51:12 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-24 16:51:12 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - Testing connection with model: o1-mini
+2025-03-24 16:51:13 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:51:13 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 133, in _test_api_connection
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+2025-03-24 16:51:13 - SyllabusPipeline - ERROR - This appears to be an issue with the model name or access to this model
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - Testing connection with model: o1-mini
+2025-03-24 16:51:13 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:51:13 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 133, in _test_api_connection
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+2025-03-24 16:51:13 - SyllabusPipeline - ERROR - This appears to be an issue with the model name or access to this model
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-24 16:51:13 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-24 16:51:14 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-24 16:51:14 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-24 16:51:14 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - Testing connection with model: o1-mini
+2025-03-24 16:51:15 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:51:15 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 133, in _test_api_connection
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+2025-03-24 16:51:15 - SyllabusPipeline - ERROR - This appears to be an issue with the model name or access to this model
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - Testing connection with model: o1-mini
+2025-03-24 16:51:15 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-24 16:51:15 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 133, in _test_api_connection
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+2025-03-24 16:51:15 - SyllabusPipeline - ERROR - This appears to be an issue with the model name or access to this model
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-24 16:51:15 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-24 16:51:20 - SyllabusPipeline - INFO - Rendering index page
+2025-03-24 16:51:28 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-24 16:51:28 - SyllabusPipeline - INFO - Generated unique ID: 52e97bc2-bdb9-4ad5-abf6-120af7edf94d
+2025-03-24 16:51:28 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\52e97bc2-bdb9-4ad5-abf6-120af7edf94d_PHY203syllabusF24.pdf
+2025-03-24 16:51:28 - SyllabusPipeline - INFO - Saved converted text to: converted\52e97bc2-bdb9-4ad5-abf6-120af7edf94d.txt
+2025-03-24 16:51:28 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\52e97bc2-bdb9-4ad5-abf6-120af7edf94d.txt
+2025-03-24 16:51:28 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-24 16:51:52 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 52e97bc2-bdb9-4ad5-abf6-120af7edf94d
+2025-03-24 16:51:52 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-24 16:52:04 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-24 16:52:04 - SyllabusPipeline - DEBUG - Response preview: ```json
+{
+  "School Name": "",
+  "Term": "Fall 2024",
+  "Course Title": "ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+  "Class Time": "MWF 1:00pm...
+2025-03-24 16:52:04 - SyllabusPipeline - INFO - Found Days of Week in response: Monday, Wednesday, Friday
+2025-03-24 16:52:04 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\52e97bc2-bdb9-4ad5-abf6-120af7edf94d_class_data.json
+2025-03-24 16:52:04 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.5882352941176471
+2025-03-24 16:52:04 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-24 16:52:04 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-24 16:52:04 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-24 16:52:04 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-24 16:52:04 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-24 16:52:04 - SyllabusPipeline - INFO - extract_all started for Unique ID: 52e97bc2-bdb9-4ad5-abf6-120af7edf94d
+2025-03-24 16:52:04 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-24 16:52:04 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-24 16:52:04 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 52e97bc2-bdb9-4ad5-abf6-120af7edf94d
+2025-03-24 16:52:04 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-24 16:52:17 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-24 16:52:17 - SyllabusPipeline - DEBUG - Response preview: ```json
+{
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+ ...
+2025-03-24 16:52:17 - SyllabusPipeline - INFO - Found Days of Week in response: Monday, Wednesday, Friday
+2025-03-24 16:52:17 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\52e97bc2-bdb9-4ad5-abf6-120af7edf94d_class_data.json
+2025-03-24 16:52:17 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.8235294117647058
+2025-03-24 16:52:17 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-24 16:52:17 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-24 16:52:17 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-24 16:52:17 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-24 16:52:17 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-24 16:52:17 - SyllabusPipeline - INFO - Parsed days of week 'Monday, Wednesday, Friday' to indices [0, 2, 4]
+2025-03-24 16:52:17 - SyllabusPipeline - INFO - Generating complete schedule from September 09, 2024 to December 12, 2024
+2025-03-24 16:52:17 - SyllabusPipeline - INFO - Generated 41 class sessions between 2024-09-09 and 2024-12-12
+2025-03-24 16:52:17 - SyllabusPipeline - INFO - Generated complete schedule with 41 class sessions
+2025-03-24 16:52:17 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-24 16:52:17 - SyllabusPipeline - INFO - Extraction complete. Found 41 events, 16 tasks. Missing fields: ['Time Zone'].
+2025-03-24 16:52:17 - SyllabusPipeline - INFO - Showing missing fields form for ID: 52e97bc2-bdb9-4ad5-abf6-120af7edf94d
+2025-03-24 16:52:43 - SyllabusPipeline - INFO - Processing user-provided data for ID: 52e97bc2-bdb9-4ad5-abf6-120af7edf94d
+2025-03-24 16:52:43 - SyllabusPipeline - INFO - User provided data: {'Class Start Date': '2024-09-04', 'Class End Date': '2024-12-11'}
+2025-03-24 16:52:43 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-24 16:52:43 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-24 16:52:43 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-24 16:52:43 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-24 16:52:43 - SyllabusPipeline - WARNING - Failed to parse date 'date': Unknown string format: date
+2025-03-24 16:52:43 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Chapter 1 Wed': Unknown string format: Reading: Chapter 1 Wed
+2025-03-24 16:52:43 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 3': Unknown string format: Reading: Sections 3
+2025-03-24 16:52:43 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 2': Unknown string format: Reading: Sections 2
+2025-03-24 16:52:43 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Chap': Unknown string format: Reading: Chap
+2025-03-24 16:52:43 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Section s 4': Unknown string format: Reading: Section s 4
+2025-03-24 16:52:43 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: 1st part of Sec': Unknown string format: Reading: 1st part of Sec
+2025-03-24 16:52:43 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Chap': Unknown string format: Reading: Chap
+2025-03-24 16:52:43 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: 2nd part of Sec': Unknown string format: Reading: 2nd part of Sec
+2025-03-24 16:52:43 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 13': Unknown string format: Reading: Sections 13
+2025-03-24 16:52:43 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 15': Unknown string format: Reading: Sections 15
+2025-03-24 16:52:43 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 15': Unknown string format: Reading: Sections 15
+2025-03-24 16:52:43 - SyllabusPipeline - WARNING - Failed to parse date '250 points Grading Scheme : A(93 -100); A -(90-93); B+(87 -90); B(83 -87); B -(80-83); C+(77 -80); C(73 -77); C-(70-73); D+(67 -70); D(60 -67); F(<60)': Unknown string format: 250 points Grading Scheme : A(93 -100); A -(90-93); B+(87 -90); B(83 -87); B -(80-83); C+(77 -80); C(73 -77); C-(70-73); D+(67 -70); D(60 -67); F(<60)
+2025-03-24 16:52:43 - SyllabusPipeline - WARNING - Failed to parse date 's 4': Unknown string format: s 4
+2025-03-24 16:52:43 - SyllabusPipeline - WARNING - Failed to parse date 'Each student registered for PHY203 must also register for two sections of PHY273': Unknown string format: Each student registered for PHY203 must also register for two sections of PHY273
+2025-03-24 16:52:43 - SyllabusPipeline - INFO - Successfully processed dates from user input
+2025-03-24 16:52:43 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-24 16:52:43 - SyllabusPipeline - INFO - Successfully updated class schedule from user input
+2025-03-24 16:52:43 - SyllabusPipeline - INFO - Showing results for ID: 52e97bc2-bdb9-4ad5-abf6-120af7edf94d

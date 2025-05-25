@@ -1,0 +1,19 @@
+2025-03-23 12:25:06,684 [INFO] logging_setup.__init__:69 - Logging initialized to file: logs\syllabus_parser_20250323_122506.log
+2025-03-23 12:25:06,688 [INFO] app.<module>:217 - Loaded configuration from config.yaml
+2025-03-23 12:25:06,689 [INFO] app.create_required_directories:242 - Created all required directories with absolute paths
+2025-03-23 12:25:07,379 [INFO] openai_parser.__init__:66 - OpenAI parser initialized with model: o1-mini
+2025-03-23 12:25:07,380 [INFO] app.<module>:261 - OpenAIParser initialized successfully
+2025-03-23 12:25:07,381 [INFO] date_parser.__init__:105 - DateParser initialized for normalization and calculation
+2025-03-23 12:25:07,381 [INFO] app.<module>:269 - DateParser initialized successfully
+2025-03-23 12:25:07,383 [INFO] schedule_parser.__init__:40 - ScheduleParser initialized
+2025-03-23 12:25:07,384 [INFO] app.<module>:277 - ScheduleParser initialized successfully
+2025-03-23 12:25:07,384 [INFO] assignment_parser.__init__:24 - AssignmentParser initialized
+2025-03-23 12:25:07,385 [INFO] app.<module>:285 - AssignmentParser initialized successfully
+2025-03-23 12:25:07,390 [INFO] app.<module>:303 - SyllabusParser initialized successfully
+2025-03-23 12:25:07,391 [INFO] openai_parser.__init__:66 - OpenAI parser initialized with model: o1-mini
+2025-03-23 12:25:07,392 [INFO] date_parser.__init__:105 - DateParser initialized for normalization and calculation
+2025-03-23 12:25:07,392 [INFO] schedule_parser.__init__:40 - ScheduleParser initialized
+2025-03-23 12:25:07,392 [INFO] assignment_parser.__init__:24 - AssignmentParser initialized
+2025-03-23 12:25:07,392 [INFO] syllabus_extractor.__init__:46 - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 12:25:07,394 [INFO] app.<module>:317 - SyllabusExtractor initialized successfully
+2025-03-23 12:25:07,398 [INFO] app.<module>:1221 - Starting Flask application on 0.0.0.0:5000

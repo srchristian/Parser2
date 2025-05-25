@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "extraction_time": "2025-03-23T16:37:00.699804",
+    "unique_id": "aff2760d-426d-499d-9559-364f3ab840d7",
+    "text_length": 12189,
+    "confidence_scores": {
+      "class_data": 0.0,
+      "event_data": 0,
+      "task_data": 0,
+      "date_verification": 0,
+      "overall": 0.0
+    },
+    "missing_fields": [
+      "Class Time",
+      "Time Zone",
+      "Days of Week",
+      "Class Start Date",
+      "Class End Date"
+    ],
+    "parsed_syllabus_path": "utils/parsing/syllabus_repository/parsed_syllabus\\aff2760d-426d-499d-9559-364f3ab840d7.json",
+    "scheduled_labs": false,
+    "recitation_session": false,
+    "process_time": 3.781746
+  },
+  "class_data": {
+    "School Name": "",
+    "Term": "",
+    "Course Title": "",
+    "Instructor Name": "",
+    "Instructor Email": "",
+    "Class Time": "",
+    "Time Zone": "",
+    "Days of Week": "",
+    "Term Start Date": "",
+    "Term End Date": "",
+    "Class Start Date": "",
+    "Class End Date": "",
+    "Office Hours": "",
+    "Telephone": "",
+    "Class Location": "",
+    "Additional": "",
+    "Date Verification": ""
+  },
+  "event_data": [],
+  "task_data": [],
+  "status": "Success"
+}

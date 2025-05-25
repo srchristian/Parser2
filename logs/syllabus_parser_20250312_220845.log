@@ -1,0 +1,20 @@
+2025-03-12 22:08:45,504 [INFO] logging_setup.__init__:69 - Logging initialized to file: logs\syllabus_parser_20250312_220845.log
+2025-03-12 22:08:45,514 [INFO] app.<module>:210 - Loaded configuration from config.yaml
+2025-03-12 22:08:45,514 [DEBUG] app.create_required_directories:240 - Created directory: utils/parsing/syllabus_repository
+2025-03-12 22:08:45,514 [DEBUG] app.create_required_directories:240 - Created directory: utils/parsing/syllabus_repository/original_syllabus
+2025-03-12 22:08:45,514 [DEBUG] app.create_required_directories:240 - Created directory: utils/parsing/syllabus_repository/converted_syllabus
+2025-03-12 22:08:45,514 [DEBUG] app.create_required_directories:240 - Created directory: utils/parsing/syllabus_repository/parsed_syllabus
+2025-03-12 22:08:45,518 [DEBUG] app.create_required_directories:240 - Created directory: utils/parsing/syllabus_repository/main_data
+2025-03-12 22:08:46,410 [INFO] app.<module>:259 - SyllabusParser initialized successfully
+2025-03-12 22:08:46,413 [INFO] openai_parser.__init__:64 - OpenAI parser initialized with model: o1-mini
+2025-03-12 22:08:46,418 [INFO] date_parser.__init__:68 - DateParser initialized
+2025-03-12 22:08:46,418 [INFO] schedule_parser.__init__:40 - ScheduleParser initialized
+2025-03-12 22:08:46,419 [INFO] assignment_parser.__init__:24 - AssignmentParser initialized
+2025-03-12 22:08:46,419 [INFO] date_scraper._log:111 - Using default school CSV path: C:\SyllabusParser2\utils\School List\schools_with_urls.csv
+2025-03-12 22:08:46,421 [ERROR] date_scraper._log:111 - School CSV file not found: C:\SyllabusParser2\utils\School List\schools_with_urls.csv
+2025-03-12 22:08:46,422 [DEBUG] date_scraper._log:111 - Compiling regex patterns for school names
+2025-03-12 22:08:46,422 [DEBUG] date_scraper._log:111 - Compiled regex patterns for 0 schools
+2025-03-12 22:08:46,422 [INFO] date_scraper.__init__:95 - TermDateScraper initialized
+2025-03-12 22:08:46,424 [INFO] syllabus_extractor.__init__:57 - SyllabusExtractor initialized with model: o1-mini
+2025-03-12 22:08:46,425 [INFO] app.<module>:273 - SyllabusExtractor initialized successfully
+2025-03-12 22:08:46,433 [INFO] app.<module>:1017 - Starting Flask application on 0.0.0.0:5000

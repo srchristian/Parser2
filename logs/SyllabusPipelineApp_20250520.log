@@ -1,0 +1,27 @@
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [setup_logger:97] Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250520.log
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [<module>:116] Application logger initialized.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [__init__:150] DateParser initialized using 'python-dateutil' for robust date parsing.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [__init__:153] DateParser standard output format set to: '%B %d, %Y' (Month Day, Year).
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [<module>:129] DateParser initialized successfully.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [__init__:66] Initializing OpenAIParser with model: gpt-4.1-nano
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [__init__:85] OpenAI client created for model gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [<module>:136] OpenAIParser initialized successfully with model: gpt-4.1-nano.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [__init__:138] SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [_create_directories:183] SyllabusParser output directory ensured: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [__init__:166] OpenAI client initialized for SyllabusParser. Model preference: gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [__init__:177] SyllabusParser initialized. Expects pre-converted .txt files for parsing.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [<module>:144] SyllabusParser initialized successfully.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [__init__:77] Initializing SyllabusExtractor...
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [__init__:85] SyllabusExtractor preferred OpenAI model for internal parser: gpt-4.1-nano
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [__init__:94] Using provided OpenAIParser instance.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [__init__:107] SyllabusExtractor initialized successfully.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [<module>:151] SyllabusExtractor initialized successfully.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [__init__:62] ScheduleParser initialized using provided DateParser instance.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [__init__:76] ScheduleParser initialized. Default term weeks for estimation: 15.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [<module>:159] ScheduleParser initialized successfully.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [__init__:80] AssignmentParser initialized using provided DateParser instance.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [__init__:92] AssignmentParser will use 'extract_course_code' from utils.helpers.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [__init__:97] AssignmentParser initialized.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [<module>:171] AssignmentParser initialized.
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [<module>:187] Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-20 17:33:02 - SyllabusPipelineApp - INFO - [<module>:495] Starting Flask application on 0.0.0.0:5000 with debug=True

@@ -1,0 +1,37 @@
+{
+    "metadata": {
+        "extraction_time": "2025-03-26T16:32:39.947669",
+        "unique_id": "ae6f5fe8-f706-45da-8639-12b6cff1e97a",
+        "text_length": 12189,
+        "extraction_complete": false,
+        "missing_fields": [
+            "Days of Week",
+            "Class Start Date",
+            "Class End Date"
+        ],
+        "scheduled_labs": true,
+        "recitation_session": true,
+        "original_file": "ae6f5fe8-f706-45da-8639-12b6cff1e97a.txt",
+        "process_time": 2.140566
+    },
+    "class_data": {
+        "School Name": "University of Rhode Island",
+        "Term": "Fall 2024",
+        "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+        "Instructor Name": "Miquel Dorca",
+        "Instructor Email": "miquel@uri.edu",
+        "Class Time": "1:00 PM - 1:50 PM",
+        "Time Zone": "",
+        "Days of Week": "",
+        "Term Start Date": "",
+        "Term End Date": "",
+        "Class Start Date": "",
+        "Class End Date": "",
+        "Office Hours": "Monday, Wednesday, Friday 12:30 PM - 1:00 PM",
+        "Telephone": "401-874-2098",
+        "Class Location": "East Hall Auditorium",
+        "Additional": "Calculus-based introduction to Newtonian mechanics. Kinematics and dynamics of particles and systems of particles, conservation laws, rotational motion, gravitation, and oscillatory motion."
+    },
+    "event_data": [],
+    "task_data": []
+}

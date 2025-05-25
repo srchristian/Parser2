@@ -1,0 +1,10 @@
+```json
+{
+  "course_info": "PHY203: ELEMENTARY PHYSICS I (Fall 2024) Instructor: Miquel Dorca, 211 East Hall, miquel@uri.edu Office Hours: MWF 12:30pm -1:00pm Lecture Times: 1pm-1:50pm (section 1), (East Hall Auditorium)",
+  "schedule": "Lecture Times: 1pm-1:50pm (section 1), (East Hall Auditorium) MWF. November 25th, 27th, December 2nd: Course will be held asynchronously on Brightspace.",
+  "assignments": "Homework Assignments: A set of homework problems will be due on or before (usually Wednesdays or Fridays) of almost every week (by 10 p.m.) and will be administered through WebAssign.\nWed., Sept. 11 HW #1 due\nWed., Sept. 18 HW #2 due\nWed., Sept. 25 HW #3 due\nFri., Oct. 4 HW #4 due\nFri., Oct. 11 HW #5 due\nFri., Oct. 18 HW #6 due\nFri., Oct. 25 HW #7 due\nWed., Nov. 6 HW #8 due\nWed., Nov. 20 HW #9 due\nWed., Nov. 27 HW #10 due\nWed., Dec. 4 HW #11 due\nWed., Dec. 11 HW #12 due",
+  "exams": "Unit exam #1 on Chap. 1,3,4: Fri. 09/27\nUnit exam #2 on Chap. 5-8: Fri. 10/25\nUnit exam #3 on Chap. 9-11,15: Wed. 12/11\nFinal Exam: TBA (Chaps. 1-11,15)\nAll exams are closed book and no other resources are allowed. Calculators will be permitted. A sheet of paper containing relevant formulas for each unit exam and 3 sheets for the final are allowed.",
+  "readings": "Text: University Physics (Open Stax), 1st Edition, Volume 1\nReading: Chapter 1 - Wed., Sept. 11\nReading: Sections 3.1-3.5 - Wed., Sept. 18\nReading: Sections 2.1-2.3, 4.1-4.3 - Wed., Sept. 25\nReading: Chapter 5 - Fri., Oct. 4\nReading: Sections 4.4, 6.1-6.3 - Fri., Oct. 11\nReading: 1st part of Sec. 2.4, Chap. 7 - Fri., Oct. 18\nReading: Chapter 8 - Fri., Oct. 25\nReading: Sections 9.1-9.6 - Wed., Oct. 30\nReading: Sections 10.1-10.6 - Wed., Nov. 13\nReading: 2nd part of Sec. 2.4, Secs. 11-1-11.3 - Wed., Nov. 20\nReading: Sections 13.1-13.5 - Wed., Nov. 27\nReading: Sections 15.1, 15.2, 15.4 - Wed., Dec. 4",
+  "special_sessions": "The course will be given asynchronously on Brightspace on: November 25th, 27th, December 2nd."
+}
+```

@@ -1,0 +1,64 @@
+```json
+{
+  "course_info": "PHY203: ELEMENTARY PHYSICS I (Fall 2024)\n\n**Instructor:** Miquel Dorca\n**Office:** 211 East Hall\n**Email:** miquel@uri.edu\n**Office Hours:** MWF 12:30pm - 1:00pm\n\n**Lecture Time:** 1:00pm - 1:50pm (Section 1)\n**Location:** East Hall Auditorium\n\n**Course Description:** Calculus-based introduction to Newtonian mechanics. Kinematics and dynamics of particles and systems of particles, conservation laws, rotational motion, gravitation, and oscillatory motion.\n\n**Prerequisites:** Credit or concurrent enrollment in MTH 141 and concurrent enrollment in PHY 273.\n\n**Intended for:** Science and engineering majors.\n\n**Textbook:** University Physics (OpenStax), 1st Edition, Volume 1. Available at [OpenStax](https://openstax.org/subjects/science).\n\n**Course Goals:**
+1. Develop a conceptual and quantitative understanding of kinematics.
+2. Develop a conceptual and quantitative understanding of forces.
+3. Develop a conceptual and quantitative understanding of work, energy, and energy conservation.
+4. Develop a conceptual and quantitative understanding of linear momentum and linear momentum conservation.
+5. Develop a conceptual and quantitative understanding of rotational kinematics, rotational dynamics, and angular momentum conservation.
+6. Develop a conceptual and quantitative understanding of oscillations and simple harmonic motion.\n\n**General Education Areas:**
+- Scientific, Technology, Engineering, and Mathematical Disciplines (Full)
+- Mathematical, Statistical, or Computational Strategies (Partial)\n\n**Learning Outcomes:**
+1. Demonstrate an understanding of the basic concepts of classical mechanics.
+2. Apply a conceptual understanding of classical mechanics to physics problems.
+3. Develop problem-solving strategies and techniques appropriate to classical mechanics.
+4. Carry out quantitative solutions of classical mechanics problems.
+5. Carry out, analyze, and present the results of classical mechanics laboratory experiments.",
+  
+  "schedule": "**Lecture Schedule:**\n- **Days:** Monday, Wednesday, Friday (MWF)\n- **Time:** 1:00pm - 1:50pm\n- **Location:** East Hall Auditorium\n\n**Recitation Schedule:**\n- **Location:** Room 112\n\n**Laboratory Schedule:** Refer to special_sessions for detailed laboratory timings and locations.",
+
+  "assignments": "**Homework Assignments:**\nAll homework problems are administered through WebAssign and are due by 10:00pm on the specified due dates. Submissions are typically due on Wednesdays or Fridays.\n\n**Homework Schedule:**
+- **Wed., Sept. 11:** HW #1 due – Reading: Chapter 1
+- **Wed., Sept. 18:** HW #2 due – Reading: Sections 3.1-3.5
+- **Wed., Sept. 25:** HW #3 due – Reading: Sections 2.1-2.3, 4.1-4.3
+- **Fri., Sept. 27:** HW #4 due – Reading: Chapter 5
+- **Fri., Oct. 1:** HW #5 due – Reading: Sections 4.4, 6.1-6.3
+- **Fri., Oct. 18:** HW #6 due – Reading: 1st part of Sec. 2.4, Chapter 7
+- **Fri., Oct. 25:** HW #7 due – Reading: Chapter 8
+- **Wed., Nov. 6:** HW #8 due – Reading: Sections 9.1-9.6
+- **Wed., Nov. 13:** HW #9 due – Reading: 2nd part of Sec. 2.4, Sections 11.1-11.3
+- **Wed., Dec. 4:** HW #10 due – Reading: Sections 13.1-13.5
+- **Wed., Dec. 11:** HW #11 due – Reading: Sections 15.1, 15.2, 15.4
+- **Wed., Dec. 11:** HW #12 due – Reading: Sections 15.1, 15.2, 15.4\n\n**Assignment Policies:**
+- Maximum of 5 submission attempts per assignment.
+- After the due date, a 4-day extension with a 10-point penalty is available once per assignment.
+- Each student receives a unique set of problem numbers to ensure varied answers.",
+  
+  "exams": "**Examination Schedule:**\n- **Unit Exam 1:** Chapters 1, 3, 4\n  - **Date:** Friday, September 27\n- **Unit Exam 2:** Chapters 5-8\n  - **Date:** Friday, October 25\n- **Unit Exam 3:** Chapters 9-11, 15\n  - **Date:** Wednesday, December 11\n- **Final Exam:** Chapters 1-11, 15\n  - **Date:** To Be Announced (TBA)\n\n**Exam Policies:**
+- All exams are closed book; no other resources are allowed.
+- Calculators are permitted.
+- Students may bring one sheet of formulas for each unit exam and three sheets for the final exam.
+- The final exam consists of three parts, each corresponding to a unit exam. If a final exam part score is higher than the respective unit exam score, it replaces the unit exam score in the semester grade. Lower scores do not replace unit exam scores.
+- **Note:** If the course switches to remote delivery, the exam schedule and grading scheme may be modified.",
+  
+  "readings": "**Textbook:**\n- University Physics (OpenStax), 1st Edition, Volume 1\n- Available at [OpenStax](https://openstax.org/subjects/science)\n\n**Assigned Readings:**\n- Chapter 1\n- Sections 3.1-3.5\n- Sections 2.1-2.3, 4.1-4.3\n- Chapter 5\n- Sections 4.4, 6.1-6.3\n- 1st part of Sec. 2.4, Chapter 7\n- Chapter 8\n- Sections 9.1-9.6\n- Sections 10.1-10.6\n- 2nd part of Sec. 2.4, Sections 11.1-11.3\n- Sections 13.1-13.5\n- Sections 15.1, 15.2, 15.4",
+
+  "special_sessions": "**Recitation: PHY273 - Laboratory and Recitation for Elementary Physics I**\n- **Location:** Room 112\n- **Enrollment:** Separate enrollment required for recitation and laboratory sections.\n- **Recitation Grade:** Up to 250 points counted toward PHY203 grade.\n- **Requirements:** Correctly solve 3 problems in each recitation to receive full credit.\n\n**Laboratory: PHY273 Laboratory**\n- **Registration:** Register for one laboratory section (000x) and one recitation section (R0x).\n- **Make-up Labs:** Only one make-up lab available at the end of the semester. Must complete all seven experiments.\n- **Equipment:** Bring an acceptable lab notebook (e.g., National Brand Computation Notebook, Model number 43-648).\n\n**Tentative Laboratory Schedule:**
+1. **Intro Lab:** Week of 9/9-9/13
+2. **Motion in 1D (Free Fall):** 9/16-9/20
+3. **Motion in 1D (Analysis):** 9/23-9/27
+4. **Motion in 2D (Projectiles):** 9/30-10/4
+5. **Motion in 2D (Analysis):** 10/7-10/11
+6. **Newton's Laws:** 10/14-10/18
+7. **Conservation of Energy:** 10/21-10/25
+8. **Collisions (Experimental):** 10/28-11/1
+9. **Collisions (Analysis):** 11/4-11/15
+10. **Ballistic Pendulum:** 11/18-11/22
+11. **Rotational Dynamics:** 12/2-12/6
+12. **Make-up Lab (Pendulum):** 12/12 (Reading Day)\n\n**Laboratory Policies:**
+- Complete all seven experiments; missing any results in zero points for missed experiments.
+- Legitimate reasons for missing a lab require advance permission from the TA for participation in another lab section.\n\n**Continuation of Elementary Physics:**
+- PHY204: Electricity and Magnetism
+- PHY205: Thermodynamics, Waves, Acoustics, Optics"
+}
+```

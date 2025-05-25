@@ -1,0 +1,97 @@
+{
+    "class_data": {
+        "School Name": "University of Rhode Island",
+        "Term": "Fall 2024",
+        "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+        "Instructor Name": "Miquel Dorca",
+        "Instructor Email": "miquel@uri.edu",
+        "Class Time": "1:00 PM - 1:50 PM",
+        "Time Zone": "",
+        "Days of Week": "Monday, Wednesday, Friday",
+        "Term Start Date": "",
+        "Term End Date": "",
+        "Class Start Date": "September 04, 2024",
+        "Class End Date": "December 11, 2024",
+        "Office Hours": "MWF 12:30 PM - 1:00 PM",
+        "Telephone": "",
+        "Class Location": "East Hall Auditorium",
+        "Additional": "Calculus-based introduction to Newtonian mechanics. Kinematics and dynamics of particles and systems of particles, conservation laws, rotational motion, gravitation, and oscillatory motion."
+    },
+    "event_data": [],
+    "task_data": [
+        {
+            "Task Title": "PHY203: HW #1",
+            "Due Date": "Reading: Chapter 1",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #2",
+            "Due Date": "Reading: Sections 3",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #3",
+            "Due Date": "Reading: Sections 2",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #4",
+            "Due Date": "Reading: Chap",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #5",
+            "Due Date": "Reading: Sections 4",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #6",
+            "Due Date": "Reading: 1st part of Sec",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #7",
+            "Due Date": "Reading: Chap",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #8",
+            "Due Date": "March 26, 2025",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #9",
+            "Due Date": "Reading: 2nd part of Sec",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #10",
+            "Due Date": "Reading: Sections 13",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #11",
+            "Due Date": "Reading: Sections 15",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "PHY203: HW #12",
+            "Due Date": "Reading: Sections 15",
+            "Task Description": ""
+        }
+    ],
+    "metadata": {
+        "original_file": null,
+        "syllabus_text_path": null,
+        "missing_fields": [],
+        "confidence_scores": {
+            "class_data": 0.625,
+            "overall": 0.625
+        },
+        "process_time": 24.048202,
+        "timestamp": "2025-03-25T14:39:02.051062",
+        "unique_id": "9e6d1d05-4389-4e38-9efd-cb1518283c88",
+        "parsed_syllabus_path": "utils/parsing/syllabus_repository/parsed_syllabus\\9e6d1d05-4389-4e38-9efd-cb1518283c88.json"
+    },
+    "status": "Success"
+}

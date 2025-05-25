@@ -1,0 +1,96 @@
+{
+    "metadata": {
+        "pipeline_start_time": "2025-05-17T13:07:54.296254",
+        "unique_id": "bb548444-18b9-47eb-95c8-210605f25446",
+        "original_file": "bb548444-18b9-47eb-95c8-210605f25446_PHY203syllabusF24.pdf",
+        "extraction_complete": true,
+        "parser_stages_completed": [
+            "syllabus_segmentation",
+            "class_data_extraction",
+            "date_processing",
+            "assignment_processing",
+            "schedule_generation"
+        ],
+        "text_length": 12833,
+        "extractor_model_used": "gpt-4o",
+        "class_data_missing_fields_by_extractor": [
+            "Days of Week",
+            "Class End Date",
+            "Class Start Date"
+        ],
+        "extractor_process_time": 3.016187,
+        "pipeline_end_time": "2025-05-17T13:08:28.765343",
+        "process_time_pipeline": 34.468,
+        "missing_fields": [
+            "Time Zone",
+            "Days of Week",
+            "Class Start Date",
+            "Class End Date"
+        ]
+    },
+    "class_data": {
+        "School Name": "University of Rhode Island",
+        "Term": "Fall 2024",
+        "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+        "Instructor Name": "Miquel Dorca",
+        "Instructor Email": "miquel@uri.edu",
+        "Class Time": "1pm-1:50pm",
+        "Time Zone": "",
+        "Days of Week": "",
+        "Class Start Date": "",
+        "Class End Date": "",
+        "Office Hours": "MWF 12:30pm -1:00pm",
+        "Telephone": "",
+        "Class Location": "East Hall Auditorium",
+        "Additional": "Calculus-based introduction to Newtonian mechanics. Kinematics and dynamics of particles and systems of particles, conservation laws, rotational motion, gravitation, and oscillatory motion."
+    },
+    "event_data": [],
+    "task_data": [
+        {
+            "Task Title": "PHY203: exam",
+            "Due Date": "May 09, 2025",
+            "Task Description": "",
+            "Raw Extracted Title": "exam",
+            "Raw Extracted Date String": "Fri. 09"
+        },
+        {
+            "Task Title": "PHY203: exam",
+            "Due Date": "May 10, 2025",
+            "Task Description": "",
+            "Raw Extracted Title": "exam",
+            "Raw Extracted Date String": "Fri. 10"
+        },
+        {
+            "Task Title": "PHY203: exam",
+            "Due Date": "May 12, 2025",
+            "Task Description": "",
+            "Raw Extracted Title": "exam",
+            "Raw Extracted Date String": "Wed., 12"
+        },
+        {
+            "Task Title": "PHY203: Homework",
+            "Due Date": "on or before (usually Wednesdays or Fridays) of almost every week (by 10",
+            "Task Description": "Assignments: A set of homework problems will be",
+            "Raw Extracted Title": "Homework",
+            "Raw Extracted Date String": "on or before (usually Wednesdays or Fridays) of almost every week (by 10"
+        }
+    ],
+    "segmented_syllabus": {
+        "course_identification": "PHY203: ELEMENTARY PHYSICS I (Fall 2024)\nLecture Times: 1pm-1:50pm (section 1), East Hall Auditorium\nModality: In-person",
+        "instructor_information": "Instructor: Miquel Dorca\nOffice: 211 East Hall\nEmail: miquel@uri.edu\nOffice Hours: MWF 12:30pm -1:00pm",
+        "course_description_prerequisites": "Calculus-based introduction to Newtonian mechanics. Kinematics and dynamics of particles and systems of particles, conservation laws, rotational motion, gravitation, and oscillatory motion. (Lec. 3) Pre: credit or concurrent enrollment in MTH 141 and concurrent enrollment in PHY 273. Intended for science and engineering majors.",
+        "learning_objectives": "1. To develop a conceptual and quantitative understanding of kinematics.\n2. To develop a conceptual and quantitative understanding of forces.\n3. To develop a conceptual and quantitative understanding of work, energy, and energy conservation.\n4. To develop a conceptual and quantitative understanding of linear momentum and linear momentum conservation.\n5. To develop a conceptual and quantitative understanding of rotational kinematics, rotational dynamics, and angular momentum conservation.\n6. To develop a conceptual and quantitative understanding of oscillations and simple harmonic motion.",
+        "required_texts_materials": "Text: University Physics (Open Stax), 1st Edition, Volume 1\nUniversity Physics from Open Stax is a free, open access textbook that can be found at https://openstax.org/subjects/science.",
+        "course_requirements_grading_policy": "Course Grade:\nThe grade for PHY203 will be based on a maximum of 1200 points:\nunit exams 400 points\nfinal exam 400 points\nhomework 150 points\nrecitation 250 points\n\nGrading Scheme:\nA(93-100); A-(90-93); B+(87-90); B(83-87); B-(80-83); C+(77-80); C(73-77); C-(70-73); D+(67-70); D(60-67); F(<60).",
+        "assignments_exams": "Examinations: There will be three unit exams and a cumulative final exam. All exams are closed book and no other resources are allowed. Calculators will be permitted.\nYou will be allowed to bring a sheet of paper containing relevant formulas for each unit exam and 3 sheets for the final.\n\nCourse Units: The course is divided into three units as follows:\nunit #1 Chaps. 1,3,4 exam on Fri. 09/27\nunit #2 Chaps. 5-8 exam on Fri. 10/25\nunit #3 Chaps. 9-11,15 exam on Wed., 12/11\nFinal Exam: Chaps. 1-11,15 tba\n\nHomework Assignments: A set of homework problems will be due on or before (usually Wednesdays or Fridays) of almost every week (by 10 p.m.) and will be administered through a web-based system called WebAssign.",
+        "course_schedule": "Wed., Sept. 11 HW #1 due Reading: Chapter 1\nWed., Sept. 18 HW #2 due Reading: Sections 3.1-3.5\nWed., Sept. 25 HW #3 due Reading: Sections 2.1-2.3, 4.1-4.3\nFri., Sept. 27 Exam #1 (Chaps. 1,3,4)\nFri., Oct. 4 HW #4 due Reading: Chap. 5\nFri., Oct. 11 HW #5 due Reading: Sections 4.4, 6.1-6.3\nFri., Oct. 18 HW #6 due Reading: 1st part of Sec. 2.4, Chap. 7\nFri., Oct. 25 HW #7 due Reading: Chap. 8\nFri., Oct. 25 Exam #2 (Chaps. 5-8)\nWed., Oct. 30 No Homework due Reading: Sections 9.1-9.6\nWed., Nov. 6 HW #8 due\nWed., Nov. 13 No Homework due Reading: Sections 10.1-10.6\nWed., Nov. 20 HW #9 due Reading: 2nd part of Sec. 2.4, Secs. 11-11-11.3\nWed., Nov. 27 HW #10 due Reading: Sections 13.1-13.5\nWed., Dec. 4 HW #11 due Reading: Sections 15.1,15.2,15.4\nWed., Dec. 11 HW #12 due Reading: Sections 15.1,15.2,15.4\nWed., Dec. 11 Exam #3 (Chaps. 9-11,15)\nFinal Exam TBA Chaps. 1-11,15",
+        "course_policies": "",
+        "communication_student_support": "Brightspace: The class will use Brightspace for class announcements and all lectures will be posted there. If the course needs to go remote (due to a weather cancellation, for instance) the lectures will be given asynchronously on Brightspace.\n\nThis course will be taught in person (besides any possible weather related cancellations). However, if there are no further notices, the course will be given asynchronously on Brightspace on the following three dates: November 25th, 27th, December 2nd.",
+        "university_wide_policies_resources": "Anti-Bias Syllabus Statement: We respect the rights and dignity of each individual and group. We reject prejudice and intolerance, and we work to understand differences. We believe that equity and inclusion are critical components for campus community members to thrive. If you are a target or a witness of a bias incident, you are encouraged to submit a report to the URI Bias Response Team at www.uri.edu/brt . There you will also find people and resources to help.\n\nDisability Services for Students Statement: Your access in this course is important. Please send me your Disability Services for Students (DSS) accommodation letter early in the semester so that we have adequate time to discuss and arrange your approved academic accommodations. If you have not yet established services through DSS, please contact them to engage in a confidential conversation about the process for requesting reasonable accommodations in the classroom. DSS can be reached by calling: 401-874-2098, visiting: web.uri.edu/disability , or emailing: dss@etal.uri.edu . We are available to meet with students enrolled in Kingston as well as Providence courses.\n\nAcademic Enhancement Center (for undergraduate courses): Located in Roosevelt Hall, the AEC offers free face-to-face and web-based services to undergraduate students seeking academic support. Peer tutoring is available for STEM-related courses by appointment online and in-person. The Writing Center offers peer tutoring focused on supporting undergraduate writers at any stage of a writing assignment. The UCS160 course and academic skills consultations offer students strategies and activities aimed at improving their studying and test-taking skills. Complete details about each of these programs, up-to-date schedules, contact information and self-service study resources are all available on the AEC website, uri.edu/aec.\n\nCOVID-19 Statement: The University is committed to delivering its educational mission while protecting the health and safety of our community. While the university has worked to create a healthy learning environment for all, it is up to all of us to ensure our campus stays that way.\nAs members of the URI community, students are required to comply with standards of conduct and take precautions to keep themselves and others safe. Visit web.uri.edu/coronavirus/ for the latest information about the URI COVID-19 response.",
+        "separate_laboratory_sections": "PHY273: LABORATORY AND RECITATION FOR ELEMENTARY PHYSICS I\nPHY273 is closely connected to PHY203. It consists of two components: Laboratory and Recitation. Separate enrollment in each is required.\nYour recitation grade will be absorbed into your PHY203 grade, but you will be getting a separate letter grade for the lab section of PHY273 (1 credit).\nPHY273 Laboratory\nA statement of Laboratory Policies and the Lab Schedule for the semester is provided below.\nA lab manual must be purchased either in advance or at the first lab meeting. Please bring an acceptable lab notebook to your first lab meeting. The following is the most common, durable and least expensive of its kind we have recommended before:\nNational Brand Computation Notebook, Model number 43-648, 75 sheets with no carbon paper.",
+        "recitation_discussion_sections": "Recitation:\n- All students must also register for a recitation section of PHY273. Separate enrollment is required.\n- The recitations will be held in Room 112.\n- Your recitation grade will be counted toward your PHY203 grade up to a maximum of 250 points. There is no separate letter grade for the recitation of PH273.\n- You must correctly solve 3 problems in each recitation to get full credit for the section. Solving more than 3 problems will count for missed problems in previous recitation meetings.",
+        "unclassified_content": [],
+        "UUID": "bb548444-18b9-47eb-95c8-210605f25446",
+        "parsing_method_used": "llm"
+    }
+}

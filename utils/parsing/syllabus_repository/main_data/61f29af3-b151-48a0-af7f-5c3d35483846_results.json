@@ -1,0 +1,94 @@
+{
+    "class_data": {
+        "School Name": "",
+        "Term": "",
+        "Course Title": "",
+        "Instructor Name": "",
+        "Instructor Email": "",
+        "Class Time": "1:00 PM - 1:50 PM",
+        "Time Zone": "",
+        "Days of Week": "Monday, Wednesday, Friday",
+        "Term Start Date": "",
+        "Term End Date": "",
+        "Class Start Date": "September 04, 2024",
+        "Class End Date": "December 11, 2024",
+        "Office Hours": "",
+        "Telephone": "",
+        "Class Location": "",
+        "Additional": ""
+    },
+    "event_data": [],
+    "task_data": [
+        {
+            "Task Title": "COURSE: HW #1",
+            "Due Date": "March 26, 2025",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #2",
+            "Due Date": "March 26, 2025",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #3",
+            "Due Date": "March 28, 2025",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #4",
+            "Due Date": "March 28, 2025",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #5",
+            "Due Date": "March 28, 2025",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #6",
+            "Due Date": "March 28, 2025",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #7",
+            "Due Date": "March 26, 2025",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #8",
+            "Due Date": "March 26, 2025",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #9",
+            "Due Date": "March 26, 2025",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #10",
+            "Due Date": "March 26, 2025",
+            "Task Description": ""
+        },
+        {
+            "Task Title": "COURSE: HW #11",
+            "Due Date": "March 26, 2025",
+            "Task Description": ""
+        }
+    ],
+    "metadata": {
+        "original_file": null,
+        "syllabus_text_path": null,
+        "missing_fields": [],
+        "requires_user_input": false,
+        "processing_stage": "after_user_input",
+        "confidence_scores": {
+            "class_data": 0.0,
+            "overall": 0.0
+        },
+        "process_time": 49.587284,
+        "timestamp": "2025-03-25T14:59:41.505788",
+        "unique_id": "61f29af3-b151-48a0-af7f-5c3d35483846",
+        "parsed_syllabus_path": "utils/parsing/syllabus_repository/parsed_syllabus\\61f29af3-b151-48a0-af7f-5c3d35483846.json"
+    },
+    "status": "Success"
+}

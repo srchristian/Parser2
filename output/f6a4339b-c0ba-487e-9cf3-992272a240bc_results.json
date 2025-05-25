@@ -1,0 +1,648 @@
+{
+  "metadata": {
+    "extraction_time": "2025-03-12T21:08:03.582484",
+    "unique_id": "f6a4339b-c0ba-487e-9cf3-992272a240bc",
+    "text_length": 12187,
+    "confidence_scores": {
+      "class_data": 0.5882352941176471,
+      "event_data": 0,
+      "task_data": 1.0,
+      "date_verification": 0.0,
+      "overall": 0.3764705882352941
+    },
+    "missing_fields": [
+      "Days of Week",
+      "Term Start Date",
+      "Term End Date"
+    ],
+    "original_file": "f6a4339b-c0ba-487e-9cf3-992272a240bc_PHY203syllabusF24.pdf",
+    "process_time": 56.488366,
+    "timestamp": "2025-03-12T21:09:00.074760"
+  },
+  "class_data": {
+    "School Name": "University of Rhode Island",
+    "Term": "Fall 2024",
+    "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+    "Instructor Name": "Miquel Dorca",
+    "Instructor Email": "miquel@uri.edu",
+    "Class Time": "1:00 PM - 1:50 PM",
+    "Time Zone": "",
+    "Days of Week": "Monday, Wednesday, Friday",
+    "Term Start Date": "September 04, 2024",
+    "Term End Date": "December 11, 2024",
+    "Class Start Date": "September 04, 2024",
+    "Class End Date": "December 11, 2024",
+    "Office Hours": "Monday, Wednesday, Friday 12:30 PM - 1:00 PM",
+    "Telephone": "",
+    "Class Location": "East Hall Auditorium",
+    "Additional": "Calculus-based introduction to Newtonian mechanics. Kinematics and dynamics of particles and systems of particles, conservation laws, rotational motion, gravitation, and oscillatory motion. Prerequisite: credit or concurrent enrollment in MTH 141 and PHY 273. Intended for science and engineering majors. Textbook: University Physics (Open Stax), 1st Edition, Volume 1. Course will use Brightspace for announcements and lectures. Possible remote lectures on November 25th, 27th, and December 2nd. Three unit exams and a cumulative final exam. Homework assignments via WebAssign. Recitation required for PHY273. Anti-Bias, Disability Services, Academic Enhancement Center, and COVID-19 policies are included.",
+    "Date Verification": "user_provided"
+  },
+  "event_data": [
+    {
+      "Event Date": "September 04, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "September 06, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "September 09, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "September 11, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": [
+        "PHY203: Homework #1"
+      ],
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "September 13, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "September 16, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "September 18, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": [
+        "PHY203: Homework #2"
+      ],
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "September 20, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "September 23, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "September 25, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": [
+        "PHY203: Homework #3"
+      ],
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "September 27, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": [
+        "PHY203: Unit Exam 1"
+      ],
+      "assignment_description": null,
+      "test": [
+        "PHY203: Unit Exam 1"
+      ],
+      "special": null
+    },
+    {
+      "Event Date": "September 30, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "October 02, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "October 04, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": [
+        "PHY203: Homework #4"
+      ],
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "October 07, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "October 09, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "October 11, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": [
+        "PHY203: Homework #5"
+      ],
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "October 14, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "October 16, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "October 18, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": [
+        "PHY203: Homework #6"
+      ],
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "October 21, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "October 23, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "October 25, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": [
+        "PHY203: Homework #7",
+        "PHY203: Unit Exam 2"
+      ],
+      "assignment_description": null,
+      "test": [
+        "PHY203: Unit Exam 2"
+      ],
+      "special": null
+    },
+    {
+      "Event Date": "October 28, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "October 30, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "November 01, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "November 04, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "November 06, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": [
+        "PHY203: Homework #8"
+      ],
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "November 08, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "November 11, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "November 13, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "November 15, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "November 18, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "November 20, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": [
+        "PHY203: Homework #9"
+      ],
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "November 22, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "November 25, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "November 27, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "November 29, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "December 02, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "December 04, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": [
+        "PHY203: Homework #10"
+      ],
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "December 06, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "December 09, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": null,
+      "assignment_description": null,
+      "test": null,
+      "special": null
+    },
+    {
+      "Event Date": "December 11, 2024",
+      "Event Title": "PHY203: Class",
+      "Class Time": "1:00 PM - 1:50 PM",
+      "Class Location": "East Hall Auditorium",
+      "reading": null,
+      "assignment": [
+        "PHY203: Homework #11",
+        "PHY203: Homework #12",
+        "PHY203: Unit Exam 3"
+      ],
+      "assignment_description": null,
+      "test": [
+        "PHY203: Unit Exam 3"
+      ],
+      "special": null
+    }
+  ],
+  "task_data": [
+    {
+      "Task Title": "PHY203: Homework #1",
+      "Due Date": "September 11, 2024",
+      "Task Description": "Homework #1 is due on or before Wednesday, September 11, 2024 by 10 p.m. Assigned reading: Chapter 1.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Homework #2",
+      "Due Date": "September 18, 2024",
+      "Task Description": "Homework #2 is due on or before Wednesday, September 18, 2024 by 10 p.m. Assigned reading: Sections 3.1-3.5.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Homework #3",
+      "Due Date": "September 25, 2024",
+      "Task Description": "Homework #3 is due on or before Wednesday, September 25, 2024 by 10 p.m. Assigned reading: Sections 2.1-2.3, 4.1-4.3.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Homework #4",
+      "Due Date": "October 04, 2024",
+      "Task Description": "Homework #4 is due on or before Friday, October 4, 2024 by 10 p.m. Assigned reading: Chapter 5.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Homework #5",
+      "Due Date": "October 11, 2024",
+      "Task Description": "Homework #5 is due on or before Friday, October 11, 2024 by 10 p.m. Assigned reading: Sections 4.4, 6.1-6.3.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Homework #6",
+      "Due Date": "October 18, 2024",
+      "Task Description": "Homework #6 is due on or before Friday, October 18, 2024 by 10 p.m. Assigned reading: 1st part of Section 2.4, Chapter 7.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Homework #7",
+      "Due Date": "October 25, 2024",
+      "Task Description": "Homework #7 is due on or before Friday, October 25, 2024 by 10 p.m. Assigned reading: Chapter 8.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Homework #8",
+      "Due Date": "November 06, 2024",
+      "Task Description": "Homework #8 is due on or before Wednesday, November 6, 2024 by 10 p.m. Assigned reading: None specified.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Homework #9",
+      "Due Date": "November 20, 2024",
+      "Task Description": "Homework #9 is due on or before Wednesday, November 20, 2024 by 10 p.m. Assigned reading: 2nd part of Section 2.4, Sections 11-11.3.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Homework #10",
+      "Due Date": "December 04, 2024",
+      "Task Description": "Homework #10 is due on or before Wednesday, December 4, 2024 by 10 p.m. Assigned reading: Sections 13.1-13.5.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Homework #11",
+      "Due Date": "December 11, 2024",
+      "Task Description": "Homework #11 is due on or before Wednesday, December 11, 2024 by 10 p.m. Assigned reading: Sections 15.1, 15.2, 15.4.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Homework #12",
+      "Due Date": "December 11, 2024",
+      "Task Description": "Homework #12 is due on or before Wednesday, December 11, 2024 by 10 p.m. Assigned reading: Sections 15.1, 15.2, 15.4.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Unit Exam 1",
+      "Due Date": "September 27, 2024",
+      "Task Description": "Unit Exam 1 covers Chapters 1, 3, and 4. The exam is closed book, calculators are permitted, and one sheet of formulas is allowed.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Unit Exam 2",
+      "Due Date": "October 25, 2024",
+      "Task Description": "Unit Exam 2 covers Chapters 5-8. The exam is closed book, calculators are permitted, and one sheet of formulas is allowed.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Unit Exam 3",
+      "Due Date": "December 11, 2024",
+      "Task Description": "Unit Exam 3 covers Chapters 9-11 and 15. The exam is closed book, calculators are permitted, and one sheet of formulas is allowed.",
+      "Due Time": "23:59"
+    },
+    {
+      "Task Title": "PHY203: Final Exam",
+      "Due Date": "TBA",
+      "Task Description": "The Final Exam will be cumulative, covering Chapters 1-11 and 15. It consists of three parts corresponding to the three unit exams. If a score on a part of the final exam is higher than the corresponding unit exam score, it will replace the unit exam score in the semester grade calculation. The exact date is to be announced.",
+      "Due Time": "23:59"
+    }
+  ],
+  "status": "Success"
+}

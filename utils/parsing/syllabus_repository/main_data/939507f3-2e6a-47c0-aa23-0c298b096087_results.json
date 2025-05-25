@@ -1,0 +1,73 @@
+{
+    "metadata": {
+        "pipeline_start_time": "2025-05-19T16:35:04.294397",
+        "unique_id": "939507f3-2e6a-47c0-aa23-0c298b096087",
+        "original_file": "939507f3-2e6a-47c0-aa23-0c298b096087_PHY203syllabusF24.pdf",
+        "extraction_complete": true,
+        "parser_stages_completed": [
+            "syllabus_segmentation",
+            "class_data_extraction",
+            "date_processing",
+            "assignment_processing",
+            "schedule_generation"
+        ],
+        "text_length": 12833,
+        "Scheduled Labs": "No",
+        "Recitation Sessions": "No",
+        "extractor_model_used": "gpt-4.1-nano",
+        "class_data_missing_fields_by_extractor": null,
+        "extractor_process_time": 4.76836,
+        "pipeline_end_time": "2025-05-19T16:35:44.922479",
+        "process_time_pipeline": 40.625,
+        "missing_fields": [],
+        "processing_stage": "user_data_completed",
+        "last_updated_by_user": "2025-05-19T16:36:32.344744"
+    },
+    "class_data": {
+        "School Name": "University of Rhode Island",
+        "Term": "Fall 2024",
+        "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+        "Course Code": "PHY203",
+        "Instructor Name": "Miquel Dorca",
+        "Instructor Email": "miquel@uri.edu",
+        "Class Time": "1pm-1:50pm",
+        "Time Zone": "",
+        "Days of Week": "Friday",
+        "Term Start Date": "September 04, 2024",
+        "Term End Date": "December 11, 2024",
+        "Class Start Date": "September 04, 2024",
+        "Class End Date": "December 11, 2024",
+        "Office Hours": "MWF 12:30pm -1:00pm",
+        "Telephone": "",
+        "Class Location": "East Hall Auditorium",
+        "Additional": "Calculus-based introduction to Newtonian mechanics. Kinematics and dynamics of particles and systems of particles, conservation laws, rotational motion, gravitation, and oscillatory motion. Text: University Physics (Open Stax), 1st Edition, Volume 1. The course uses Brightspace for announcements and lectures, with some classes possibly given asynchronously. There will be three unit exams and a final exam, all closed book with permitted calculators. Homework is administered via WebAssign. The course is divided into three units with specific chapters and exam dates. The final exam score can replace the unit exam score if higher. Recitation sections are held in Room 112, with a maximum of 250 points contributing to the grade. The course continues into PHY204 and PHY205 in subsequent semesters. Additional policies include lab requirements, make-up labs, and grading scales."
+    },
+    "event_data": [],
+    "task_data": [],
+    "lab_data": [],
+    "recitation_data": [],
+    "segmented_syllabus": {
+        "course_identification": "PHY203: ELEMENTARY PHYSICS I (Fall 2024)  \n\nInstructor:  Miquel Dorca, 211 East Hall, miquel@uri.edu  \nOffice Hours: MWF 12:30pm -1:00pm   Lecture Times: 1pm-1:50pm (section 1 ), \n(East Hall Auditorium)",
+        "instructor_information": "Instructor: Miquel Dorca, 211 East Hall, miquel@uri.edu",
+        "course_description_prerequisites": "Calculus-based introduction to Newtonian mechanics. Kinematics and dynamics of particles and systems of particles, conservation laws, rotational motion, gravitation, and oscillatory motion. (Lectures: 3)  Pre: credit or concurrent enrollment in MTH 141 and concurrent enrollment in PHY 273. Intended for science and engineering majors.",
+        "learning_objectives": "1. To develop a conceptual and quantitative understanding of kinematics.\n2. To develop a conceptual and quantitative understanding of forces.\n3. To develop a conceptual and quantitative understanding of work, energy, and energy conservation.\n4. To develop a conceptual and quantitative understanding of linear momentum and linear momentum conservation.\n5. To develop a conceptual and quantitative understanding of rotational kinematics, rotational dynamics, and angular momentum conservation.\n6. To develop a conceptual and quantitative understanding of oscillations and simple harmonic motion.",
+        "required_texts_materials": "Text: University Physics (Open Stax), 1st Edition, Volume 1\nOpenStax Physics free online at: https://openstax.org/subjects/science.",
+        "course_requirements_grading_policy": "Course Grade:  The grade for PHY203 will be based on a maximum of 1200 points :\n- unit exams: 400 points\n- final exam: 400 points\n- homework: 150 points\n- recitation: 250 points\nGrading Scheme:  A(93 -100); A-(90-93); B+(87 -90); B(83 -87); B-(80-83); C+(77 -80); C(73 -77); C-(70-73); D+(67 -70); D(60 -67); F(<60).",
+        "assignments_exams": "Examinations:  There will be three unit exams and a cumulative final exam. All exams are closed book and no other resources are allowed. Calculators permitted. You may bring a sheet of paper with relevant formulas: 1 sheet per unit exam, 3 sheets for final. Each unit exam is at the end of the respective course units:\n- Unit #1: Chaps. 1,3,4  Exam on Fri.  09/27\n- Unit #2: Chaps. 5-8  Exam on Fri.  10/25\n- Unit #3: Chaps. 9-11,15  Exam on Wed.  12/11\n- Final Exam: Chaps. 1-11,15 (TBA)\n\nHomework Assignments: Due usually on Wednesdays or Fridays by 10 p.m., administered via WebAssign. There are 5 submission chances per assignment; extensions with late penalty available after due date. \n\nCourse Schedule:  Three units as above, with specific exam and homework dates listed.\n\nRecitation:  Registered separately for PHY273 recitation, which counts toward PHY203 up to 250 points. Must solve 3 problems per recitation.\n\nNote: All points and specific deadlines are detailed in the syllabus.",
+        "course_schedule": "Wednesday, September 11: HW #1 due, Reading: Chapter 1\nWednesday, September 18: HW #2 due, Reading: Sections 3.1-3.5\nWednesday, September 25: HW #3 due, Reading: Sections 2.1-2.3, 4.1-4.3\nFriday, September 27: Exam #1 (Chaps. 1,3,4)\nFriday, October 4: HW #4 due, Reading: Chap. 5\nFriday, October 11: HW #5 due, Reading: Sections 4.4, 6.1-6.3\nFriday, October 18: HW #6 due, Reading: first part of Sec. 2.4, Chap. 7\nFriday, October 25: HW #7 due, Reading: Chap. 8; Exam #2 (Chaps. 5-8)\nWednesday, October 30: No homework due, Reading: Sections 9.1-9.6\nWednesday, November 6: HW #8 due\nWednesday, November 13: No homework due, Reading: Sections 10.1-10.6\nWednesday, November 20: HW #9 due, Reading: second part of Sec. 2.4, Secs. 11-11.3\nWednesday, November 27: HW #10 due, Reading: Sections 13.1-13.5\nWednesday, December 4: HW #11 due, Reading: Sections 15.1,15.2,15.4\nWednesday, December 11: HW #12 due, Reading: Sections 15.1,15.2,15.4; Exam #3 (Chaps. 9-11,15)\nFinal Exam: TBA (Chaps. 1-11,15)",
+        "course_policies": "Attendance and Participation:  Not explicitly specified, but class attendance assumed.\nLate/Missed Work Policy:  Assignments are due by 10 p.m. and extensions can be granted with a late penalty after due date, up to 4 days.\nAdditional Resources:  Links to URI Disability Services, Academic Support Center, and COVID-19 policies provided.\nInstitutional policies:  Respect, bias reporting info, ADA accommodations, academic integrity, campus safety, and health resources listed in detail.",
+        "communication_student_support": "Instructor Contact: miquel@uri.edu; Response Time: not specified but expected to be prompt.\nPreferred Communication: Email, Brightspace announcements.\nSupport Resources: URI Disability Services (dss@etal.uri.edu, 401-874-2098, web.uri.edu/disability), Academic Enhancement Center (uri.edu/aec), and campus COVID-19 info at web.uri.edu/coronavirus/.",
+        "university_wide_policies_resources": "Links and summaries of policies: FERPA, Non-Discrimination/Title IX, Disability Accommodations (ADA/Section 504), Academic Integrity/Honor Code, Emergency Procedures/Campus Safety, IT Use, Grade Appeals, Student Conduct, Health and Wellness resources, and Academic Calendar provided.",
+        "separate_laboratory_sections": "PHY273 Laboratory & Recitation components require separate enrollment.\nLaboratory Schedule:\n- Intro lab: 9/9-13\n- Motion in 1D: 9/16-20\n- Motion in 1D analysis: 9/23-27\n- Motion in 2D (projectiles): 9/30-10/4\n- Motion in 2D analysis: 10/7-11\n- Newton's laws: 10/14-18\n- Conservation of Energy: 10/21-25\n- Collisions (experiments): 10/28-11/1\n- Collisions (analysis): 11/4-15\n- Ballistic Pendulum: 11/18-22\n- No labs: 11/25-29\n- Rotational dynamics: 12/2-6\n- Make-up Lab (Pendulum): 12/12 (Reading day)",
+        "recitation_discussion_sections": "",
+        "unclassified_content": [
+            "Anti-Bias Syllabus Statement: We respect the rights and dignity of each individual and group. We reject prejudice and intolerance, and we work to understand differences. We believe that equity and inclusion are critical components for campus community members to thrive. If you are a target or a witness of a bias incident, you are encouraged to submit a report to the URI Bias Response Team at www.uri.edu/brt . There you will also find people and resources to help.",
+            "Disability Services for Students Statement: Your access in this course is important. Please send me your Disability Services for Students (DSS) accommodation letter early in the semester so that we have adequate time to discuss and arrange your approved academic accommodations. If you have not yet established services through DSS, please contact them to engage in a confidential conversation about the process for requesting reasonable accommodations in the classroom. DSS can be reached by calling: 401-874-2098, visiting: web.uri.edu/disability , or emailing: dss@etal.uri.edu . We are available to meet with students enrolled in Kingston as well as Providence courses.",
+            "Academic Enhancement Center (for undergraduate courses): Located in Roosevelt Hall, the AEC offers free face-to-face and web-based services to undergraduate students seeking academic support. Peer tutoring is available for STEM-related courses by appointment online and in-person. The Writing Center offers peer tutoring focused on supporting undergraduate writers at any stage of a writing assignment. The UCS160 course and academic skills consultations offer students strategies and activities aimed at improving their studying and test-taking skills. Complete details about each of these programs, up-to-date schedules, contact information and self-service study resources are all available on the AEC website, uri.edu/aec .",
+            "COVID-19 Statement: The University is committed to delivering its educational mission while protecting the health and safety of our community. While the university has worked to create a healthy learning environment for all, it is up to all of us to ensure our campus stays that way. As members of the URI community, students are required to comply with standards of conduct and take precautions to keep themselves and others safe. Visit web.uri.edu/coronavirus/ for the latest information about the URI COVID-19 response."
+        ],
+        "UUID": "939507f3-2e6a-47c0-aa23-0c298b096087",
+        "parsing_method_used": "llm",
+        "segmentation_timestamp": "2025-05-19T16:35:40.136592"
+    }
+}

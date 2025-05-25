@@ -1,0 +1,468 @@
+2025-05-19 15:43:25 - INFO - Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250519.log
+2025-05-19 15:43:25 - INFO - Application logger initialized.
+2025-05-19 15:43:25 - INFO - DateParser initialized using 'python-dateutil' for robust date parsing.
+2025-05-19 15:43:25 - INFO - DateParser standard output format set to: '%B %d, %Y' (Month Day, Year).
+2025-05-19 15:43:25 - INFO - DateParser initialized successfully.
+2025-05-19 15:43:25 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-19 15:43:25 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 15:43:25 - INFO - OpenAIParser initialized successfully with model: gpt-4o.
+2025-05-19 15:43:25 - INFO - SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-19 15:43:25 - INFO - SyllabusParser output directory ensured: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-19 15:43:25 - INFO - OpenAI client initialized for SyllabusParser. Model preference: gpt-4o. Timeout: 90.0s read, 15.0s connect.
+2025-05-19 15:43:25 - INFO - SyllabusParser initialized.
+2025-05-19 15:43:25 - INFO - SyllabusParser initialized successfully.
+2025-05-19 15:43:25 - INFO - Initializing SyllabusExtractor...
+2025-05-19 15:43:25 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-19 15:43:25 - INFO - Using provided OpenAIParser instance.
+2025-05-19 15:43:25 - INFO - SyllabusExtractor initialized successfully.
+2025-05-19 15:43:25 - INFO - SyllabusExtractor initialized successfully.
+2025-05-19 15:43:25 - INFO - ScheduleParser initialized using provided DateParser instance.
+2025-05-19 15:43:25 - INFO - ScheduleParser initialized. Default term weeks for estimation: 15.
+2025-05-19 15:43:25 - INFO - ScheduleParser initialized successfully.
+2025-05-19 15:43:25 - ERROR - Error initializing AssignmentParser: f-string expression part cannot include a backslash (assignment_parser.py, line 495)
+Traceback (most recent call last):
+  File "C:\SyllabusParser2\app.py", line 165, in <module>
+    from utils.parsers.assignment_parser import AssignmentParser
+  File "C:\SyllabusParser2\utils\parsers\assignment_parser.py", line 495
+    elif "sep" in date_str.lower(): dt_obj = datetime.strptime(f"September {re.search(r'\d+', date_str).group(0)}, {re.search(r'\d{4}', date_str).group(0)}", "%B %d, %Y")
+                                                                                                                                                            ^
+SyntaxError: f-string expression part cannot include a backslash
+2025-05-19 15:43:25 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser']
+2025-05-19 15:43:25 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-19 15:43:26 - INFO - Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250519.log
+2025-05-19 15:43:26 - INFO - Application logger initialized.
+2025-05-19 15:43:26 - INFO - DateParser initialized using 'python-dateutil' for robust date parsing.
+2025-05-19 15:43:26 - INFO - DateParser standard output format set to: '%B %d, %Y' (Month Day, Year).
+2025-05-19 15:43:26 - INFO - DateParser initialized successfully.
+2025-05-19 15:43:26 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-19 15:43:26 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 15:43:26 - INFO - OpenAIParser initialized successfully with model: gpt-4o.
+2025-05-19 15:43:26 - INFO - SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-19 15:43:26 - INFO - SyllabusParser output directory ensured: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-19 15:43:26 - INFO - OpenAI client initialized for SyllabusParser. Model preference: gpt-4o. Timeout: 90.0s read, 15.0s connect.
+2025-05-19 15:43:26 - INFO - SyllabusParser initialized.
+2025-05-19 15:43:26 - INFO - SyllabusParser initialized successfully.
+2025-05-19 15:43:26 - INFO - Initializing SyllabusExtractor...
+2025-05-19 15:43:26 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-19 15:43:26 - INFO - Using provided OpenAIParser instance.
+2025-05-19 15:43:26 - INFO - SyllabusExtractor initialized successfully.
+2025-05-19 15:43:26 - INFO - SyllabusExtractor initialized successfully.
+2025-05-19 15:43:26 - INFO - ScheduleParser initialized using provided DateParser instance.
+2025-05-19 15:43:26 - INFO - ScheduleParser initialized. Default term weeks for estimation: 15.
+2025-05-19 15:43:26 - INFO - ScheduleParser initialized successfully.
+2025-05-19 15:43:26 - ERROR - Error initializing AssignmentParser: f-string expression part cannot include a backslash (assignment_parser.py, line 495)
+Traceback (most recent call last):
+  File "C:\SyllabusParser2\app.py", line 165, in <module>
+    from utils.parsers.assignment_parser import AssignmentParser
+  File "C:\SyllabusParser2\utils\parsers\assignment_parser.py", line 495
+    elif "sep" in date_str.lower(): dt_obj = datetime.strptime(f"September {re.search(r'\d+', date_str).group(0)}, {re.search(r'\d{4}', date_str).group(0)}", "%B %d, %Y")
+                                                                                                                                                            ^
+SyntaxError: f-string expression part cannot include a backslash
+2025-05-19 15:43:26 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser']
+2025-05-19 15:43:26 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-19 16:16:44 - INFO - Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250519.log
+2025-05-19 16:16:44 - INFO - Application logger initialized.
+2025-05-19 16:16:44 - INFO - DateParser initialized using 'python-dateutil' for robust date parsing.
+2025-05-19 16:16:44 - INFO - DateParser standard output format set to: '%B %d, %Y' (Month Day, Year).
+2025-05-19 16:16:44 - INFO - DateParser initialized successfully.
+2025-05-19 16:16:45 - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-05-19 16:16:45 - INFO - OpenAI client created for model gpt-4o. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 16:16:45 - INFO - OpenAIParser initialized successfully with model: gpt-4o.
+2025-05-19 16:16:45 - INFO - SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-19 16:16:45 - INFO - SyllabusParser output directory ensured: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-19 16:16:45 - INFO - OpenAI client initialized for SyllabusParser. Model preference: gpt-4o. Timeout: 90.0s read, 15.0s connect.
+2025-05-19 16:16:45 - INFO - SyllabusParser initialized.
+2025-05-19 16:16:45 - INFO - SyllabusParser initialized successfully.
+2025-05-19 16:16:45 - INFO - Initializing SyllabusExtractor...
+2025-05-19 16:16:45 - INFO - SyllabusExtractor preferred OpenAI model for internal parser: gpt-4o
+2025-05-19 16:16:45 - INFO - Using provided OpenAIParser instance.
+2025-05-19 16:16:45 - INFO - SyllabusExtractor initialized successfully.
+2025-05-19 16:16:45 - INFO - SyllabusExtractor initialized successfully.
+2025-05-19 16:16:45 - INFO - ScheduleParser initialized using provided DateParser instance.
+2025-05-19 16:16:45 - INFO - ScheduleParser initialized. Default term weeks for estimation: 15.
+2025-05-19 16:16:45 - INFO - ScheduleParser initialized successfully.
+2025-05-19 16:16:45 - INFO - AssignmentParser initialized using provided DateParser instance.
+2025-05-19 16:16:45 - INFO - AssignmentParser will use 'extract_course_code' from utils.helpers.
+2025-05-19 16:16:45 - INFO - AssignmentParser initialized.
+2025-05-19 16:16:45 - INFO - AssignmentParser initialized.
+2025-05-19 16:16:45 - INFO - Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-19 16:16:45 - INFO - Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [setup_logger:97] Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250519.log
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [<module>:116] Application logger initialized.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [__init__:150] DateParser initialized using 'python-dateutil' for robust date parsing.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [__init__:153] DateParser standard output format set to: '%B %d, %Y' (Month Day, Year).
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [<module>:129] DateParser initialized successfully.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [__init__:66] Initializing OpenAIParser with model: gpt-4.1-nano
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [__init__:85] OpenAI client created for model gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [<module>:136] OpenAIParser initialized successfully with model: gpt-4.1-nano.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [__init__:149] SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [_create_directories:198] SyllabusParser output directory ensured: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [__init__:181] OpenAI client initialized for SyllabusParser. Model preference: gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [__init__:192] SyllabusParser initialized.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [<module>:144] SyllabusParser initialized successfully.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [__init__:77] Initializing SyllabusExtractor...
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [__init__:85] SyllabusExtractor preferred OpenAI model for internal parser: gpt-4.1-nano
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [__init__:94] Using provided OpenAIParser instance.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [__init__:107] SyllabusExtractor initialized successfully.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [<module>:151] SyllabusExtractor initialized successfully.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [__init__:62] ScheduleParser initialized using provided DateParser instance.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [__init__:76] ScheduleParser initialized. Default term weeks for estimation: 15.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [<module>:159] ScheduleParser initialized successfully.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [__init__:80] AssignmentParser initialized using provided DateParser instance.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [__init__:92] AssignmentParser will use 'extract_course_code' from utils.helpers.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [__init__:97] AssignmentParser initialized.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [<module>:171] AssignmentParser initialized.
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [<module>:187] Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-19 16:17:10 - SyllabusPipelineApp - INFO - [<module>:495] Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [setup_logger:97] Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250519.log
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [<module>:116] Application logger initialized.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [__init__:150] DateParser initialized using 'python-dateutil' for robust date parsing.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [__init__:153] DateParser standard output format set to: '%B %d, %Y' (Month Day, Year).
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [<module>:129] DateParser initialized successfully.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [__init__:66] Initializing OpenAIParser with model: gpt-4.1-nano
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [__init__:85] OpenAI client created for model gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [<module>:136] OpenAIParser initialized successfully with model: gpt-4.1-nano.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [__init__:149] SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [_create_directories:198] SyllabusParser output directory ensured: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [__init__:181] OpenAI client initialized for SyllabusParser. Model preference: gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [__init__:192] SyllabusParser initialized.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [<module>:144] SyllabusParser initialized successfully.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [__init__:77] Initializing SyllabusExtractor...
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [__init__:85] SyllabusExtractor preferred OpenAI model for internal parser: gpt-4.1-nano
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [__init__:94] Using provided OpenAIParser instance.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [__init__:107] SyllabusExtractor initialized successfully.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [<module>:151] SyllabusExtractor initialized successfully.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [__init__:62] ScheduleParser initialized using provided DateParser instance.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [__init__:76] ScheduleParser initialized. Default term weeks for estimation: 15.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [<module>:159] ScheduleParser initialized successfully.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [__init__:80] AssignmentParser initialized using provided DateParser instance.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [__init__:92] AssignmentParser will use 'extract_course_code' from utils.helpers.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [__init__:97] AssignmentParser initialized.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [<module>:171] AssignmentParser initialized.
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [<module>:187] Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-19 16:17:11 - SyllabusPipelineApp - INFO - [<module>:495] Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-19 16:21:50 - SyllabusPipelineApp - INFO - [setup_logger:97] Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250519.log
+2025-05-19 16:21:50 - SyllabusPipelineApp - INFO - [<module>:116] Application logger initialized.
+2025-05-19 16:21:50 - SyllabusPipelineApp - INFO - [__init__:150] DateParser initialized using 'python-dateutil' for robust date parsing.
+2025-05-19 16:21:50 - SyllabusPipelineApp - INFO - [__init__:153] DateParser standard output format set to: '%B %d, %Y' (Month Day, Year).
+2025-05-19 16:21:50 - SyllabusPipelineApp - INFO - [<module>:129] DateParser initialized successfully.
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [__init__:66] Initializing OpenAIParser with model: gpt-4.1-nano
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [__init__:85] OpenAI client created for model gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [<module>:136] OpenAIParser initialized successfully with model: gpt-4.1-nano.
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [__init__:149] SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [_create_directories:198] SyllabusParser output directory ensured: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [__init__:181] OpenAI client initialized for SyllabusParser. Model preference: gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [__init__:192] SyllabusParser initialized.
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [<module>:144] SyllabusParser initialized successfully.
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [__init__:77] Initializing SyllabusExtractor...
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [__init__:85] SyllabusExtractor preferred OpenAI model for internal parser: gpt-4.1-nano
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [__init__:94] Using provided OpenAIParser instance.
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [__init__:107] SyllabusExtractor initialized successfully.
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [<module>:151] SyllabusExtractor initialized successfully.
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [__init__:62] ScheduleParser initialized using provided DateParser instance.
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [__init__:76] ScheduleParser initialized. Default term weeks for estimation: 15.
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [<module>:159] ScheduleParser initialized successfully.
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [__init__:80] AssignmentParser initialized using provided DateParser instance.
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [__init__:92] AssignmentParser will use 'extract_course_code' from utils.helpers.
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [__init__:97] AssignmentParser initialized.
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [<module>:171] AssignmentParser initialized.
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [<module>:187] Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-19 16:21:51 - SyllabusPipelineApp - INFO - [<module>:495] Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-19 16:22:14 - SyllabusPipelineApp - INFO - [setup_logger:97] Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250519.log
+2025-05-19 16:22:14 - SyllabusPipelineApp - INFO - [<module>:116] Application logger initialized.
+2025-05-19 16:22:14 - SyllabusPipelineApp - INFO - [__init__:150] DateParser initialized using 'python-dateutil' for robust date parsing.
+2025-05-19 16:22:14 - SyllabusPipelineApp - INFO - [__init__:153] DateParser standard output format set to: '%B %d, %Y' (Month Day, Year).
+2025-05-19 16:22:14 - SyllabusPipelineApp - INFO - [<module>:129] DateParser initialized successfully.
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [__init__:66] Initializing OpenAIParser with model: gpt-4.1-nano
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [__init__:85] OpenAI client created for model gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [<module>:136] OpenAIParser initialized successfully with model: gpt-4.1-nano.
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [__init__:149] SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [_create_directories:198] SyllabusParser output directory ensured: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [__init__:181] OpenAI client initialized for SyllabusParser. Model preference: gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [__init__:192] SyllabusParser initialized.
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [<module>:144] SyllabusParser initialized successfully.
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [__init__:77] Initializing SyllabusExtractor...
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [__init__:85] SyllabusExtractor preferred OpenAI model for internal parser: gpt-4.1-nano
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [__init__:94] Using provided OpenAIParser instance.
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [__init__:107] SyllabusExtractor initialized successfully.
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [<module>:151] SyllabusExtractor initialized successfully.
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [__init__:62] ScheduleParser initialized using provided DateParser instance.
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [__init__:76] ScheduleParser initialized. Default term weeks for estimation: 15.
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [<module>:159] ScheduleParser initialized successfully.
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [__init__:80] AssignmentParser initialized using provided DateParser instance.
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [__init__:92] AssignmentParser will use 'extract_course_code' from utils.helpers.
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [__init__:97] AssignmentParser initialized.
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [<module>:171] AssignmentParser initialized.
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [<module>:187] Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-19 16:22:15 - SyllabusPipelineApp - INFO - [<module>:495] Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-19 16:22:24 - SyllabusPipelineApp - INFO - [setup_logger:97] Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250519.log
+2025-05-19 16:22:24 - SyllabusPipelineApp - INFO - [<module>:116] Application logger initialized.
+2025-05-19 16:22:24 - SyllabusPipelineApp - INFO - [__init__:150] DateParser initialized using 'python-dateutil' for robust date parsing.
+2025-05-19 16:22:24 - SyllabusPipelineApp - INFO - [__init__:153] DateParser standard output format set to: '%B %d, %Y' (Month Day, Year).
+2025-05-19 16:22:24 - SyllabusPipelineApp - INFO - [<module>:129] DateParser initialized successfully.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [__init__:66] Initializing OpenAIParser with model: gpt-4.1-nano
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [__init__:85] OpenAI client created for model gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [<module>:136] OpenAIParser initialized successfully with model: gpt-4.1-nano.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [__init__:149] SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [_create_directories:198] SyllabusParser output directory ensured: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [__init__:181] OpenAI client initialized for SyllabusParser. Model preference: gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [__init__:192] SyllabusParser initialized.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [<module>:144] SyllabusParser initialized successfully.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [__init__:77] Initializing SyllabusExtractor...
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [__init__:85] SyllabusExtractor preferred OpenAI model for internal parser: gpt-4.1-nano
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [__init__:94] Using provided OpenAIParser instance.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [__init__:107] SyllabusExtractor initialized successfully.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [<module>:151] SyllabusExtractor initialized successfully.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [__init__:62] ScheduleParser initialized using provided DateParser instance.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [__init__:76] ScheduleParser initialized. Default term weeks for estimation: 15.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [<module>:159] ScheduleParser initialized successfully.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [__init__:80] AssignmentParser initialized using provided DateParser instance.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [__init__:92] AssignmentParser will use 'extract_course_code' from utils.helpers.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [__init__:97] AssignmentParser initialized.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [<module>:171] AssignmentParser initialized.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [<module>:187] Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [<module>:495] Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [setup_logger:97] Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250519.log
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [<module>:116] Application logger initialized.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [__init__:150] DateParser initialized using 'python-dateutil' for robust date parsing.
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [__init__:153] DateParser standard output format set to: '%B %d, %Y' (Month Day, Year).
+2025-05-19 16:22:25 - SyllabusPipelineApp - INFO - [<module>:129] DateParser initialized successfully.
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [__init__:66] Initializing OpenAIParser with model: gpt-4.1-nano
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [__init__:85] OpenAI client created for model gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [<module>:136] OpenAIParser initialized successfully with model: gpt-4.1-nano.
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [__init__:149] SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [_create_directories:198] SyllabusParser output directory ensured: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [__init__:181] OpenAI client initialized for SyllabusParser. Model preference: gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [__init__:192] SyllabusParser initialized.
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [<module>:144] SyllabusParser initialized successfully.
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [__init__:77] Initializing SyllabusExtractor...
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [__init__:85] SyllabusExtractor preferred OpenAI model for internal parser: gpt-4.1-nano
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [__init__:94] Using provided OpenAIParser instance.
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [__init__:107] SyllabusExtractor initialized successfully.
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [<module>:151] SyllabusExtractor initialized successfully.
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [__init__:62] ScheduleParser initialized using provided DateParser instance.
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [__init__:76] ScheduleParser initialized. Default term weeks for estimation: 15.
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [<module>:159] ScheduleParser initialized successfully.
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [__init__:80] AssignmentParser initialized using provided DateParser instance.
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [__init__:92] AssignmentParser will use 'extract_course_code' from utils.helpers.
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [__init__:97] AssignmentParser initialized.
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [<module>:171] AssignmentParser initialized.
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [<module>:187] Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-19 16:22:26 - SyllabusPipelineApp - INFO - [<module>:495] Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-19 16:23:46 - SyllabusPipelineApp - INFO - [index:212] Rendering index page (/)
+2025-05-19 16:23:46 - SyllabusPipelineApp - WARNING - [page_not_found_error_handler:477] 404 Not Found: http://127.0.0.1:5000/favicon.ico (Error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.)
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [setup_logger:97] Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250519.log
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [<module>:116] Application logger initialized.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [__init__:150] DateParser initialized using 'python-dateutil' for robust date parsing.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [__init__:153] DateParser standard output format set to: '%B %d, %Y' (Month Day, Year).
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [<module>:129] DateParser initialized successfully.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [__init__:66] Initializing OpenAIParser with model: gpt-4.1-nano
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [__init__:85] OpenAI client created for model gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [<module>:136] OpenAIParser initialized successfully with model: gpt-4.1-nano.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [__init__:149] SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [_create_directories:198] SyllabusParser output directory ensured: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [__init__:181] OpenAI client initialized for SyllabusParser. Model preference: gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [__init__:192] SyllabusParser initialized.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [<module>:144] SyllabusParser initialized successfully.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [__init__:77] Initializing SyllabusExtractor...
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [__init__:85] SyllabusExtractor preferred OpenAI model for internal parser: gpt-4.1-nano
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [__init__:94] Using provided OpenAIParser instance.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [__init__:107] SyllabusExtractor initialized successfully.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [<module>:151] SyllabusExtractor initialized successfully.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [__init__:62] ScheduleParser initialized using provided DateParser instance.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [__init__:76] ScheduleParser initialized. Default term weeks for estimation: 15.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [<module>:159] ScheduleParser initialized successfully.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [__init__:80] AssignmentParser initialized using provided DateParser instance.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [__init__:92] AssignmentParser will use 'extract_course_code' from utils.helpers.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [__init__:97] AssignmentParser initialized.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [<module>:171] AssignmentParser initialized.
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [<module>:187] Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-19 16:34:26 - SyllabusPipelineApp - INFO - [<module>:495] Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [setup_logger:97] Logger 'SyllabusPipelineApp' configured. Level: DEBUG. File: logs\SyllabusPipelineApp_20250519.log
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [<module>:116] Application logger initialized.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [__init__:150] DateParser initialized using 'python-dateutil' for robust date parsing.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [__init__:153] DateParser standard output format set to: '%B %d, %Y' (Month Day, Year).
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [<module>:129] DateParser initialized successfully.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [__init__:66] Initializing OpenAIParser with model: gpt-4.1-nano
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [__init__:85] OpenAI client created for model gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [<module>:136] OpenAIParser initialized successfully with model: gpt-4.1-nano.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [__init__:149] SyllabusParser will use imported helper functions (read_json, write_json) from utils.helpers.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [_create_directories:198] SyllabusParser output directory ensured: utils\parsing\syllabus_repository\parsed_syllabus
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [__init__:181] OpenAI client initialized for SyllabusParser. Model preference: gpt-4.1-nano. Timeout: 60.0s read, 10.0s connect.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [__init__:192] SyllabusParser initialized.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [<module>:144] SyllabusParser initialized successfully.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [__init__:77] Initializing SyllabusExtractor...
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [__init__:85] SyllabusExtractor preferred OpenAI model for internal parser: gpt-4.1-nano
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [__init__:94] Using provided OpenAIParser instance.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [__init__:107] SyllabusExtractor initialized successfully.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [<module>:151] SyllabusExtractor initialized successfully.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [__init__:62] ScheduleParser initialized using provided DateParser instance.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [__init__:76] ScheduleParser initialized. Default term weeks for estimation: 15.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [<module>:159] ScheduleParser initialized successfully.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [__init__:80] AssignmentParser initialized using provided DateParser instance.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [__init__:92] AssignmentParser will use 'extract_course_code' from utils.helpers.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [__init__:97] AssignmentParser initialized.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [<module>:171] AssignmentParser initialized.
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [<module>:187] Available parsers for pipeline: ['syllabus_parser', 'extractor', 'openai_parser', 'date_parser', 'schedule_parser', 'assignment_parser']
+2025-05-19 16:34:27 - SyllabusPipelineApp - INFO - [<module>:495] Starting Flask application on 0.0.0.0:5000 with debug=True
+2025-05-19 16:34:56 - SyllabusPipelineApp - INFO - [index:212] Rendering index page (/)
+2025-05-19 16:35:04 - SyllabusPipelineApp - INFO - [upload_file_route:217] Processing file upload request via /upload
+2025-05-19 16:35:04 - SyllabusPipelineApp - INFO - [upload_file_route:229] Generated unique ID for upload: 939507f3-2e6a-47c0-aa23-0c298b096087
+2025-05-19 16:35:04 - SyllabusPipelineApp - INFO - [upload_file_route:259] File uploaded and saved to: C:\SyllabusParser2\uploads\939507f3-2e6a-47c0-aa23-0c298b096087_PHY203syllabusF24.pdf
+2025-05-19 16:35:04 - SyllabusPipelineApp - INFO - [upload_file_route:262] Starting syllabus pipeline for: C:\SyllabusParser2\uploads\939507f3-2e6a-47c0-aa23-0c298b096087_PHY203syllabusF24.pdf (Display: 939507f3-2e6a-47c0-aa23-0c298b096087_PHY203syllabusF24.pdf)
+2025-05-19 16:35:04 - SyllabusPipelineApp - INFO - [parse_syllabus:291] Starting syllabus segmentation for: C:\SyllabusParser2\uploads\939507f3-2e6a-47c0-aa23-0c298b096087_PHY203syllabusF24.pdf (ID: 939507f3-2e6a-47c0-aa23-0c298b096087)
+2025-05-19 16:35:04 - SyllabusPipelineApp - INFO - [parse_syllabus:299] Using unique ID for this segmentation run: 939507f3-2e6a-47c0-aa23-0c298b096087
+2025-05-19 16:35:04 - SyllabusPipelineApp - INFO - [_extract_text_from_file:210] Attempting to extract text from file: C:\SyllabusParser2\uploads\939507f3-2e6a-47c0-aa23-0c298b096087_PHY203syllabusF24.pdf
+2025-05-19 16:35:04 - SyllabusPipelineApp - INFO - [_extract_text_from_file:257] Successfully extracted text from PDF: 939507f3-2e6a-47c0-aa23-0c298b096087_PHY203syllabusF24.pdf (approx. 12866 chars).
+2025-05-19 16:35:04 - SyllabusPipelineApp - INFO - [parse_syllabus:311] Extracted 12833 characters from file 939507f3-2e6a-47c0-aa23-0c298b096087_PHY203syllabusF24.pdf for segmentation.
+2025-05-19 16:35:04 - SyllabusPipelineApp - DEBUG - [_call_openai_api:491] Saved API segmentation prompt to utils\parsing\syllabus_repository\parsed_syllabus\segmentation_debug\prompt_segment_939507f3-2e6a-47c0-aa23-0c298b096087_20250519_163504467957.txt
+2025-05-19 16:35:04 - SyllabusPipelineApp - INFO - [_call_openai_api:502] Calling OpenAI API for segmentation (Attempt 1/2) with model gpt-4.1-nano for ID 939507f3-2e6a-47c0-aa23-0c298b096087...
+2025-05-19 16:35:40 - SyllabusPipelineApp - INFO - [_call_openai_api:526] Received OpenAI response for segmentation (length 8202 chars) on attempt 1 for ID 939507f3-2e6a-47c0-aa23-0c298b096087.
+2025-05-19 16:35:40 - SyllabusPipelineApp - DEBUG - [_parse_llm_response:581] Extracted JSON content by finding first and last braces (no markdown block).
+2025-05-19 16:35:40 - SyllabusPipelineApp - INFO - [_parse_llm_response:656] LLM response parsed, validated, and structured successfully.
+2025-05-19 16:35:40 - SyllabusPipelineApp - INFO - [parse_syllabus:373] Syllabus segmentation for 939507f3-2e6a-47c0-aa23-0c298b096087 completed in 35.84s. Method: llm. Output: utils\parsing\syllabus_repository\parsed_syllabus\939507f3-2e6a-47c0-aa23-0c298b096087_segmented_syllabus.json
+2025-05-19 16:35:40 - SyllabusPipelineApp - INFO - [extract_all:124] SyllabusExtractor.extract_all started for Unique ID: 939507f3-2e6a-47c0-aa23-0c298b096087
+2025-05-19 16:35:40 - SyllabusPipelineApp - INFO - [extract_all:134] Text length for extraction: 12833 characters
+2025-05-19 16:35:40 - SyllabusPipelineApp - DEBUG - [extract_all:136] Text preview for extraction: PHY203: ELEMENTARY PHYSICS I (Fall 2024)  
+ 
+ 
+Instructor:  Miquel Dorca, 211 East Hall, miquel@uri.edu  
+ 
+Office Hours: MWF 12:30pm -1:00pm   Lecture Time s: 1pm-1:50pm (section 1 ), 
+(East Hall Auditorium)  
+ 
+Course Description  
+Calculus -based i ntroductio n to Newtonian mechanics. Kine matics and dynamics of 
+particles and systems of particles , conservation laws, rotational motion, gravitation,  and 
+oscillatory motion. (Lec. 3 )  Pre: credit or concurrent enrollment in MTH 141 and 
+conc...
+2025-05-19 16:35:40 - SyllabusPipelineApp - INFO - [extract_all:141] Delegating extraction to OpenAIParser...
+2025-05-19 16:35:40 - SyllabusPipelineApp - INFO - [extract:113] OpenAIParser: Starting data extraction for ID: 939507f3-2e6a-47c0-aa23-0c298b096087
+2025-05-19 16:35:40 - SyllabusPipelineApp - INFO - [_extract_class_metadata:272] Calling OpenAI API for class metadata (ID: 939507f3-2e6a-47c0-aa23-0c298b096087, attempt 1/2). Model: gpt-4.1-nano
+2025-05-19 16:35:44 - SyllabusPipelineApp - INFO - [_extract_class_metadata:285] OpenAI API response received for class_data (ID: 939507f3-2e6a-47c0-aa23-0c298b096087, length: 1425 chars).
+2025-05-19 16:35:44 - SyllabusPipelineApp - DEBUG - [_extract_class_metadata:286] OpenAI Raw Response for class_data (ID: 939507f3-2e6a-47c0-aa23-0c298b096087, first 500 chars): {
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Course Code": "PHY203",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+  "Class Time": "1pm-1:50pm",
+  "Time Zone": "",
+  "Days of Week": "Monday, Wednesday, Friday",
+  "Term Start Date": "",
+  "Term End Date": "",
+  "Class Start Date": "",
+  "Class End Date": "",
+  "Office Hours": "MWF 12:30pm -1:00pm",
+  "Telephone": "",
+  "Class Location": ...
+2025-05-19 16:35:44 - SyllabusPipelineApp - DEBUG - [_extract_json_from_response:346] Attempting direct JSON parse of API response.
+2025-05-19 16:35:44 - SyllabusPipelineApp - INFO - [_extract_class_metadata:294] Successfully extracted and parsed class metadata from API response for ID: 939507f3-2e6a-47c0-aa23-0c298b096087.
+2025-05-19 16:35:44 - SyllabusPipelineApp - INFO - [extract:182] Extraction for ID 939507f3-2e6a-47c0-aa23-0c298b096087 completed. Fields flagged by parser: ['Class Start Date']. Process time: 4.77s
+2025-05-19 16:35:44 - SyllabusPipelineApp - INFO - [extract_all:153] OpenAIParser extraction completed in 4.77 seconds for ID: 939507f3-2e6a-47c0-aa23-0c298b096087
+2025-05-19 16:35:44 - SyllabusPipelineApp - INFO - [extract_all:154] Missing fields reported by parser: N/A
+2025-05-19 16:35:44 - SyllabusPipelineApp - DEBUG - [extract_all:157] Extracted class_data for ID 939507f3-2e6a-47c0-aa23-0c298b096087: {'School Name': 'University of Rhode Island', 'Term': 'Fall 2024', 'Course Title': 'PHY203: ELEMENTARY PHYSICS I', 'Course Code': 'PHY203', 'Instructor Name': 'Miquel Dorca', 'Instructor Email': 'miquel@uri.edu', 'Class Time': '1pm-1:50pm', 'Time Zone': '', 'Days of Week': 'Monday, Wednesday, Friday', 'Term Start Date': '', 'Term End Date': '', 'Class Start Date': '', 'Class End Date': '', 'Office Hours': 'MWF 12:30pm -1:00pm', 'Telephone': '', 'Class Location': 'East Hall Auditorium', 'Additional': 'Calculus-based introduction to Newtonian mechanics. Kinematics and dynamics of particles and systems of particles, conservation laws, rotational motion, gravitation, and oscillatory motion. Text: University Physics (Open Stax), 1st Edition, Volume 1. The course uses Brightspace for announcements and lectures, with some classes possibly given asynchronously. There will be three unit exams and a final exam, all closed book with permitted calculators. Homework is administered via WebAssign. The course is divided into three units with specific chapters and exam dates. The final exam score can replace the unit exam score if higher. Recitation sections are held in Room 112, with a maximum of 250 points contributing to the grade. The course continues into PHY204 and PHY205 in subsequent semesters. Additional policies include lab requirements, make-up labs, and grading scales.'}
+2025-05-19 16:35:44 - SyllabusPipelineApp - INFO - [process_dates:206] Normalizing all relevant dates and standardizing days of week in extracted data.
+2025-05-19 16:35:44 - SyllabusPipelineApp - DEBUG - [_standardize_days_of_week:338] Attempting to standardize days of week from: 'Monday, Wednesday, Friday'
+2025-05-19 16:35:44 - SyllabusPipelineApp - DEBUG - [_standardize_days_of_week:390] Regex/token based standardization for 'Monday, Wednesday, Friday' yielded indices: [4]
+2025-05-19 16:35:44 - SyllabusPipelineApp - INFO - [_standardize_days_of_week:408] Successfully standardized days of week: 'Monday, Wednesday, Friday' -> 'Friday'
+2025-05-19 16:35:44 - SyllabusPipelineApp - DEBUG - [process_dates:220] Standardized 'Days of Week' in class_data: 'Monday, Wednesday, Friday' -> 'Friday'
+2025-05-19 16:35:44 - SyllabusPipelineApp - INFO - [process_dates:273] Date processing and standardization completed for all relevant fields.
+2025-05-19 16:35:44 - SyllabusPipelineApp - INFO - [extract_tasks_from_text:161] Attempting to extract tasks from text segment of length 991 chars.
+2025-05-19 16:35:44 - SyllabusPipelineApp - INFO - [extract_tasks_from_text:262] No tasks (assignments, exams, etc.) found using regex patterns in the provided text segment.
+2025-05-19 16:35:44 - SyllabusPipelineApp - INFO - [process_schedule:94] Processing class schedule to generate/update event_data...
+2025-05-19 16:35:44 - SyllabusPipelineApp - DEBUG - [_ensure_class_start_end_dates:176] Ensuring 'Class Start Date' and 'Class End Date' are determined and refined.
+2025-05-19 16:35:44 - SyllabusPipelineApp - DEBUG - [normalize_date:299] Date string '' is empty or a special value; returning as is.
+2025-05-19 16:35:44 - SyllabusPipelineApp - DEBUG - [normalize_date:299] Date string '' is empty or a special value; returning as is.
+2025-05-19 16:35:44 - SyllabusPipelineApp - DEBUG - [normalize_date:299] Date string '' is empty or a special value; returning as is.
+2025-05-19 16:35:44 - SyllabusPipelineApp - DEBUG - [normalize_date:299] Date string '' is empty or a special value; returning as is.
+2025-05-19 16:35:44 - SyllabusPipelineApp - WARNING - [_ensure_class_start_end_dates:205] Class Start Date and Term Start Date are missing or invalid. Cannot determine class start.
+2025-05-19 16:35:44 - SyllabusPipelineApp - WARNING - [_ensure_class_start_end_dates:225] Class End Date is missing, and Term End Date is also missing or invalid, and Class Start Date is unavailable for estimation. Cannot determine class end.
+2025-05-19 16:35:44 - SyllabusPipelineApp - WARNING - [process_schedule:153] Missing critical information (Class Start Date: '', Class End Date: '', or Days of Week: 'Friday') in class_data after finalization. Cannot generate class session schedule.
+2025-05-19 16:35:44 - SyllabusPipelineApp - INFO - [upload_file_route:275] Results also saved to main_data_dir: utils\parsing\syllabus_repository\main_data\939507f3-2e6a-47c0-aa23-0c298b096087_results.json
+2025-05-19 16:35:44 - SyllabusPipelineApp - INFO - [missing_fields:291] Showing missing fields form for ID: 939507f3-2e6a-47c0-aa23-0c298b096087
+2025-05-19 16:36:17 - SyllabusPipelineApp - INFO - [complete_data:313] Processing completed data for ID: 939507f3-2e6a-47c0-aa23-0c298b096087
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [complete_data:332] Updated class_data.Class Start Date from form: '2024-09-04'
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [complete_data:332] Updated class_data.Class End Date from form: '2024-12-11'
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [complete_data:332] Updated class_data.Term Start Date from form: ''
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [complete_data:332] Updated class_data.Term End Date from form: ''
+2025-05-19 16:36:17 - SyllabusPipelineApp - INFO - [process_dates:206] Normalizing all relevant dates and standardizing days of week in extracted data.
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [_standardize_days_of_week:338] Attempting to standardize days of week from: 'Friday'
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [_standardize_days_of_week:390] Regex/token based standardization for 'Friday' yielded indices: [4]
+2025-05-19 16:36:17 - SyllabusPipelineApp - INFO - [_standardize_days_of_week:408] Successfully standardized days of week: 'Friday' -> 'Friday'
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [normalize_date:309] Normalized date: '2024-09-04' -> 'September 04, 2024'
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [process_dates:233] Normalized 'Class Start Date' in class_data: '2024-09-04' -> 'September 04, 2024'
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [normalize_date:309] Normalized date: '2024-12-11' -> 'December 11, 2024'
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [process_dates:233] Normalized 'Class End Date' in class_data: '2024-12-11' -> 'December 11, 2024'
+2025-05-19 16:36:17 - SyllabusPipelineApp - INFO - [process_dates:273] Date processing and standardization completed for all relevant fields.
+2025-05-19 16:36:17 - SyllabusPipelineApp - INFO - [process_schedule:94] Processing class schedule to generate/update event_data...
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [_ensure_class_start_end_dates:176] Ensuring 'Class Start Date' and 'Class End Date' are determined and refined.
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [normalize_date:299] Date string '' is empty or a special value; returning as is.
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [normalize_date:299] Date string '' is empty or a special value; returning as is.
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [_standardize_days_of_week:338] Attempting to standardize days of week from: 'Friday'
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [_standardize_days_of_week:390] Regex/token based standardization for 'Friday' yielded indices: [4]
+2025-05-19 16:36:17 - SyllabusPipelineApp - INFO - [_standardize_days_of_week:408] Successfully standardized days of week: 'Friday' -> 'Friday'
+2025-05-19 16:36:17 - SyllabusPipelineApp - ERROR - [_ensure_class_start_end_dates:271] Error occurred while refining Class Start/End Dates: 'DateParser' object has no attribute 'date_parser_module'
+Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\schedule_parser.py", line 236, in _ensure_class_start_end_dates
+    start_date_obj_current = self.date_parser.date_parser_module.parse(final_class_start_str, ignoretz=True).date()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DateParser' object has no attribute 'date_parser_module'
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [_standardize_days_of_week:338] Attempting to standardize days of week from: 'Friday'
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [_standardize_days_of_week:390] Regex/token based standardization for 'Friday' yielded indices: [4]
+2025-05-19 16:36:17 - SyllabusPipelineApp - INFO - [_standardize_days_of_week:408] Successfully standardized days of week: 'Friday' -> 'Friday'
+2025-05-19 16:36:17 - SyllabusPipelineApp - INFO - [_generate_class_sessions:304] Generating regular class sessions for 'PHY203' from September 04, 2024 to December 11, 2024.
+2025-05-19 16:36:17 - SyllabusPipelineApp - ERROR - [_generate_class_sessions:344] Unexpected error generating class sessions for 'PHY203': 'DateParser' object has no attribute 'date_parser_module'
+Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\schedule_parser.py", line 313, in _generate_class_sessions
+    start_obj = self.date_parser.date_parser_module.parse(class_start_date_str, ignoretz=True).date()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DateParser' object has no attribute 'date_parser_module'
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [_merge_schedules:369] Merging 0 generated sessions with 0 existing events.
+2025-05-19 16:36:17 - SyllabusPipelineApp - DEBUG - [_merge_schedules:438] Merged schedule sorted successfully. Total events in final schedule: 0
+2025-05-19 16:36:17 - SyllabusPipelineApp - INFO - [process_schedule:151] Generated/merged schedule with 0 total events for course 'PHY203'.
+2025-05-19 16:36:17 - SyllabusPipelineApp - INFO - [process_tasks_from_structured_data:113] Processing tasks from structured data (task_data) for validation and linking.
+2025-05-19 16:36:17 - SyllabusPipelineApp - INFO - [process_tasks_from_structured_data:116] No task_data found to process in process_tasks_from_structured_data.
+2025-05-19 16:36:17 - SyllabusPipelineApp - INFO - [complete_data:354] Updated results also saved to main_data_dir: utils\parsing\syllabus_repository\main_data\939507f3-2e6a-47c0-aa23-0c298b096087_results.json
+2025-05-19 16:36:17 - SyllabusPipelineApp - INFO - [missing_fields:291] Showing missing fields form for ID: 939507f3-2e6a-47c0-aa23-0c298b096087
+2025-05-19 16:36:32 - SyllabusPipelineApp - INFO - [complete_data:313] Processing completed data for ID: 939507f3-2e6a-47c0-aa23-0c298b096087
+2025-05-19 16:36:32 - SyllabusPipelineApp - DEBUG - [complete_data:332] Updated class_data.Term Start Date from form: '9/4/24'
+2025-05-19 16:36:32 - SyllabusPipelineApp - DEBUG - [complete_data:332] Updated class_data.Term End Date from form: '12/11/24'
+2025-05-19 16:36:32 - SyllabusPipelineApp - INFO - [process_dates:206] Normalizing all relevant dates and standardizing days of week in extracted data.
+2025-05-19 16:36:32 - SyllabusPipelineApp - DEBUG - [_standardize_days_of_week:338] Attempting to standardize days of week from: 'Friday'
+2025-05-19 16:36:32 - SyllabusPipelineApp - DEBUG - [_standardize_days_of_week:390] Regex/token based standardization for 'Friday' yielded indices: [4]
+2025-05-19 16:36:32 - SyllabusPipelineApp - INFO - [_standardize_days_of_week:408] Successfully standardized days of week: 'Friday' -> 'Friday'
+2025-05-19 16:36:32 - SyllabusPipelineApp - DEBUG - [normalize_date:309] Normalized date: '9/4/24' -> 'September 04, 2024'
+2025-05-19 16:36:32 - SyllabusPipelineApp - DEBUG - [process_dates:233] Normalized 'Term Start Date' in class_data: '9/4/24' -> 'September 04, 2024'
+2025-05-19 16:36:32 - SyllabusPipelineApp - DEBUG - [normalize_date:309] Normalized date: '12/11/24' -> 'December 11, 2024'
+2025-05-19 16:36:32 - SyllabusPipelineApp - DEBUG - [process_dates:233] Normalized 'Term End Date' in class_data: '12/11/24' -> 'December 11, 2024'
+2025-05-19 16:36:32 - SyllabusPipelineApp - INFO - [process_dates:273] Date processing and standardization completed for all relevant fields.
+2025-05-19 16:36:32 - SyllabusPipelineApp - INFO - [process_schedule:94] Processing class schedule to generate/update event_data...
+2025-05-19 16:36:32 - SyllabusPipelineApp - DEBUG - [_ensure_class_start_end_dates:176] Ensuring 'Class Start Date' and 'Class End Date' are determined and refined.
+2025-05-19 16:36:32 - SyllabusPipelineApp - DEBUG - [_standardize_days_of_week:338] Attempting to standardize days of week from: 'Friday'
+2025-05-19 16:36:32 - SyllabusPipelineApp - DEBUG - [_standardize_days_of_week:390] Regex/token based standardization for 'Friday' yielded indices: [4]
+2025-05-19 16:36:32 - SyllabusPipelineApp - INFO - [_standardize_days_of_week:408] Successfully standardized days of week: 'Friday' -> 'Friday'
+2025-05-19 16:36:32 - SyllabusPipelineApp - ERROR - [_ensure_class_start_end_dates:271] Error occurred while refining Class Start/End Dates: 'DateParser' object has no attribute 'date_parser_module'
+Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\schedule_parser.py", line 236, in _ensure_class_start_end_dates
+    start_date_obj_current = self.date_parser.date_parser_module.parse(final_class_start_str, ignoretz=True).date()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DateParser' object has no attribute 'date_parser_module'
+2025-05-19 16:36:32 - SyllabusPipelineApp - DEBUG - [_standardize_days_of_week:338] Attempting to standardize days of week from: 'Friday'
+2025-05-19 16:36:32 - SyllabusPipelineApp - DEBUG - [_standardize_days_of_week:390] Regex/token based standardization for 'Friday' yielded indices: [4]
+2025-05-19 16:36:32 - SyllabusPipelineApp - INFO - [_standardize_days_of_week:408] Successfully standardized days of week: 'Friday' -> 'Friday'
+2025-05-19 16:36:32 - SyllabusPipelineApp - INFO - [_generate_class_sessions:304] Generating regular class sessions for 'PHY203' from September 04, 2024 to December 11, 2024.
+2025-05-19 16:36:32 - SyllabusPipelineApp - ERROR - [_generate_class_sessions:344] Unexpected error generating class sessions for 'PHY203': 'DateParser' object has no attribute 'date_parser_module'
+Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\schedule_parser.py", line 313, in _generate_class_sessions
+    start_obj = self.date_parser.date_parser_module.parse(class_start_date_str, ignoretz=True).date()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DateParser' object has no attribute 'date_parser_module'
+2025-05-19 16:36:32 - SyllabusPipelineApp - DEBUG - [_merge_schedules:369] Merging 0 generated sessions with 0 existing events.
+2025-05-19 16:36:32 - SyllabusPipelineApp - DEBUG - [_merge_schedules:438] Merged schedule sorted successfully. Total events in final schedule: 0
+2025-05-19 16:36:32 - SyllabusPipelineApp - INFO - [process_schedule:151] Generated/merged schedule with 0 total events for course 'PHY203'.
+2025-05-19 16:36:32 - SyllabusPipelineApp - INFO - [process_tasks_from_structured_data:113] Processing tasks from structured data (task_data) for validation and linking.
+2025-05-19 16:36:32 - SyllabusPipelineApp - INFO - [process_tasks_from_structured_data:116] No task_data found to process in process_tasks_from_structured_data.
+2025-05-19 16:36:32 - SyllabusPipelineApp - INFO - [complete_data:354] Updated results also saved to main_data_dir: utils\parsing\syllabus_repository\main_data\939507f3-2e6a-47c0-aa23-0c298b096087_results.json
+2025-05-19 16:36:32 - SyllabusPipelineApp - INFO - [show_results:368] Showing results for ID: 939507f3-2e6a-47c0-aa23-0c298b096087

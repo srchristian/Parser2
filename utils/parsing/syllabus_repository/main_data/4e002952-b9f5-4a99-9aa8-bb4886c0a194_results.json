@@ -1,0 +1,44 @@
+{
+    "class_data": {
+        "School Name": "",
+        "Term": "Fall 2024",
+        "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+        "Instructor Name": "Miquel Dorca",
+        "Instructor Email": "miquel@uri.edu",
+        "Class Time": "1pm-1:50pm",
+        "Time Zone": "",
+        "Days of Week": "Monday, Wednesday, Friday",
+        "Term Start Date": "",
+        "Term End Date": "",
+        "Class Start Date": "September 11, 2024",
+        "Class End Date": "December 11, 2024",
+        "Office Hours": "MWF 12:30pm -1:00pm",
+        "Telephone": "",
+        "Class Location": "East Hall Auditorium",
+        "Additional": "Calculus-based introduction to Newtonian mechanics. Kinematics and dynamics of particles and systems of particles, conservation laws, rotational motion, gravitation, and oscillatory motion."
+    },
+    "event_data": [],
+    "task_data": [
+        {
+            "Task Title": "PHY203: HW #1",
+            "Due Date": "date, a 4 day extension with a 10 point penalty can be selected in WebAssign (available once only per assignment)",
+            "Task Description": "due, Wed., Sept. 18 HW #2 due, Wed., Sept. 25 HW #3 due, Fri., Oct. 4 HW #4 due, Fri., Oct. 11 HW #5 due, Fri., Oct. 18 HW #6 due, Fri., Oct. 25 HW #7 due, Wed., Nov. 6 HW #8 due, Wed., Nov. 20 HW #9 due, Wed., Nov. 27 HW #10 due, Wed., Dec. 4 HW #11 due, Wed., Dec. 11 HW #12 due. After the"
+        }
+    ],
+    "metadata": {
+        "original_file": null,
+        "syllabus_text_path": null,
+        "missing_fields": [],
+        "requires_user_input": false,
+        "processing_stage": "completed",
+        "confidence_scores": {
+            "class_data": 0.5,
+            "overall": 0.5
+        },
+        "process_time": 24.587387,
+        "timestamp": "2025-03-26T16:00:09.767238",
+        "unique_id": "4e002952-b9f5-4a99-9aa8-bb4886c0a194",
+        "parsed_syllabus_path": "utils/parsing/syllabus_repository/parsed_syllabus\\4e002952-b9f5-4a99-9aa8-bb4886c0a194.json"
+    },
+    "status": "Success"
+}

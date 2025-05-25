@@ -1,0 +1,33 @@
+{
+    "metadata": {
+        "extraction_time": "2025-03-26T16:59:56.547279",
+        "unique_id": "41a6851d-94aa-478f-af62-d3380a68caf4",
+        "text_length": 15785,
+        "extraction_complete": false,
+        "missing_fields": [],
+        "scheduled_labs": false,
+        "recitation_session": false,
+        "original_file": "41a6851d-94aa-478f-af62-d3380a68caf4.txt",
+        "process_time": 1.497858,
+        "processing_stage": "after_user_input",
+        "requires_user_input": false
+    },
+    "class_data": {
+        "School Name": "",
+        "Term": "",
+        "Course Title": "",
+        "Instructor Name": "Dr. Donna Murdoch",
+        "Instructor Email": "murdoch@tc.edu",
+        "Class Time": "6 PM",
+        "Time Zone": "EST",
+        "Days of Week": "Tuesday, Thursday, Saturday",
+        "Class Start Date": "September 16, 2021",
+        "Class End Date": "December 09, 2021",
+        "Office Hours": "",
+        "Telephone": "",
+        "Class Location": "Zoom",
+        "Additional": "In this course we will explore online teaching and learning - new theories and research that inform best practices in online learning and “participative culture,” the history and evolution of online learning, and planning and designing an online course."
+    },
+    "event_data": [],
+    "task_data": []
+}

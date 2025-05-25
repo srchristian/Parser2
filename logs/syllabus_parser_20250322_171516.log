@@ -1,0 +1,28 @@
+2025-03-22 17:15:16,090 [INFO] logging_setup.__init__:69 - Logging initialized to file: logs\syllabus_parser_20250322_171516.log
+2025-03-22 17:15:16,094 [INFO] app.<module>:217 - Loaded configuration from config.yaml
+2025-03-22 17:15:16,095 [DEBUG] app.create_required_directories:251 - Created directory: utils/parsing/syllabus_repository
+2025-03-22 17:15:16,095 [DEBUG] app.create_required_directories:251 - Created directory: utils/parsing/syllabus_repository/original_syllabus
+2025-03-22 17:15:16,095 [DEBUG] app.create_required_directories:251 - Created directory: utils/parsing/syllabus_repository/converted_syllabus
+2025-03-22 17:15:16,096 [DEBUG] app.create_required_directories:251 - Created directory: utils/parsing/syllabus_repository/parsed_syllabus
+2025-03-22 17:15:16,097 [DEBUG] app.create_required_directories:251 - Created directory: utils/parsing/syllabus_repository/main_data
+2025-03-22 17:15:16,774 [INFO] openai_parser.__init__:56 - OpenAI parser initialized with model: o1-mini
+2025-03-22 17:15:16,774 [INFO] app.<module>:270 - OpenAIParser initialized successfully
+2025-03-22 17:15:16,775 [INFO] date_parser.__init__:69 - DateParser initialized with enhanced day processing
+2025-03-22 17:15:16,776 [INFO] app.<module>:278 - DateParser initialized successfully
+2025-03-22 17:15:16,776 [INFO] schedule_parser.__init__:40 - ScheduleParser initialized
+2025-03-22 17:15:16,777 [INFO] app.<module>:286 - ScheduleParser initialized successfully
+2025-03-22 17:15:16,778 [INFO] assignment_parser.__init__:24 - AssignmentParser initialized
+2025-03-22 17:15:16,778 [INFO] app.<module>:294 - AssignmentParser initialized successfully
+2025-03-22 17:15:16,814 [INFO] app.<module>:312 - SyllabusParser initialized successfully
+2025-03-22 17:15:16,817 [INFO] openai_parser.__init__:56 - OpenAI parser initialized with model: o1-mini
+2025-03-22 17:15:16,818 [INFO] date_parser.__init__:69 - DateParser initialized with enhanced day processing
+2025-03-22 17:15:16,818 [INFO] schedule_parser.__init__:40 - ScheduleParser initialized
+2025-03-22 17:15:16,819 [INFO] assignment_parser.__init__:24 - AssignmentParser initialized
+2025-03-22 17:15:16,819 [INFO] date_scraper._log:111 - Using default school CSV path: C:\SyllabusParser2\utils\School List\schools_with_urls.csv
+2025-03-22 17:15:16,819 [ERROR] date_scraper._log:111 - School CSV file not found: C:\SyllabusParser2\utils\School List\schools_with_urls.csv
+2025-03-22 17:15:16,820 [DEBUG] date_scraper._log:111 - Compiling regex patterns for school names
+2025-03-22 17:15:16,820 [DEBUG] date_scraper._log:111 - Compiled regex patterns for 0 schools
+2025-03-22 17:15:16,820 [INFO] date_scraper.__init__:95 - TermDateScraper initialized
+2025-03-22 17:15:16,820 [INFO] syllabus_extractor.__init__:58 - SyllabusExtractor initialized with model: o1-mini
+2025-03-22 17:15:16,820 [INFO] app.<module>:326 - SyllabusExtractor initialized successfully
+2025-03-22 17:15:16,824 [INFO] app.<module>:1237 - Starting Flask application on 0.0.0.0:5000

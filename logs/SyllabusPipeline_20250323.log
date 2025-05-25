@@ -1,0 +1,1820 @@
+2025-03-23 13:54:58 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 13:54:58 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 13:59:49 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 13:59:49 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 13:59:50 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 13:59:50 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 13:59:50 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 14:05:32 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 14:05:32 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 14:05:32 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 14:05:32 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 14:05:32 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 14:05:51 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 14:05:51 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 14:05:51 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 14:05:51 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 14:05:51 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 14:09:49 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 14:09:49 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 14:09:49 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 14:09:49 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 14:09:49 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 14:09:49 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 14:09:49 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 14:09:49 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 14:09:49 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 14:09:49 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 14:09:49 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 14:09:49 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 14:09:49 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 14:09:49 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 14:09:50 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 14:09:50 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 14:09:50 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 14:09:50 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 14:09:50 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 14:09:50 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 14:09:50 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 14:09:50 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 14:09:50 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 14:09:50 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 14:09:50 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 14:09:50 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 14:09:50 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 14:09:50 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 14:12:27 - SyllabusPipeline - INFO - Rendering index page
+2025-03-23 14:12:37 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-23 14:12:37 - SyllabusPipeline - INFO - Generated unique ID: a2156dba-76e2-40af-b662-cbc0d4b1394d
+2025-03-23 14:12:37 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\a2156dba-76e2-40af-b662-cbc0d4b1394d_PHY203syllabusF24.pdf
+2025-03-23 14:12:37 - SyllabusPipeline - INFO - Saved converted text to: converted\a2156dba-76e2-40af-b662-cbc0d4b1394d.txt
+2025-03-23 14:12:37 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\a2156dba-76e2-40af-b662-cbc0d4b1394d.txt
+2025-03-23 14:12:37 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-23 14:12:45 - SyllabusPipeline - INFO - extract_all started for Unique ID: a2156dba-76e2-40af-b662-cbc0d4b1394d
+2025-03-23 14:12:45 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-23 14:12:45 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-23 14:12:45 - SyllabusPipeline - ERROR - Failed to extract syllabus data: 'OpenAIParser' object has no attribute 'extract': Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\syllabus_extractor.py", line 101, in extract_all
+    extracted_data = self.openai_parser.extract(syllabus_text, unique_id)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'OpenAIParser' object has no attribute 'extract'
+
+2025-03-23 14:12:45 - SyllabusPipeline - INFO - Showing missing fields form for ID: a2156dba-76e2-40af-b662-cbc0d4b1394d
+2025-03-23 14:13:26 - SyllabusPipeline - INFO - Processing user-provided data for ID: a2156dba-76e2-40af-b662-cbc0d4b1394d
+2025-03-23 14:13:26 - SyllabusPipeline - INFO - User provided data: {'Class Time': '1:00 PM - 1:50 PM', 'Days of Week': 'Monday, Wednesday, Friday', 'Class Start Date': '2024-09-04', 'Class End Date': '2024-12-11'}
+2025-03-23 14:13:26 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 14:13:26 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-23 14:13:26 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-23 14:13:26 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-23 14:13:26 - SyllabusPipeline - INFO - Successfully processed dates from user input
+2025-03-23 14:13:26 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-23 14:13:26 - SyllabusPipeline - INFO - Successfully updated class schedule from user input
+2025-03-23 14:13:26 - SyllabusPipeline - INFO - Still missing fields after user input: ['Course Title', 'Term']
+2025-03-23 14:13:26 - SyllabusPipeline - INFO - Showing missing fields form for ID: a2156dba-76e2-40af-b662-cbc0d4b1394d
+2025-03-23 14:13:32 - SyllabusPipeline - INFO - Processing user-provided data for ID: a2156dba-76e2-40af-b662-cbc0d4b1394d
+2025-03-23 14:13:32 - SyllabusPipeline - INFO - User provided data: {}
+2025-03-23 14:13:32 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 14:13:32 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-23 14:13:32 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-23 14:13:32 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-23 14:13:32 - SyllabusPipeline - INFO - Successfully processed dates from user input
+2025-03-23 14:13:32 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-23 14:13:32 - SyllabusPipeline - INFO - Successfully updated class schedule from user input
+2025-03-23 14:13:32 - SyllabusPipeline - INFO - Still missing fields after user input: ['Course Title', 'Term']
+2025-03-23 14:13:32 - SyllabusPipeline - INFO - Showing missing fields form for ID: a2156dba-76e2-40af-b662-cbc0d4b1394d
+2025-03-23 14:13:35 - SyllabusPipeline - INFO - Processing user-provided data for ID: a2156dba-76e2-40af-b662-cbc0d4b1394d
+2025-03-23 14:13:35 - SyllabusPipeline - INFO - User provided data: {}
+2025-03-23 14:13:35 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 14:13:35 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-23 14:13:35 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-23 14:13:35 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-23 14:13:35 - SyllabusPipeline - INFO - Successfully processed dates from user input
+2025-03-23 14:13:35 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-23 14:13:35 - SyllabusPipeline - INFO - Successfully updated class schedule from user input
+2025-03-23 14:13:35 - SyllabusPipeline - INFO - Still missing fields after user input: ['Course Title', 'Term']
+2025-03-23 14:13:35 - SyllabusPipeline - INFO - Showing missing fields form for ID: a2156dba-76e2-40af-b662-cbc0d4b1394d
+2025-03-23 16:24:32 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:24:32 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:24:32 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:24:32 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:24:32 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:24:32 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:24:32 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:24:32 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:24:32 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:24:32 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:24:32 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:24:32 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:24:32 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:24:32 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:24:38 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:24:38 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:24:38 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:24:38 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:24:38 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:24:38 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:24:38 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:24:38 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:24:38 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:24:38 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:24:38 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:24:38 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:24:38 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:24:38 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:24:39 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:24:39 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:24:39 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:24:39 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:24:39 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:24:39 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:24:39 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:24:39 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:24:39 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:24:39 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:24:39 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:24:39 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:24:39 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:24:39 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:24:46 - SyllabusPipeline - INFO - Showing missing fields form for ID: a2156dba-76e2-40af-b662-cbc0d4b1394d
+2025-03-23 16:24:51 - SyllabusPipeline - INFO - Rendering index page
+2025-03-23 16:24:59 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-23 16:24:59 - SyllabusPipeline - INFO - Generated unique ID: 4ac7e343-73f8-439b-9ae4-0221cb6abb1f
+2025-03-23 16:24:59 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\4ac7e343-73f8-439b-9ae4-0221cb6abb1f_PHY203syllabusF24.pdf
+2025-03-23 16:24:59 - SyllabusPipeline - INFO - Saved converted text to: converted\4ac7e343-73f8-439b-9ae4-0221cb6abb1f.txt
+2025-03-23 16:24:59 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\4ac7e343-73f8-439b-9ae4-0221cb6abb1f.txt
+2025-03-23 16:24:59 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-23 16:25:06 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 4ac7e343-73f8-439b-9ae4-0221cb6abb1f
+2025-03-23 16:25:06 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 1/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 16:25:07 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 2/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 16:25:09 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 3/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 16:25:09 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\4ac7e343-73f8-439b-9ae4-0221cb6abb1f_class_data.json
+2025-03-23 16:25:09 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.0
+2025-03-23 16:25:09 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 16:25:09 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 16:25:09 - SyllabusPipeline - INFO - extract_all started for Unique ID: 4ac7e343-73f8-439b-9ae4-0221cb6abb1f
+2025-03-23 16:25:09 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-23 16:25:09 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-23 16:25:09 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 4ac7e343-73f8-439b-9ae4-0221cb6abb1f
+2025-03-23 16:25:09 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 1/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 16:25:10 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 2/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 16:25:12 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 3/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 16:25:12 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\4ac7e343-73f8-439b-9ae4-0221cb6abb1f_class_data.json
+2025-03-23 16:25:12 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.0
+2025-03-23 16:25:12 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 16:25:12 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 16:25:12 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-23 16:25:12 - SyllabusPipeline - INFO - Recalculating class schedule
+2025-03-23 16:25:12 - SyllabusPipeline - INFO - Processing assignments
+2025-03-23 16:25:12 - SyllabusPipeline - INFO - No task data to process
+2025-03-23 16:25:12 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 0 tasks. Missing fields: ['Class Time', 'Time Zone', 'Days of Week', 'Class Start Date', 'Class End Date'].
+2025-03-23 16:25:12 - SyllabusPipeline - INFO - Showing missing fields form for ID: 4ac7e343-73f8-439b-9ae4-0221cb6abb1f
+2025-03-23 16:27:38 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:27:38 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:27:38 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:27:38 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:27:38 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:27:38 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:27:38 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:27:38 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:27:38 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:27:38 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:27:38 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:27:38 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:27:38 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:27:38 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:27:41 - SyllabusPipeline - INFO - Rendering index page
+2025-03-23 16:27:49 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-23 16:27:49 - SyllabusPipeline - INFO - Generated unique ID: 941c479e-2ba9-46ec-9a1d-242cb25776b2
+2025-03-23 16:27:49 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\941c479e-2ba9-46ec-9a1d-242cb25776b2_PHY203syllabusF24.pdf
+2025-03-23 16:27:49 - SyllabusPipeline - INFO - Saved converted text to: converted\941c479e-2ba9-46ec-9a1d-242cb25776b2.txt
+2025-03-23 16:27:49 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\941c479e-2ba9-46ec-9a1d-242cb25776b2.txt
+2025-03-23 16:27:49 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-23 16:27:56 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 941c479e-2ba9-46ec-9a1d-242cb25776b2
+2025-03-23 16:35:54 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:35:54 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:35:54 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:35:54 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:35:54 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:35:54 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:35:54 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:35:54 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:35:54 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:35:54 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:35:54 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:35:54 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:35:54 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:35:54 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:35:55 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:35:55 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:35:55 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:35:55 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:35:55 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:35:55 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:35:55 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:35:55 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:35:55 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:35:55 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:35:55 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:35:55 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:35:55 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:35:55 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:36:00 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-23 16:36:00 - SyllabusPipeline - INFO - Generated unique ID: b0172d13-9660-4fcf-ba48-e3b0a20bb6f4
+2025-03-23 16:36:00 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\b0172d13-9660-4fcf-ba48-e3b0a20bb6f4_PHY203syllabusF24.pdf
+2025-03-23 16:36:00 - SyllabusPipeline - INFO - Saved converted text to: converted\b0172d13-9660-4fcf-ba48-e3b0a20bb6f4.txt
+2025-03-23 16:36:00 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\b0172d13-9660-4fcf-ba48-e3b0a20bb6f4.txt
+2025-03-23 16:36:00 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-23 16:36:08 - SyllabusPipeline - INFO - Extracting syllabus data for ID: b0172d13-9660-4fcf-ba48-e3b0a20bb6f4
+2025-03-23 16:36:08 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 1/3): Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.3 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-03-23 16:36:09 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 2/3): Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.3 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-03-23 16:36:10 - SyllabusPipeline - INFO - Rendering index page
+2025-03-23 16:36:11 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 3/3): Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.3 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-03-23 16:36:11 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\b0172d13-9660-4fcf-ba48-e3b0a20bb6f4_class_data.json
+2025-03-23 16:36:11 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.0
+2025-03-23 16:36:11 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 16:36:11 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 16:36:11 - SyllabusPipeline - INFO - extract_all started for Unique ID: b0172d13-9660-4fcf-ba48-e3b0a20bb6f4
+2025-03-23 16:36:11 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-23 16:36:11 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-23 16:36:11 - SyllabusPipeline - INFO - Extracting syllabus data for ID: b0172d13-9660-4fcf-ba48-e3b0a20bb6f4
+2025-03-23 16:36:12 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 1/3): Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.3 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-03-23 16:36:13 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 2/3): Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.3 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-03-23 16:36:15 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 3/3): Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.3 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-03-23 16:36:15 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\b0172d13-9660-4fcf-ba48-e3b0a20bb6f4_class_data.json
+2025-03-23 16:36:15 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.0
+2025-03-23 16:36:15 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 16:36:15 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 16:36:15 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-23 16:36:15 - SyllabusPipeline - INFO - Recalculating class schedule
+2025-03-23 16:36:15 - SyllabusPipeline - INFO - Processing assignments
+2025-03-23 16:36:15 - SyllabusPipeline - INFO - No task data to process
+2025-03-23 16:36:15 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 0 tasks. Missing fields: ['Class Time', 'Time Zone', 'Days of Week', 'Class Start Date', 'Class End Date'].
+2025-03-23 16:36:32 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:36:32 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:36:32 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:36:32 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:36:32 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:36:32 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:36:32 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:36:32 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:36:32 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:36:32 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:36:32 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:36:32 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:36:32 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:36:32 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:36:33 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:36:33 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:36:33 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:36:33 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:36:33 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:36:33 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:36:33 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:36:33 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:36:33 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:36:33 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:36:33 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:36:33 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:36:33 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:36:33 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:36:36 - SyllabusPipeline - INFO - Rendering index page
+2025-03-23 16:36:45 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-23 16:36:45 - SyllabusPipeline - INFO - Generated unique ID: aff2760d-426d-499d-9559-364f3ab840d7
+2025-03-23 16:36:45 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\aff2760d-426d-499d-9559-364f3ab840d7_PHY203syllabusF24.pdf
+2025-03-23 16:36:45 - SyllabusPipeline - INFO - Saved converted text to: converted\aff2760d-426d-499d-9559-364f3ab840d7.txt
+2025-03-23 16:36:45 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\aff2760d-426d-499d-9559-364f3ab840d7.txt
+2025-03-23 16:36:45 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-23 16:36:53 - SyllabusPipeline - INFO - Extracting syllabus data for ID: aff2760d-426d-499d-9559-364f3ab840d7
+2025-03-23 16:36:53 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 1/3): Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.3 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-03-23 16:36:54 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 2/3): Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.3 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-03-23 16:36:56 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 3/3): Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.3 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-03-23 16:36:56 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\aff2760d-426d-499d-9559-364f3ab840d7_class_data.json
+2025-03-23 16:36:56 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.0
+2025-03-23 16:36:56 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 16:36:56 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 16:36:56 - SyllabusPipeline - INFO - extract_all started for Unique ID: aff2760d-426d-499d-9559-364f3ab840d7
+2025-03-23 16:36:56 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-23 16:36:56 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-23 16:36:56 - SyllabusPipeline - INFO - Extracting syllabus data for ID: aff2760d-426d-499d-9559-364f3ab840d7
+2025-03-23 16:36:57 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 1/3): Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.3 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-03-23 16:36:58 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 2/3): Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.3 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-03-23 16:37:00 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 3/3): Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.3 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-03-23 16:37:00 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\aff2760d-426d-499d-9559-364f3ab840d7_class_data.json
+2025-03-23 16:37:00 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.0
+2025-03-23 16:37:00 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 16:37:00 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 16:37:00 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-23 16:37:00 - SyllabusPipeline - INFO - Recalculating class schedule
+2025-03-23 16:37:00 - SyllabusPipeline - INFO - Processing assignments
+2025-03-23 16:37:00 - SyllabusPipeline - INFO - No task data to process
+2025-03-23 16:37:00 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 0 tasks. Missing fields: ['Class Time', 'Time Zone', 'Days of Week', 'Class Start Date', 'Class End Date'].
+2025-03-23 16:37:00 - SyllabusPipeline - INFO - Showing missing fields form for ID: aff2760d-426d-499d-9559-364f3ab840d7
+2025-03-23 16:40:26 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:40:26 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:40:26 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:40:26 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:40:26 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:40:26 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:40:26 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:40:26 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:40:26 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:40:26 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:40:26 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:40:26 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:40:26 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:40:26 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:40:44 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:40:44 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:40:44 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:40:44 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:40:44 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:40:44 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:40:44 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:40:44 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:40:44 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:40:44 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:40:44 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:40:44 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:40:44 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:40:44 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:40:45 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:40:45 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:40:45 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:40:45 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:40:45 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:40:45 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:40:45 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:40:45 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:40:45 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:40:45 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:40:45 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:40:45 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:40:45 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:40:45 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:40:57 - SyllabusPipeline - INFO - Rendering index page
+2025-03-23 16:41:04 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-23 16:41:04 - SyllabusPipeline - INFO - Generated unique ID: 37fca948-c7d9-42bb-a3ce-dfd94deeaa78
+2025-03-23 16:41:04 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\37fca948-c7d9-42bb-a3ce-dfd94deeaa78_PHY203syllabusF24.pdf
+2025-03-23 16:41:04 - SyllabusPipeline - INFO - Saved converted text to: converted\37fca948-c7d9-42bb-a3ce-dfd94deeaa78.txt
+2025-03-23 16:41:04 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\37fca948-c7d9-42bb-a3ce-dfd94deeaa78.txt
+2025-03-23 16:41:04 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-23 16:41:35 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 37fca948-c7d9-42bb-a3ce-dfd94deeaa78
+2025-03-23 16:41:36 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 1/3): Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.3 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-03-23 16:41:37 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 2/3): Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.3 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-03-23 16:41:39 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 3/3): Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.3 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-03-23 16:41:39 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\37fca948-c7d9-42bb-a3ce-dfd94deeaa78_class_data.json
+2025-03-23 16:41:39 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.0
+2025-03-23 16:41:39 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 16:41:39 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 16:41:39 - SyllabusPipeline - INFO - extract_all started for Unique ID: 37fca948-c7d9-42bb-a3ce-dfd94deeaa78
+2025-03-23 16:41:39 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-23 16:41:39 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-23 16:41:39 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 37fca948-c7d9-42bb-a3ce-dfd94deeaa78
+2025-03-23 16:41:39 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 1/3): Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.3 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-03-23 16:41:41 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 2/3): Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.3 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-03-23 16:41:43 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 3/3): Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.3 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-03-23 16:41:43 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\37fca948-c7d9-42bb-a3ce-dfd94deeaa78_class_data.json
+2025-03-23 16:41:43 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.0
+2025-03-23 16:41:43 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 16:41:43 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 16:41:43 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-23 16:41:43 - SyllabusPipeline - INFO - Recalculating class schedule
+2025-03-23 16:41:43 - SyllabusPipeline - INFO - Processing assignments
+2025-03-23 16:41:43 - SyllabusPipeline - INFO - No task data to process
+2025-03-23 16:41:43 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 0 tasks. Missing fields: ['Class Time', 'Time Zone', 'Days of Week', 'Class Start Date', 'Class End Date'].
+2025-03-23 16:41:43 - SyllabusPipeline - INFO - Showing missing fields form for ID: 37fca948-c7d9-42bb-a3ce-dfd94deeaa78
+2025-03-23 16:44:33 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:44:33 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:44:33 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:44:33 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:44:33 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:44:33 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:44:33 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:44:33 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:44:33 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:44:33 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:44:33 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:44:33 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:44:33 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:44:33 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:44:40 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:44:40 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:44:40 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:44:40 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:44:40 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:44:40 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:44:40 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:44:40 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:44:40 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:44:40 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:44:40 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:44:40 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:44:40 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:44:40 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:44:41 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:44:41 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:44:41 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:44:41 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:44:41 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:44:41 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:44:41 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:44:41 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:44:41 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:44:41 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:44:41 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:44:41 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:44:41 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:44:41 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:44:44 - SyllabusPipeline - INFO - Rendering index page
+2025-03-23 16:44:51 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-23 16:44:51 - SyllabusPipeline - INFO - Generated unique ID: 8ad867dd-b8cc-4f91-8c6b-576a7cb07d54
+2025-03-23 16:44:51 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\8ad867dd-b8cc-4f91-8c6b-576a7cb07d54_PHY203syllabusF24.pdf
+2025-03-23 16:44:51 - SyllabusPipeline - INFO - Saved converted text to: converted\8ad867dd-b8cc-4f91-8c6b-576a7cb07d54.txt
+2025-03-23 16:44:51 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\8ad867dd-b8cc-4f91-8c6b-576a7cb07d54.txt
+2025-03-23 16:44:51 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-23 16:45:07 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 8ad867dd-b8cc-4f91-8c6b-576a7cb07d54
+2025-03-23 16:45:18 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\8ad867dd-b8cc-4f91-8c6b-576a7cb07d54_class_data.json
+2025-03-23 16:45:18 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.47058823529411764
+2025-03-23 16:45:18 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 16:45:18 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 16:45:18 - SyllabusPipeline - INFO - extract_all started for Unique ID: 8ad867dd-b8cc-4f91-8c6b-576a7cb07d54
+2025-03-23 16:45:18 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-23 16:45:18 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-23 16:45:18 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 8ad867dd-b8cc-4f91-8c6b-576a7cb07d54
+2025-03-23 16:45:30 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\8ad867dd-b8cc-4f91-8c6b-576a7cb07d54_class_data.json
+2025-03-23 16:45:30 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.6470588235294118
+2025-03-23 16:45:30 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 16:45:30 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 16:45:30 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-23 16:45:30 - SyllabusPipeline - INFO - Recalculating class schedule
+2025-03-23 16:45:30 - SyllabusPipeline - INFO - Processing assignments
+2025-03-23 16:45:30 - SyllabusPipeline - INFO - No task data to process
+2025-03-23 16:45:30 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 0 tasks. Missing fields: ['Days of Week', 'Class Start Date', 'Class End Date'].
+2025-03-23 16:45:30 - SyllabusPipeline - INFO - Showing missing fields form for ID: 8ad867dd-b8cc-4f91-8c6b-576a7cb07d54
+2025-03-23 16:45:53 - SyllabusPipeline - INFO - Processing user-provided data for ID: 8ad867dd-b8cc-4f91-8c6b-576a7cb07d54
+2025-03-23 16:45:53 - SyllabusPipeline - INFO - User provided data: {'Class Time': '1:00 PM - 1:50 PM', 'Days of Week': 'Monday, Wednesday, Friday', 'Class Start Date': '2024-09-04', 'Class End Date': '2024-12-11'}
+2025-03-23 16:45:53 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 16:45:53 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-23 16:45:53 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-23 16:45:53 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-23 16:45:53 - SyllabusPipeline - INFO - Successfully processed dates from user input
+2025-03-23 16:45:53 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-23 16:45:53 - SyllabusPipeline - INFO - Successfully updated class schedule from user input
+2025-03-23 16:45:53 - SyllabusPipeline - INFO - Showing results for ID: 8ad867dd-b8cc-4f91-8c6b-576a7cb07d54
+2025-03-23 16:52:19 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:52:19 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:52:19 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:52:19 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:52:19 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:52:19 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:52:19 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:52:19 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:52:19 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:52:19 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:52:19 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:52:19 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:52:19 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:52:19 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:54:08 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:54:08 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:54:08 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:54:08 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:54:08 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:54:08 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:54:08 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:54:08 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:54:08 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:54:08 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:54:08 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:54:08 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:54:08 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:54:08 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:55:23 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:55:23 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:55:23 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:55:23 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:55:23 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:55:23 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:55:23 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:55:23 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:55:23 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:55:23 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:55:23 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:55:23 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:55:23 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:55:23 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:56:01 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:56:01 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:56:01 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:56:01 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:56:01 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:56:01 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:56:01 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:56:01 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:56:01 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:56:01 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:56:01 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:56:01 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:56:01 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:56:01 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:56:02 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:56:02 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:56:02 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:56:02 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:56:02 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:56:02 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 16:56:02 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 16:56:02 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 16:56:02 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 16:56:02 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 16:56:02 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 16:56:02 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 16:56:02 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 16:56:02 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 16:56:05 - SyllabusPipeline - INFO - Rendering index page
+2025-03-23 16:56:14 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-23 16:56:14 - SyllabusPipeline - INFO - Generated unique ID: b674edfc-3115-469d-8e8e-c8ae4db76bb9
+2025-03-23 16:56:14 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\b674edfc-3115-469d-8e8e-c8ae4db76bb9_PHY203syllabusF24.pdf
+2025-03-23 16:56:14 - SyllabusPipeline - INFO - Saved converted text to: converted\b674edfc-3115-469d-8e8e-c8ae4db76bb9.txt
+2025-03-23 16:56:14 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\b674edfc-3115-469d-8e8e-c8ae4db76bb9.txt
+2025-03-23 16:56:14 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-23 16:56:33 - SyllabusPipeline - INFO - Extracting syllabus data for ID: b674edfc-3115-469d-8e8e-c8ae4db76bb9
+2025-03-23 16:56:33 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 1/3): Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-03-23 16:56:34 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 2/3): Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-03-23 16:56:36 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 3/3): Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-03-23 16:56:36 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\b674edfc-3115-469d-8e8e-c8ae4db76bb9_class_data.json
+2025-03-23 16:56:36 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.0
+2025-03-23 16:56:36 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 16:56:36 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 16:56:36 - SyllabusPipeline - INFO - extract_all started for Unique ID: b674edfc-3115-469d-8e8e-c8ae4db76bb9
+2025-03-23 16:56:36 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-23 16:56:36 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-23 16:56:36 - SyllabusPipeline - INFO - Extracting syllabus data for ID: b674edfc-3115-469d-8e8e-c8ae4db76bb9
+2025-03-23 16:56:37 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 1/3): Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-03-23 16:56:38 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 2/3): Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-03-23 16:56:40 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 3/3): Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-03-23 16:56:40 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\b674edfc-3115-469d-8e8e-c8ae4db76bb9_class_data.json
+2025-03-23 16:56:40 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.0
+2025-03-23 16:56:40 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 16:56:40 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 16:56:40 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-23 16:56:40 - SyllabusPipeline - INFO - Recalculating class schedule
+2025-03-23 16:56:40 - SyllabusPipeline - INFO - Processing assignments
+2025-03-23 16:56:40 - SyllabusPipeline - INFO - No task data to process
+2025-03-23 16:56:40 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 0 tasks. Missing fields: ['Class Time', 'Time Zone', 'Days of Week', 'Class Start Date', 'Class End Date'].
+2025-03-23 16:56:40 - SyllabusPipeline - INFO - Showing missing fields form for ID: b674edfc-3115-469d-8e8e-c8ae4db76bb9
+2025-03-23 17:04:39 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:04:39 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:04:39 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:04:39 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:04:39 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:04:39 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:04:39 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:04:39 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:04:39 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:04:39 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:04:39 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:04:39 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:04:39 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:04:39 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:06:16 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:06:16 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:06:16 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:06:16 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:06:16 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:06:16 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:06:16 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:06:16 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:06:16 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:06:16 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:06:16 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:06:16 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:06:16 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:06:16 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:06:23 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:06:23 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:06:23 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:06:23 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:06:23 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:06:23 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:06:23 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:06:23 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:06:23 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:06:23 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:06:23 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:06:23 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:06:23 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:06:23 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:06:24 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:06:24 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:06:24 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:06:24 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:06:24 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:06:24 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:06:24 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:06:24 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:06:24 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:06:24 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:06:24 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:06:24 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:06:24 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:06:24 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:06:27 - SyllabusPipeline - INFO - Rendering index page
+2025-03-23 17:06:33 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-23 17:06:33 - SyllabusPipeline - INFO - Generated unique ID: d0590f19-50ff-4ab8-a904-a9c6c7618380
+2025-03-23 17:06:33 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\d0590f19-50ff-4ab8-a904-a9c6c7618380_PHY203syllabusF24.pdf
+2025-03-23 17:06:33 - SyllabusPipeline - INFO - Saved converted text to: converted\d0590f19-50ff-4ab8-a904-a9c6c7618380.txt
+2025-03-23 17:06:33 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\d0590f19-50ff-4ab8-a904-a9c6c7618380.txt
+2025-03-23 17:06:33 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-23 17:07:01 - SyllabusPipeline - INFO - Extracting syllabus data for ID: d0590f19-50ff-4ab8-a904-a9c6c7618380
+2025-03-23 17:07:16 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\d0590f19-50ff-4ab8-a904-a9c6c7618380_class_data.json
+2025-03-23 17:07:16 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.5882352941176471
+2025-03-23 17:07:16 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 17:07:16 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 17:07:16 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-23 17:07:16 - SyllabusPipeline - INFO - extract_all started for Unique ID: d0590f19-50ff-4ab8-a904-a9c6c7618380
+2025-03-23 17:07:16 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-23 17:07:16 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-23 17:07:16 - SyllabusPipeline - INFO - Extracting syllabus data for ID: d0590f19-50ff-4ab8-a904-a9c6c7618380
+2025-03-23 17:07:35 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\d0590f19-50ff-4ab8-a904-a9c6c7618380_class_data.json
+2025-03-23 17:07:35 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.9411764705882353
+2025-03-23 17:07:35 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 17:07:35 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-23 17:07:35 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-23 17:07:35 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-23 17:07:35 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-23 17:07:35 - SyllabusPipeline - INFO - Parsed days of week 'Monday, Wednesday, Friday' to indices [0, 2, 4]
+2025-03-23 17:07:35 - SyllabusPipeline - INFO - Generating complete schedule from August 26, 2024 to December 12, 2024
+2025-03-23 17:07:35 - SyllabusPipeline - INFO - Generated 47 class sessions between 2024-08-26 and 2024-12-12
+2025-03-23 17:07:35 - SyllabusPipeline - INFO - Generated complete schedule with 47 class sessions
+2025-03-23 17:07:35 - SyllabusPipeline - ERROR - Failed to extract syllabus data: AssignmentParser.process_assignments() missing 1 required positional argument: 'class_data': Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\syllabus_extractor.py", line 120, in extract_all
+    extracted_data = self.assignment_parser.process_assignments(extracted_data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AssignmentParser.process_assignments() missing 1 required positional argument: 'class_data'
+
+2025-03-23 17:07:35 - SyllabusPipeline - INFO - Showing missing fields form for ID: d0590f19-50ff-4ab8-a904-a9c6c7618380
+2025-03-23 17:07:53 - SyllabusPipeline - INFO - Processing user-provided data for ID: d0590f19-50ff-4ab8-a904-a9c6c7618380
+2025-03-23 17:07:53 - SyllabusPipeline - INFO - User provided data: {'Days of Week': 'Monday, Wednesday, Friday', 'Class Start Date': '2024-09-04', 'Class End Date': '2024-12-11'}
+2025-03-23 17:07:53 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 17:07:53 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-23 17:07:53 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-23 17:07:53 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-23 17:07:53 - SyllabusPipeline - INFO - Successfully processed dates from user input
+2025-03-23 17:07:53 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-23 17:07:53 - SyllabusPipeline - INFO - Successfully updated class schedule from user input
+2025-03-23 17:07:53 - SyllabusPipeline - INFO - Showing results for ID: d0590f19-50ff-4ab8-a904-a9c6c7618380
+2025-03-23 17:10:19 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:10:19 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:10:19 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:10:19 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:10:19 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:10:19 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:10:19 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:10:19 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:10:19 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:10:19 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:10:19 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:10:19 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:10:19 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:10:19 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:10:28 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:10:28 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:10:28 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:10:28 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:10:28 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:10:28 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:10:28 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:10:28 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:10:28 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:10:28 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:10:28 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:10:28 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:10:28 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:10:28 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:11:25 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:11:25 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:11:25 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:11:25 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:11:25 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:11:25 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:11:25 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:11:25 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:11:25 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:11:25 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:11:25 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:11:25 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:11:25 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:11:25 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:11:26 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:11:26 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:11:26 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:11:26 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:11:26 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:11:26 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:11:26 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:11:26 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:11:26 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:11:26 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:11:26 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:11:26 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:11:26 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:11:26 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:11:32 - SyllabusPipeline - INFO - Rendering index page
+2025-03-23 17:11:38 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-23 17:11:38 - SyllabusPipeline - INFO - Generated unique ID: d8a92e1b-9bec-45ea-b5ba-38a8447cf489
+2025-03-23 17:11:38 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\d8a92e1b-9bec-45ea-b5ba-38a8447cf489_PHY203syllabusF24.pdf
+2025-03-23 17:11:39 - SyllabusPipeline - INFO - Saved converted text to: converted\d8a92e1b-9bec-45ea-b5ba-38a8447cf489.txt
+2025-03-23 17:11:39 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\d8a92e1b-9bec-45ea-b5ba-38a8447cf489.txt
+2025-03-23 17:11:39 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-23 17:11:51 - SyllabusPipeline - INFO - Extracting syllabus data for ID: d8a92e1b-9bec-45ea-b5ba-38a8447cf489
+2025-03-23 17:12:01 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\d8a92e1b-9bec-45ea-b5ba-38a8447cf489_class_data.json
+2025-03-23 17:12:01 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.47058823529411764
+2025-03-23 17:12:01 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 17:12:01 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 17:12:01 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-23 17:12:01 - SyllabusPipeline - INFO - extract_all started for Unique ID: d8a92e1b-9bec-45ea-b5ba-38a8447cf489
+2025-03-23 17:12:01 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-23 17:12:01 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-23 17:12:01 - SyllabusPipeline - INFO - Extracting syllabus data for ID: d8a92e1b-9bec-45ea-b5ba-38a8447cf489
+2025-03-23 17:12:13 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\d8a92e1b-9bec-45ea-b5ba-38a8447cf489_class_data.json
+2025-03-23 17:12:13 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.5882352941176471
+2025-03-23 17:12:13 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 17:12:13 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 17:12:13 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-23 17:12:13 - SyllabusPipeline - INFO - Recalculating class schedule
+2025-03-23 17:12:13 - SyllabusPipeline - ERROR - Failed to extract syllabus data: AssignmentParser.process_assignments() missing 1 required positional argument: 'class_data': Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\syllabus_extractor.py", line 120, in extract_all
+    extracted_data = self.assignment_parser.process_assignments(extracted_data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AssignmentParser.process_assignments() missing 1 required positional argument: 'class_data'
+
+2025-03-23 17:12:13 - SyllabusPipeline - INFO - Showing missing fields form for ID: d8a92e1b-9bec-45ea-b5ba-38a8447cf489
+2025-03-23 17:12:35 - SyllabusPipeline - INFO - Processing user-provided data for ID: d8a92e1b-9bec-45ea-b5ba-38a8447cf489
+2025-03-23 17:12:35 - SyllabusPipeline - INFO - User provided data: {'Class Time': '1:00 PM - 1:50 PM', 'Days of Week': 'Monday, Wednesday, Friday', 'Class Start Date': '2024-09-04', 'Class End Date': '2024-12-11'}
+2025-03-23 17:12:35 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 17:12:35 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-23 17:12:35 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-23 17:12:35 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-23 17:12:35 - SyllabusPipeline - INFO - Successfully processed dates from user input
+2025-03-23 17:12:35 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-23 17:12:35 - SyllabusPipeline - INFO - Successfully updated class schedule from user input
+2025-03-23 17:12:35 - SyllabusPipeline - INFO - Showing results for ID: d8a92e1b-9bec-45ea-b5ba-38a8447cf489
+2025-03-23 17:19:45 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:19:45 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:19:45 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:19:45 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:19:45 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:19:45 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:19:45 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:19:45 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:19:45 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:19:45 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:19:45 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:19:45 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:19:45 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:19:45 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:20:44 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:20:44 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:20:44 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:20:44 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:20:44 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:20:44 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:20:44 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:20:44 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:20:44 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:20:44 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:20:44 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:20:44 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:20:44 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:20:44 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:24:31 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:24:31 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:24:31 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:24:31 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:24:31 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:24:31 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:24:31 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:24:31 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:24:31 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:24:31 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:24:31 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:24:31 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:24:31 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:24:31 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:26:04 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:26:04 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:26:04 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:26:04 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:26:04 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:26:04 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:26:04 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:26:04 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:26:04 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:26:04 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:26:04 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:26:04 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:26:04 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:26:04 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:30:09 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:30:09 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:30:09 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:30:09 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:30:09 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:30:09 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:30:09 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:30:09 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:30:09 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:30:09 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:30:09 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:30:09 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:30:09 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:30:09 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:32:16 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:32:16 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:32:16 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:32:16 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:32:16 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:32:16 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:32:16 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:32:16 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:32:16 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:32:16 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:32:16 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:32:16 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:32:16 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:32:16 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:40:36 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:40:36 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:40:36 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:40:36 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:40:36 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:40:36 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:40:36 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:40:36 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:40:36 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:40:36 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:40:36 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:40:36 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:40:36 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:40:36 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:42:18 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:42:18 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:42:18 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:42:18 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:42:18 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:42:18 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:42:18 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:42:18 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:42:18 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:42:18 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:42:18 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:42:18 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:42:18 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:42:18 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:42:19 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:42:19 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:42:19 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:42:19 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:42:19 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:42:19 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:42:19 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:42:19 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:42:19 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:42:19 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:42:19 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:42:19 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:42:19 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:42:19 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:42:24 - SyllabusPipeline - INFO - Rendering index page
+2025-03-23 17:42:31 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-23 17:42:31 - SyllabusPipeline - INFO - Generated unique ID: 3200b94b-c425-45fe-afb6-889f7ea56949
+2025-03-23 17:42:31 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\3200b94b-c425-45fe-afb6-889f7ea56949_PHY203syllabusF24.pdf
+2025-03-23 17:42:31 - SyllabusPipeline - INFO - Saved converted text to: converted\3200b94b-c425-45fe-afb6-889f7ea56949.txt
+2025-03-23 17:42:31 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\3200b94b-c425-45fe-afb6-889f7ea56949.txt
+2025-03-23 17:42:31 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-23 17:42:46 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 3200b94b-c425-45fe-afb6-889f7ea56949
+2025-03-23 17:43:00 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\3200b94b-c425-45fe-afb6-889f7ea56949_class_data.json
+2025-03-23 17:43:00 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.5294117647058824
+2025-03-23 17:43:00 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 17:43:00 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 17:43:00 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-23 17:43:00 - SyllabusPipeline - INFO - Processing assignments from structured data
+2025-03-23 17:43:00 - SyllabusPipeline - INFO - Validating assignment sequence
+2025-03-23 17:43:00 - SyllabusPipeline - INFO - Found 12 homework assignments
+2025-03-23 17:43:00 - SyllabusPipeline - WARNING - Found duplicate homework numbers in assignments
+2025-03-23 17:43:00 - SyllabusPipeline - INFO - Linking assignments to class sessions
+2025-03-23 17:43:00 - SyllabusPipeline - INFO - extract_all started for Unique ID: 3200b94b-c425-45fe-afb6-889f7ea56949
+2025-03-23 17:43:00 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-23 17:43:00 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-23 17:43:00 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 3200b94b-c425-45fe-afb6-889f7ea56949
+2025-03-23 17:43:16 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\3200b94b-c425-45fe-afb6-889f7ea56949_class_data.json
+2025-03-23 17:43:16 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.5882352941176471
+2025-03-23 17:43:16 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 17:43:16 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 17:43:16 - SyllabusPipeline - WARNING - Schedule generation skipped - missing Days of Week.
+2025-03-23 17:43:16 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-23 17:43:16 - SyllabusPipeline - INFO - Processing assignments from structured data
+2025-03-23 17:43:16 - SyllabusPipeline - INFO - Validating assignment sequence
+2025-03-23 17:43:16 - SyllabusPipeline - INFO - Found 13 homework assignments
+2025-03-23 17:43:16 - SyllabusPipeline - WARNING - Found duplicate homework numbers in assignments
+2025-03-23 17:43:16 - SyllabusPipeline - INFO - Linking assignments to class sessions
+2025-03-23 17:43:16 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 16 tasks. Missing fields: ['Time Zone', 'Days of Week', 'Class Start Date', 'Class End Date'].
+2025-03-23 17:43:16 - SyllabusPipeline - INFO - Showing missing fields form for ID: 3200b94b-c425-45fe-afb6-889f7ea56949
+2025-03-23 17:44:53 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:44:53 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:44:53 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:44:53 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:44:53 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:44:53 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:44:53 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:44:53 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:44:53 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:44:53 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:44:53 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:44:53 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:44:53 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:44:53 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:45:58 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:45:58 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:45:58 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:45:58 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:45:58 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:45:58 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:45:58 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:45:58 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:45:58 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:45:58 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:45:58 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:45:58 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:45:58 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:45:58 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:48:20 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:48:20 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:48:20 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:48:20 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:48:20 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:48:20 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:48:20 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:48:20 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:48:20 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:48:20 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:48:20 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:48:20 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:48:20 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:48:20 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:49:59 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:49:59 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:49:59 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:49:59 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:49:59 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:49:59 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:49:59 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:49:59 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:49:59 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:49:59 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:49:59 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:49:59 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:49:59 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:49:59 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:55:56 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:55:56 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:55:56 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:55:56 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:55:56 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:55:56 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:55:56 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:55:56 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:55:56 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:55:56 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:55:56 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:55:56 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:55:56 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:55:56 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:56:13 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:56:13 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:56:13 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:56:13 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:56:13 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:56:13 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:56:13 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:56:13 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:56:13 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:56:13 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:56:13 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:56:13 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:56:13 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:56:13 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:56:14 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:56:14 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:56:14 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:56:14 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:56:14 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:56:14 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 17:56:14 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 17:56:14 - SyllabusPipeline - INFO - OpenAI initialized with model: o1-mini
+2025-03-23 17:56:14 - SyllabusPipeline - INFO - OpenAIParser initialized with model: o1-mini
+2025-03-23 17:56:14 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 17:56:14 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 17:56:14 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 17:56:14 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 17:56:14 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 17:56:18 - SyllabusPipeline - INFO - Rendering index page
+2025-03-23 17:56:27 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-23 17:56:27 - SyllabusPipeline - INFO - Generated unique ID: a9b3cad6-155f-4b70-a91c-64471cace037
+2025-03-23 17:56:27 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\a9b3cad6-155f-4b70-a91c-64471cace037_PHY203syllabusF24.pdf
+2025-03-23 17:56:27 - SyllabusPipeline - INFO - Saved converted text to: converted\a9b3cad6-155f-4b70-a91c-64471cace037.txt
+2025-03-23 17:56:27 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\a9b3cad6-155f-4b70-a91c-64471cace037.txt
+2025-03-23 17:56:27 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-23 17:56:57 - SyllabusPipeline - INFO - Extracting syllabus data for ID: a9b3cad6-155f-4b70-a91c-64471cace037
+2025-03-23 17:57:11 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\a9b3cad6-155f-4b70-a91c-64471cace037_class_data.json
+2025-03-23 17:57:11 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.5882352941176471
+2025-03-23 17:57:11 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 17:57:11 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 17:57:11 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-23 17:57:11 - SyllabusPipeline - INFO - Processing assignments from structured data
+2025-03-23 17:57:11 - SyllabusPipeline - INFO - Validating assignment sequence
+2025-03-23 17:57:11 - SyllabusPipeline - INFO - Found 12 homework assignments
+2025-03-23 17:57:11 - SyllabusPipeline - WARNING - Found duplicate homework numbers in assignments
+2025-03-23 17:57:11 - SyllabusPipeline - INFO - Linking assignments to class sessions
+2025-03-23 17:57:11 - SyllabusPipeline - INFO - Processing assignments from structured data
+2025-03-23 17:57:11 - SyllabusPipeline - INFO - Validating assignment sequence
+2025-03-23 17:57:11 - SyllabusPipeline - INFO - Found 12 homework assignments
+2025-03-23 17:57:11 - SyllabusPipeline - WARNING - Found duplicate homework numbers in assignments
+2025-03-23 17:57:11 - SyllabusPipeline - INFO - Linking assignments to class sessions
+2025-03-23 17:57:11 - SyllabusPipeline - INFO - extract_all started for Unique ID: a9b3cad6-155f-4b70-a91c-64471cace037
+2025-03-23 17:57:11 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-23 17:57:11 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-23 17:57:11 - SyllabusPipeline - INFO - Extracting syllabus data for ID: a9b3cad6-155f-4b70-a91c-64471cace037
+2025-03-23 17:57:30 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\a9b3cad6-155f-4b70-a91c-64471cace037_class_data.json
+2025-03-23 17:57:30 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.6470588235294118
+2025-03-23 17:57:30 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 17:57:30 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 17:57:30 - SyllabusPipeline - WARNING - Schedule generation skipped - missing Days of Week.
+2025-03-23 17:57:30 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-23 17:57:30 - SyllabusPipeline - INFO - Processing assignments from structured data
+2025-03-23 17:57:30 - SyllabusPipeline - INFO - Validating assignment sequence
+2025-03-23 17:57:30 - SyllabusPipeline - INFO - Found 13 homework assignments
+2025-03-23 17:57:30 - SyllabusPipeline - WARNING - Found duplicate homework numbers in assignments
+2025-03-23 17:57:30 - SyllabusPipeline - INFO - Linking assignments to class sessions
+2025-03-23 17:57:30 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 16 tasks. Missing fields: ['Days of Week', 'Class Start Date', 'Class End Date'].
+2025-03-23 17:57:30 - SyllabusPipeline - INFO - Showing missing fields form for ID: a9b3cad6-155f-4b70-a91c-64471cace037
+2025-03-23 18:00:43 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:00:43 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:00:43 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:00:43 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:00:43 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:00:43 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:00:43 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:00:43 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:00:43 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:00:43 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:00:43 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:00:43 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:00:44 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:00:44 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:00:44 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:00:44 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:00:44 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:00:44 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:00:44 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:00:44 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:00:44 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:00:44 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:00:44 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:00:44 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:01:59 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:03:21 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:03:21 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:03:21 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:03:21 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:03:21 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:03:21 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:03:21 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:03:21 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:03:21 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:03:21 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:03:21 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:03:21 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:03:22 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:03:22 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:03:22 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:03:22 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:03:22 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:03:22 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:03:22 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:03:22 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:03:22 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:03:22 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:03:22 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:03:22 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:04:10 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:04:10 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:04:10 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:04:10 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:04:10 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:04:10 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:04:10 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:04:10 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:04:10 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:04:10 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:04:10 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:04:10 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:04:11 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:04:11 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:04:11 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:04:11 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:04:11 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:04:11 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:04:11 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:04:11 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:04:11 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:04:11 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:04:11 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:04:11 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:04:15 - SyllabusPipeline - INFO - Rendering index page
+2025-03-23 18:04:22 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-23 18:04:22 - SyllabusPipeline - INFO - Generated unique ID: 5f0c584f-2905-404e-b660-8beb1d31aad8
+2025-03-23 18:04:22 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\5f0c584f-2905-404e-b660-8beb1d31aad8_PHY203syllabusF24.pdf
+2025-03-23 18:04:22 - SyllabusPipeline - INFO - Saved converted text to: converted\5f0c584f-2905-404e-b660-8beb1d31aad8.txt
+2025-03-23 18:04:22 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\5f0c584f-2905-404e-b660-8beb1d31aad8.txt
+2025-03-23 18:04:22 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-23 18:04:48 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 5f0c584f-2905-404e-b660-8beb1d31aad8
+2025-03-23 18:04:48 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 1/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 18:04:49 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 2/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 18:04:51 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 3/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 18:04:51 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\5f0c584f-2905-404e-b660-8beb1d31aad8_class_data.json
+2025-03-23 18:04:51 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.0
+2025-03-23 18:04:51 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 18:04:51 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 18:04:51 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-23 18:04:51 - SyllabusPipeline - INFO - Processing assignments from structured data
+2025-03-23 18:04:51 - SyllabusPipeline - INFO - Validating assignment sequence
+2025-03-23 18:04:51 - SyllabusPipeline - INFO - Found 12 homework assignments
+2025-03-23 18:04:51 - SyllabusPipeline - INFO - Linking assignments to class sessions
+2025-03-23 18:04:51 - SyllabusPipeline - INFO - extract_all started for Unique ID: 5f0c584f-2905-404e-b660-8beb1d31aad8
+2025-03-23 18:04:51 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-23 18:04:51 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-23 18:04:51 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 5f0c584f-2905-404e-b660-8beb1d31aad8
+2025-03-23 18:04:51 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 1/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 18:04:52 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 2/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 18:04:54 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 3/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 18:04:54 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\5f0c584f-2905-404e-b660-8beb1d31aad8_class_data.json
+2025-03-23 18:04:54 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.0
+2025-03-23 18:04:54 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 18:04:54 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 18:04:54 - SyllabusPipeline - WARNING - Schedule generation skipped - missing Days of Week.
+2025-03-23 18:04:54 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-23 18:04:54 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 16 tasks. Missing fields: ['Class Time', 'Time Zone', 'Days of Week', 'Class Start Date', 'Class End Date'].
+2025-03-23 18:04:54 - SyllabusPipeline - INFO - Showing missing fields form for ID: 5f0c584f-2905-404e-b660-8beb1d31aad8
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:14:47 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - OpenAI initialized (version 0.x) with model: o1-mini
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - ScheduleParser initialized
+d with model: o1-mini
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:16:06 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:16:22 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:18:07 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:18:07 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:18:07 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:18:07 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:18:07 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:18:07 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:18:07 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:18:07 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:18:07 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:18:07 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:18:07 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:18:07 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:18:08 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:18:08 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:18:08 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:18:08 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:18:08 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:18:08 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:18:08 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:18:08 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:18:08 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:18:08 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:18:08 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:18:08 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:18:12 - SyllabusPipeline - INFO - Rendering index page
+2025-03-23 18:18:18 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-23 18:18:18 - SyllabusPipeline - INFO - Generated unique ID: a725c7d4-0de7-466e-82a1-0862e85f60cc
+2025-03-23 18:18:18 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\a725c7d4-0de7-466e-82a1-0862e85f60cc_PHY203syllabusF24.pdf
+2025-03-23 18:18:18 - SyllabusPipeline - INFO - Saved converted text to: converted\a725c7d4-0de7-466e-82a1-0862e85f60cc.txt
+2025-03-23 18:18:18 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\a725c7d4-0de7-466e-82a1-0862e85f60cc.txt
+2025-03-23 18:18:18 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-23 18:18:34 - SyllabusPipeline - INFO - Extracting syllabus data for ID: a725c7d4-0de7-466e-82a1-0862e85f60cc
+2025-03-23 18:18:34 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 1/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 18:18:35 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 2/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 18:18:37 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 3/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 18:18:37 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\a725c7d4-0de7-466e-82a1-0862e85f60cc_class_data.json
+2025-03-23 18:18:37 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.0
+2025-03-23 18:18:37 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 18:18:37 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 18:18:37 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-23 18:18:37 - SyllabusPipeline - INFO - Processing assignments from structured data
+2025-03-23 18:18:37 - SyllabusPipeline - INFO - Validating assignment sequence
+2025-03-23 18:18:37 - SyllabusPipeline - INFO - Found 12 homework assignments
+2025-03-23 18:18:37 - SyllabusPipeline - INFO - Linking assignments to class sessions
+2025-03-23 18:18:37 - SyllabusPipeline - INFO - extract_all started for Unique ID: a725c7d4-0de7-466e-82a1-0862e85f60cc
+2025-03-23 18:18:37 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-23 18:18:37 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-23 18:18:37 - SyllabusPipeline - INFO - Extracting syllabus data for ID: a725c7d4-0de7-466e-82a1-0862e85f60cc
+2025-03-23 18:18:37 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 1/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 18:18:38 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 2/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 18:18:40 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 3/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 18:18:40 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\a725c7d4-0de7-466e-82a1-0862e85f60cc_class_data.json
+2025-03-23 18:18:40 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.0
+2025-03-23 18:18:40 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 18:18:40 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 18:18:40 - SyllabusPipeline - WARNING - Schedule generation skipped - missing Days of Week.
+2025-03-23 18:18:40 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-23 18:18:40 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 16 tasks. Missing fields: ['Class Time', 'Time Zone', 'Days of Week', 'Class Start Date', 'Class End Date'].
+2025-03-23 18:18:40 - SyllabusPipeline - INFO - Showing missing fields form for ID: a725c7d4-0de7-466e-82a1-0862e85f60cc
+2025-03-23 18:19:17 - SyllabusPipeline - INFO - Processing user-provided data for ID: a725c7d4-0de7-466e-82a1-0862e85f60cc
+2025-03-23 18:19:17 - SyllabusPipeline - INFO - User provided data: {'Class Time': '1:00 PM - 1:50 PM', 'Days of Week': 'Monday, Wednesday, Friday', 'Class Start Date': '2024-09-04', 'Class End Date': '2024-12-11'}
+2025-03-23 18:19:17 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 18:19:17 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-23 18:19:17 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-23 18:19:17 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-23 18:19:17 - SyllabusPipeline - WARNING - Failed to parse date '(Reading: Chapter 1)': Unknown string format: (Reading: Chapter 1)
+2025-03-23 18:19:17 - SyllabusPipeline - WARNING - Failed to parse date '(Reading: Sections 3': Unknown string format: (Reading: Sections 3
+2025-03-23 18:19:17 - SyllabusPipeline - WARNING - Failed to parse date '(Reading: Sections 2': Unknown string format: (Reading: Sections 2
+2025-03-23 18:19:17 - SyllabusPipeline - WARNING - Failed to parse date '(Reading: Chap': Unknown string format: (Reading: Chap
+2025-03-23 18:19:17 - SyllabusPipeline - WARNING - Failed to parse date '(Reading: Sections 4': Unknown string format: (Reading: Sections 4
+2025-03-23 18:19:17 - SyllabusPipeline - WARNING - Failed to parse date '(Reading: 1st part of Sec': Unknown string format: (Reading: 1st part of Sec
+2025-03-23 18:19:17 - SyllabusPipeline - WARNING - Failed to parse date '(Reading: Chap': Unknown string format: (Reading: Chap
+2025-03-23 18:19:17 - SyllabusPipeline - WARNING - Failed to parse date '(Reading: Sections 9': Unknown string format: (Reading: Sections 9
+2025-03-23 18:19:17 - SyllabusPipeline - WARNING - Failed to parse date '(Reading: 2nd part of Sec': Unknown string format: (Reading: 2nd part of Sec
+2025-03-23 18:19:17 - SyllabusPipeline - WARNING - Failed to parse date '(Reading: Sections 13': Unknown string format: (Reading: Sections 13
+2025-03-23 18:19:17 - SyllabusPipeline - WARNING - Failed to parse date '(Reading: Sections 15': Unknown string format: (Reading: Sections 15
+2025-03-23 18:19:17 - SyllabusPipeline - WARNING - Failed to parse date '(Reading: Sections 15': Unknown string format: (Reading: Sections 15
+2025-03-23 18:19:17 - SyllabusPipeline - INFO - Successfully processed dates from user input
+2025-03-23 18:19:17 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-23 18:19:17 - SyllabusPipeline - INFO - Successfully updated class schedule from user input
+2025-03-23 18:19:17 - SyllabusPipeline - INFO - Showing results for ID: a725c7d4-0de7-466e-82a1-0862e85f60cc
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:20:15 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:20:17 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:20:20 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:20:24 - SyllabusPipeline - INFO - Rendering index page
+2025-03-23 18:20:30 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-23 18:20:30 - SyllabusPipeline - INFO - Generated unique ID: be5bf7a8-987c-449d-ba94-4441582a331d
+2025-03-23 18:20:30 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\be5bf7a8-987c-449d-ba94-4441582a331d_PHY203syllabusF24.pdf
+2025-03-23 18:20:31 - SyllabusPipeline - INFO - Saved converted text to: converted\be5bf7a8-987c-449d-ba94-4441582a331d.txt
+2025-03-23 18:20:31 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\be5bf7a8-987c-449d-ba94-4441582a331d.txt
+2025-03-23 18:20:31 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-23 18:20:53 - SyllabusPipeline - INFO - Extracting syllabus data for ID: be5bf7a8-987c-449d-ba94-4441582a331d
+2025-03-23 18:20:53 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 1/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 18:20:54 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 2/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 18:20:56 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 3/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 18:20:56 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\be5bf7a8-987c-449d-ba94-4441582a331d_class_data.json
+2025-03-23 18:20:56 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.0
+2025-03-23 18:20:56 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 18:20:56 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 18:20:56 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-23 18:20:56 - SyllabusPipeline - INFO - extract_all started for Unique ID: be5bf7a8-987c-449d-ba94-4441582a331d
+2025-03-23 18:20:56 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-23 18:20:56 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-23 18:20:56 - SyllabusPipeline - INFO - Extracting syllabus data for ID: be5bf7a8-987c-449d-ba94-4441582a331d
+2025-03-23 18:20:56 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 1/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 18:20:57 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 2/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 18:20:59 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 3/3): 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2025-03-23 18:20:59 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\be5bf7a8-987c-449d-ba94-4441582a331d_class_data.json
+2025-03-23 18:20:59 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.0
+2025-03-23 18:20:59 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 18:20:59 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 18:20:59 - SyllabusPipeline - WARNING - Schedule generation skipped - missing Days of Week.
+2025-03-23 18:20:59 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-23 18:20:59 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 16 tasks. Missing fields: ['Class Time', 'Time Zone', 'Days of Week', 'Class Start Date', 'Class End Date'].
+2025-03-23 18:20:59 - SyllabusPipeline - INFO - Showing missing fields form for ID: be5bf7a8-987c-449d-ba94-4441582a331d
+2025-03-23 18:21:17 - SyllabusPipeline - INFO - Processing user-provided data for ID: be5bf7a8-987c-449d-ba94-4441582a331d
+2025-03-23 18:21:17 - SyllabusPipeline - INFO - User provided data: {'Class Time': '1:00 PM - 1:50 PM', 'Days of Week': 'Monday, Wednesday, Friday', 'Class Start Date': '2024-09-04', 'Class End Date': '2024-12-11'}
+2025-03-23 18:21:17 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 18:21:17 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-23 18:21:17 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-23 18:21:17 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-23 18:21:17 - SyllabusPipeline - WARNING - Failed to parse date 'date': Unknown string format: date
+2025-03-23 18:21:17 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Chapter 1 Wed': Unknown string format: Reading: Chapter 1 Wed
+2025-03-23 18:21:17 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 3': Unknown string format: Reading: Sections 3
+2025-03-23 18:21:17 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 2': Unknown string format: Reading: Sections 2
+2025-03-23 18:21:17 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Chap': Unknown string format: Reading: Chap
+2025-03-23 18:21:17 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Section s 4': Unknown string format: Reading: Section s 4
+2025-03-23 18:21:17 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: 1st part of Sec': Unknown string format: Reading: 1st part of Sec
+2025-03-23 18:21:17 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Chap': Unknown string format: Reading: Chap
+2025-03-23 18:21:17 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: 2nd part of Sec': Unknown string format: Reading: 2nd part of Sec
+2025-03-23 18:21:17 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 13': Unknown string format: Reading: Sections 13
+2025-03-23 18:21:17 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 15': Unknown string format: Reading: Sections 15
+2025-03-23 18:21:17 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 15': Unknown string format: Reading: Sections 15
+2025-03-23 18:21:17 - SyllabusPipeline - WARNING - Failed to parse date '250 points Grading Scheme : A(93 -100); A -(90-93); B+(87 -90); B(83 -87); B -(80-83); C+(77 -80); C(73 -77); C-(70-73); D+(67 -70); D(60 -67); F(<60)': Unknown string format: 250 points Grading Scheme : A(93 -100); A -(90-93); B+(87 -90); B(83 -87); B -(80-83); C+(77 -80); C(73 -77); C-(70-73); D+(67 -70); D(60 -67); F(<60)
+2025-03-23 18:21:17 - SyllabusPipeline - WARNING - Failed to parse date 's 4': Unknown string format: s 4
+2025-03-23 18:21:17 - SyllabusPipeline - WARNING - Failed to parse date 'Each student registered for PHY203 must also register for two sections of PHY273': Unknown string format: Each student registered for PHY203 must also register for two sections of PHY273
+2025-03-23 18:21:17 - SyllabusPipeline - INFO - Successfully processed dates from user input
+2025-03-23 18:21:17 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-23 18:21:17 - SyllabusPipeline - INFO - Successfully updated class schedule from user input
+2025-03-23 18:21:17 - SyllabusPipeline - INFO - Showing results for ID: be5bf7a8-987c-449d-ba94-4441582a331d
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:26:59 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:27:18 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:27:33 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:27:33 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:27:33 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:27:33 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:27:33 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:27:33 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:27:33 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:27:33 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:27:33 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:27:33 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:27:33 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:27:33 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:27:34 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:27:34 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:27:34 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:27:34 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:27:34 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-23 18:27:34 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-23 18:27:34 - SyllabusPipeline - INFO - OpenAIParser: Using new 1.x API style with model o1-mini
+2025-03-23 18:27:34 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-23 18:27:34 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-23 18:27:34 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-23 18:27:34 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-23 18:27:34 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-23 18:27:41 - SyllabusPipeline - INFO - Rendering index page
+2025-03-23 18:27:47 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-23 18:27:47 - SyllabusPipeline - INFO - Generated unique ID: 8d61a205-7635-4e52-a0b8-f42ab7fa6442
+2025-03-23 18:27:47 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\8d61a205-7635-4e52-a0b8-f42ab7fa6442_PHY203syllabusF24.pdf
+2025-03-23 18:27:48 - SyllabusPipeline - INFO - Saved converted text to: converted\8d61a205-7635-4e52-a0b8-f42ab7fa6442.txt
+2025-03-23 18:27:48 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\8d61a205-7635-4e52-a0b8-f42ab7fa6442.txt
+2025-03-23 18:27:48 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-23 18:28:10 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 8d61a205-7635-4e52-a0b8-f42ab7fa6442
+2025-03-23 18:28:23 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\8d61a205-7635-4e52-a0b8-f42ab7fa6442_class_data.json
+2025-03-23 18:28:23 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.5882352941176471
+2025-03-23 18:28:23 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 18:28:23 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 18:28:23 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-23 18:28:23 - SyllabusPipeline - INFO - Processing assignments from structured data
+2025-03-23 18:28:23 - SyllabusPipeline - INFO - Validating assignment sequence
+2025-03-23 18:28:23 - SyllabusPipeline - INFO - Found 13 homework assignments
+2025-03-23 18:28:23 - SyllabusPipeline - WARNING - Found duplicate homework numbers in assignments
+2025-03-23 18:28:23 - SyllabusPipeline - INFO - Linking assignments to class sessions
+2025-03-23 18:28:23 - SyllabusPipeline - INFO - extract_all started for Unique ID: 8d61a205-7635-4e52-a0b8-f42ab7fa6442
+2025-03-23 18:28:23 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-23 18:28:23 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-23 18:28:23 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 8d61a205-7635-4e52-a0b8-f42ab7fa6442
+2025-03-23 18:28:36 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\8d61a205-7635-4e52-a0b8-f42ab7fa6442_class_data.json
+2025-03-23 18:28:36 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.8235294117647058
+2025-03-23 18:28:36 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-23 18:28:36 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-23 18:28:36 - SyllabusPipeline - WARNING - Schedule generation skipped - missing Days of Week.
+2025-03-23 18:28:36 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-23 18:28:36 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 16 tasks. Missing fields: ['Days of Week'].
+2025-03-23 18:28:36 - SyllabusPipeline - INFO - Showing missing fields form for ID: 8d61a205-7635-4e52-a0b8-f42ab7fa6442
+2025-03-24 16:12:05 - SyllabusPipeline - INFO - Rendering index page
+2025-03-24 16:12:12 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-24 16:12:12 - SyllabusPipeline - INFO - Generated unique ID: acb78767-3a82-474c-8696-32c2c25f1f4f
+2025-03-24 16:12:12 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\acb78767-3a82-474c-8696-32c2c25f1f4f_PHY203syllabusF24.pdf
+2025-03-24 16:12:12 - SyllabusPipeline - INFO - Saved converted text to: converted\acb78767-3a82-474c-8696-32c2c25f1f4f.txt
+2025-03-24 16:12:12 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\acb78767-3a82-474c-8696-32c2c25f1f4f.txt
+2025-03-24 16:12:12 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-24 16:12:33 - SyllabusPipeline - INFO - Extracting syllabus data for ID: acb78767-3a82-474c-8696-32c2c25f1f4f
+2025-03-24 16:12:42 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\acb78767-3a82-474c-8696-32c2c25f1f4f_class_data.json
+2025-03-24 16:12:42 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.47058823529411764
+2025-03-24 16:12:42 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-24 16:12:42 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-24 16:12:42 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-24 16:12:42 - SyllabusPipeline - INFO - Processing assignments from structured data
+2025-03-24 16:12:42 - SyllabusPipeline - INFO - Validating assignment sequence
+2025-03-24 16:12:42 - SyllabusPipeline - INFO - Found 12 homework assignments
+2025-03-24 16:12:42 - SyllabusPipeline - INFO - Linking assignments to class sessions
+2025-03-24 16:12:42 - SyllabusPipeline - INFO - extract_all started for Unique ID: acb78767-3a82-474c-8696-32c2c25f1f4f
+2025-03-24 16:12:42 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-24 16:12:42 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-24 16:12:42 - SyllabusPipeline - INFO - Extracting syllabus data for ID: acb78767-3a82-474c-8696-32c2c25f1f4f
+2025-03-24 16:12:53 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\acb78767-3a82-474c-8696-32c2c25f1f4f_class_data.json
+2025-03-24 16:12:53 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.8235294117647058
+2025-03-24 16:12:53 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-24 16:12:53 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-24 16:12:53 - SyllabusPipeline - WARNING - Schedule generation skipped - missing Days of Week.
+2025-03-24 16:12:53 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-24 16:12:53 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 16 tasks. Missing fields: ['Days of Week'].
+2025-03-24 16:12:53 - SyllabusPipeline - INFO - Showing missing fields form for ID: acb78767-3a82-474c-8696-32c2c25f1f4f

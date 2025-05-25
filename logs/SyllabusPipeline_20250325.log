@@ -1,0 +1,1649 @@
+2025-03-25 14:10:02 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-25 14:10:02 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-25 14:10:02 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:10:02 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:10:02 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:10:02 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - Testing connection with model: o1-mini
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - Testing connection with model: o1-mini
+2025-03-25 14:10:03 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-25 14:10:03 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 133, in _test_api_connection
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+2025-03-25 14:10:03 - SyllabusPipeline - ERROR - This appears to be an issue with the model name or access to this model
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:10:03 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-25 14:10:03 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 133, in _test_api_connection
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+2025-03-25 14:10:03 - SyllabusPipeline - ERROR - This appears to be an issue with the model name or access to this model
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:10:03 - SyllabusPipeline - INFO - Testing connection with model: o1-mini
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - Testing connection with model: o1-mini
+2025-03-25 14:10:04 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-25 14:10:04 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 133, in _test_api_connection
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+2025-03-25 14:10:04 - SyllabusPipeline - ERROR - This appears to be an issue with the model name or access to this model
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:10:04 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-25 14:10:04 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 133, in _test_api_connection
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+2025-03-25 14:10:04 - SyllabusPipeline - ERROR - This appears to be an issue with the model name or access to this model
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-25 14:10:04 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:10:20 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-25 14:10:20 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:10:20 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:10:20 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-25 14:10:20 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:10:20 - SyllabusPipeline - INFO - Testing connection with model: o1-mini
+2025-03-25 14:10:21 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-25 14:10:21 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 133, in _test_api_connection
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+2025-03-25 14:10:21 - SyllabusPipeline - ERROR - This appears to be an issue with the model name or access to this model
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - Testing connection with model: o1-mini
+2025-03-25 14:10:21 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-25 14:10:21 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 133, in _test_api_connection
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+2025-03-25 14:10:21 - SyllabusPipeline - ERROR - This appears to be an issue with the model name or access to this model
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:10:21 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - Testing connection with model: o1-mini
+2025-03-25 14:10:22 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-25 14:10:22 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 133, in _test_api_connection
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+2025-03-25 14:10:22 - SyllabusPipeline - ERROR - This appears to be an issue with the model name or access to this model
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - Testing connection with model: o1-mini
+2025-03-25 14:10:22 - SyllabusPipeline - ERROR - API connection test failed: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-03-25 14:10:22 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 133, in _test_api_connection
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+
+2025-03-25 14:10:22 - SyllabusPipeline - ERROR - This appears to be an issue with the model name or access to this model
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-25 14:10:22 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:10:28 - SyllabusPipeline - INFO - Rendering index page
+2025-03-25 14:10:34 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-25 14:10:34 - SyllabusPipeline - INFO - Generated unique ID: e3303fcd-013c-4ecc-a486-6b61218e0455
+2025-03-25 14:10:34 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\e3303fcd-013c-4ecc-a486-6b61218e0455_PHY203syllabusF24.pdf
+2025-03-25 14:10:35 - SyllabusPipeline - INFO - Saved converted text to: converted\e3303fcd-013c-4ecc-a486-6b61218e0455.txt
+2025-03-25 14:10:35 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\e3303fcd-013c-4ecc-a486-6b61218e0455.txt
+2025-03-25 14:10:35 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-25 14:10:45 - SyllabusPipeline - INFO - Extracting syllabus data for ID: e3303fcd-013c-4ecc-a486-6b61218e0455
+2025-03-25 14:10:45 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:10:56 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:10:56 - SyllabusPipeline - DEBUG - Response preview: ```json
+{
+  "School Name": "",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+  "Class Time": "1:...
+2025-03-25 14:10:56 - SyllabusPipeline - INFO - Found Days of Week in response: Monday, Wednesday, Friday
+2025-03-25 14:10:56 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\e3303fcd-013c-4ecc-a486-6b61218e0455_class_data.json
+2025-03-25 14:10:56 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.5882352941176471
+2025-03-25 14:10:56 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 14:10:56 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-25 14:10:56 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-25 14:10:56 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-25 14:10:56 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-25 14:10:56 - SyllabusPipeline - INFO - extract_all started for Unique ID: e3303fcd-013c-4ecc-a486-6b61218e0455
+2025-03-25 14:10:56 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-25 14:10:56 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-25 14:10:56 - SyllabusPipeline - INFO - Extracting syllabus data for ID: e3303fcd-013c-4ecc-a486-6b61218e0455
+2025-03-25 14:10:56 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:11:10 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:11:10 - SyllabusPipeline - DEBUG - Response preview: ```json
+{
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri...
+2025-03-25 14:11:10 - SyllabusPipeline - WARNING - Days of Week not found in response
+2025-03-25 14:11:10 - SyllabusPipeline - WARNING - Days of Week field is empty - attempting specific extraction
+2025-03-25 14:11:10 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:11:11 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 1/3): Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-03-25 14:11:11 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 398, in _call_openai_with_retry
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+
+2025-03-25 14:11:11 - SyllabusPipeline - INFO - Waiting 1 seconds before retry
+2025-03-25 14:11:12 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 2/3)
+2025-03-25 14:11:12 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 2/3): Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-03-25 14:11:12 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 398, in _call_openai_with_retry
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+
+2025-03-25 14:11:12 - SyllabusPipeline - INFO - Waiting 2 seconds before retry
+2025-03-25 14:11:14 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 3/3)
+2025-03-25 14:11:14 - SyllabusPipeline - ERROR - OpenAI API call failed (attempt 3/3): Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-03-25 14:11:14 - SyllabusPipeline - ERROR - Traceback (most recent call last):
+  File "C:\SyllabusParser2\utils\parsers\openai_parser.py", line 398, in _call_openai_with_retry
+    response = self.client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_utils\_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 914, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1242, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 919, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\SyllabusParser2\venv\Lib\site-packages\openai\_base_client.py", line 1023, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+
+2025-03-25 14:11:14 - SyllabusPipeline - ERROR - All 3 API call attempts failed
+2025-03-25 14:11:14 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\e3303fcd-013c-4ecc-a486-6b61218e0455_class_data.json
+2025-03-25 14:11:14 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.5882352941176471
+2025-03-25 14:11:14 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 14:11:14 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-25 14:11:14 - SyllabusPipeline - WARNING - Schedule generation skipped - missing Days of Week.
+2025-03-25 14:11:14 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-25 14:11:14 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 16 tasks. Missing fields: ['Time Zone', 'Days of Week', 'Class Start Date', 'Class End Date'].
+2025-03-25 14:11:14 - SyllabusPipeline - INFO - Showing missing fields form for ID: e3303fcd-013c-4ecc-a486-6b61218e0455
+2025-03-25 14:11:29 - SyllabusPipeline - INFO - Processing user-provided data for ID: e3303fcd-013c-4ecc-a486-6b61218e0455
+2025-03-25 14:11:29 - SyllabusPipeline - INFO - User provided data: {'Class Start Date': '2024-09-04', 'Class End Date': '2024-12-11'}
+2025-03-25 14:11:29 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 14:11:29 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-25 14:11:29 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-25 14:11:29 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-25 14:11:29 - SyllabusPipeline - WARNING - Failed to parse date 'date': Unknown string format: date
+2025-03-25 14:11:29 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Chapter 1 Wed': Unknown string format: Reading: Chapter 1 Wed
+2025-03-25 14:11:29 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 3': Unknown string format: Reading: Sections 3
+2025-03-25 14:11:29 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 2': Unknown string format: Reading: Sections 2
+2025-03-25 14:11:29 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Chap': Unknown string format: Reading: Chap
+2025-03-25 14:11:29 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Section s 4': Unknown string format: Reading: Section s 4
+2025-03-25 14:11:29 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: 1st part of Sec': Unknown string format: Reading: 1st part of Sec
+2025-03-25 14:11:29 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Chap': Unknown string format: Reading: Chap
+2025-03-25 14:11:29 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: 2nd part of Sec': Unknown string format: Reading: 2nd part of Sec
+2025-03-25 14:11:29 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 13': Unknown string format: Reading: Sections 13
+2025-03-25 14:11:29 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 15': Unknown string format: Reading: Sections 15
+2025-03-25 14:11:29 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 15': Unknown string format: Reading: Sections 15
+2025-03-25 14:11:29 - SyllabusPipeline - WARNING - Failed to parse date '250 points Grading Scheme : A(93 -100); A -(90-93); B+(87 -90); B(83 -87); B -(80-83); C+(77 -80); C(73 -77); C-(70-73); D+(67 -70); D(60 -67); F(<60)': Unknown string format: 250 points Grading Scheme : A(93 -100); A -(90-93); B+(87 -90); B(83 -87); B -(80-83); C+(77 -80); C(73 -77); C-(70-73); D+(67 -70); D(60 -67); F(<60)
+2025-03-25 14:11:29 - SyllabusPipeline - WARNING - Failed to parse date 's 4': Unknown string format: s 4
+2025-03-25 14:11:29 - SyllabusPipeline - WARNING - Failed to parse date 'Each student registered for PHY203 must also register for two sections of PHY273': Unknown string format: Each student registered for PHY203 must also register for two sections of PHY273
+2025-03-25 14:11:29 - SyllabusPipeline - INFO - Successfully processed dates from user input
+2025-03-25 14:11:29 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-25 14:11:29 - SyllabusPipeline - INFO - Successfully updated class schedule from user input
+2025-03-25 14:11:30 - SyllabusPipeline - INFO - Showing results for ID: e3303fcd-013c-4ecc-a486-6b61218e0455
+2025-03-25 14:21:43 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-25 14:21:43 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-25 14:21:43 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:21:43 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:21:43 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:21:43 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:21:43 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-25 14:21:43 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:21:43 - SyllabusPipeline - INFO - Testing connection with model: o1-mini
+2025-03-25 14:21:43 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-25 14:21:43 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:21:43 - SyllabusPipeline - INFO - Testing connection with model: o1-mini
+2025-03-25 14:21:44 - SyllabusPipeline - INFO - API test succeeded. Response: ''
+2025-03-25 14:21:44 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:21:44 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:21:44 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:21:44 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:21:44 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:21:44 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-25 14:21:44 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-25 14:21:44 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:21:44 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:21:44 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-25 14:21:44 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:21:44 - SyllabusPipeline - INFO - Testing connection with model: o1-mini
+2025-03-25 14:21:44 - SyllabusPipeline - INFO - API test succeeded. Response: ''
+2025-03-25 14:21:44 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:21:45 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:21:45 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:21:45 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:21:45 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:21:45 - SyllabusPipeline - INFO - Using OpenAI model: o1-mini
+2025-03-25 14:21:45 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: o1-mini
+2025-03-25 14:21:45 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:21:45 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:21:45 - SyllabusPipeline - INFO - Created OpenAI client for model o1-mini
+2025-03-25 14:21:45 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:21:45 - SyllabusPipeline - INFO - Testing connection with model: o1-mini
+2025-03-25 14:21:45 - SyllabusPipeline - INFO - API test succeeded. Response: ''
+2025-03-25 14:21:45 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:21:45 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:21:45 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:21:45 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:21:45 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-25 14:21:45 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:21:46 - SyllabusPipeline - INFO - API test succeeded. Response: ''
+2025-03-25 14:21:46 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:21:46 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:21:46 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:21:46 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:21:46 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: o1-mini
+2025-03-25 14:21:46 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:21:51 - SyllabusPipeline - INFO - Rendering index page
+2025-03-25 14:21:58 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-25 14:21:58 - SyllabusPipeline - INFO - Generated unique ID: 4064c2aa-3b1c-4641-b83d-90ac400f852f
+2025-03-25 14:21:58 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\4064c2aa-3b1c-4641-b83d-90ac400f852f_PHY203syllabusF24.pdf
+2025-03-25 14:21:58 - SyllabusPipeline - INFO - Saved converted text to: converted\4064c2aa-3b1c-4641-b83d-90ac400f852f.txt
+2025-03-25 14:21:58 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\4064c2aa-3b1c-4641-b83d-90ac400f852f.txt
+2025-03-25 14:21:58 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-25 14:22:23 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 4064c2aa-3b1c-4641-b83d-90ac400f852f
+2025-03-25 14:22:23 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:22:39 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:22:39 - SyllabusPipeline - DEBUG - Response preview: ```json
+{
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+ ...
+2025-03-25 14:22:39 - SyllabusPipeline - WARNING - Days of Week not found in response
+2025-03-25 14:22:39 - SyllabusPipeline - WARNING - Days of Week field is empty - attempting specific extraction
+2025-03-25 14:22:39 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:22:50 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:22:50 - SyllabusPipeline - INFO - Successfully extracted Days of Week: ```
+
+```
+2025-03-25 14:22:50 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\4064c2aa-3b1c-4641-b83d-90ac400f852f_class_data.json
+2025-03-25 14:22:50 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.6470588235294118
+2025-03-25 14:22:50 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 14:22:50 - SyllabusPipeline - INFO - Processing days of week: '```
+
+```'
+2025-03-25 14:22:50 - SyllabusPipeline - DEBUG - Normalized days string: '```
+
+```'
+2025-03-25 14:22:50 - SyllabusPipeline - WARNING - Could not parse days of week: '```
+
+```'
+2025-03-25 14:22:50 - SyllabusPipeline - INFO - Processed days of week: '```
+
+```' -> '```
+
+```'
+2025-03-25 14:22:50 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-25 14:22:50 - SyllabusPipeline - INFO - extract_all started for Unique ID: 4064c2aa-3b1c-4641-b83d-90ac400f852f
+2025-03-25 14:22:50 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-25 14:22:50 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-25 14:22:50 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 4064c2aa-3b1c-4641-b83d-90ac400f852f
+2025-03-25 14:22:50 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:23:05 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:23:05 - SyllabusPipeline - DEBUG - Response preview: ```json
+{
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+ ...
+2025-03-25 14:23:05 - SyllabusPipeline - WARNING - Days of Week not found in response
+2025-03-25 14:23:05 - SyllabusPipeline - WARNING - Days of Week field is empty - attempting specific extraction
+2025-03-25 14:23:05 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:23:09 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:23:09 - SyllabusPipeline - INFO - Successfully extracted Days of Week: Monday, Wednesday, Friday
+2025-03-25 14:23:09 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\4064c2aa-3b1c-4641-b83d-90ac400f852f_class_data.json
+2025-03-25 14:23:09 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.5882352941176471
+2025-03-25 14:23:09 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 14:23:09 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-25 14:23:09 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-25 14:23:09 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-25 14:23:09 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-25 14:23:09 - SyllabusPipeline - INFO - Recalculating class schedule
+2025-03-25 14:23:09 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-25 14:23:09 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 16 tasks. Missing fields: ['Time Zone', 'Class Start Date', 'Class End Date'].
+2025-03-25 14:23:09 - SyllabusPipeline - INFO - Showing missing fields form for ID: 4064c2aa-3b1c-4641-b83d-90ac400f852f
+2025-03-25 14:23:25 - SyllabusPipeline - INFO - Processing user-provided data for ID: 4064c2aa-3b1c-4641-b83d-90ac400f852f
+2025-03-25 14:23:25 - SyllabusPipeline - INFO - User provided data: {'Class Start Date': '2024-09-04', 'Class End Date': '2024-12-11'}
+2025-03-25 14:23:25 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 14:23:25 - SyllabusPipeline - INFO - Processing days of week: '```
+
+```'
+2025-03-25 14:23:25 - SyllabusPipeline - DEBUG - Normalized days string: '```
+
+```'
+2025-03-25 14:23:25 - SyllabusPipeline - WARNING - Could not parse days of week: '```
+
+```'
+2025-03-25 14:23:25 - SyllabusPipeline - INFO - Processed days of week: '```
+
+```' -> '```
+
+```'
+2025-03-25 14:23:25 - SyllabusPipeline - WARNING - Failed to parse date 'date': Unknown string format: date
+2025-03-25 14:23:25 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Chapter 1 Wed': Unknown string format: Reading: Chapter 1 Wed
+2025-03-25 14:23:25 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 3': Unknown string format: Reading: Sections 3
+2025-03-25 14:23:25 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 2': Unknown string format: Reading: Sections 2
+2025-03-25 14:23:25 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Chap': Unknown string format: Reading: Chap
+2025-03-25 14:23:25 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Section s 4': Unknown string format: Reading: Section s 4
+2025-03-25 14:23:25 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: 1st part of Sec': Unknown string format: Reading: 1st part of Sec
+2025-03-25 14:23:25 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Chap': Unknown string format: Reading: Chap
+2025-03-25 14:23:25 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: 2nd part of Sec': Unknown string format: Reading: 2nd part of Sec
+2025-03-25 14:23:25 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 13': Unknown string format: Reading: Sections 13
+2025-03-25 14:23:25 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 15': Unknown string format: Reading: Sections 15
+2025-03-25 14:23:25 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 15': Unknown string format: Reading: Sections 15
+2025-03-25 14:23:25 - SyllabusPipeline - WARNING - Failed to parse date '250 points Grading Scheme : A(93 -100); A -(90-93); B+(87 -90); B(83 -87); B -(80-83); C+(77 -80); C(73 -77); C-(70-73); D+(67 -70); D(60 -67); F(<60)': Unknown string format: 250 points Grading Scheme : A(93 -100); A -(90-93); B+(87 -90); B(83 -87); B -(80-83); C+(77 -80); C(73 -77); C-(70-73); D+(67 -70); D(60 -67); F(<60)
+2025-03-25 14:23:25 - SyllabusPipeline - WARNING - Failed to parse date 's 4': Unknown string format: s 4
+2025-03-25 14:23:25 - SyllabusPipeline - WARNING - Failed to parse date 'Each student registered for PHY203 must also register for two sections of PHY273': Unknown string format: Each student registered for PHY203 must also register for two sections of PHY273
+2025-03-25 14:23:25 - SyllabusPipeline - INFO - Successfully processed dates from user input
+2025-03-25 14:23:25 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-25 14:23:25 - SyllabusPipeline - INFO - Successfully updated class schedule from user input
+2025-03-25 14:23:26 - SyllabusPipeline - INFO - Showing results for ID: 4064c2aa-3b1c-4641-b83d-90ac400f852f
+2025-03-25 14:31:55 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-03-25 14:31:55 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:31:55 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-03-25 14:31:55 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:31:55 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:31:55 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:31:55 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:31:55 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:31:55 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:31:55 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:31:55 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:31:55 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:31:56 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:32:06 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-03-25 14:32:06 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:32:06 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:32:07 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:32:07 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:32:07 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:32:07 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:32:07 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:32:07 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:32:07 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:32:07 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:32:07 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:32:07 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 14:32:07 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-03-25 14:32:07 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:32:07 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:32:07 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:32:07 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:32:07 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:32:08 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:32:08 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:32:08 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:32:08 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:32:08 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:32:08 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 14:32:08 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:32:09 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-03-25 14:32:09 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:32:09 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:32:09 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:32:09 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:32:09 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:32:10 - SyllabusPipeline - INFO - Rendering index page
+2025-03-25 14:32:10 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:32:10 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:32:10 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:32:10 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:32:10 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:32:10 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:32:10 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 14:32:10 - SyllabusPipeline - INFO - Initializing OpenAIParser with model: gpt-4o
+2025-03-25 14:32:10 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:32:10 - SyllabusPipeline - INFO - API key found ending with: ...M2UA
+2025-03-25 14:32:10 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:32:10 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:32:10 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:32:11 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:32:11 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:32:11 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:32:11 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:32:11 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:32:11 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 14:32:11 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:32:17 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-25 14:32:17 - SyllabusPipeline - INFO - Generated unique ID: 01ffe61c-fae0-4dae-954a-f80b89439605
+2025-03-25 14:32:17 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\01ffe61c-fae0-4dae-954a-f80b89439605_PHY203syllabusF24.pdf
+2025-03-25 14:32:17 - SyllabusPipeline - INFO - Saved converted text to: converted\01ffe61c-fae0-4dae-954a-f80b89439605.txt
+2025-03-25 14:32:17 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\01ffe61c-fae0-4dae-954a-f80b89439605.txt
+2025-03-25 14:32:17 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-25 14:32:30 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 01ffe61c-fae0-4dae-954a-f80b89439605
+2025-03-25 14:32:30 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:32:33 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:32:33 - SyllabusPipeline - DEBUG - Response preview: ```json
+{
+  "School Name": "",
+  "Term": "Fall 2024",
+  "Course Title": "ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+  "Class Time": "1pm-1:50pm...
+2025-03-25 14:32:33 - SyllabusPipeline - ERROR - No JSON found in metadata response
+2025-03-25 14:32:33 - SyllabusPipeline - WARNING - Days of Week field is empty - attempting specific extraction
+2025-03-25 14:32:33 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:32:34 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:32:34 - SyllabusPipeline - INFO - Successfully extracted Days of Week: Monday, Wednesday, Friday
+2025-03-25 14:32:34 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\01ffe61c-fae0-4dae-954a-f80b89439605_class_data.json
+2025-03-25 14:32:34 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.058823529411764705
+2025-03-25 14:32:34 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 14:32:34 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-25 14:32:34 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-25 14:32:34 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-25 14:32:34 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-25 14:32:34 - SyllabusPipeline - INFO - Processing assignments from structured data
+2025-03-25 14:32:34 - SyllabusPipeline - INFO - Validating assignment sequence
+2025-03-25 14:32:34 - SyllabusPipeline - INFO - Found 12 homework assignments
+2025-03-25 14:32:34 - SyllabusPipeline - INFO - Linking assignments to class sessions
+2025-03-25 14:32:34 - SyllabusPipeline - INFO - extract_all started for Unique ID: 01ffe61c-fae0-4dae-954a-f80b89439605
+2025-03-25 14:32:34 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-25 14:32:34 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-25 14:32:34 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 01ffe61c-fae0-4dae-954a-f80b89439605
+2025-03-25 14:32:34 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:32:37 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:32:37 - SyllabusPipeline - DEBUG - Response preview: ```json
+{
+    "School Name": "",
+    "Term": "Fall 2024",
+    "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+    "Instructor Name": "Miquel Dorca",
+    "Instructor Email": "miquel@uri.edu",
+    "Clas...
+2025-03-25 14:32:37 - SyllabusPipeline - ERROR - No JSON found in metadata response
+2025-03-25 14:32:37 - SyllabusPipeline - WARNING - Days of Week field is empty - attempting specific extraction
+2025-03-25 14:32:37 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:32:38 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:32:38 - SyllabusPipeline - INFO - Successfully extracted Days of Week: Monday, Wednesday, Friday
+2025-03-25 14:32:38 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\01ffe61c-fae0-4dae-954a-f80b89439605_class_data.json
+2025-03-25 14:32:38 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.058823529411764705
+2025-03-25 14:32:38 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 14:32:38 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-25 14:32:38 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-25 14:32:38 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-25 14:32:38 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-25 14:32:38 - SyllabusPipeline - INFO - Recalculating class schedule
+2025-03-25 14:32:38 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-25 14:32:38 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 16 tasks. Missing fields: ['Class Time', 'Time Zone', 'Class Start Date', 'Class End Date'].
+2025-03-25 14:32:38 - SyllabusPipeline - INFO - Showing missing fields form for ID: 01ffe61c-fae0-4dae-954a-f80b89439605
+2025-03-25 14:32:59 - SyllabusPipeline - INFO - Processing user-provided data for ID: 01ffe61c-fae0-4dae-954a-f80b89439605
+2025-03-25 14:32:59 - SyllabusPipeline - INFO - User provided data: {'Class Time': '1:00 PM - 1:50 PM', 'Class Start Date': '2024-09-04', 'Class End Date': '2024-12-11'}
+2025-03-25 14:32:59 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 14:32:59 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-25 14:32:59 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-25 14:32:59 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-25 14:32:59 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Chapter 1 Wed': Unknown string format: Reading: Chapter 1 Wed
+2025-03-25 14:32:59 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 3': Unknown string format: Reading: Sections 3
+2025-03-25 14:32:59 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 2': Unknown string format: Reading: Sections 2
+2025-03-25 14:32:59 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Chap': Unknown string format: Reading: Chap
+2025-03-25 14:32:59 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 4': Unknown string format: Reading: Sections 4
+2025-03-25 14:32:59 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: 1st part of Sec': Unknown string format: Reading: 1st part of Sec
+2025-03-25 14:32:59 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Chap': Unknown string format: Reading: Chap
+2025-03-25 14:32:59 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: 2nd part of Sec': Unknown string format: Reading: 2nd part of Sec
+2025-03-25 14:32:59 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 13': Unknown string format: Reading: Sections 13
+2025-03-25 14:32:59 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 15': Unknown string format: Reading: Sections 15
+2025-03-25 14:32:59 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 15': Unknown string format: Reading: Sections 15
+2025-03-25 14:32:59 - SyllabusPipeline - INFO - Successfully processed dates from user input
+2025-03-25 14:32:59 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-25 14:32:59 - SyllabusPipeline - INFO - Successfully updated class schedule from user input
+2025-03-25 14:32:59 - SyllabusPipeline - INFO - Showing results for ID: 01ffe61c-fae0-4dae-954a-f80b89439605
+2025-03-25 14:38:22 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:38:22 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:38:22 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:38:22 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:38:22 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:38:23 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:38:24 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:38:24 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:38:24 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:38:24 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:38:24 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:38:24 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 14:38:24 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:38:31 - SyllabusPipeline - INFO - Rendering index page
+2025-03-25 14:38:37 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-25 14:38:37 - SyllabusPipeline - INFO - Generated unique ID: 9e6d1d05-4389-4e38-9efd-cb1518283c88
+2025-03-25 14:38:37 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\9e6d1d05-4389-4e38-9efd-cb1518283c88_PHY203syllabusF24.pdf
+2025-03-25 14:38:38 - SyllabusPipeline - INFO - Saved converted text to: converted\9e6d1d05-4389-4e38-9efd-cb1518283c88.txt
+2025-03-25 14:38:38 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\9e6d1d05-4389-4e38-9efd-cb1518283c88.txt
+2025-03-25 14:38:38 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-25 14:38:54 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 9e6d1d05-4389-4e38-9efd-cb1518283c88
+2025-03-25 14:38:54 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:38:57 - SyllabusPipeline - DEBUG - Response preview: {
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+ ...
+2025-03-25 14:38:57 - SyllabusPipeline - WARNING - Days of Week field is empty - attempting specific extraction
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - Successfully extracted Days of Week: Monday, Wednesday, Friday
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.625
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\9e6d1d05-4389-4e38-9efd-cb1518283c88_class_data.json
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-25 14:38:57 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - Processing assignments from structured data
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - Validating assignment sequence
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - Found 12 homework assignments
+2025-03-25 14:38:57 - SyllabusPipeline - WARNING - Found duplicate homework numbers in assignments
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - Linking assignments to class sessions
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - extract_all started for Unique ID: 9e6d1d05-4389-4e38-9efd-cb1518283c88
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 9e6d1d05-4389-4e38-9efd-cb1518283c88
+2025-03-25 14:38:57 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:39:01 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:39:01 - SyllabusPipeline - DEBUG - Response preview: {
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+ ...
+2025-03-25 14:39:01 - SyllabusPipeline - WARNING - Days of Week field is empty - attempting specific extraction
+2025-03-25 14:39:01 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:39:02 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:39:02 - SyllabusPipeline - INFO - Successfully extracted Days of Week: Monday, Wednesday, Friday
+2025-03-25 14:39:02 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.625
+2025-03-25 14:39:02 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\9e6d1d05-4389-4e38-9efd-cb1518283c88_class_data.json
+2025-03-25 14:39:02 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 14:39:02 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-25 14:39:02 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-25 14:39:02 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-25 14:39:02 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-25 14:39:02 - SyllabusPipeline - INFO - Recalculating class schedule
+2025-03-25 14:39:02 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-25 14:39:02 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 16 tasks. Missing fields: ['Time Zone', 'Class Start Date', 'Class End Date'].
+2025-03-25 14:39:02 - SyllabusPipeline - INFO - Showing missing fields form for ID: 9e6d1d05-4389-4e38-9efd-cb1518283c88
+2025-03-25 14:39:22 - SyllabusPipeline - INFO - Processing user-provided data for ID: 9e6d1d05-4389-4e38-9efd-cb1518283c88
+2025-03-25 14:39:22 - SyllabusPipeline - INFO - User provided data: {'Class Start Date': '2024-09-04', 'Class End Date': '2024-12-11'}
+2025-03-25 14:39:22 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 14:39:22 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-25 14:39:22 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-25 14:39:22 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-25 14:39:22 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Chapter 1': Unknown string format: Reading: Chapter 1
+2025-03-25 14:39:22 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 3': Unknown string format: Reading: Sections 3
+2025-03-25 14:39:22 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 2': Unknown string format: Reading: Sections 2
+2025-03-25 14:39:22 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Chap': Unknown string format: Reading: Chap
+2025-03-25 14:39:22 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 4': Unknown string format: Reading: Sections 4
+2025-03-25 14:39:22 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: 1st part of Sec': Unknown string format: Reading: 1st part of Sec
+2025-03-25 14:39:22 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Chap': Unknown string format: Reading: Chap
+2025-03-25 14:39:22 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: 2nd part of Sec': Unknown string format: Reading: 2nd part of Sec
+2025-03-25 14:39:22 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 13': Unknown string format: Reading: Sections 13
+2025-03-25 14:39:22 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 15': Unknown string format: Reading: Sections 15
+2025-03-25 14:39:22 - SyllabusPipeline - WARNING - Failed to parse date 'Reading: Sections 15': Unknown string format: Reading: Sections 15
+2025-03-25 14:39:22 - SyllabusPipeline - INFO - Successfully processed dates from user input
+2025-03-25 14:39:22 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-25 14:39:22 - SyllabusPipeline - INFO - Successfully updated class schedule from user input
+2025-03-25 14:39:22 - SyllabusPipeline - INFO - Showing results for ID: 9e6d1d05-4389-4e38-9efd-cb1518283c88
+2025-03-25 14:52:55 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:52:55 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:52:55 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:52:55 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:52:55 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:52:55 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:52:55 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:52:55 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:52:55 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:52:55 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:52:56 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:52:56 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:52:56 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:52:56 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:52:56 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:52:56 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:52:56 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 14:52:56 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:52:56 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:52:56 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:52:56 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:52:56 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:52:57 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:52:57 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:52:57 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:52:57 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:52:57 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:52:57 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 14:52:57 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:52:58 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:52:58 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:52:58 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:52:58 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:52:58 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:52:58 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:52:58 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 14:52:58 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:52:58 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:52:58 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:52:58 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:52:58 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:52:59 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:52:59 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:52:59 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:52:59 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:52:59 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:52:59 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 14:52:59 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:54:49 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hi there! How can I assist you today?'
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 14:54:50 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:57:57 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:57:57 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:57:57 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:57:57 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:57:57 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:57:57 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:57:57 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:57:57 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:57:57 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:57:57 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:57:58 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:57:59 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:57:59 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:57:59 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:57:59 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:57:59 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:57:59 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 14:57:59 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:57:59 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:57:59 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:57:59 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:57:59 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:57:59 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:57:59 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 14:57:59 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:58:35 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:58:35 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:58:35 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:58:35 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:58:35 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:58:36 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hi there! How can I assist you today?'
+2025-03-25 14:58:36 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:58:36 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:58:36 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:58:36 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:58:36 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:58:36 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 14:58:36 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:58:36 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:58:36 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:58:36 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:58:36 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:58:37 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:58:37 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:58:37 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:58:37 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:58:37 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:58:37 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 14:58:37 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:58:38 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:58:38 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:58:38 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:58:38 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:58:38 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 14:58:39 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 14:58:44 - SyllabusPipeline - INFO - Rendering index page
+2025-03-25 14:58:51 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-25 14:58:51 - SyllabusPipeline - INFO - Generated unique ID: 61f29af3-b151-48a0-af7f-5c3d35483846
+2025-03-25 14:58:51 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\61f29af3-b151-48a0-af7f-5c3d35483846_PHY203syllabusF24.pdf
+2025-03-25 14:58:51 - SyllabusPipeline - INFO - Saved converted text to: converted\61f29af3-b151-48a0-af7f-5c3d35483846.txt
+2025-03-25 14:58:51 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\61f29af3-b151-48a0-af7f-5c3d35483846.txt
+2025-03-25 14:58:51 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-25 14:59:03 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 61f29af3-b151-48a0-af7f-5c3d35483846
+2025-03-25 14:59:03 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:59:03 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:59:03 - SyllabusPipeline - WARNING - Could not extract Days of Week
+2025-03-25 14:59:04 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 2/3)
+2025-03-25 14:59:05 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:59:05 - SyllabusPipeline - WARNING - Could not extract Days of Week
+2025-03-25 14:59:06 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 3/3)
+2025-03-25 14:59:06 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:59:06 - SyllabusPipeline - WARNING - Could not extract Days of Week
+2025-03-25 14:59:06 - SyllabusPipeline - INFO - Calling OpenAI API for date extraction (attempt 1/3)
+2025-03-25 14:59:07 - SyllabusPipeline - INFO - Got response from OpenAI API for date extraction
+2025-03-25 14:59:07 - SyllabusPipeline - ERROR - Error calling OpenAI API for date extraction (attempt 1): 'OpenAIParser' object has no attribute '_extract_json_from_response'
+2025-03-25 14:59:08 - SyllabusPipeline - INFO - Calling OpenAI API for date extraction (attempt 2/3)
+2025-03-25 14:59:09 - SyllabusPipeline - INFO - Got response from OpenAI API for date extraction
+2025-03-25 14:59:09 - SyllabusPipeline - ERROR - Error calling OpenAI API for date extraction (attempt 2): 'OpenAIParser' object has no attribute '_extract_json_from_response'
+2025-03-25 14:59:11 - SyllabusPipeline - INFO - Calling OpenAI API for date extraction (attempt 3/3)
+2025-03-25 14:59:11 - SyllabusPipeline - INFO - Got response from OpenAI API for date extraction
+2025-03-25 14:59:11 - SyllabusPipeline - ERROR - Error calling OpenAI API for date extraction (attempt 3): 'OpenAIParser' object has no attribute '_extract_json_from_response'
+2025-03-25 14:59:11 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:59:15 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:59:15 - SyllabusPipeline - DEBUG - Response preview: {
+    "School Name": "",
+    "Term": "Fall 2024",
+    "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+    "Instructor Name": "Miquel Dorca",
+    "Instructor Email": "miquel@uri.edu",
+    "Class Time":...
+2025-03-25 14:59:15 - SyllabusPipeline - ERROR - Error calling OpenAI API (attempt 1): 'OpenAIParser' object has no attribute '_extract_json_from_response'
+2025-03-25 14:59:16 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 2/3)
+2025-03-25 14:59:18 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:59:18 - SyllabusPipeline - DEBUG - Response preview: {
+    "School Name": "",
+    "Term": "Fall 2024",
+    "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+    "Instructor Name": "Miquel Dorca",
+    "Instructor Email": "miquel@uri.edu",
+    "Class Time":...
+2025-03-25 14:59:18 - SyllabusPipeline - ERROR - Error calling OpenAI API (attempt 2): 'OpenAIParser' object has no attribute '_extract_json_from_response'
+2025-03-25 14:59:20 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 3/3)
+2025-03-25 14:59:24 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:59:24 - SyllabusPipeline - DEBUG - Response preview: {
+  "School Name": "",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+  "Class Time": "1:00 PM - ...
+2025-03-25 14:59:24 - SyllabusPipeline - ERROR - Error calling OpenAI API (attempt 3): 'OpenAIParser' object has no attribute '_extract_json_from_response'
+2025-03-25 14:59:24 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.0
+2025-03-25 14:59:24 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\61f29af3-b151-48a0-af7f-5c3d35483846_class_data.json
+2025-03-25 14:59:24 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 14:59:24 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-25 14:59:24 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-25 14:59:24 - SyllabusPipeline - INFO - Processing assignments from structured data
+2025-03-25 14:59:24 - SyllabusPipeline - INFO - Validating assignment sequence
+2025-03-25 14:59:24 - SyllabusPipeline - INFO - Found 11 homework assignments
+2025-03-25 14:59:24 - SyllabusPipeline - INFO - Linking assignments to class sessions
+2025-03-25 14:59:24 - SyllabusPipeline - INFO - extract_all started for Unique ID: 61f29af3-b151-48a0-af7f-5c3d35483846
+2025-03-25 14:59:24 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-25 14:59:24 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-25 14:59:24 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 61f29af3-b151-48a0-af7f-5c3d35483846
+2025-03-25 14:59:24 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:59:25 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:59:25 - SyllabusPipeline - INFO - Successfully extracted Days of Week: Monday, Wednesday, Friday
+2025-03-25 14:59:25 - SyllabusPipeline - INFO - Calling OpenAI API for date extraction (attempt 1/3)
+2025-03-25 14:59:25 - SyllabusPipeline - INFO - Got response from OpenAI API for date extraction
+2025-03-25 14:59:25 - SyllabusPipeline - ERROR - Error calling OpenAI API for date extraction (attempt 1): 'OpenAIParser' object has no attribute '_extract_json_from_response'
+2025-03-25 14:59:26 - SyllabusPipeline - INFO - Calling OpenAI API for date extraction (attempt 2/3)
+2025-03-25 14:59:27 - SyllabusPipeline - INFO - Got response from OpenAI API for date extraction
+2025-03-25 14:59:27 - SyllabusPipeline - ERROR - Error calling OpenAI API for date extraction (attempt 2): 'OpenAIParser' object has no attribute '_extract_json_from_response'
+2025-03-25 14:59:29 - SyllabusPipeline - INFO - Calling OpenAI API for date extraction (attempt 3/3)
+2025-03-25 14:59:31 - SyllabusPipeline - INFO - Got response from OpenAI API for date extraction
+2025-03-25 14:59:31 - SyllabusPipeline - ERROR - Error calling OpenAI API for date extraction (attempt 3): 'OpenAIParser' object has no attribute '_extract_json_from_response'
+2025-03-25 14:59:31 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 14:59:33 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:59:33 - SyllabusPipeline - DEBUG - Response preview: {
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+ ...
+2025-03-25 14:59:33 - SyllabusPipeline - ERROR - Error calling OpenAI API (attempt 1): 'OpenAIParser' object has no attribute '_extract_json_from_response'
+2025-03-25 14:59:34 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 2/3)
+2025-03-25 14:59:36 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:59:36 - SyllabusPipeline - DEBUG - Response preview: {
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+ ...
+2025-03-25 14:59:36 - SyllabusPipeline - ERROR - Error calling OpenAI API (attempt 2): 'OpenAIParser' object has no attribute '_extract_json_from_response'
+2025-03-25 14:59:38 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 3/3)
+2025-03-25 14:59:41 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 14:59:41 - SyllabusPipeline - DEBUG - Response preview: {
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+ ...
+2025-03-25 14:59:41 - SyllabusPipeline - ERROR - Error calling OpenAI API (attempt 3): 'OpenAIParser' object has no attribute '_extract_json_from_response'
+2025-03-25 14:59:41 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.0625
+2025-03-25 14:59:41 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\61f29af3-b151-48a0-af7f-5c3d35483846_class_data.json
+2025-03-25 14:59:41 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 14:59:41 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-25 14:59:41 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-25 14:59:41 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-25 14:59:41 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-25 14:59:41 - SyllabusPipeline - INFO - Recalculating class schedule
+2025-03-25 14:59:41 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-25 14:59:41 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 16 tasks. Missing fields: ['Class Time', 'Time Zone', 'Class Start Date', 'Class End Date'].
+2025-03-25 14:59:41 - SyllabusPipeline - INFO - Showing missing fields form for ID: 61f29af3-b151-48a0-af7f-5c3d35483846
+2025-03-25 14:59:57 - SyllabusPipeline - INFO - Processing user-provided data for ID: 61f29af3-b151-48a0-af7f-5c3d35483846
+2025-03-25 14:59:57 - SyllabusPipeline - INFO - User provided data: {'Class Time': '1:00 PM - 1:50 PM', 'Class Start Date': '2024-09-04', 'Class End Date': '2024-12-11'}
+2025-03-25 14:59:57 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 14:59:57 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-25 14:59:57 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-25 14:59:57 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-25 14:59:57 - SyllabusPipeline - INFO - Successfully processed dates from user input
+2025-03-25 14:59:57 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-25 14:59:57 - SyllabusPipeline - INFO - Successfully updated class schedule from user input
+2025-03-25 14:59:57 - SyllabusPipeline - INFO - All fields complete. Showing results for ID: 61f29af3-b151-48a0-af7f-5c3d35483846
+2025-03-25 14:59:57 - SyllabusPipeline - INFO - Showing results for ID: 61f29af3-b151-48a0-af7f-5c3d35483846
+2025-03-25 15:05:24 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 15:05:24 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 15:05:25 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 15:05:26 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 15:05:26 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 15:05:26 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 15:05:26 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 15:05:26 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 15:05:26 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 15:05:26 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 15:05:26 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 15:05:26 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 15:05:26 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 15:05:26 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 15:05:26 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 15:05:26 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 15:05:26 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 15:05:26 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 15:05:26 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 15:05:26 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 15:05:33 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 15:05:33 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 15:05:33 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 15:05:33 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 15:05:33 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 15:05:34 - SyllabusPipeline - INFO - Rendering index page
+2025-03-25 15:05:35 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 15:05:35 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 15:05:35 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 15:05:35 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 15:05:35 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 15:05:36 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 15:05:36 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 15:05:36 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 15:05:36 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 15:05:36 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 15:05:36 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 15:05:36 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 15:05:36 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 15:05:36 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 15:05:36 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 15:05:36 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 15:05:36 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 15:05:37 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 15:05:37 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 15:05:37 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 15:05:37 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 15:05:37 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 15:05:37 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 15:05:37 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 15:05:42 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-25 15:05:42 - SyllabusPipeline - INFO - Generated unique ID: d4fcd8fe-0d98-4038-9556-5c79d63dda3f
+2025-03-25 15:05:42 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\d4fcd8fe-0d98-4038-9556-5c79d63dda3f_PHY203syllabusF24.pdf
+2025-03-25 15:05:42 - SyllabusPipeline - INFO - Saved converted text to: converted\d4fcd8fe-0d98-4038-9556-5c79d63dda3f.txt
+2025-03-25 15:05:42 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\d4fcd8fe-0d98-4038-9556-5c79d63dda3f.txt
+2025-03-25 15:05:42 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-25 15:05:54 - SyllabusPipeline - INFO - Extracting syllabus data for ID: d4fcd8fe-0d98-4038-9556-5c79d63dda3f
+2025-03-25 15:05:54 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 15:05:55 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 15:05:55 - SyllabusPipeline - WARNING - Could not extract Days of Week
+2025-03-25 15:05:56 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 2/3)
+2025-03-25 15:05:56 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 15:05:56 - SyllabusPipeline - WARNING - Could not extract Days of Week
+2025-03-25 15:05:57 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 3/3)
+2025-03-25 15:05:58 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 15:05:58 - SyllabusPipeline - WARNING - Could not extract Days of Week
+2025-03-25 15:05:58 - SyllabusPipeline - INFO - Calling OpenAI API for date extraction (attempt 1/3)
+2025-03-25 15:05:58 - SyllabusPipeline - INFO - Got response from OpenAI API for date extraction
+2025-03-25 15:05:58 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 15:06:02 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 15:06:02 - SyllabusPipeline - DEBUG - Response preview: {
+  "School Name": "",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+  "Class Time": "1pm-1:50pm...
+2025-03-25 15:06:02 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.5
+2025-03-25 15:06:02 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\d4fcd8fe-0d98-4038-9556-5c79d63dda3f_class_data.json
+2025-03-25 15:06:02 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 15:06:02 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-25 15:06:02 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-25 15:06:02 - SyllabusPipeline - INFO - Processing assignments from structured data
+2025-03-25 15:06:02 - SyllabusPipeline - INFO - Validating assignment sequence
+2025-03-25 15:06:02 - SyllabusPipeline - INFO - Found 11 homework assignments
+2025-03-25 15:06:02 - SyllabusPipeline - WARNING - Found duplicate homework numbers in assignments
+2025-03-25 15:06:02 - SyllabusPipeline - INFO - Linking assignments to class sessions
+2025-03-25 15:06:02 - SyllabusPipeline - INFO - extract_all started for Unique ID: d4fcd8fe-0d98-4038-9556-5c79d63dda3f
+2025-03-25 15:06:02 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-25 15:06:02 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-25 15:06:02 - SyllabusPipeline - INFO - Extracting syllabus data for ID: d4fcd8fe-0d98-4038-9556-5c79d63dda3f
+2025-03-25 15:06:02 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 15:06:02 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 15:06:02 - SyllabusPipeline - INFO - Successfully extracted Days of Week: Monday, Wednesday, Friday
+2025-03-25 15:06:02 - SyllabusPipeline - INFO - Calling OpenAI API for date extraction (attempt 1/3)
+2025-03-25 15:06:03 - SyllabusPipeline - INFO - Got response from OpenAI API for date extraction
+2025-03-25 15:06:03 - SyllabusPipeline - INFO - Successfully extracted Class Start Date: September 11, 2024
+2025-03-25 15:06:03 - SyllabusPipeline - INFO - Successfully extracted Class End Date: December 11, 2024
+2025-03-25 15:06:03 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 15:06:06 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 15:06:06 - SyllabusPipeline - DEBUG - Response preview: {
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+ ...
+2025-03-25 15:06:06 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.75
+2025-03-25 15:06:06 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\d4fcd8fe-0d98-4038-9556-5c79d63dda3f_class_data.json
+2025-03-25 15:06:06 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 15:06:06 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-25 15:06:06 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-25 15:06:06 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-25 15:06:06 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-25 15:06:06 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-25 15:06:06 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 16 tasks. Missing fields: ['Time Zone'].
+2025-03-25 15:06:06 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-25 15:06:06 - SyllabusPipeline - INFO - extract_all started for Unique ID: d4fcd8fe-0d98-4038-9556-5c79d63dda3f
+2025-03-25 15:06:06 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-25 15:06:06 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-25 15:06:06 - SyllabusPipeline - INFO - Extracting syllabus data for ID: d4fcd8fe-0d98-4038-9556-5c79d63dda3f
+2025-03-25 15:06:06 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 15:06:07 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 15:06:07 - SyllabusPipeline - INFO - Successfully extracted Days of Week: Monday, Wednesday, Friday
+2025-03-25 15:06:07 - SyllabusPipeline - INFO - Calling OpenAI API for date extraction (attempt 1/3)
+2025-03-25 15:06:08 - SyllabusPipeline - INFO - Got response from OpenAI API for date extraction
+2025-03-25 15:06:08 - SyllabusPipeline - INFO - Successfully extracted Class Start Date: September 11, 2024
+2025-03-25 15:06:08 - SyllabusPipeline - INFO - Successfully extracted Class End Date: December 11, 2024
+2025-03-25 15:06:08 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 15:06:11 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 15:06:11 - SyllabusPipeline - DEBUG - Response preview: {
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+ ...
+2025-03-25 15:06:11 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.75
+2025-03-25 15:06:11 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\d4fcd8fe-0d98-4038-9556-5c79d63dda3f_class_data.json
+2025-03-25 15:06:11 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 15:06:11 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-25 15:06:11 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-25 15:06:11 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-25 15:06:11 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-25 15:06:11 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-25 15:06:11 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 16 tasks. Missing fields: ['Time Zone'].
+2025-03-25 15:06:11 - SyllabusPipeline - INFO - Showing results for ID: d4fcd8fe-0d98-4038-9556-5c79d63dda3f
+2025-03-25 16:36:58 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 16:36:58 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 16:36:58 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 16:36:58 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 16:36:58 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 16:36:58 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 16:36:58 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 16:36:58 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 16:36:58 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - Initializing SyllabusExtractor...
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - Using OpenAI model: gpt-4o
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - Using API key from environment variable OPENAI_API_KEY
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - API key found ending with: ...FM2UA
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - Created OpenAI client for model gpt-4o
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - Testing OpenAI API connection...
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 16:36:59 - SyllabusPipeline - INFO - Testing connection with model: gpt-4o
+2025-03-25 16:37:00 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 16:37:00 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 16:37:00 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 16:37:00 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 16:37:00 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 16:37:00 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 16:37:00 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 16:37:00 - SyllabusPipeline - INFO - API test succeeded. Response: 'Hello! How can I assist you today?'
+2025-03-25 16:37:00 - SyllabusPipeline - INFO - OpenAI API connection test successful
+2025-03-25 16:37:00 - SyllabusPipeline - INFO - DateParser initialized for normalization and calculation
+2025-03-25 16:37:00 - SyllabusPipeline - INFO - ScheduleParser initialized
+2025-03-25 16:37:00 - SyllabusPipeline - INFO - AssignmentParser initialized
+2025-03-25 16:37:00 - SyllabusPipeline - INFO - SyllabusExtractor initialized with model: gpt-4o
+2025-03-25 16:37:00 - SyllabusPipeline - INFO - Starting Flask application on 0.0.0.0:5000
+2025-03-25 16:37:05 - SyllabusPipeline - INFO - Rendering index page
+2025-03-25 16:37:10 - SyllabusPipeline - INFO - Processing file upload request
+2025-03-25 16:37:10 - SyllabusPipeline - INFO - Generated unique ID: 45103d11-b479-41c7-8262-3551d9ac3c25
+2025-03-25 16:37:10 - SyllabusPipeline - INFO - Saved uploaded file to: uploads\45103d11-b479-41c7-8262-3551d9ac3c25_PHY203syllabusF24.pdf
+2025-03-25 16:37:10 - SyllabusPipeline - INFO - Saved converted text to: converted\45103d11-b479-41c7-8262-3551d9ac3c25.txt
+2025-03-25 16:37:10 - SyllabusPipeline - INFO - Saved converted text to converted_syllabus: utils/parsing/syllabus_repository/converted_syllabus\45103d11-b479-41c7-8262-3551d9ac3c25.txt
+2025-03-25 16:37:10 - SyllabusPipeline - INFO - Processing 12189 characters of text
+2025-03-25 16:37:22 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 45103d11-b479-41c7-8262-3551d9ac3c25
+2025-03-25 16:37:22 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 16:37:26 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 16:37:26 - SyllabusPipeline - DEBUG - Response preview: {
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+ ...
+2025-03-25 16:37:26 - SyllabusPipeline - DEBUG - Full response: {
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+  "Class Time": "1:00 PM - 1:50 PM",
+  "Time Zone": "",
+  "Days of Week": "",
+  "Term Start Date": "",
+  "Term End Date": "",
+  "Class Start Date": "",
+  "Class End Date": "",
+  "Office Hours": "MWF 12:30 PM - 1:00 PM",
+  "Telephone": "",
+  "Class Location": "East Hall Auditorium",
+  "Additional": "Calculus-based introduction to Newtonian mechanics. Kinematics and dynamics of particles and systems of particles, conservation laws, rotational motion, gravitation, and oscillatory motion."
+}
+2025-03-25 16:37:26 - SyllabusPipeline - INFO - Critical fields missing from initial extraction. Making targeted extractions.
+2025-03-25 16:37:26 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 16:37:26 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 16:37:26 - SyllabusPipeline - WARNING - Could not extract Days of Week
+2025-03-25 16:37:27 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 2/3)
+2025-03-25 16:37:28 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 16:37:28 - SyllabusPipeline - WARNING - Could not extract Days of Week
+2025-03-25 16:37:29 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 3/3)
+2025-03-25 16:37:29 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 16:37:29 - SyllabusPipeline - WARNING - Could not extract Days of Week
+2025-03-25 16:37:29 - SyllabusPipeline - INFO - Calling OpenAI API for date extraction (attempt 1/3)
+2025-03-25 16:37:30 - SyllabusPipeline - INFO - Got response from OpenAI API for date extraction
+2025-03-25 16:37:30 - SyllabusPipeline - DEBUG - Full response: ```json
+{
+  "Term Start Date": "",
+  "Term End Date": "",
+  "Class Start Date": "",
+  "Class End Date": ""
+}
+```
+2025-03-25 16:37:30 - SyllabusPipeline - DEBUG - Direct JSON parsing failed, trying alternate methods
+2025-03-25 16:37:30 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.5625
+2025-03-25 16:37:30 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\45103d11-b479-41c7-8262-3551d9ac3c25_class_data.json
+2025-03-25 16:37:30 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 16:37:30 - SyllabusPipeline - INFO - Processed days of week: '' -> ''
+2025-03-25 16:37:30 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-25 16:37:30 - SyllabusPipeline - INFO - Processing assignments from structured data
+2025-03-25 16:37:30 - SyllabusPipeline - INFO - Validating assignment sequence
+2025-03-25 16:37:30 - SyllabusPipeline - INFO - Found 11 homework assignments
+2025-03-25 16:37:30 - SyllabusPipeline - WARNING - Found duplicate homework numbers in assignments
+2025-03-25 16:37:30 - SyllabusPipeline - INFO - Linking assignments to class sessions
+2025-03-25 16:37:30 - SyllabusPipeline - INFO - extract_all started for Unique ID: 45103d11-b479-41c7-8262-3551d9ac3c25
+2025-03-25 16:37:30 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-25 16:37:30 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-25 16:37:30 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 45103d11-b479-41c7-8262-3551d9ac3c25
+2025-03-25 16:37:30 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 16:37:33 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 16:37:33 - SyllabusPipeline - DEBUG - Response preview: {
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+ ...
+2025-03-25 16:37:33 - SyllabusPipeline - DEBUG - Full response: {
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+  "Class Time": "1:00 PM - 1:50 PM",
+  "Time Zone": "",
+  "Days of Week": "",
+  "Term Start Date": "",
+  "Term End Date": "",
+  "Class Start Date": "",
+  "Class End Date": "",
+  "Office Hours": "MWF 12:30 PM - 1:00 PM",
+  "Telephone": "",
+  "Class Location": "East Hall Auditorium",
+  "Additional": "Calculus-based introduction to Newtonian mechanics. Kinematics and dynamics of particles and systems of particles, conservation laws, rotational motion, gravitation, and oscillatory motion."
+}
+2025-03-25 16:37:33 - SyllabusPipeline - INFO - Critical fields missing from initial extraction. Making targeted extractions.
+2025-03-25 16:37:33 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 16:37:34 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 16:37:34 - SyllabusPipeline - INFO - Successfully extracted Days of Week: Monday, Wednesday, Friday
+2025-03-25 16:37:34 - SyllabusPipeline - INFO - Calling OpenAI API for date extraction (attempt 1/3)
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Got response from OpenAI API for date extraction
+2025-03-25 16:37:36 - SyllabusPipeline - DEBUG - Full response: ```json
+{
+  "Term Start Date": "",
+  "Term End Date": "",
+  "Class Start Date": "September 11, 2024",
+  "Class End Date": "December 11, 2024"
+}
+```
+2025-03-25 16:37:36 - SyllabusPipeline - DEBUG - Direct JSON parsing failed, trying alternate methods
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Successfully extracted Class Start Date: September 11, 2024
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Successfully extracted Class End Date: December 11, 2024
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Added missing field 'Days of Week' from targeted extraction
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Added missing field 'Class Start Date' from targeted extraction
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Added missing field 'Class End Date' from targeted extraction
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.75
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\45103d11-b479-41c7-8262-3551d9ac3c25_class_data.json
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-25 16:37:36 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 16 tasks. Missing fields: ['Time Zone'].
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - extract_all started for Unique ID: 45103d11-b479-41c7-8262-3551d9ac3c25
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Text length: 12189 characters
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Step 1: Running OpenAIParser.extract()
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Extracting syllabus data for ID: 45103d11-b479-41c7-8262-3551d9ac3c25
+2025-03-25 16:37:36 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 16:37:39 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 16:37:39 - SyllabusPipeline - DEBUG - Response preview: {
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+ ...
+2025-03-25 16:37:39 - SyllabusPipeline - DEBUG - Full response: {
+  "School Name": "University of Rhode Island",
+  "Term": "Fall 2024",
+  "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+  "Instructor Name": "Miquel Dorca",
+  "Instructor Email": "miquel@uri.edu",
+  "Class Time": "1:00 PM - 1:50 PM",
+  "Time Zone": "",
+  "Days of Week": "",
+  "Term Start Date": "",
+  "Term End Date": "",
+  "Class Start Date": "",
+  "Class End Date": "",
+  "Office Hours": "MWF 12:30 PM - 1:00 PM",
+  "Telephone": "",
+  "Class Location": "East Hall Auditorium",
+  "Additional": "Calculus-based introduction to Newtonian mechanics. Kinematics and dynamics of particles and systems of particles, conservation laws, rotational motion, gravitation, and oscillatory motion."
+}
+2025-03-25 16:37:39 - SyllabusPipeline - INFO - Critical fields missing from initial extraction. Making targeted extractions.
+2025-03-25 16:37:39 - SyllabusPipeline - INFO - Calling OpenAI API (attempt 1/3)
+2025-03-25 16:37:40 - SyllabusPipeline - INFO - Got response from OpenAI API
+2025-03-25 16:37:40 - SyllabusPipeline - INFO - Successfully extracted Days of Week: Monday, Wednesday, Friday
+2025-03-25 16:37:40 - SyllabusPipeline - INFO - Calling OpenAI API for date extraction (attempt 1/3)
+2025-03-25 16:38:11 - SyllabusPipeline - INFO - Got response from OpenAI API for date extraction
+2025-03-25 16:38:11 - SyllabusPipeline - DEBUG - Full response: ```json
+{
+  "Term Start Date": "September 4, 2024",
+  "Term End Date": "",
+  "Class Start Date": "September 4, 2024",
+  "Class End Date": "December 11, 2024"
+}
+```
+2025-03-25 16:38:11 - SyllabusPipeline - DEBUG - Direct JSON parsing failed, trying alternate methods
+2025-03-25 16:38:11 - SyllabusPipeline - INFO - Successfully extracted Term Start Date: September 4, 2024
+2025-03-25 16:38:11 - SyllabusPipeline - INFO - Successfully extracted Class Start Date: September 4, 2024
+2025-03-25 16:38:11 - SyllabusPipeline - INFO - Successfully extracted Class End Date: December 11, 2024
+2025-03-25 16:38:11 - SyllabusPipeline - INFO - Added missing field 'Days of Week' from targeted extraction
+2025-03-25 16:38:11 - SyllabusPipeline - INFO - Added missing field 'Term Start Date' from targeted extraction
+2025-03-25 16:38:11 - SyllabusPipeline - INFO - Added missing field 'Class Start Date' from targeted extraction
+2025-03-25 16:38:11 - SyllabusPipeline - INFO - Added missing field 'Class End Date' from targeted extraction
+2025-03-25 16:38:11 - SyllabusPipeline - INFO - Successfully extracted class data with confidence: 0.8125
+2025-03-25 16:38:11 - SyllabusPipeline - INFO - Saved JSON to: utils/parsing/syllabus_repository/main_data\45103d11-b479-41c7-8262-3551d9ac3c25_class_data.json
+2025-03-25 16:38:11 - SyllabusPipeline - INFO - Normalizing dates in extracted data
+2025-03-25 16:38:11 - SyllabusPipeline - INFO - Processing days of week: 'Monday, Wednesday, Friday'
+2025-03-25 16:38:11 - SyllabusPipeline - DEBUG - Days already in comma-separated format: 'Monday, Wednesday, Friday'
+2025-03-25 16:38:11 - SyllabusPipeline - INFO - Processed days of week: 'Monday, Wednesday, Friday' -> 'Monday, Wednesday, Friday'
+2025-03-25 16:38:11 - SyllabusPipeline - INFO - Processing class schedule
+2025-03-25 16:38:11 - SyllabusPipeline - INFO - Processing assignments from text
+2025-03-25 16:38:11 - SyllabusPipeline - INFO - Extraction complete. Found 0 events, 16 tasks. Missing fields: ['Time Zone'].
+2025-03-25 16:38:11 - SyllabusPipeline - INFO - Showing results for ID: 45103d11-b479-41c7-8262-3551d9ac3c25

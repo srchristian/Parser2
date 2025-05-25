@@ -1,0 +1,32 @@
+{
+    "class_data": {
+        "School Name": "University of Rhode Island",
+        "Term": "Fall 2024",
+        "Course Title": "PHY203: ELEMENTARY PHYSICS I",
+        "Instructor Name": "Miquel Dorca",
+        "Instructor Email": "miquel@uri.edu",
+        "Class Time": "1:00 PM - 1:50 PM",
+        "Time Zone": "",
+        "Days of Week": "Monday, Wednesday, Friday",
+        "Term Start Date": "",
+        "Term End Date": "",
+        "Class Start Date": "September 04, 2024",
+        "Class End Date": "December 11, 2024",
+        "Office Hours": "MWF 12:30pm -1:00pm",
+        "Telephone": "",
+        "Class Location": "",
+        "Additional": "Brightspace: Used for class announcements and all lectures will be posted. Remote lectures will be given asynchronously on Brightspace if needed. Course Grade: Based on a maximum of 1200 points: unit exams 400 points, final exam 400 points, homework 150 points, recitation 250 points. Grading Scheme: A(93-100); A-(90-93); B+(87-90); B(83-87); B-(80-83); C+(77-80); C(73-77); C-(70-73); D+(67-70); D(60-67); F(<60).",
+        "Date Verification": "ai_generated"
+    },
+    "event_data": [],
+    "task_data": [],
+    "metadata": {
+        "original_file": null,
+        "syllabus_text_path": null,
+        "missing_fields": [],
+        "process_time": 34.551303,
+        "timestamp": "2025-03-23T17:12:13.672476",
+        "parsed_syllabus_path": "utils/parsing/syllabus_repository/parsed_syllabus\\d8a92e1b-9bec-45ea-b5ba-38a8447cf489.json"
+    },
+    "status": "Success"
+}
