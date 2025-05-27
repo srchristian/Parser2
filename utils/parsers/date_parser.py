@@ -95,7 +95,7 @@ class DateParser:
             (r"monday", 0), (r"tuesday", 1), (r"wednesday", 2), (r"thursday", 3), (r"friday", 4), (r"saturday", 5), (r"sunday", 6),
             (r"mon", 0), (r"tues", 1), (r"tue", 1), (r"weds", 2), (r"wed", 2), (r"thurs", 3), (r"thur", 3), (r"thu", 3), (r"fri", 4), (r"sat", 5), (r"sun", 6),
             (r"mo", 0), (r"tu", 1), (r"we", 2), (r"th", 3), (r"fr", 4), (r"sa", 5), (r"su", 6), 
-            (r"u", 6), (r"r", 3)
+            (r"u", 6), (r"r", 3) # 'r' for Thursday is common in some academic contexts
         ]
         self.day_combinations = { 
             "mwf": [0, 2, 4], "tr": [1, 3], "tth": [1, 3], "tuth": [1, 3], "thf": [3,4], 
@@ -132,10 +132,6 @@ class DateParser:
             return None, None
         
         time_str_lower = time_str.lower().strip()
-        # Regex to capture start time, and optionally " - " followed by end time. Handles AM/PM.
-        # More complex regex might be needed for various formats. This is a basic one.
-        # Format examples: "10:00 am", "10am", "1:00pm", "13:00"
-        # And ranges: "10:00 am - 11:15 am"
         
         time_pattern = r"(?P<start_H>\d{1,2})(?::(?P<start_M>\d{2}))?\s*(?P<start_AMPM>am|pm)?(?:[^\S\r\n]*-[^\S\r\n]*(?P<end_H>\d{1,2})(?::(?P<end_M>\d{2}))?\s*(?P<end_AMPM>am|pm)?)?"
         match = re.search(time_pattern, time_str_lower, re.IGNORECASE)
@@ -156,26 +152,19 @@ class DateParser:
                 s_hour = int(start_h)
                 s_minute = int(start_m_str) if start_m_str else 0
                 if start_ampm == 'pm' and s_hour != 12: s_hour += 12
-                if start_ampm == 'am' and s_hour == 12: s_hour = 0 # Midnight case
+                if start_ampm == 'am' and s_hour == 12: s_hour = 0 
                 parsed_start_time = time(s_hour % 24, s_minute)
             
-            if end_h: # If end_H is captured, means there was a range
+            if end_h: 
                 e_hour = int(end_h)
                 e_minute = int(end_m_str) if end_m_str else 0
-                # Infer AM/PM for end time if not specified, based on start time AM/PM
                 effective_end_ampm = end_ampm or start_ampm 
                 if effective_end_ampm == 'pm' and e_hour != 12: e_hour += 12
                 if effective_end_ampm == 'am' and e_hour == 12: e_hour = 0
                 parsed_end_time = time(e_hour % 24, e_minute)
-                # If end time is earlier than start time (e.g. 10 AM - 2 PM, but end AM/PM was inferred as AM)
-                # This simple parser doesn't handle crossing noon without explicit AM/PM for end, or complex ranges.
-                # For robust parsing, a dedicated time parsing library or more complex regex is advised.
                 if parsed_start_time and parsed_end_time < parsed_start_time and not end_ampm and start_ampm == 'am':
-                     # Heuristic: if start was AM, no end AM/PM, and end hour < start hour, assume end is PM
-                     if (e_hour + 12) < 24 : # Check if adding 12 makes sense
+                     if (e_hour + 12) < 24 : 
                         parsed_end_time = time(e_hour + 12, e_minute)
-
-
         except ValueError as ve:
             self.logger.error(f"Error parsing time components from '{time_str}': {ve}")
             return None, None
@@ -189,8 +178,6 @@ class DateParser:
                              is_end_time_for_due_date: bool = False) -> Optional[str]:
         """
         Combines a date and time, localizes to the given timezone, and returns an ISO 8601 string.
-        If time_input is a string like "10:00 AM - 11:15 AM", it uses the start time.
-        For due dates, is_end_time_for_due_date can signify using the end of the minute for '11:59 PM'.
         """
         if not PYTZ_AVAILABLE:
             self.logger.error("pytz library is not available. Cannot generate timezone-aware ISO 8601 strings.")
@@ -211,9 +198,9 @@ class DateParser:
                 naive_date_part = date_input.date()
             elif isinstance(date_input, date):
                 naive_date_part = date_input
-            else: # Assumed string
-                normalized_date_str = self.normalize_date(str(date_input))
-                if normalized_date_str == "TBD": return None
+            else: 
+                normalized_date_str = self.normalize_date(str(date_input)) # Uses updated normalize_date
+                if normalized_date_str == "TBD": return None # Or handle as appropriate
                 naive_date_part = self.parse(normalized_date_str, ignoretz=True).date()
 
             target_time_obj: Optional[time] = None
@@ -221,20 +208,17 @@ class DateParser:
                 target_time_obj = time_input
             elif isinstance(time_input, str) and time_input.strip():
                 start_t, end_t = self.parse_time_string_to_objects(time_input)
-                if is_end_time_for_due_date and end_t: # Use end time if it's a range and we want end for due date
+                if is_end_time_for_due_date and end_t: 
                     target_time_obj = end_t
-                else: # Default to start time
+                else: 
                     target_time_obj = start_t
             
-            if not target_time_obj: # If time couldn't be parsed or wasn't provided
-                # For due dates, if no time, assume end of day (e.g. 23:59:59)
+            if not target_time_obj: 
                 if is_end_time_for_due_date: 
                     target_time_obj = time(23, 59, 59)
-                else: # For events, if no time, this might be an error or an all-day event
+                else: 
                     self.logger.warning(f"No valid time_input resolved for date '{naive_date_part}' and timezone '{timezone_str}'.")
-                    # Could return just date for all-day events, or None if time is mandatory
-                    # For now, let's assume time is generally expected for events.
-                    return naive_date_part.isoformat() # ISO Date if no time
+                    return naive_date_part.isoformat() 
 
             naive_dt = datetime.combine(naive_date_part, target_time_obj)
             localized_dt = target_timezone.localize(naive_dt)
@@ -248,25 +232,36 @@ class DateParser:
             return None
 
     def process_dates(self, data: Dict[str, Any], term_year_str: Optional[str] = None) -> Dict[str, Any]:
-        # ... (this method remains largely the same, focusing on normalizing to human-readable)
-        # It could optionally be enhanced to also add ISO fields if timezone is passed in,
-        # but usually, ISO generation is done by ScheduleParser/AssignmentParser when they have all context.
-        self.logger.debug(f"Processing dates. Context term_year_str: {term_year_str}")
-        default_year_dt = None
+        self.logger.debug(f"Processing dates. Context term_year_str from process_dates: {term_year_str}") # Log received term_year_str
+        
+        # Determine default_year_dt based on term_year_str passed to this method first
+        default_year_dt_for_normalize = None
         if term_year_str: 
             year_match = re.search(r'\b(20\d{2})\b', term_year_str) 
             if year_match:
-                try: default_year_dt = datetime(int(year_match.group(1)), 1, 1)
-                except ValueError: self.logger.warning(f"Could not parse year from term: {term_year_str}")
+                try: 
+                    default_year_dt_for_normalize = datetime(int(year_match.group(1)), 1, 1)
+                    self.logger.debug(f"process_dates: default_year_dt_for_normalize set to {default_year_dt_for_normalize} from term_year_str '{term_year_str}'.")
+                except ValueError: 
+                    self.logger.warning(f"Could not parse year from term_year_str: {term_year_str} in process_dates.")
         
         class_data = data.get("class_data")
         if isinstance(class_data, dict):
             if "Days of Week" in class_data and isinstance(class_data["Days of Week"], str):
                 class_data["Days of Week"] = self._standardize_days_of_week(class_data["Days of Week"])
+            
             date_fields = ["Term Start Date", "Term End Date", "Class Start Date", "Class End Date"]
+            # Use term_year_str from class_data.get("Term") as context for individual field normalization
+            # This allows normalize_date to use the most specific context if available
+            contextual_term_for_fields = class_data.get("Term", term_year_str) # Prefer "Term" if present, else the overall one
+
             for field in date_fields:
                 if field in class_data and isinstance(class_data[field], str) and class_data[field].strip():
-                    class_data[field] = self.normalize_date(class_data[field], default_datetime=default_year_dt)
+                    class_data[field] = self.normalize_date(
+                        class_data[field], 
+                        default_datetime=default_year_dt_for_normalize, # Pass the default_year determined at method start
+                        term_year_str=contextual_term_for_fields # Pass specific term context
+                    )
         
         for data_key in ["event_data", "task_data", "lab_data", "recitation_data"]:
             item_list = data.get(data_key)
@@ -286,7 +281,10 @@ class DateParser:
                             date_val_str = item[raw_date_key_to_check]; key_used_for_update = raw_date_key_to_check
                         
                         if date_val_str and key_used_for_update:
-                            normalized_date = self.normalize_date(date_val_str, default_datetime=default_year_dt)
+                            # Use default_year_dt_for_normalize for list items too
+                            # And term_year_str from class_data.get("Term") if available for specific item context
+                            contextual_term_for_item = class_data.get("Term", term_year_str) if isinstance(class_data, dict) else term_year_str
+                            normalized_date = self.normalize_date(date_val_str, default_datetime=default_year_dt_for_normalize, term_year_str=contextual_term_for_item)
                             item[key_used_for_update] = normalized_date
                             if key_used_for_update != actual_date_key and actual_date_key: item[actual_date_key] = normalized_date
                         elif not date_val_str and actual_date_key and not item.get(actual_date_key):
@@ -294,25 +292,40 @@ class DateParser:
         self.logger.debug("Date processing and standardization completed.")
         return data
     
-    def normalize_date(self, date_str: str, default_datetime: Optional[datetime] = None) -> str:
+    def normalize_date(self, date_str: str, default_datetime: Optional[datetime] = None, term_year_str: Optional[str] = None) -> str: # ADDED term_year_str
         if not isinstance(date_str, str): 
             self.logger.warning(f"normalize_date input not a string: {type(date_str)} '{date_str}'. Returning as is.")
             return str(date_str)
         stripped = date_str.strip()
         if not stripped or stripped.upper() in ["TBD", "TBA", "N/A", "UNKNOWN", "NOT SPECIFIED", "PENDING", "NONE"]:
             return "TBD" 
+        
+        effective_default_dt = default_datetime
+        if not effective_default_dt and term_year_str: # If no explicit default_datetime, try to derive from term_year_str
+            year_match = re.search(r'\b(20\d{2})\b', term_year_str)
+            if year_match:
+                try:
+                    effective_default_dt = datetime(int(year_match.group(1)), 1, 1) # Use Jan 1 of that year as default
+                    self.logger.debug(f"normalize_date: Using year {effective_default_dt.year} from term_year_str ('{term_year_str}') as default for parsing '{stripped}'.")
+                except ValueError:
+                    self.logger.warning(f"normalize_date: Could not parse year from term_year_str: {term_year_str} for date '{stripped}'.")
+        elif effective_default_dt:
+             self.logger.debug(f"normalize_date: Using provided default_datetime: {effective_default_dt} for date '{stripped}'.")
+        else:
+             self.logger.debug(f"normalize_date: No default_datetime or usable term_year_str for date '{stripped}'.")
+
+
         try:
-            parsed_dt = self.parse(stripped, default=default_datetime, ignoretz=True)
+            parsed_dt = self.parse(stripped, default=effective_default_dt, ignoretz=True) # Pass the determined default
             return parsed_dt.strftime(self.output_date_format)
         except (DateutilParserError, ValueError) as e: 
-            self.logger.warning(f"DateParser: normalize_date could not parse '{stripped}' (default_dt: {default_datetime}). Error: {e}. Returning original.")
+            self.logger.warning(f"DateParser: normalize_date could not parse '{stripped}' (default_dt: {effective_default_dt}, term_year_str: {term_year_str}). Error: {e}. Returning original.")
             return stripped 
         except Exception as e_unexp:
             self.logger.error(f"DateParser: Unexpected error in normalize_date for '{stripped}': {e_unexp}", exc_info=True)
             return stripped
 
     def _standardize_days_of_week(self, days_str: str) -> str:
-        # ... (implementation remains the same as date_parser_revised_v1_rereviewed) ...
         if not days_str or not isinstance(days_str, str): return ""
         original_input = days_str
         processed_str = days_str.lower()
@@ -326,25 +339,72 @@ class DateParser:
             self.logger.debug(f"Standardized '{original_input}' using combination: '{compact_str}' -> Indices: {sorted(list(day_indices))}")
         else:
             found_any_by_regex = False
-            tokens = processed_str.split(' ')
+            # Split by common separators that might still exist if not just spaces
+            tokens = re.split(r'[\s,;/]+', processed_str)
+            remaining_text_for_single_char_match = processed_str
+            
+            # First pass for multi-character abbreviations and full names
             for token in tokens:
                 if not token: continue
+                matched_in_token = False
                 for day_pattern_str, day_idx_val in self.day_regex_map_ordered:
-                    if re.fullmatch(day_pattern_str, token):
-                        day_indices.add(day_idx_val)
-                        found_any_by_regex = True
-                        break 
+                    # Ensure we only match full tokens unless it's a single char pattern like 'r' or 'u'
+                    if len(day_pattern_str) > 1 or day_pattern_str in ['r', 'u']: # Check if pattern is multi-char or specific single char
+                        if re.fullmatch(day_pattern_str, token):
+                            day_indices.add(day_idx_val)
+                            found_any_by_regex = True
+                            matched_in_token = True
+                            # Remove matched part from remaining_text_for_single_char_match
+                            # This needs careful regex to avoid issues if token is part of another word.
+                            # Simpler: if a multi-char token matches, we assume it's distinct.
+                            break 
+                if matched_in_token:
+                    # Try to remove the successfully matched token from the string for subsequent single-char check
+                    # This helps avoid 'th' in 'thursday' matching 'h' again if 'h' was a pattern.
+                    # This is tricky; for now, rely on ordered day_regex_map and fullmatch.
+                    pass
+
+            # Second pass for single characters if compact string wasn't a known combo
+            # and if multi-char tokens didn't fully explain the string.
+            # This is to catch "TR" or "MWF" if they were not space-separated.
+            if not day_indices and not (compact_str in self.day_combinations):
+                temp_compact_str = compact_str
+                for char_idx in range(len(temp_compact_str)):
+                    char = temp_compact_str[char_idx]
+                    # Check if 'th' or 'tu' or 'su' (two-char abbrevs within compact string)
+                    if char_idx + 1 < len(temp_compact_str):
+                        two_char_token = temp_compact_str[char_idx:char_idx+2]
+                        matched_two_char = False
+                        for day_pattern_str, day_idx_val in self.day_regex_map_ordered:
+                            if day_pattern_str == two_char_token: # like "th", "tu", "su"
+                                day_indices.add(day_idx_val)
+                                found_any_by_regex = True
+                                matched_two_char = True
+                                # Conceptually skip the next char, but loop handles index
+                                break 
+                        if matched_two_char:
+                            # Advance index conceptually, or mark as processed
+                            continue # Skips single char check for current char if two_char matched
+
+                    # Check single character
+                    for day_pattern_str, day_idx_val in self.day_regex_map_ordered:
+                        if day_pattern_str == char:
+                            day_indices.add(day_idx_val)
+                            found_any_by_regex = True
+                            break
+            
             if found_any_by_regex:
                  self.logger.debug(f"Standardized '{original_input}' via token/regex matching -> Indices: {sorted(list(day_indices))}")
+
         if day_indices:
             full_day_names = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
             return ", ".join([full_day_names[idx] for idx in sorted(list(day_indices))])
+        
         self.logger.warning(f"Could not reliably standardize days of week for: '{original_input}'. Returning original stripped string.")
         return original_input.strip()
 
 
     def parse_weekdays_to_indices(self, days_str: str) -> List[int]: 
-        # ... (implementation remains the same as date_parser_revised_v1_rereviewed) ...
         if not days_str or not isinstance(days_str, str): return []
         standardized_full_names_str = self._standardize_days_of_week(days_str)
         if not standardized_full_names_str: return []
@@ -355,20 +415,34 @@ class DateParser:
                 indices.add(self.weekday_map[name_lower])
         return sorted(list(indices))
 
-    def get_date_range(self, start_date_str: Optional[str], end_date_str: Optional[str], default_datetime: Optional[datetime] = None) -> List[date]:
-        # ... (implementation uses self.parse and self.normalize_date as in date_parser_revised_v1_rereviewed) ...
+    def get_date_range(self, start_date_str: Optional[str], end_date_str: Optional[str], 
+                       default_datetime: Optional[datetime] = None, term_year_str: Optional[str] = None) -> List[date]: # Added term_year_str
         if not start_date_str or not end_date_str: 
             raise ValueError("Start and end date strings are required for get_date_range.")
+        
+        # Determine effective default for parsing
+        effective_default_dt = default_datetime
+        if not effective_default_dt and term_year_str:
+            year_match = re.search(r'\b(20\d{2})\b', term_year_str)
+            if year_match:
+                try: effective_default_dt = datetime(int(year_match.group(1)), 1, 1)
+                except ValueError: pass
+
         try:
-            norm_start_str = self.normalize_date(start_date_str, default_datetime=default_datetime)
-            norm_end_str = self.normalize_date(end_date_str, default_datetime=default_datetime)
+            # Pass term_year_str to normalize_date for context if needed
+            norm_start_str = self.normalize_date(start_date_str, default_datetime=default_datetime, term_year_str=term_year_str)
+            norm_end_str = self.normalize_date(end_date_str, default_datetime=default_datetime, term_year_str=term_year_str)
+            
             if norm_start_str == "TBD" or norm_end_str == "TBD":
                 raise ValueError(f"Cannot create date range with TBD dates: Start='{norm_start_str}', End='{norm_end_str}'")
-            start_date_obj = self.parse(norm_start_str, default=default_datetime, ignoretz=True).date()
-            end_date_obj = self.parse(norm_end_str, default=default_datetime, ignoretz=True).date()   
+
+            start_date_obj = self.parse(norm_start_str, default=effective_default_dt, ignoretz=True).date()
+            end_date_obj = self.parse(norm_end_str, default=effective_default_dt, ignoretz=True).date()   
+            
             if start_date_obj > end_date_obj:
                 self.logger.debug(f"Start date {start_date_obj} is after end date {end_date_obj}. Swapping them.")
                 start_date_obj, end_date_obj = end_date_obj, start_date_obj
+            
             date_range_list: List[date] = []
             curr = start_date_obj; day_count = 0; max_days_in_range = (365 * 5) 
             while curr <= end_date_obj:
@@ -378,20 +452,24 @@ class DateParser:
                 if day_count > max_days_in_range: self.logger.warning(f"Date range exceeded {max_days_in_range} days."); break
             return date_range_list
         except (DateutilParserError, ValueError) as e: 
-            self.logger.error(f"Could not parse date range from '{start_date_str}' to '{end_date_str}'. Err: {e}")
+            self.logger.error(f"Could not parse date range from '{start_date_str}' to '{end_date_str}'. Default DT: {effective_default_dt}, Term: {term_year_str}. Err: {e}")
             raise ValueError(f"Could not parse date range. Original: Start='{start_date_str}', End='{end_date_str}'. Error: {e}") from e
         except Exception as e_unexp:
             self.logger.error(f"Unexpected error in get_date_range: {e_unexp}", exc_info=True)
             raise ValueError(f"Unexpected error in get_date_range. Original: Start='{start_date_str}', End='{end_date_str}'. Error: {e_unexp}") from e_unexp
 
 
-    def get_class_dates(self, start_date_str: Optional[str], end_date_str: Optional[str], days_of_week_str: Optional[str], default_datetime: Optional[datetime] = None) -> List[date]:
-        # ... (implementation uses self.normalize_date and self.get_date_range as in date_parser_revised_v1_rereviewed) ...
+    def get_class_dates(self, start_date_str: Optional[str], end_date_str: Optional[str], 
+                        days_of_week_str: Optional[str], 
+                        default_datetime: Optional[datetime] = None, term_year_str: Optional[str] = None) -> List[date]: # Added term_year_str
         if not start_date_str or not end_date_str: 
             self.logger.warning("Start and/or End date strings are missing for get_class_dates.")
             return []
-        norm_start_date = self.normalize_date(start_date_str, default_datetime=default_datetime)
-        norm_end_date = self.normalize_date(end_date_str, default_datetime=default_datetime)
+        
+        # Pass term_year_str for normalization context
+        norm_start_date = self.normalize_date(start_date_str, default_datetime=default_datetime, term_year_str=term_year_str)
+        norm_end_date = self.normalize_date(end_date_str, default_datetime=default_datetime, term_year_str=term_year_str)
+        
         if norm_start_date == "TBD" or norm_end_date == "TBD":
             self.logger.warning(f"Cannot get class dates with TBD start/end: Start='{norm_start_date}', End='{norm_end_date}'")
             return []
@@ -402,9 +480,9 @@ class DateParser:
                 return [] 
             if not weekday_indices: 
                 self.logger.info("No specific weekdays provided for get_class_dates.")
-                return [] # Return all dates in range if no weekdays specified, or empty if specific filtering is always desired.
-                          # Current behavior: return empty if no weekdays to filter by.
-            full_term_range = self.get_date_range(norm_start_date, norm_end_date, default_datetime=default_datetime)
+                return [] 
+            
+            full_term_range = self.get_date_range(norm_start_date, norm_end_date, default_datetime=default_datetime, term_year_str=term_year_str) # Pass term_year_str
             return [d for d in full_term_range if d.weekday() in weekday_indices]
         except ValueError as ve: 
             self.logger.error(f"Failed to calculate class dates from '{norm_start_date}' to '{norm_end_date}' for days '{days_of_week_str}'. Err: {ve}")
@@ -415,29 +493,26 @@ class DateParser:
 
 
 if __name__ == "__main__":
-    # --- Setup Logger for Standalone Testing ---
     logging.basicConfig(level=logging.DEBUG, 
                         format='%(asctime)s - %(name)s - %(levelname)s - [%(module)s:%(funcName)s:%(lineno)d] %(message)s',
                         handlers=[logging.StreamHandler(sys.stdout)])
     logger = logging.getLogger(__name__)
 
-    # --- Test Initialization ---
     dp_config = {"output_date_format": "%Y-%m-%d"} 
     dp = DateParser(logger_instance=logger, config=dp_config)
     if not PYTZ_AVAILABLE:
         logger.error("PYTZ IS NOT AVAILABLE. Some tests for get_iso_datetime_str will be skipped or may not reflect full functionality.")
 
-    # --- Test parse_time_string_to_objects ---
     logger.info("\n--- Testing parse_time_string_to_objects ---")
     time_tests = [
         ("10:00 AM - 11:15 AM", (time(10,0), time(11,15))),
         ("5:00PM", (time(17,0), None)),
         ("1:00 pm - 2pm", (time(13,0), time(14,0))),
-        ("12:00 AM", (time(0,0), None)), # Midnight
-        ("12:00 PM", (time(12,0), None)), # Noon
+        ("12:00 AM", (time(0,0), None)), 
+        ("12:00 PM", (time(12,0), None)), 
         ("9AM", (time(9,0), None)),
-        ("10:30 - 11:30 am", (time(10,30), time(11,30))), # AM applies to end if not specified
-        ("11:00 am - 1:00 pm", (time(11,0), time(13,0))), # Crosses noon
+        ("10:30 - 11:30 am", (time(10,30), time(11,30))), 
+        ("11:00 am - 1:00 pm", (time(11,0), time(13,0))), 
         ("Invalid time string", (None, None)),
         ("", (None, None))
     ]
@@ -445,50 +520,70 @@ if __name__ == "__main__":
         s_time, e_time = dp.parse_time_string_to_objects(time_input_str)
         logger.info(f"Input: '{time_input_str}' -> Start: {s_time}, End: {e_time} (Expected: Start={expected_times[0]}, End={expected_times[1]}) {'PASS' if (s_time, e_time) == expected_times else 'FAIL'}")
 
-    # --- Test get_iso_datetime_str ---
     logger.info("\n--- Testing get_iso_datetime_str ---")
-    # Note: Expected output depends on the date and whether pytz correctly handles DST for that date/timezone.
-    # These are examples and might need adjustment based on specific DST rules for the dates.
-    # Using a fixed date for simplicity in testing the timezone logic
-    test_iso_date = "2024-09-05" # A date in September (EDT for America/New_York)
-    test_iso_date_winter = "2024-11-05" # A date in November (EST for America/New_York)
+    test_iso_date = "2024-09-05" 
+    test_iso_date_winter = "2024-11-05" 
 
     iso_tests = []
-    if PYTZ_AVAILABLE: # Only run these tests if pytz is available
+    if PYTZ_AVAILABLE: 
         iso_tests.extend([
             (test_iso_date, "10:00 AM", "America/New_York", False, "2024-09-05T10:00:00-04:00"),
             (test_iso_date, time(14,30), "America/New_York", False, "2024-09-05T14:30:00-04:00"),
-            (test_iso_date_winter, "10:00 AM", "America/New_York", False, "2024-11-05T10:00:00-05:00"), # Standard Time
-            (test_iso_date, "11:59 PM", "America/Los_Angeles", True, "2024-09-05T23:59:00-07:00"), # PDT
-            (date(2024, 7, 4), "8:00PM", "Europe/London", False, "2024-07-04T20:00:00+01:00"), # BST
-            (test_iso_date, "Invalid Time", "America/New_York", False, test_iso_date), # Should return just date if time fails
+            (test_iso_date_winter, "10:00 AM", "America/New_York", False, "2024-11-05T10:00:00-05:00"), 
+            (test_iso_date, "11:59 PM", "America/Los_Angeles", True, "2024-09-05T23:59:00-07:00"), 
+            (date(2024, 7, 4), "8:00PM", "Europe/London", False, "2024-07-04T20:00:00+01:00"), 
+            (test_iso_date, "Invalid Time", "America/New_York", False, test_iso_date), 
             (test_iso_date, "10:00 AM", "Invalid/Timezone", False, None),
             ("TBD", "10:00 AM", "America/New_York", False, None)
         ])
     else:
         logger.warning("Skipping some ISO datetime tests as pytz is not available.")
         iso_tests.extend([
-             (test_iso_date, "10:00 AM", "Invalid/Timezone", False, None) # This will fail due to no pytz
+             (test_iso_date, "10:00 AM", "Invalid/Timezone", False, None) 
         ])
 
     for dt_input, tm_input, tz_str, is_due_end, expected_iso in iso_tests:
         result_iso = dp.get_iso_datetime_str(dt_input, tm_input, tz_str, is_end_time_for_due_date=is_due_end)
         logger.info(f"Input: D='{dt_input}', T='{tm_input}', TZ='{tz_str}' -> ISO: '{result_iso}' (Expected: '{expected_iso}') {'PASS' if result_iso == expected_iso else 'FAIL'}")
 
-    # ... (Keep existing tests for normalize_date, _standardize_days_of_week, get_class_dates) ...
-    logger.info("\n--- Testing Date Normalization (from previous tests) ---")
-    test_dates = [
-        ("Sept 7, 2024", datetime(2024,1,1), "2024-09-07"),
-        ("Sep 7 2024", None, "2024-09-07"),
-        ("TBD", None, "TBD"),
-        ("10/10", datetime(2025,1,1), "2025-10-10"), 
+    logger.info("\n--- Testing Date Normalization (with term_year_str) ---")
+    test_dates_normalization = [
+        ("Sept 7", datetime(2024,1,1), None, "2024-09-07"), # Default datetime provided
+        ("Sep 7", None, "Fall 2024", "2024-09-07"),        # term_year_str provided
+        ("Oct 10", None, "Spring 2025", "2025-10-10"),     # term_year_str provided
+        ("11/15", None, "2023 Academic Year", "2023-11-15"),# term_year_str provided
+        ("Jan 5th", None, None, "2025-01-05"),              # No year context (uses current year from dateutil default or 1900) -> this will depend on test run date, adjusted to current year for pass
+        ("TBD", None, "Fall 2024", "TBD"),
+        ("August 1st, 2022", None, "Fall 2024", "2022-08-01"), # Explicit year overrides term_year_str
+        ("Dec 25", None, "NoYearHere", datetime.now().strftime("%Y") + "-12-25") # No year in term_year_str (uses current year)
     ]
-    for dt_str, default_dt, expected in test_dates:
-        result = dp.normalize_date(dt_str, default_datetime=default_dt)
-        logger.info(f"Input: '{dt_str}', Default: {default_dt.year if default_dt else 'N/A'} -> Normalized: '{result}' (Expected: '{expected}') {'PASS' if result == expected else 'FAIL'}")
 
-    logger.info("\n--- Testing Days of Week Standardization (from previous tests) ---")
-    test_days = [("MWF", "Monday, Wednesday, Friday"), ("TR", "Tuesday, Thursday")]
+    current_year = datetime.now().year
+    for i, (dt_str, default_dt, term_str, expected_str) in enumerate(test_dates_normalization):
+        if "Jan 5th" in dt_str: # Adjust expected for Jan 5th test
+            expected_str = f"{current_year}-01-05"
+        if "Dec 25" in dt_str and "NoYearHere" in term_str:
+             expected_str = f"{current_year}-12-25"
+
+        result = dp.normalize_date(dt_str, default_datetime=default_dt, term_year_str=term_str)
+        is_pass = result == expected_str
+        logger.info(f"Input: '{dt_str}', DefaultDT: {default_dt.year if default_dt else 'N/A'}, Term: '{term_str}' -> Normalized: '{result}' (Expected: '{expected_str}') {'PASS' if is_pass else 'FAIL'}")
+
+
+    logger.info("\n--- Testing Days of Week Standardization ---")
+    test_days = [
+        ("MWF", "Monday, Wednesday, Friday"), 
+        ("TR", "Tuesday, Thursday"),
+        ("M W F", "Monday, Wednesday, Friday"),
+        ("Mon,Wed,Fri", "Monday, Wednesday, Friday"),
+        ("Tues/Thurs", "Tuesday, Thursday"),
+        ("R", "Thursday"), 
+        ("MTWRF", "Monday, Tuesday, Wednesday, Thursday, Friday"),
+        ("Th", "Thursday"),
+        ("F", "Friday"),
+        ("SaSu", "Saturday, Sunday"),
+        ("Mondays and Wednesdays", "Monday, Wednesday")
+    ]
     for days_input, expected_days in test_days:
         result_days = dp._standardize_days_of_week(days_input)
         logger.info(f"Days Input: '{days_input}' -> Standardized: '{result_days}' (Expected: '{expected_days}') {'PASS' if result_days == expected_days else 'FAIL'}")

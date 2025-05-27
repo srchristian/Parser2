@@ -8,12 +8,11 @@ directories:
   converted: 'converted'
   output: 'output'
   logs: 'logs'
-  syllabus_repository: 'utils/parsing/syllabus_repository'
-  original_syllabus_dir: 'utils/parsing/syllabus_repository/original_syllabus'
-  converted_syllabus_dir: 'utils/parsing/syllabus_repository/converted_syllabus'
-  parsed_syllabus_dir: 'utils/parsing/syllabus_repository/parsed_syllabus' # Used by SyllabusParser
-  main_data_dir: 'utils/parsing/syllabus_repository/main_data'
-  main_index_dir: 'utils/parsing/syllabus_repository/main_data' # Duplicate of main_data_dir? Consolidate if so.
+  original_syllabus_dir: 'syllabus_data/originals'
+  converted_syllabus_dir: 'syllabus_data/converted'
+  parsed_syllabus_dir: 'syllabus_data/parsed'
+  main_data_dir: 'syllabus_data/main'
+  main_index_dir: 'syllabus_data/main'
 
 # ============================
 # Flask Configuration
@@ -22,114 +21,72 @@ flask:
   debug: True
   host: '0.0.0.0'
   port: 5000
-  secret_key: 'development_secret_key_should_be_changed_in_production'  # Replace with a secure random key from os.urandom(24)
+  secret_key: 'development_secret_key_should_be_changed_in_production'
 
 # ============================
 # File Settings
 # ============================
 file_settings:
-  allowed_extensions: 
+  allowed_extensions:
     - 'pdf'
     - 'docx'
     - 'txt'
-    - 'html' # Added html based on app.py capabilities
-    - 'htm'  # Added htm
-  max_content_length: 16777216  # 16 MB in bytes
+    - 'html'
+    - 'htm'
+  max_content_length: 16777216  # 16 MB
 
 # ============================
 # Logging Configuration
 # ============================
 logging:
-  level: 'DEBUG'  # Options: DEBUG, INFO, WARNING, ERROR, CRITICAL
-  # format for app.py's setup_logger, ensure it matches what setup_logger expects or remove if setup_logger defines its own
+  level: 'DEBUG'
   format: '%(asctime)s - %(name)s - %(levelname)s - [%(funcName)s:%(lineno)d] %(message)s'
-  datefmt: '%Y-%m-%d %H:%M:%S' # date format for the logger
-  # 'file' and 'console' keys here might be custom if your setup_logger uses them, otherwise remove.
-  # Standard file logging is usually handled by FileHandler within setup_logger.
-  # file: 'parser.log' # This specific key 'file' is not standard for logging.basicConfig or FileHandler path directly here.
-  # console: True    # This specific key 'console' is not standard.
+  datefmt: '%Y-%m-%d %H:%M:%S'
 
 # ============================
 # Required Fields for Missing Fields Page (class_data)
-# These fields, if missing, might trigger the "Missing Fields" page.
-# Align this list with Project Plan Section II.B "Required by System?" entries.
+# These fields, if missing after initial extraction, WILL trigger a user prompt.
 # ============================
 required_fields:
-  - 'Term'
-  - 'Course Title' # Should include course code
-  - 'Course Code' # Explicitly required
-  - 'Instructor Name'
-  - 'Class Time'
-  - 'Days of Week'
-  - 'Term Start Date'
-  - 'Term End Date'
+  - 'Time Zone'
   - 'Class Start Date'
   - 'Class End Date'
-  # Add other fields from Project Plan II.B marked as "Yes" for "Required by System?"
+  - 'Days of Week'
+  - 'Class Time'
+  - 'Course Code'
+  - 'Course Title'
+  # Fields NOT listed here but present in the LLM extraction schema (like 'Term', 'Instructor Name', 'Term Start Date', 'Term End Date')
+  # will be extracted if found by the LLM, but the user will NOT be prompted for them if they are missing.
 
 # ============================
-# Environment Variables to check (informational, not directly used by app to load them)
+# Environment Variables to check
 # ============================
 environment_variables:
   - 'OPENAI_API_KEY'
-  # - 'FLASK_SECRET_KEY' # Example if you were to load it from env
 
 # ============================
-# Parser Scripts (Informational - paths are hardcoded in app.py imports)
-# This section seems more like a note and isn't directly used by app.py to load parsers.
+# Parser Specific Configurations
 # ============================
-parsers:
-  parser_class: 'utils/parsing/parser_class.py' # Example old key, likely not used
-  parser_syllabus: 'utils/parsers/syllabus_parser.py' # Corrected path based on app.py
-  # parser_events, parser_labs, parser_recitation are not individual scripts loaded this way.
-  # They are classes within the parser modules.
-
-# ============================
-# Session Configuration (If using Flask server-side sessions extensively)
-# ============================
-session:
-  type: 'filesystem' # Example: Flask-Session type
-  file_dir: 'flask_session_data' # Example: directory for filesystem sessions
-  permanent: False
-  use_signer: True
-
-# ============================
-# Parser Specific Configurations (Example Structure)
-# ============================
-# parser_class: # This was likely for an older structure or specific settings for a general class parser
-#   default_values:
-#     'Instructor Email': 'Not provided'
-#     # ... other defaults for class_data if OpenAIParser fails to find them and you want hardcoded fallbacks.
-
-#openai_parser specific settings (used by OpenAIParser class)
 openai_parser:
-  max_chars_for_metadata: 30000 # Max characters of syllabus text to send for class_data extraction
-  max_api_retries: 2            # Number of retries for API calls within OpenAIParser
-  client_timeout:               # Timeout settings for the httpx client used by OpenAI SDK
-    read: 60.0                  # Read timeout in seconds
-    connect: 10.0               # Connect timeout in seconds
-  # critical_fields_check_after_extraction: # Fields OpenAIParser specifically checks and might log warnings for
-  #   - "Term"
-  #   - "Course Title"
-  #   # ... etc. (already handled in the code, this is for an idea if you want it configurable)
+  max_chars_for_metadata: 30000
+  max_api_retries: 2
+  client_timeout:
+    read: 60.0
+    connect: 10.0
 
-#schedule_parser specific settings
 schedule_parser:
-  default_term_weeks: 15 # Used for estimating class end date if not found
+  default_term_weeks: 15
 
 # ============================
-# OpenAI Configuration (Used by OpenAIParser and SyllabusParser for LLM calls)
+# OpenAI Configuration
 # ============================
 openai:
-  model: 'gpt-4.1-nano' # << CHANGED MODEL HERE
-  # max_tokens: 12000 # This might be a setting for completion, not chat typically. Chat models manage tokens differently.
-  api_key: null  # Recommended: Set OPENAI_API_KEY environment variable. App will use that.
-                 # If set here, it would override the environment variable if the parser code prioritizes this.
+  model: 'gpt-4.1-nano'
+  api_key: null # Relies on environment variable OPENAI_API_KEY
 
 # ============================
-# Extraction Configuration (Primary source for model name in app.py)
+# Extraction Configuration
 # ============================
 extraction:
-  openai_model: 'gpt-4.1-nano' # << CHANGED MODEL HERE
-  openai_api_key: null # Set to null to rely on os.environ.get("OPENAI_API_KEY") or the general openai.api_key above
-                        # Parsers typically check config -> environment.
+  openai_model: 'gpt-4.1-nano'
+  openai_api_key: null # Relies on environment variable
