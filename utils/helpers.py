@@ -556,18 +556,20 @@ def process_syllabus_pipeline(
     parsed_results_dir = Path(config.get("directories", {}).get("parsed_syllabus_dir", "syllabus_data/parsed_results"))
     cached_final_json_path = parsed_results_dir / f"{content_hash}_results.json"
 
-    if cached_final_json_path.exists():
-        module_logger.info(f"CACHE HIT: Found processed results for hash {content_hash} at {cached_final_json_path}.")
-        cached_results = read_json(cached_final_json_path)
-        if cached_results:
-            cached_results.setdefault("metadata", {})["retrieved_from_cache"] = True
-            cached_results["metadata"]["cache_hit_time"] = datetime.now().isoformat()
-            cached_results["metadata"]["original_file_on_this_run"] = original_filename_for_display
-            return cached_results
-        else:
-            module_logger.warning(f"CACHE CORRUPT? Failed to read cached file {cached_final_json_path}. Re-processing.")
+    # --- CACHING LOGIC TO COMMENT OUT ---
+    # if cached_final_json_path.exists():
+    #     module_logger.info(f"CACHE HIT: Found processed results for hash {content_hash} at {cached_final_json_path}.")
+    #     cached_results = read_json(cached_final_json_path)
+    #     if cached_results:
+    #         cached_results.setdefault("metadata", {})["retrieved_from_cache"] = True
+    #         cached_results["metadata"]["cache_hit_time"] = datetime.now().isoformat()
+    #         cached_results["metadata"]["original_file_on_this_run"] = original_filename_for_display
+    #         return cached_results
+    #     else:
+    #         module_logger.warning(f"CACHE CORRUPT? Failed to read cached file {cached_final_json_path}. Re-processing.")
+    # --- END OF CACHING LOGIC TO COMMENT OUT ---
 
-    module_logger.info(f"CACHE MISS: No cached results found for hash {content_hash}. Processing anew.")
+    module_logger.info(f"CACHE MISS or CACHING DISABLED: No cached results found for hash {content_hash}. Processing anew.") # You can update this log message if you like
 
     results: Dict[str, Any] = {
         "metadata": {

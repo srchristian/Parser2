@@ -233,10 +233,10 @@ class SyllabusParser:
         parsed_sections: Optional[Dict[str, Any]] = None
         parsing_method = "llm"
         if self.openai_status == "ready" and self.client:
-            if len(syllabus_text.strip()) < 150: 
-                self.logger.warning(f"Syllabus text for {job_id} too short ({len(syllabus_text.strip())} chars). Using fallback segmentation.")
-            else:
-                prompt = self._generate_segmentation_prompt(syllabus_text)
+                # if len(syllabus_text.strip()) < 150: # << COMMENT OUT OR REMOVE THIS CONDITION
+                #     self.logger.warning(f"Syllabus text for {job_id} too short ({len(syllabus_text.strip())} chars). Using fallback segmentation.")
+                # else: # << REMOVE THIS 'ELSE' if the condition is removed
+                prompt = self._generate_segmentation_prompt(syllabus_text) # Now always attempts this if client is ready
                 response_text = self._call_openai_api(prompt, job_id)
                 if response_text:
                     parsed_sections = self._parse_llm_response(response_text, job_id) # Pass job_id for logging
